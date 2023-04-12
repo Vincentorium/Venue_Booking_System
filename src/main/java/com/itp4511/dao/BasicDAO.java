@@ -18,6 +18,7 @@ public class BasicDAO<T> {
 
     public int update(String sql, Object... parameters){
 
+
             Connection con=null;
         try {
             con= C3p0Utils.getConnection();

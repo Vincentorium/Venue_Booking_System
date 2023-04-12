@@ -11,7 +11,13 @@ public class User implements Serializable{
   private String userPassword;
   private byte userType;
 
-
+  public User(long userId, String userName, String userAcc, String userPassword, byte userType) {
+    this.userId = userId;
+    this.userName = userName;
+    this.userAcc = userAcc;
+    this.userPassword = userPassword;
+    this.userType = userType;
+  }
 
   public User() {
   }

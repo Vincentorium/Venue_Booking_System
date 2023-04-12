@@ -1,4 +1,4 @@
-package com.itp4511.dao;
+package com.itp4511.domain;
 
 
 public class Guest {
