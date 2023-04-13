@@ -35,6 +35,26 @@ public class SessionService {
         return sessionDAO.queryMulti("SELECT * FROM `session` where sessionCampus=? and sessionDate =?", Session.class, campus,Date.valueOf(date));
 
     }
+
+
+
+
+    public boolean updateSession(Object[][] bachList) {
+
+        int input[] = new int [bachList.length];
+
+        input= sessionDAO.updateBach("UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionStatus`=? where  `sessionID`=?",   bachList);
+
+
+
+
+        return input.length > 0;
+    }
+
+
+
+
+
     //get the laest session id:   order=reorder
 //    public List<Session> getSessionNotAvailableWithSelectedDay(){
 //        return venueDAO.queryMulti("SELECT * FROM `session` ", Session.class);

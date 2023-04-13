@@ -7,10 +7,15 @@ import org.apache.commons.dbutils.handlers.*;
 import org.junit.Test;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
+
+//practice
 public class DBUtils_USE {
+
 
     //
 
@@ -22,6 +27,7 @@ public class DBUtils_USE {
         //2.使用DUBTIL 的類和接口， 先引入UDBTILS jas， 加入到本Projec
         //3.
         QueryRunner queryRunner = new QueryRunner();
+
 
         //4.執行相關方法，返回ArrayList resultset
         String sql = "select * from userinfo";
@@ -125,6 +131,90 @@ public class DBUtils_USE {
         }
 
     }
+
+
+
+
+    @Test
+    public void testDMLBach() {
+
+        Connection connection = C3p0Utils.getConnection();
+        String sqlInsert = "INSERT INTO `session` (`sessionID`, `sessionDate`,`sessionStartTime`, `sessionEndTime`,sessionStatus,sessionCampus) "
+                + "VALUES (?,now(), ?, ?, ?,?)";
+
+
+        Object[][] bachListInser = new Object[][]{
+                {null, "10:11:00", "1:00:00", 1, 1},
+                {null, "11:12:00", "1:00:00", 1, 1},
+                {null, "12:13:00", "1:00:00", 1, 1},};
+
+
+        String sql="UPDATE `session` SET  `sessionStatus`=?,`sessionFKbookingRecord`=?  where  `sessionID`=?";
+        Object[][] bachList = new Object[][]{
+                { 1, 1,9},
+                { 1, 1,10},
+                { 1, 1,11},};
+
+        try {
+
+            int affectedRow[] = qr.batch(connection, sql, bachList);
+            System.out.println(affectedRow.length > 0 ? "做了" : "沒做");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            C3p0Utils.closeAll(connection, null, null);
+        }
+
+    }
+
+    private QueryRunner qr = new QueryRunner();
+
+    //batch native
+    public void testBatchupdate(ArrayList<String> dataArray, String sql) throws SQLException {
+        Connection conn = C3p0Utils.getConnection();
+        PreparedStatement ps = null;
+
+
+        try {
+            conn.setAutoCommit(false);
+            ps = conn.prepareStatement(sql);
+
+            for (String data : dataArray) {
+                String[] values = data.split(","); //Assuming the array contains strings delimited by semi-colon
+                ps.setNull(1, java.sql.Types.NULL);
+                ps.setString(2, values[0]);
+                ps.setString(3, values[1]);
+                ps.setString(4, values[2]);
+                ps.setString(5, values[3]);
+                ps.addBatch();
+            }
+
+            int isSuccess[] = ps.executeBatch();
+            conn.commit();
+        } catch (SQLException e) {
+            conn.rollback();
+            System.out.println(e);
+            throw e;
+        } finally {
+            if (ps != null) {
+                ps.close();
+                C3p0Utils.closeAll(conn, null, null);
+            }
+            conn.setAutoCommit(true);
+
+        }
+        C3p0Utils.closeAll(conn, null, null);
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 }

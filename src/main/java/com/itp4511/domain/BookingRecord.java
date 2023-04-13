@@ -1,10 +1,12 @@
+
 package com.itp4511.domain;
 
 
 import java.io.Serializable;
 import java.sql.Date;
 
-public class BookingRecord implements Serializable {
+
+public class BookingRecord implements Serializable{
 
   private long bookId;
   private java.sql.Date bookDate;
@@ -12,21 +14,18 @@ public class BookingRecord implements Serializable {
   private String bookReceiptName;
   private long bookStatus;
   private long bookFKmemberId;
-  private long bookFkSession;
   private long bookFkGuestList;
-
 
   public BookingRecord() {
   }
 
-  public BookingRecord(long bookId, Date bookDate, String bookReceipt, String bookReceiptName, long bookStatus, long bookFKmemberId, long bookFkSession, long bookFkGuestList) {
+  public BookingRecord(long bookId, Date bookDate, String bookReceipt, String bookReceiptName, long bookStatus, long bookFKmemberId, long bookFkGuestList) {
     this.bookId = bookId;
     this.bookDate = bookDate;
     this.bookReceipt = bookReceipt;
     this.bookReceiptName = bookReceiptName;
     this.bookStatus = bookStatus;
     this.bookFKmemberId = bookFKmemberId;
-    this.bookFkSession = bookFkSession;
     this.bookFkGuestList = bookFkGuestList;
   }
 
@@ -81,15 +80,6 @@ public class BookingRecord implements Serializable {
 
   public void setBookFKmemberId(long bookFKmemberId) {
     this.bookFKmemberId = bookFKmemberId;
-  }
-
-
-  public long getBookFkSession() {
-    return bookFkSession;
-  }
-
-  public void setBookFkSession(long bookFkSession) {
-    this.bookFkSession = bookFkSession;
   }
 
 

@@ -5,9 +5,8 @@ import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Time;
 
-public class Session implements Serializable {
 
-
+public class Session  implements Serializable{
 
   private long sessionId;
   private java.sql.Date sessionDate;
@@ -15,17 +14,19 @@ public class Session implements Serializable {
   private java.sql.Time sessionEndTime;
   private long sessionCampus;
   private long sessionStatus;
+  private long sessionFKbookingRecord;
 
   public Session() {
   }
 
-  public Session(long sessionId, Date sessionDate, Time sessionStartTime, Time sessionEndTime, long sessionCampus, long sessionStatus) {
+  public Session(long sessionId, Date sessionDate, Time sessionStartTime, Time sessionEndTime, long sessionCampus, long sessionStatus, long sessionFKbookingRecord) {
     this.sessionId = sessionId;
     this.sessionDate = sessionDate;
     this.sessionStartTime = sessionStartTime;
     this.sessionEndTime = sessionEndTime;
     this.sessionCampus = sessionCampus;
     this.sessionStatus = sessionStatus;
+    this.sessionFKbookingRecord = sessionFKbookingRecord;
   }
 
   public long getSessionId() {
@@ -79,6 +80,15 @@ public class Session implements Serializable {
 
   public void setSessionStatus(long sessionStatus) {
     this.sessionStatus = sessionStatus;
+  }
+
+
+  public long getSessionFKbookingRecord() {
+    return sessionFKbookingRecord;
+  }
+
+  public void setSessionFKbookingRecord(long sessionFKbookingRecord) {
+    this.sessionFKbookingRecord = sessionFKbookingRecord;
   }
 
 }

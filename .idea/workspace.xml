@@ -7,24 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f1a288b-cf82-48a1-bdb4-f86aadf486c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/VenueDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/testfortest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/BasicDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/dao/BasicDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/Guest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/testfortest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/BookingRecordDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/dao/BookingRecordDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/BookingRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/BookingRecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/SessionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/utils/DBUtils_USE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/utils/DBUtils_USE.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/view/MHLView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/view/MHLView.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -75,22 +79,23 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookingrecord: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="guest: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="session: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="binkingreocrd: view" type="9532b39d:MariaImplModel$View" />
       </path>
     </expand>
     <select />
@@ -103,8 +108,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="111" column="25" lean-forward="true" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+            <state relative-caret-position="281">
+              <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="15" selection-start-line="15" selection-end-line="31" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,62 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="34" column="88" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state>
+              <caret selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -178,32 +153,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -222,6 +182,10 @@
     <findStrings>
       <find>'\[.{7}\]'</find>
       <find>BookingRecrod</find>
+      <find>queryRunner</find>
+      <find>update</find>
+      <find>testDMLBach</find>
+      <find>bachList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -250,23 +214,27 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/VenueDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Session.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Venue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Bookingrecrod.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecrod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Multi_BookingSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Bookingrecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" />
       </list>
     </option>
@@ -297,10 +265,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="24" />
-    <option name="y" value="424" />
-    <option name="width" value="1800" />
-    <option name="height" value="1377" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="2582" />
+    <option name="height" value="1391" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -311,7 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -392,6 +359,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -401,6 +378,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ict" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ict" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ict" type="462c0819:PsiDirectoryNode" />
+              <item name="dbutils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -429,6 +424,14 @@
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -454,6 +457,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,19 +466,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itp4511/domain" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2102102" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.itp4511.dao" />
       <recent name="com.itp4511.service" />
+      <recent name="com.itp4511.dao" />
       <recent name="com.hspedu.dao_.domain" />
       <recent name="com.hspedu.dao_.utils" />
     </key>
@@ -563,33 +569,33 @@
         </option>
       </method>
     </configuration>
-    <configuration name="DBUtils_USE.testDML" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DBUtils_USE.testDMLBach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITP4511_EA_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="com.itp4511.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DBUtils_USE" />
-      <option name="METHOD_NAME" value="testDML" />
+      <option name="PACKAGE_NAME" value="com.itp4511.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.itp4511.utils.DBUtils_USE" />
+      <option name="METHOD_NAME" value="testDMLBach" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBUtils_USE.testQuerySing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MHLView.TestBach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITP4511_EA_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="com.itp4511.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DBUtils_USE" />
-      <option name="METHOD_NAME" value="testQuerySing" />
+      <option name="PACKAGE_NAME" value="com.itp4511.view" />
+      <option name="MAIN_CLASS_NAME" value="com.itp4511.view.MHLView" />
+      <option name="METHOD_NAME" value="TestBach" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -611,6 +617,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MHLView.testDMLBach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITP4511_EA_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itp4511.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itp4511.view" />
+      <option name="MAIN_CLASS_NAME" value="com.itp4511.view.MHLView" />
+      <option name="METHOD_NAME" value="testDMLBach" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SessionService.insertOneSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITP4511_EA_Project" />
       <extension name="coverage">
@@ -627,37 +649,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDAO.testUserInfoDAO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITP4511_EA_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hspedu.dao_.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hspedu.dao_.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hspedu.dao_.test.TestDAO" />
-      <option name="METHOD_NAME" value="testUserInfoDAO" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="GlassFish Server.GlassFish 4.0.01" />
-      <item itemvalue="JUnit.DBUtils_USE.testQuerySing" />
-      <item itemvalue="JUnit.DBUtils_USE.testDML" />
-      <item itemvalue="JUnit.TestDAO.testUserInfoDAO" />
       <item itemvalue="JUnit.MHLView.mainMenuw" />
       <item itemvalue="JUnit.SessionService.insertOneSession" />
+      <item itemvalue="JUnit.MHLView.TestBach" />
+      <item itemvalue="JUnit.MHLView.testDMLBach" />
+      <item itemvalue="JUnit.DBUtils_USE.testDMLBach" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MHLView.mainMenuw" />
+        <item itemvalue="JUnit.MHLView.TestBach" />
+        <item itemvalue="JUnit.DBUtils_USE.testDMLBach" />
+        <item itemvalue="JUnit.MHLView.testDMLBach" />
         <item itemvalue="JUnit.SessionService.insertOneSession" />
-        <item itemvalue="JUnit.TestDAO.testUserInfoDAO" />
-        <item itemvalue="JUnit.DBUtils_USE.testDML" />
-        <item itemvalue="JUnit.DBUtils_USE.testQuerySing" />
       </list>
     </recent_temporary>
   </component>
@@ -677,71 +683,74 @@
       <workItem from="1680575667296" duration="2708000" />
       <workItem from="1681188083899" duration="766000" />
       <workItem from="1681188906501" duration="23514000" />
+      <workItem from="1681274619722" duration="2601000" />
+      <workItem from="1681347760434" duration="13823000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 11m 47s.xml">
+    <history-entry file="MHLView_mainMenuw - 2023.04.13 at 11h 54m 23s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 16m 19s.xml">
+    <history-entry file="MHLView_TestBach - 2023.04.13 at 12h 11m 09s.xml">
+      <configuration name="MHLView.TestBach" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MHLView_TestBach - 2023.04.13 at 12h 11m 26s.xml">
+      <configuration name="MHLView.TestBach" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MHLView_TestBach - 2023.04.13 at 12h 11m 58s.xml">
+      <configuration name="MHLView.TestBach" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MHLView_TestBach - 2023.04.13 at 12h 12m 05s.xml">
+      <configuration name="MHLView.TestBach" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MHLView_TestBach - 2023.04.13 at 12h 16m 31s.xml">
+      <configuration name="MHLView.TestBach" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MHLView_mainMenuw - 2023.04.13 at 12h 17m 00s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 16m 51s.xml">
+    <history-entry file="MHLView_mainMenuw - 2023.04.13 at 12h 18m 28s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 18m 43s.xml">
+    <history-entry file="MHLView_mainMenuw - 2023.04.13 at 12h 20m 21s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 25m 07s.xml">
-      <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 25m 24s.xml">
-      <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 25m 27s.xml">
-      <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 10h 37m 32s.xml">
-      <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 12h 10m 31s.xml">
-      <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MHLView_mainMenuw - 2023.04.12 at 12h 10m 55s.xml">
+    <history-entry file="MHLView_mainMenuw - 2023.04.13 at 13h 13m 30s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68525000" />
+    <option name="totallyTimeSpent" value="86295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22155328" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.23780856" />
+      <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.23780856" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32955974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32955974" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.49559748" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.51949686" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49559748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41886792" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32916668" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40377358" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.40125787" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32955974" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32955974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984948" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -750,7 +759,7 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="JSF" order="7" weight="0.32992172" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.19987959" />
+      <window_info anchor="right" id="Database" order="8" weight="0.320289" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="CDI" order="11" weight="0.32992172" />
@@ -783,89 +792,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hspedu/dao_/utils/C3p0Utils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/DBUtils_USE.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hspedu/dao_/domain/UserInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hspedu/dao_/dao/UserInfoDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hspedu/dao_/dao/BasicDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/dbutils/UserDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="84" column="51" lean-forward="true" selection-start-line="84" selection-start-column="51" selection-end-line="84" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/dbutils/BrandsDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/bean/Brand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/brands.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
-      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/bean/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/phoneList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -912,15 +838,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/bookingrecrod">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="22a6538d-5971-47f4-ba48-71f02823ce37">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/bookingrecrod" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -931,20 +849,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionBean.java" />
     <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/session">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="22a6538d-5971-47f4-ba48-71f02823ce37">
@@ -954,20 +859,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/testfortest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Session.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/testfortest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1003,68 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1075,37 +906,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="34" column="88" selection-start-line="34" selection-start-column="88" selection-end-line="34" selection-end-column="88" />
+        <state relative-caret-position="187">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ict/bean/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ict/bean/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/impl/AbstractPoolBackedDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/bookingrecord">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="840ca83a-92cb-4c3a-8afc-65051e18554a">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="99" column="29" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#1059#1252#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+          <folding>
+            <element signature="e#7226#7474#0" expanded="true" />
+            <element signature="e#7473#7474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2150">
+          <caret line="182" column="109" selection-start-line="182" selection-start-column="109" selection-end-line="182" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="33" />
+        <state relative-caret-position="108">
+          <caret line="15" selection-start-line="15" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/guest">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="840ca83a-92cb-4c3a-8afc-65051e18554a">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="111" column="25" lean-forward="true" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
+        <state relative-caret-position="281">
+          <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
