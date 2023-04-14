@@ -17,7 +17,7 @@ public class BookingRecordService {
     public boolean insertBookingRecords(int bookingMemberID,Object[][] bachList ) {
 
         int input = 0;
-        int index;
+        int bookingID;
         input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
                 + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
 
@@ -25,10 +25,10 @@ public class BookingRecordService {
                 "ORDER BY bookID DESC " +
                 "LIMIT 1;",BookingRecord.class, null);
 
-        index=(int)o;
+        bookingID=(int)o;
         for(int i=0;i<bachList.length;i++){
 
-            bachList[i][0]=index;
+            bachList[i][0]=bookingID;
         }
 
 

@@ -42,8 +42,10 @@ public class SessionService {
     public boolean updateSession(Object[][] bachList) {
 
         int input[] = new int [bachList.length];
-
-        input= sessionDAO.updateBach("UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionStatus`=? where  `sessionID`=?",   bachList);
+//addGuestlist
+        GuestlistService guestlistService=new GuestlistService();
+     Object[][] bachListWithGuestList= guestlistService.addGuestlist(bachList);
+        input= sessionDAO.updateBach("UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionFKGuestlist`=?,`sessionStatus`=? where  `sessionID`=?",   bachListWithGuestList);
 
 
 

@@ -25,6 +25,7 @@ public class MHLView {
     private SessionService sessionService = new SessionService();
     private BookingRecordService bookingRecordService = new BookingRecordService();
     private GuestService guestService = new GuestService();
+    private GuestlistService guestlistService = new GuestlistService ();
 
     //  private BookingRecordService bookingRecordService= new BookingRecordService();
 
@@ -137,12 +138,23 @@ public class MHLView {
                              4.未做
                                 guestList+FK
                             */
-                            Object[][] bachList2 = new Object[][]{
-                                    {0, 0, 9},
-                                    {0, 0, 10},
-                                    {0, 0, 11},};
-
+                            /*
+                            *1.createbooking, inser into JS
+                            *2.sessionGuestList, create and insert into JS
+                            *3.sessionStatus by user
+                            *4.sessionID: by user
+                            *5.guestID
+                            * bookingID,--,sessionStatus,sessionID
+                            * */
+                            int guestArray1[]={1,2};
+                            int guestArray2[]={2,3};
+                            int guestArray3[]={3,1};
                             Object[][] bachList = new Object[][]{
+                                    {0, 0,1, 43,guestArray1},
+                                    {0, 0, 1,44,guestArray2},
+                                    {0, 0, 1,45,guestArray3},};
+
+                            Object[][] bachList1 = new Object[][]{
                                     {0, 2, 9}
                             };
                             boolean isUpdate = bookingRecordService.insertBookingRecords(1, bachList);
@@ -170,8 +182,11 @@ public class MHLView {
                 case "5":
                     System.out.println("=================Display=================");
 
-                    System.out.println("\t\t 1 display guest list by id");
+                    System.out.println("\t\t 1 display guest  by id");
                     System.out.println("\t\t 2 add a guest");
+                    System.out.println("\t\t 3 display guest list for booking by booking id");
+                    System.out.println("\t\t 4 add a guest list for booking");
+                    System.out.println("\t\t 5 display guest list for booking by session id");
                     System.out.println("Please enter your choice");
                     String keyForSessionForGuest = Utility.readString(1);
                     switch (keyForSessionForGuest) {
@@ -194,6 +209,67 @@ public class MHLView {
 
                               guestService.addGuest(1,"Aristotle","Aristotle@gmail.com");
 
+                            break;
+
+                        case "3":
+                            //"\t\t 3 add a guest list for booking"
+                            /*guestlist : 1 - 1
+                            guestListID	guestListFKSession	guestListFKguestID
+
+                                1.latest sessiong id  - laste
+
+                                2.guest id - collection from UI
+                             */
+
+                            List<Guestlistbybookingid_Multi> guestlist=guestlistService.
+                                    getGeustlistByBookingID(6);
+
+                            System.out.println("BookingID: "+guestlist.get(0).getBookId());
+                            for(Guestlistbybookingid_Multi l:guestlist){
+
+                                System.out.print("name: "+l.getGuestName());
+                                System.out.print("  "+l.getSessionStartTime());
+                                System.out.println(" ~ "+l.getSessionEndTime());
+
+                            }
+                            break;
+
+                        case "4":
+                            //"\t\t 3 add a guest list for booking"
+                            /*guestlist : 1 - 1
+                            guestListID	guestListFKSession	guestListFKguestID
+
+                                1.latest sessiong id  - laste
+
+                                2.guest id - collection from UI
+                             */
+                            Object[][] bachList = new Object[][]{
+                                    {null, 9, 1},
+                                    {null, 9, 2},
+                                    {null, 9, 3},};
+                            guestlistService.addGuestlist(bachList );
+
+
+                            break;
+                        case "5":
+                            //"\t\t 3 add a guest list for booking"
+                            /*guestlist : 1 - 1
+                            guestListID	guestListFKSession	guestListFKguestID
+
+                                1.latest sessiong id  - laste
+
+                                2.guest id - collection from UI
+                             */
+
+                            List<Guestlistwithguestsession_Multi> guestlistBySession=guestlistService.getGeustlistBySessionID(9);
+                            System.out.println(guestlistBySession.size());
+                            for(Guestlistwithguestsession_Multi l:guestlistBySession){
+
+                                System.out.print("name: "+l.getGuestName());
+                                System.out.print("  "+l.getSessionStartTime());
+                                System.out.println(" ~ "+l.getSessionEndTime());
+
+                            }
                             break;
 
                     }
