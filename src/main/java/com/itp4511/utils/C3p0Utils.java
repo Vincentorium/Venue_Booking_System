@@ -22,7 +22,7 @@ public class C3p0Utils {
      */
 
     public static Connection getConnection() {
-        System.out.println("mysql");
+
         try {
             return dataSource.getConnection();
         } catch (Exception e) {

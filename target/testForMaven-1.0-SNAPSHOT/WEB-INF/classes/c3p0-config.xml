@@ -13,7 +13,7 @@
     <named-config name="mysql">
         <property name="driverClass">com.mysql.jdbc.Driver</property>
 
-        <property name="jdbcUrl">jdbc:mysql://localhost:3306/itp4511_db?serverTimezone=GMT%2b8&amp;useUnicode=true&amp;characterEncoding=utf8</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/itp4511_project?serverTimezone=GMT%2b8&amp;useUnicode=true&amp;characterEncoding=utf8</property>
         <property name="user">root</property>
         <property name="password"></property>
         <property name="initialPoolSize">10</property>

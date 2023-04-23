@@ -7,22 +7,38 @@ package ict.servlet;
  */
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 
+import com.mysql.jdbc.Connection;
 import ict.bean.UserInfo;
 import ict.dbutils.UserDB;
 import javax.servlet.annotation.WebServlet;
+
+
+
+//AddImage.java (Servlet)
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 /**
  *
  * @author Vincent
  */
-@WebServlet(name = "LoginController", urlPatterns = {"/main"})
+@MultipartConfig
+@WebServlet(name = "LoginController", urlPatterns = {"/ma2in"})
 public class LoginController extends HttpServlet {
 
     private UserDB db;
@@ -42,21 +58,67 @@ public class LoginController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String action = request.getParameter("action");
-        if (!isAuthenticated(request) && !("authenticate".equals(action))) {
-            doLogin(request, response);
-            return;
+
+
+        System.out.println("In do post method of Add Image servlet.");
+        Part file=request.getPart("image");
+
+//        String imageFileName=file.getSubmittedFileName();  // get selected image file name
+
+        String cd = file.getHeader("Content-Disposition");
+//截取不同类型的文件需要自行判断
+        String imageFileName = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
+
+
+        System.out.println("Selected Image File Name : "+imageFileName);
+
+        String uploadPath="./"+imageFileName;  // upload path where we have to upload our actual image
+        System.out.println("Upload Path : "+uploadPath);
+
+        // Uploading our selected image into the images folder
+
+
+
+
+
+        try
+        {
+
+            FileOutputStream fos=new FileOutputStream(uploadPath);
+            InputStream is=file.getInputStream();
+
+            byte[] data=new byte[is.available()];
+            is.read(data);
+            fos.write(data);
+            fos.close();
+
+
+
         }
 
-        if ("authenticate".equals(action)) {
-            doAuthenticate(request, response);
-        } else if ("logout".equals(action)) {
-            doLogout(request, response);
-        } else {
-            response.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED);
+        catch(Exception e)
+        {
+            e.printStackTrace();
         }
- 
+
+
+
+        request.setAttribute("imageFileName","Successfully upload"  );
+
+        request.setAttribute("url","login.jsp");
+        RequestDispatcher rd;
+
+        rd = getServletContext().getRequestDispatcher("/errMessage.jsp");
+
+        rd.forward(request, response);
+        //**********************
+
+        //getting database connection (jdbc code)
+
+
     }
+
+
 
     public void doAuthenticate(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 

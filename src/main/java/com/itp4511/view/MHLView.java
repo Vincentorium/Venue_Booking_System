@@ -25,7 +25,7 @@ public class MHLView {
     private SessionService sessionService = new SessionService();
     private BookingRecordService bookingRecordService = new BookingRecordService();
     private GuestService guestService = new GuestService();
-    private GuestlistService guestlistService = new GuestlistService ();
+    private GuestlistService guestlistService = new GuestlistService();
 
     //  private BookingRecordService bookingRecordService= new BookingRecordService();
 
@@ -37,7 +37,7 @@ public class MHLView {
 
             System.out.println("=================MHL=================");
             System.out.println("\t\t 1 login ");
-            System.out.println("\t\t 2  MHL");
+            System.out.println("\t\t 2  dipslay avaiable venue");
             System.out.println("\t\t 3  display session by a date");
             System.out.println("\t\t 4  Booking Service");
             System.out.println("\t\t 5  Guest Serivce");
@@ -47,6 +47,7 @@ public class MHLView {
             switch (key) {
 
 
+                //region Case 1: Login
                 case "1":
                     System.out.println("login");
                     System.out.println("id");
@@ -57,7 +58,8 @@ public class MHLView {
                     if (user != null) {
                         System.out.println("ok, " + user.getUserName());
                     }
-                    break;
+                    //endregion
+                //region Case2 dipslay avaiable venue"
                 case "2":
                     System.out.println("=================Display Order=================");
                     List<Venue> venueList = venueService.getAllVenue();
@@ -67,6 +69,9 @@ public class MHLView {
                         System.out.println(v.getVenName() + " is my favourite");
                     }
                     break;
+                //endregion
+
+                //region Case 3: Display session by date
                 case "3":
                     System.out.println("=================Display=================");
 
@@ -104,30 +109,46 @@ public class MHLView {
 
                     }
                     break;
+                //endregion
+
+                //region Case 4： Booking service
+
                 case "4":
                     System.out.println("=================Book=================");
 
-                    System.out.println("\t\t 1  display campus by id");
-                    System.out.println("\t\t 2  book a campus with session(s)");
-
+                    System.out.println("\t\t 1  display Booking by id");
+                    System.out.println("\t\t 2  book a Venue with session(s)");
+                    System.out.println("\t\t 3  Update all attributes including receipt");
+                    System.out.println("\t\t 4  add or delete guest from guestlist");
+                    System.out.println("\t\t 5  select a session to update ");
                     System.out.println("Please enter your choice");
                     String keyForBooking = Utility.readString(1);
                     switch (keyForBooking) {
 
+                        //region 1: display booking by id
                         case "1":
 
 
-                            List<BookingSession_Multi> bookingRecrodsByID = bookingRecordService.getBookingByID(1);
+                            List<BookingInfo_MM> bookingAllInfoByMemberID = bookingRecordService.getBookingAllInfoByMemberID(1);
                             System.out.println("=================Session available=================");
-                            for (BookingSession_Multi s : bookingRecrodsByID) {
+                            System.out.println("Booking No.:" + "Member Name: " + "Booking ID: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
+                            for (BookingInfo_MM s : bookingAllInfoByMemberID) {
+                                System.out.print("  " + s.getBookId());
+                                System.out.print("  " + s.getUserName());
+                                System.out.print("  " + s.getBookId());
+                                System.out.print("  " + s.getSessionId());
+                                System.out.print("  " + s.getSessionDate());
 
-                                System.out.println("Member ID: " + s.getBookFKmemberId());
-                                System.out.println("Member Name: " + s.getUserName());
-                                System.out.println("Session: " + s.getBookFkSession());
+                                System.out.print("  " + s.getSessionCampus());
+                                System.out.print("  " + s.getSessionStartTime());
+                                System.out.print("  " + s.getSessionEndTime());
+                                System.out.println("  " + s.getGuestName());
                             }
 
                             break;
+                        //endregion
 
+                        //region 2: book a venue with session
                         case "2":
 
                             //剩下問題是：如何將jason導入object[][]，且將第一個設為0——作為之後新增id用，這些都可以直接寫到service內
@@ -139,20 +160,20 @@ public class MHLView {
                                 guestList+FK
                             */
                             /*
-                            *1.createbooking, inser into JS
-                            *2.sessionGuestList, create and insert into JS
-                            *3.sessionStatus by user
-                            *4.sessionID: by user
-                            *5.guestID
-                            * bookingID,--,sessionStatus,sessionID
-                            * */
-                            int guestArray1[]={1,2};
-                            int guestArray2[]={2,3};
-                            int guestArray3[]={3,1};
+                             *1.createbooking, inser into JS
+                             *2.sessionGuestList, create and insert into JS
+                             *3.sessionStatus : specified by user
+                             *4.sessionID: specified by user
+                             *5.guestID
+                             * bookingID,--,sessionStatus,sessionID
+                             * */
+                            int guestArray1[] = {1, 2};
+                            int guestArray2[] = {2, 3};
+                            int guestArray3[] = {3, 1};
                             Object[][] bachList = new Object[][]{
-                                    {0, 0,1, 43,guestArray1},
-                                    {0, 0, 1,44,guestArray2},
-                                    {0, 0, 1,45,guestArray3},};
+                                    {0, 0, 3, 52, guestArray1},
+                                    {0, 0, 3, 53, guestArray2},
+                                    {0, 0, 3, 54, guestArray3},};
 
                             Object[][] bachList1 = new Object[][]{
                                     {0, 2, 9}
@@ -163,9 +184,16 @@ public class MHLView {
                             }
 
                             break;
+                        //endregion
 
+                        //region 3: Update all attributes including receipt
                         case "3":
-                            System.out.println("=================Book several sessions=================");
+                            System.out.println("=================Update receipt=================");
+
+
+                            boolean isSuccess = bookingRecordService.updateBookingAllInfoByMemberID(1, "testImagePath");
+                            System.out.println("=================Session available=================");
+
 
                             //DMLBach
                             //"UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionStatus`=? where  `sessionID`=?"
@@ -174,112 +202,343 @@ public class MHLView {
 
 
                             break;
+                        //endregion
+
+
+                        //region 4: add or remove guest from guestlist within the booking record
+                        case "4":
+                            System.out.println("=================Update receipt=================");
+
+
+
+                            /*
+                              原則，區分一對多的，單個的，一堆多的，單獨來出來熱處理
+                                   1.輸入id——或選中
+                                    2.彈出值
+                                    3.進行修改
+                                    4.查驗是否更改，進行更新
+*/
+                                 /*    1.輸入id——或選中
+                                        1.直接展示table*/
+
+                            List<BookingInfo_MM> bookingObject = bookingRecordService.getBookingAllInfoByMemberID(1);
+                            System.out.println("=================select booking to modif available=================");
+                            System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
+                            for (BookingInfo_MM s : bookingObject) {
+                                System.out.print("  " + s.getBookId());
+                                System.out.print("         " + s.getUserName());
+
+                                System.out.print("  " + s.getSessionId());
+                                System.out.print("  " + s.getSessionDate());
+
+                                System.out.print("  " + s.getSessionCampus());
+                                System.out.print("  " + s.getSessionStartTime());
+                                System.out.print("  " + s.getSessionEndTime());
+                                System.out.println("  " + s.getGuestName());
+                            }
+
+
+/* handle session and image
+                            BookingInfo_MM targetObject=null;
+                              int sessionSelected=0;
+                            System.out.println("select your a session");
+                            sessionSelected=Utility.readInt();
+                            for (BookingInfo_MM s : bookingObject) {
+
+                                if(s.getBookId()==1){
+                                    targetObject=s;
+                                    sessionSelected=s.getSessionId();
+                                System.out.println("Booking No.:" + s.getBookId() + "_______________________________");
+                                System.out.println("Member Name: " + s.getUserName());
+                                System.out.println("Booking ID: " + s.getBookId());
+                                System.out.println("Session Date: " + s.getSessionDate());
+
+                                System.out.println("Campus: " + s.getSessionCampus());
+                                System.out.println("From: " + s.getSessionStartTime());
+                                System.out.println("To: " + s.getSessionEndTime());
+                                System.out.println("Guest:: " + s.getGuestName());
+                                }
+                            }
+
+                            targetObject.setBookReceiptName("eee");
+*/
+
+                            System.out.println("handle a guest list");
+                            int sessionSelected = 0;
+                            System.out.println("select your a session");
+                            sessionSelected = Utility.readInt();
+                            //是用一個獲得的javean好，還是新的？。  一用全局，一對多用service獲得
+                            List<Guestlistwithsessionandguestname_Multi> guestlist = guestlistService.getGeustlistBySessionID(sessionSelected);
+
+                            System.out.println("Session:" + sessionSelected + " guest");
+                            System.out.println("Guest ID  " + "   guest name");
+                            for (Guestlistwithsessionandguestname_Multi s : guestlist) {
+
+                                System.out.print(s.getGuestId() + "   ");
+                                System.out.println(s.getGuestName() + "  ");
+
+                            }
+                            System.out.println("Guest not list on sesion");
+
+                            List<Guest> guetCollectionOfMember = guestService.getGuestNotListedOnASessionByMemberID(1, sessionSelected);
+                            System.out.println("Guest of user_____________________");
+                            for (Guest s : guetCollectionOfMember) {
+
+                                System.out.print(s.getGuestId() + "   ");
+                                System.out.println(s.getGuestName() + "  ");
+
+                            }
+
+                            int guestListID = guestlist.get(0).getGuestlistNGuestFKguestlistId();
+
+
+                            int guestID = 0;
+                            System.out.println("select your a guest to add");
+                            guestID = Utility.readInt();
+
+                            guestlistService.addGustIntoList(guestListID, guestID);
+
+
+                            List<Guestlistwithsessionandguestname_Multi> guestlistBySession = guestlistService.getGeustlistBySessionID(sessionSelected);
+
+                            System.out.println(guestlistBySession.size() + "guest is selected");
+
+
+                            for (Guestlistwithsessionandguestname_Multi l : guestlistBySession) {
+
+                                System.out.print("name: " + l.getGuestName());
+                                System.out.print("  " + l.getSessionStartTime());
+                                System.out.println(" ~ " + l.getSessionEndTime());
+
+                            }
+
+//
+
+
+                            guestID = 0;
+                            System.out.println("select your a guest to delete");
+                            guestID = Utility.readInt();
+
+                            guestlistService.deleteGustIntoList(guestListID, guestID);
+
+
+                            guestlistBySession = guestlistService.getGeustlistBySessionID(sessionSelected);
+
+                            System.out.println(guestlistBySession.size() + "guest is selected");
+                            System.out.println("After delete ");
+
+                            for (Guestlistwithsessionandguestname_Multi l : guestlistBySession) {
+
+                                System.out.print("name: " + l.getGuestName());
+                                System.out.print("  " + l.getSessionStartTime());
+                                System.out.println(" ~ " + l.getSessionEndTime());
+
+                            }
+
+
+                        /*
+                                    2.彈出值
+
+                                    3.進行修改
+                                    4.查驗是否更改，進行更新
+
+
+                                    1.獲得這個javabeans-arraylist的guest
+
+                                    2.刪除，添加
+
+                            *
+                            * */
+
+
+                            //  boolean isSuccess=bookingRecordService.updateBookingAllInfoByMemberID(1,"testImagePath");
+                            System.out.println("=================Session available=================");
+
+
+                            //DMLBach
+                            //"UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionStatus`=? where  `sessionID`=?"
+                            //1.create book
+                            //2.create session
+
+
+                            break;
+                        //endregion
+
+
+                        //region 5: Update session
+                        case "5":
+
+                            System.out.println("=================Session update=================");
+                            System.out.println("=================Display Session available=================");
+
+                            List<BookingInfo_MM> bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
+                            System.out.println("=================select booking to modif available=================");
+                            System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
+                            for (BookingInfo_MM s : bookingObjectForEditSession ) {
+                                System.out.print("  " + s.getBookId());
+                                System.out.print("         " + s.getUserName());
+
+                                System.out.print("  " + s.getSessionId());
+                                System.out.print("  " + s.getSessionDate());
+
+                                System.out.print("  " + s.getSessionCampus());
+                                System.out.print("  " + s.getSessionStartTime());
+                                System.out.print("  " + s.getSessionEndTime());
+                                System.out.println("  " + s.getGuestName());
+                            }
+
+                            System.out.println("Select a session to modify");
+                            sessionSelected= 0;
+                            sessionSelected = Utility.readInt();
+
+                            System.out.println("Display avaialbe venue and date");
+
+
+                            List<Session> sessionListByIdandDate = sessionService.displaySessionByDateAndCampus(1, "2023-04-12");
+                            System.out.println("=================Session available=================");
+                            for (Session s : sessionListByIdandDate) {
+                                System.out.println("Session ID"+s.getSessionId());
+                                System.out.print("Campus: " + s.getSessionCampus());
+                                System.out.println("          Date: " + s.getSessionDate());
+                                System.out.print("Start: " + s.getSessionStartTime());
+                                System.out.println(" ---  End: " + s.getSessionEndTime());
+                            }
+                            System.out.println("Select a session as lastest one");
+                            int sessionSelectedAsnewOne = 0;
+                            sessionSelectedAsnewOne = Utility.readInt();
+
+                            boolean updateSuccesss=sessionService.updateSessionSetBefore(sessionSelected,sessionSelectedAsnewOne);
+
+                            if(updateSuccesss){
+
+
+
+
+
+                                 bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
+                                System.out.println("=================display session after modification=================");
+                                System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
+                                for (BookingInfo_MM s : bookingObjectForEditSession ) {
+                                    System.out.print("  " + s.getBookId());
+                                    System.out.print("         " + s.getUserName());
+
+                                    System.out.print("         " + s.getSessionId());
+                                    System.out.print("  " + s.getSessionDate());
+
+                                    System.out.print("  " + s.getSessionCampus());
+                                    System.out.print("  " + s.getSessionStartTime());
+                                    System.out.print("  " + s.getSessionEndTime());
+                                    System.out.println("  " + s.getGuestName());
+                                }
+
+
+
+                            }
+
+
+
+
+                            break;
+                        //endregion w w w
 
 
                     }
                     break;
+                //endregion
 
+                //region Case 5: Guest List Management
                 case "5":
                     System.out.println("=================Display=================");
 
-                    System.out.println("\t\t 1 display guest  by id");
-                    System.out.println("\t\t 2 add a guest");
-                    System.out.println("\t\t 3 display guest list for booking by booking id");
-                    System.out.println("\t\t 4 add a guest list for booking");
-                    System.out.println("\t\t 5 display guest list for booking by session id");
+                    System.out.println("\t\t 1 by guest List By Member ID");
+                    System.out.println("\t\t 2 add a new guest ");
+                    System.out.println("\t\t 3 delete a guest list");
                     System.out.println("Please enter your choice");
-                    String keyForSessionForGuest = Utility.readString(1);
-                    switch (keyForSessionForGuest) {
+                    String keyForList = Utility.readString(1);
+                    switch (keyForList) {
 
                         case "1":
 
-                            List<Guest> guestList = guestService.getAllVenueByID(1);
+                            List<Guest> guestList = guestService.getRelevantGuestByMemberID(1);
                             System.out.println("=================Session available=================");
-                            System.out.println("User: "+guestList.get(0).getGuestFKmemberId() + " 's Guest List is as following" );
                             for (Guest s : guestList) {
 
-
-                                System.out.print("Start: " + s.getGuestName());
-                                System.out.println(" ---  End: " + s.getGuestEmail());
-
+                                System.out.println("ID: " + s.getGuestId());
+                                System.out.print("Name: " + s.getGuestName());
                             }
 
                             break;
                         case "2":
 
-                              guestService.addGuest(1,"Aristotle","Aristotle@gmail.com");
+                            List<Guest> guestList2 = guestService.getRelevantGuestByMemberID(1);
+                            System.out.println("=================your guests=================");
+                            for (Guest s : guestList2) {
+
+                                System.out.println("ID: " + s.getGuestId());
+                                System.out.print("Name: " + s.getGuestName());
+                            }
+
+                            System.out.println("=================add a new guest=================");
+
+                            boolean isInsertGuest=guestService.addGuest(1,"Emil","emil@gmail.com");
+
+                            List<Guest> guest = guestService.getRelevantGuestByMemberID(1);
+
+                            System.out.println("\n=================your guests=================");
+                            for (Guest s : guest) {
+
+                                System.out.println("ID: " + s.getGuestId());
+                                System.out.print("Name: " + s.getGuestName());
+                            }
+
+                            System.out.println("=================add a new guest=================");
+
+
+
+
+
 
                             break;
+
 
                         case "3":
-                            //"\t\t 3 add a guest list for booking"
-                            /*guestlist : 1 - 1
-                            guestListID	guestListFKSession	guestListFKguestID
 
-                                1.latest sessiong id  - laste
+                            List<Guest> guests3 = guestService.getRelevantGuestByMemberID(1);
+                            System.out.println("=================your guests=================");
+                            for (Guest s : guests3) {
 
-                                2.guest id - collection from UI
-                             */
-
-                            List<Guestlistbybookingid_Multi> guestlist=guestlistService.
-                                    getGeustlistByBookingID(6);
-
-                            System.out.println("BookingID: "+guestlist.get(0).getBookId());
-                            for(Guestlistbybookingid_Multi l:guestlist){
-
-                                System.out.print("name: "+l.getGuestName());
-                                System.out.print("  "+l.getSessionStartTime());
-                                System.out.println(" ~ "+l.getSessionEndTime());
-
+                                System.out.println("ID: " + s.getGuestId());
+                                System.out.print("Name: " + s.getGuestName());
                             }
-                            break;
 
-                        case "4":
-                            //"\t\t 3 add a guest list for booking"
-                            /*guestlist : 1 - 1
-                            guestListID	guestListFKSession	guestListFKguestID
-
-                                1.latest sessiong id  - laste
-
-                                2.guest id - collection from UI
-                             */
-                            Object[][] bachList = new Object[][]{
-                                    {null, 9, 1},
-                                    {null, 9, 2},
-                                    {null, 9, 3},};
-                            guestlistService.addGuestlist(bachList );
+                            System.out.println("=================delete a guest=================");
+                            int guestIDForDel = 0;
+                            System.out.println("select your a guest to delete");
+                            guestIDForDel  = Utility.readInt();
 
 
-                            break;
-                        case "5":
-                            //"\t\t 3 add a guest list for booking"
-                            /*guestlist : 1 - 1
-                            guestListID	guestListFKSession	guestListFKguestID
+                            boolean isInsertGuest3=guestService.deleteGuest (guestIDForDel );
 
-                                1.latest sessiong id  - laste
+                            guests3 = guestService.getRelevantGuestByMemberID(guestIDForDel );
 
-                                2.guest id - collection from UI
-                             */
+                            System.out.println("\n=================your guests=================");
+                            for (Guest s : guests3) {
 
-                            List<Guestlistwithguestsession_Multi> guestlistBySession=guestlistService.getGeustlistBySessionID(9);
-                            System.out.println(guestlistBySession.size());
-                            for(Guestlistwithguestsession_Multi l:guestlistBySession){
-
-                                System.out.print("name: "+l.getGuestName());
-                                System.out.print("  "+l.getSessionStartTime());
-                                System.out.println(" ~ "+l.getSessionEndTime());
-
+                                System.out.print("ID: " + s.getGuestId());
+                                System.out.print("Name: " + s.getGuestName());
                             }
-                            break;
 
+                            System.out.println("=================add a new guest=================");
+
+
+
+
+
+
+                            break;
                     }
                     break;
-                case "9":
-                    loop = false;
-                default:
-                    System.out.println(" wrong ");
-
-
+                //endregion
             }
         }
     }

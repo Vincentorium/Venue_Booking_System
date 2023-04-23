@@ -8,34 +8,34 @@ public class Guestlistbybookingid_Multi implements Serializable {
 
 
 
-    private long bookId;
+    private int bookId;
     private java.sql.Date bookDate;
     private String bookReceipt;
     private String bookReceiptName;
-    private long bookStatus;
-    private long bookFKmemberId;
-    private long bookFkGuestList;
-    private long sessionId;
+    private int bookStatus;
+    private int bookFKmemberId;
+    private int bookFkGuestList;
+    private int sessionId;
     private java.sql.Date sessionDate;
     private java.sql.Time sessionStartTime;
     private java.sql.Time sessionEndTime;
-    private long sessionCampus;
-    private long sessionStatus;
-    private long sessionFKbookingRecord;
-    private long guestListId;
-    private long guestListFkSession;
-    private long guestListFKguestId;
-    private long guestId;
+    private int sessionCampus;
+    private int sessionStatus;
+    private int sessionFKbookingRecord;
+    private int guestListId;
+    private int guestListFkSession;
+    private int guestListFKguestId;
+    private int guestId;
     private String guestName;
     private String guestEmail;
-    private long guestFKmemberId;
+    private int guestFKmemberId;
 
 
-    public long getBookId() {
+    public int getBookId() {
       return bookId;
     }
 
-    public void setBookId(long bookId) {
+    public void setBookId(int bookId) {
       this.bookId = bookId;
     }
 
@@ -67,38 +67,38 @@ public class Guestlistbybookingid_Multi implements Serializable {
     }
 
 
-    public long getBookStatus() {
+    public int getBookStatus() {
       return bookStatus;
     }
 
-    public void setBookStatus(long bookStatus) {
+    public void setBookStatus(int bookStatus) {
       this.bookStatus = bookStatus;
     }
 
 
-    public long getBookFKmemberId() {
+    public int getBookFKmemberId() {
       return bookFKmemberId;
     }
 
-    public void setBookFKmemberId(long bookFKmemberId) {
+    public void setBookFKmemberId(int bookFKmemberId) {
       this.bookFKmemberId = bookFKmemberId;
     }
 
 
-    public long getBookFkGuestList() {
+    public int getBookFkGuestList() {
       return bookFkGuestList;
     }
 
-    public void setBookFkGuestList(long bookFkGuestList) {
+    public void setBookFkGuestList(int bookFkGuestList) {
       this.bookFkGuestList = bookFkGuestList;
     }
 
 
-    public long getSessionId() {
+    public int getSessionId() {
       return sessionId;
     }
 
-    public void setSessionId(long sessionId) {
+    public void setSessionId(int sessionId) {
       this.sessionId = sessionId;
     }
 
@@ -130,65 +130,65 @@ public class Guestlistbybookingid_Multi implements Serializable {
     }
 
 
-    public long getSessionCampus() {
+    public int getSessionCampus() {
       return sessionCampus;
     }
 
-    public void setSessionCampus(long sessionCampus) {
+    public void setSessionCampus(int sessionCampus) {
       this.sessionCampus = sessionCampus;
     }
 
 
-    public long getSessionStatus() {
+    public int getSessionStatus() {
       return sessionStatus;
     }
 
-    public void setSessionStatus(long sessionStatus) {
+    public void setSessionStatus(int sessionStatus) {
       this.sessionStatus = sessionStatus;
     }
 
 
-    public long getSessionFKbookingRecord() {
+    public int getSessionFKbookingRecord() {
       return sessionFKbookingRecord;
     }
 
-    public void setSessionFKbookingRecord(long sessionFKbookingRecord) {
+    public void setSessionFKbookingRecord(int sessionFKbookingRecord) {
       this.sessionFKbookingRecord = sessionFKbookingRecord;
     }
 
 
-    public long getGuestListId() {
+    public int getGuestListId() {
       return guestListId;
     }
 
-    public void setGuestListId(long guestListId) {
+    public void setGuestListId(int guestListId) {
       this.guestListId = guestListId;
     }
 
 
-    public long getGuestListFkSession() {
+    public int getGuestListFkSession() {
       return guestListFkSession;
     }
 
-    public void setGuestListFkSession(long guestListFkSession) {
+    public void setGuestListFkSession(int guestListFkSession) {
       this.guestListFkSession = guestListFkSession;
     }
 
 
-    public long getGuestListFKguestId() {
+    public int getGuestListFKguestId() {
       return guestListFKguestId;
     }
 
-    public void setGuestListFKguestId(long guestListFKguestId) {
+    public void setGuestListFKguestId(int guestListFKguestId) {
       this.guestListFKguestId = guestListFKguestId;
     }
 
 
-    public long getGuestId() {
+    public int getGuestId() {
       return guestId;
     }
 
-    public void setGuestId(long guestId) {
+    public void setGuestId(int guestId) {
       this.guestId = guestId;
     }
 
@@ -211,11 +211,11 @@ public class Guestlistbybookingid_Multi implements Serializable {
     }
 
 
-    public long getGuestFKmemberId() {
+    public int getGuestFKmemberId() {
       return guestFKmemberId;
     }
 
-    public void setGuestFKmemberId(long guestFKmemberId) {
+    public void setGuestFKmemberId(int guestFKmemberId) {
       this.guestFKmemberId = guestFKmemberId;
     }
 

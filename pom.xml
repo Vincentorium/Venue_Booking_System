@@ -13,8 +13,8 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
-    
+
+
 
     
     
@@ -27,8 +27,52 @@
             <version>4.13.2</version>
 
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.oreilly.servlet/com.springsource.com.oreilly.servlet -->
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.multipartrequest/com.springsource.http.utils.multipartrequest -->
 
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>cos</artifactId>
+            <version>2017.5</version>
+        </dependency>
+        <!-- Thanks for using https://jar-download.com -->
+
+
+
+
+        <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+        <!-- serlvet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--   <dependency>
+           <groupId>org.smartupload</groupId>
+           <artifactId>smartupload</artifactId>
+           <version>1.2.1</version>
+
+
+       <dependency>
+           <groupId>smartupload</groupId>
+           <artifactId>smartupload</artifactId>
+           <version>1.0</version>
+           <scope>system</scope>
+           <systemPath>${project.basedir}/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jspSmartUpload.jar</systemPath>
+       </dependency>
+   </dependency>
+ -->
+
+       <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
@@ -75,6 +119,21 @@
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
             <version>0.9.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bbossgroups.pdp</groupId>
+            <artifactId>pdp-ewebeditor</artifactId>
+            <version>5.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bbossgroups</groupId>
+            <artifactId>bboss-mvc</artifactId>
+            <version>5.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bbossgroups</groupId>
+            <artifactId>bboss-mvc</artifactId>
+            <version>5.0.9</version>
         </dependency>
     </dependencies>
 

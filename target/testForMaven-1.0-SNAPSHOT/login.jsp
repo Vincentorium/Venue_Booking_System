@@ -12,9 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="main" method="POST">
+        <form action="main" method="POST" enctype="multipart/form-data">
             <table>
                 <tr>
+                    Image<input type="file" name="image">
                     <td>login:</td>
                     <td> <input type="text" name="username"></td>
                 </tr>

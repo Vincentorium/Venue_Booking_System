@@ -4,34 +4,34 @@ package com.itp4511.domain;
 
 public class Guestlistenguest_Mm {
 
-  private long guestlistNGuestId;
-  private long guestlistNGuestFKguestlistId;
-  private long guestlistNGuestFKguestId;
+  private int guestlistNGuestId;
+  private int guestlistNGuestFKguestlistId;
+  private int guestlistNGuestFKguestId;
 
 
-  public long getGuestlistNGuestId() {
+  public int getGuestlistNGuestId() {
     return guestlistNGuestId;
   }
 
-  public void setGuestlistNGuestId(long guestlistNGuestId) {
+  public void setGuestlistNGuestId(int guestlistNGuestId) {
     this.guestlistNGuestId = guestlistNGuestId;
   }
 
 
-  public long getGuestlistNGuestFKguestlistId() {
+  public int getGuestlistNGuestFKguestlistId() {
     return guestlistNGuestFKguestlistId;
   }
 
-  public void setGuestlistNGuestFKguestlistId(long guestlistNGuestFKguestlistId) {
+  public void setGuestlistNGuestFKguestlistId(int guestlistNGuestFKguestlistId) {
     this.guestlistNGuestFKguestlistId = guestlistNGuestFKguestlistId;
   }
 
 
-  public long getGuestlistNGuestFKguestId() {
+  public int getGuestlistNGuestFKguestId() {
     return guestlistNGuestFKguestId;
   }
 
-  public void setGuestlistNGuestFKguestId(long guestlistNGuestFKguestId) {
+  public void setGuestlistNGuestFKguestId(int guestlistNGuestFKguestId) {
     this.guestlistNGuestFKguestId = guestlistNGuestFKguestId;
   }
 

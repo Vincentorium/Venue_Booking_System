@@ -1,12 +1,10 @@
-
 package com.itp4511.domain;
 
 
-import java.io.Serializable;
 import java.sql.Date;
+import java.sql.Timestamp;
 
-
-public class BookingRecord implements Serializable{
+public class BookingRecord {
 
   private long bookId;
   private java.sql.Date bookDate;
@@ -15,11 +13,12 @@ public class BookingRecord implements Serializable{
   private long bookStatus;
   private long bookFKmemberId;
   private long bookFkGuestList;
+  private java.sql.Timestamp bookReceiptDate;
 
   public BookingRecord() {
   }
 
-  public BookingRecord(long bookId, Date bookDate, String bookReceipt, String bookReceiptName, long bookStatus, long bookFKmemberId, long bookFkGuestList) {
+  public BookingRecord(long bookId, Date bookDate, String bookReceipt, String bookReceiptName, long bookStatus, long bookFKmemberId, long bookFkGuestList, Timestamp bookReceiptDate) {
     this.bookId = bookId;
     this.bookDate = bookDate;
     this.bookReceipt = bookReceipt;
@@ -27,6 +26,7 @@ public class BookingRecord implements Serializable{
     this.bookStatus = bookStatus;
     this.bookFKmemberId = bookFKmemberId;
     this.bookFkGuestList = bookFkGuestList;
+    this.bookReceiptDate = bookReceiptDate;
   }
 
   public long getBookId() {
@@ -89,6 +89,15 @@ public class BookingRecord implements Serializable{
 
   public void setBookFkGuestList(long bookFkGuestList) {
     this.bookFkGuestList = bookFkGuestList;
+  }
+
+
+  public java.sql.Timestamp getBookReceiptDate() {
+    return bookReceiptDate;
+  }
+
+  public void setBookReceiptDate(java.sql.Timestamp bookReceiptDate) {
+    this.bookReceiptDate = bookReceiptDate;
   }
 
 }

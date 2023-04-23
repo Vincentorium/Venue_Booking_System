@@ -3,26 +3,26 @@ package com.itp4511.domain;
 
 public class Guest {
 
-  private long guestId;
+  private int guestId;
   private String guestName;
   private String guestEmail;
-  private long guestFKmemberId;
+  private int guestFKmemberId;
 
   public Guest() {
   }
 
-  public Guest(long guestId, String guestName, String guestEmail, long guestFKmemberId) {
+  public Guest(int guestId, String guestName, String guestEmail, int guestFKmemberId) {
     this.guestId = guestId;
     this.guestName = guestName;
     this.guestEmail = guestEmail;
     this.guestFKmemberId = guestFKmemberId;
   }
 
-  public long getGuestId() {
+  public int getGuestId() {
     return guestId;
   }
 
-  public void setGuestId(long guestId) {
+  public void setGuestId(int guestId) {
     this.guestId = guestId;
   }
 
@@ -45,11 +45,11 @@ public class Guest {
   }
 
 
-  public long getGuestFKmemberId() {
+  public int getGuestFKmemberId() {
     return guestFKmemberId;
   }
 
-  public void setGuestFKmemberId(long guestFKmemberId) {
+  public void setGuestFKmemberId(int guestFKmemberId) {
     this.guestFKmemberId = guestFKmemberId;
   }
 

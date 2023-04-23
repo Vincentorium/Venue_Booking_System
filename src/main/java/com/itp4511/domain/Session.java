@@ -1,12 +1,10 @@
 package com.itp4511.domain;
 
-
 import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Time;
 
-
-public class Session  implements Serializable{
+public class Session implements Serializable {
 
   private long sessionId;
   private java.sql.Date sessionDate;
@@ -15,11 +13,13 @@ public class Session  implements Serializable{
   private long sessionCampus;
   private long sessionStatus;
   private long sessionFKbookingRecord;
+  private long sessionFkGuestlist;
+
 
   public Session() {
   }
 
-  public Session(long sessionId, Date sessionDate, Time sessionStartTime, Time sessionEndTime, long sessionCampus, long sessionStatus, long sessionFKbookingRecord) {
+  public Session(long sessionId, Date sessionDate, Time sessionStartTime, Time sessionEndTime, long sessionCampus, long sessionStatus, long sessionFKbookingRecord, long sessionFkGuestlist) {
     this.sessionId = sessionId;
     this.sessionDate = sessionDate;
     this.sessionStartTime = sessionStartTime;
@@ -27,6 +27,7 @@ public class Session  implements Serializable{
     this.sessionCampus = sessionCampus;
     this.sessionStatus = sessionStatus;
     this.sessionFKbookingRecord = sessionFKbookingRecord;
+    this.sessionFkGuestlist = sessionFkGuestlist;
   }
 
   public long getSessionId() {
@@ -89,6 +90,15 @@ public class Session  implements Serializable{
 
   public void setSessionFKbookingRecord(long sessionFKbookingRecord) {
     this.sessionFKbookingRecord = sessionFKbookingRecord;
+  }
+
+
+  public long getSessionFkGuestlist() {
+    return sessionFkGuestlist;
+  }
+
+  public void setSessionFkGuestlist(long sessionFkGuestlist) {
+    this.sessionFkGuestlist = sessionFkGuestlist;
   }
 
 }

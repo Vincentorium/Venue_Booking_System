@@ -1,15 +1,7 @@
 package com.itp4511.service;
 
-import com.itp4511.dao.GuestlistDAO;
-import com.itp4511.domain.Guestlist;
-import com.itp4511.dao.Guestlistwithguestsession_MultiDAO;
-import com.itp4511.domain.Guestlistwithguestsession_Multi;
-
-import com.itp4511.dao.Guestlistbybookingid_MultiDAO;
-import com.itp4511.domain.Guestlistbybookingid_Multi;
-
-import com.itp4511.domain.Guestlistenguest_Mm;
-import com.itp4511.dao.Guestlistenguest_MmDAO;
+import com.itp4511.dao.*;
+import com.itp4511.domain.*;
 
 import java.util.List;
 
@@ -18,22 +10,30 @@ public class GuestlistService {
     private GuestlistDAO guestlistDAO = new GuestlistDAO();
     private Guestlistbybookingid_MultiDAO guestlistbybookingid_MultiDAO = new Guestlistbybookingid_MultiDAO();
 
-    private Guestlistwithguestsession_MultiDAO guestlistwithguestsession_MultiDAO = new Guestlistwithguestsession_MultiDAO();
 
     private Guestlistenguest_MmDAO guestlistenguest_MmDAO = new Guestlistenguest_MmDAO();
+    private Guestlistwithsessionandguestname_MultiDAO guestlistwithsessionandguestname_MultiDAO = new Guestlistwithsessionandguestname_MultiDAO();
 
 
-    public List<Guestlistwithguestsession_Multi> getGeustlistBySessionID(int sessionID) {
+    public List<Guestlistwithsessionandguestname_Multi> getGeustlistBySessionID(int sessionID) {
 
-        return guestlistwithguestsession_MultiDAO.queryMulti("SELECT * FROM `guestlist` as gl " +
-                "left join guest as g " +
-                "on gl.guestListFKguestID=g.guestID " +
-                "left join session as s " +
-                "on   gl.guestListFKSession=s.sessionID  " +
-                "where gl.guestListFKSession=?;", Guestlistwithguestsession_Multi.class, sessionID);
+
+        String sql="SELECT * FROM `session` as s " +
+                "left join guestlistenguest_mm as mm on s.sessionFKGuestlist=mm.guestlistNGuestFKguestlistID " +
+                "left join guest as g on mm.guestlistNGuestFKguestID=g.guestID " +
+                "where sessionID=?;";
+        return guestlistwithsessionandguestname_MultiDAO.queryMulti (sql, Guestlistwithsessionandguestname_Multi.class, sessionID);
 
     }
 
+    public List<Guestlistwithsessionandguestname_Multi> getGeustlistWithGuestNameByGuestListID(int guestListID) {
+
+        return guestlistwithsessionandguestname_MultiDAO.queryMulti(
+                "SELECT * FROM `guestlistenguest_mm` as mm " +
+                "left join guest as g on mm.guestlistNGuestFKguestID =？" +
+                "where guestlistNGuestFKguestlistID=？;", Guestlistwithsessionandguestname_Multi.class, guestListID);
+
+    }
 
     public List<Guestlistbybookingid_Multi> getGeustlistByBookingID(int bookingID) {
 
@@ -49,7 +49,6 @@ public class GuestlistService {
                 "where br.bookID=? ", Guestlistbybookingid_Multi.class, bookingID);
 
     }
-
 
     public List<Guestlist> getAllVenue() {
         return guestlistDAO.queryMulti("select * from Guestlist", Guestlist.class);
@@ -99,9 +98,23 @@ public class GuestlistService {
         return bachListAfterGuest;
     }
 
-    public void tesArr() {
+    public void addGustIntoList(int listID,int guestID) {
+
+        String sql="INSERT INTO `guestlistenguest_mm`(`guestlistNGuestID`, `guestlistNGuestFKguestlistID`, `guestlistNGuestFKguestID`) VALUES (null,?,?)";
+
+        guestlistenguest_MmDAO.update(sql,listID,guestID);
 
     }
+    public void deleteGustIntoList( int listID,int guestID) {
+
+            String sql="DELETE FROM `guestlistenguest_mm`  " +
+
+                    "WHERE guestlistNGuestFKguestlistID=? and guestlistNGuestFKguestID=?";
+
+            guestlistenguest_MmDAO.update(sql,listID,guestID);
+
+    }
+
 
 
 }
