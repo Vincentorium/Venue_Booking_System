@@ -35,15 +35,21 @@ public class GuestService {
 
         int isSucess = 0;
         int index;
-        isSucess = guestDAO.update("INSERT INTO `guest`(`guestID`, `guestName`, `guestEmail`, `guestFKmemberID`) VALUES (?,?,?,?)",
-                null,name,mail,memberID);
+        try {
+            isSucess = guestDAO.update("INSERT INTO `guest`(`guestID`, `guestName`, `guestEmail`, `guestFKmemberID`) VALUES (?,?,?,?)", null, name, mail, memberID);
 
+        } catch(Exception e) {
+
+            System.out.println("Exception: " + e.getMessage());
+
+
+        }
 
         return isSucess>0;
     }
 
 
-    public boolean deleteGuest(int memberID) {
+    public boolean deleteGuest(int guestID) {
 
         /*
         * 1.check if the guest is in other session in other guest list
@@ -53,24 +59,12 @@ public class GuestService {
         * */
 
         int isSucess = 0;
-        int index;
-
-        List<Sessionbyguestid> sessionbyguestid   =sessionService.sessionbyGuestID(memberID);
-
-
-        if(sessionbyguestid.isEmpty()){
 
 
 
 
-            isSucess = guestDAO.update("DELETE FROM `guest` WHERE  guestID=?",
-                    memberID);
-
-        }else {
-
-            System.out.printf("User is  in the relevant session");
-
-        }
+        isSucess = guestDAO.update("DELETE FROM `guest` WHERE  guestID=?",
+                guestID);
 
 
 

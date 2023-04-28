@@ -1341,761 +1341,848 @@
     <table id="340" parent="9" name="guestlistenguest_mm">
       <Comment>guestlistnguest_mm</Comment>
     </table>
-    <table id="341" parent="9" name="session"/>
-    <table id="342" parent="9" name="testsession"/>
-    <table id="343" parent="9" name="user"/>
-    <table id="344" parent="9" name="venue"/>
-    <view id="345" parent="9" name="binkingreocrd">
+    <table id="341" parent="9" name="role"/>
+    <table id="342" parent="9" name="session"/>
+    <table id="343" parent="9" name="testsession"/>
+    <table id="344" parent="9" name="user"/>
+    <table id="345" parent="9" name="venue"/>
+    <view id="346" parent="9" name="binkingreocrd">
       <SourceTextLength>447</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <view id="346" parent="9" name="bookinginfo_mm">
+    <view id="347" parent="9" name="bookinginfo_mm">
       <SourceTextLength>2066</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <view id="347" parent="9" name="guestlistbybookingid_multi">
+    <view id="348" parent="9" name="guestlistbybookingid_multi">
       <SourceTextLength>1139</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <view id="348" parent="9" name="guestlistwithguestsession">
+    <view id="349" parent="9" name="guestlistwithguestsession">
       <SourceTextLength>783</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <view id="349" parent="9" name="guestlistwithsessionandguestname">
+    <view id="350" parent="9" name="guestlistwithsessionandguestname">
       <SourceTextLength>911</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <view id="350" parent="9" name="sessionbyguestid">
+    <view id="351" parent="9" name="sessionbyguestid">
       <SourceTextLength>1102</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <view id="351" parent="9" name="test2">
+    <view id="352" parent="9" name="test2">
       <SourceTextLength>585</SourceTextLength>
       <Definer>root@localhost</Definer>
     </view>
-    <routine id="352" parent="9" name="fill_table">
+    <view id="353" parent="9" name="userinfo">
+      <SourceTextLength>551</SourceTextLength>
+      <Definer>root@localhost</Definer>
+    </view>
+    <routine id="354" parent="9" name="fill_table">
       <SourceTextLength>355</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
-    <routine id="353" parent="9" name="insert_session">
-      <SourceTextLength>450</SourceTextLength>
+    <routine id="355" parent="9" name="insert_session">
+      <SourceTextLength>457</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
-    <column id="354" parent="337" name="bookID">
+    <column id="356" parent="337" name="bookID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="355" parent="337" name="bookDate">
+    <column id="357" parent="337" name="bookDate">
       <Position>2</Position>
-      <DataType>date|0s</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>current_timestamp()</OnUpdate>
     </column>
-    <column id="356" parent="337" name="bookReceipt">
+    <column id="358" parent="337" name="bookReceipt">
       <Position>3</Position>
       <DataType>mediumblob|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="357" parent="337" name="bookReceiptName">
+    <column id="359" parent="337" name="bookReceiptName">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="358" parent="337" name="bookStatus">
+    <column id="360" parent="337" name="bookStatus">
       <Position>5</Position>
       <DataType>tinyint(4)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="359" parent="337" name="bookFKmemberID">
+    <column id="361" parent="337" name="bookFKmemberID">
       <Position>6</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="360" parent="337" name="bookFKGuestList">
+    <column id="362" parent="337" name="bookFKGuestList">
       <Position>7</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="337" name="bookReceiptDate">
+    <column id="363" parent="337" name="bookReceiptDate">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="362" parent="337" name="bookingFKmemberID">
+    <column id="364" parent="337" name="bookRemark">
+      <Position>9</Position>
+      <DataType>tinytext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="365" parent="337" name="bookingFKmemberID">
       <ColNames>bookFKmemberID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="363" parent="337" name="PRIMARY">
+    <key id="366" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>bookID
 bookDate</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="364" parent="337" name="bookingFKmemberID">
+    <foreign-key id="367" parent="337" name="bookingFKmemberID">
       <ColNames>bookFKmemberID</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userID</RefColNames>
     </foreign-key>
-    <column id="365" parent="338" name="guestID">
+    <column id="368" parent="338" name="guestID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="366" parent="338" name="guestName">
+    <column id="369" parent="338" name="guestName">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="367" parent="338" name="guestEmail">
+    <column id="370" parent="338" name="guestEmail">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="368" parent="338" name="guestFKmemberID">
+    <column id="371" parent="338" name="guestFKmemberID">
       <Position>4</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="369" parent="338" name="PRIMARY">
+    <index id="372" parent="338" name="guestFKmemberID">
+      <ColNames>guestFKmemberID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="373" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>guestID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="370" parent="338" name="guestFKmemberID">
-      <ColNames>guestID</ColNames>
+    <foreign-key id="374" parent="338" name="guestFKmemberID">
+      <ColNames>guestFKmemberID</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>userID</RefColNames>
     </foreign-key>
-    <column id="371" parent="339" name="guestListID">
+    <column id="375" parent="339" name="guestListID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="372" parent="339" name="PRIMARY">
+    <key id="376" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>guestListID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="373" parent="340" name="guestlistNGuestID">
+    <column id="377" parent="340" name="guestlistNGuestID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="374" parent="340" name="guestlistNGuestFKguestlistID">
+    <column id="378" parent="340" name="guestlistNGuestFKguestlistID">
       <Position>2</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="375" parent="340" name="guestlistNGuestFKguestID">
+    <column id="379" parent="340" name="guestlistNGuestFKguestID">
       <Position>3</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="376" parent="340" name="guestlisteNGuest_MMFKguestlistID">
+    <index id="380" parent="340" name="guestlisteNGuest_MMFKguestlistID">
       <ColNames>guestlistNGuestFKguestlistID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="377" parent="340" name="guestlisteNGuest_MMFKguestID">
+    <index id="381" parent="340" name="guestlisteNGuest_MMFKguestID">
       <ColNames>guestlistNGuestFKguestID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="378" parent="340" name="PRIMARY">
+    <key id="382" parent="340" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>guestlistNGuestID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="379" parent="340" name="guestlisteNGuest_MMFKguestlistID">
+    <foreign-key id="383" parent="340" name="guestlisteNGuest_MMFKguestlistID">
       <ColNames>guestlistNGuestFKguestlistID</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>guestlist</RefTableName>
       <RefColNames>guestListID</RefColNames>
     </foreign-key>
-    <foreign-key id="380" parent="340" name="guestlisteNGuest_MMFKguestID">
+    <foreign-key id="384" parent="340" name="guestlisteNGuest_MMFKguestID">
       <ColNames>guestlistNGuestFKguestID</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>guest</RefTableName>
       <RefColNames>guestID</RefColNames>
     </foreign-key>
-    <column id="381" parent="341" name="sessionID">
+    <column id="385" parent="341" name="roleID">
+      <Position>1</Position>
+      <DataType>int(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="386" parent="341" name="roleTitle">
+      <Position>2</Position>
+      <DataType>tinytext|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="387" parent="341" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>roleID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="388" parent="342" name="sessionID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="382" parent="341" name="sessionDate">
+    <column id="389" parent="342" name="sessionDate">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="383" parent="341" name="sessionStartTime">
+    <column id="390" parent="342" name="sessionStartTime">
       <Position>3</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="384" parent="341" name="sessionEndTime">
+    <column id="391" parent="342" name="sessionEndTime">
       <Position>4</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="385" parent="341" name="sessionCampus">
+    <column id="392" parent="342" name="sessionCampus">
       <Position>5</Position>
       <DataType>int(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="386" parent="341" name="sessionStatus">
+    <column id="393" parent="342" name="sessionStatus">
       <Position>6</Position>
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="387" parent="341" name="sessionFKbookingRecord">
+    <column id="394" parent="342" name="sessionFKbookingRecord">
       <Position>7</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="388" parent="341" name="sessionFKGuestlist">
+    <column id="395" parent="342" name="sessionFKGuestlist">
       <Position>8</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="389" parent="341" name="sessionFKCampusID">
+    <index id="396" parent="342" name="sessionFKCampusID">
       <ColNames>sessionCampus</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="390" parent="341" name="sessionFKbookingRecord">
+    <index id="397" parent="342" name="sessionFKbookingRecord">
       <ColNames>sessionFKbookingRecord</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="391" parent="341" name="sessionFKGuestlist">
+    <index id="398" parent="342" name="sessionFKGuestlist">
       <ColNames>sessionFKGuestlist</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="392" parent="341" name="PRIMARY">
+    <key id="399" parent="342" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>sessionID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="393" parent="341" name="sessionFKCampusID">
+    <foreign-key id="400" parent="342" name="sessionFKCampusID">
       <ColNames>sessionCampus</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>venue</RefTableName>
       <RefColNames>venID</RefColNames>
     </foreign-key>
-    <foreign-key id="394" parent="341" name="sessionFKbookingRecord">
+    <foreign-key id="401" parent="342" name="sessionFKbookingRecord">
       <ColNames>sessionFKbookingRecord</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>bookingrecord</RefTableName>
       <RefColNames>bookID</RefColNames>
     </foreign-key>
-    <foreign-key id="395" parent="341" name="sessionFKGuestlist">
+    <foreign-key id="402" parent="342" name="sessionFKGuestlist">
       <ColNames>sessionFKGuestlist</ColNames>
       <RefSchemaName>itp4511_project</RefSchemaName>
       <RefTableName>guestlist</RefTableName>
       <RefColNames>guestListID</RefColNames>
     </foreign-key>
-    <column id="396" parent="342" name="id">
+    <column id="403" parent="343" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="397" parent="342" name="s">
+    <column id="404" parent="343" name="s">
       <Position>2</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="398" parent="342" name="e">
+    <column id="405" parent="343" name="e">
       <Position>3</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="399" parent="342" name="c">
+    <column id="406" parent="343" name="c">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="400" parent="342" name="date">
+    <column id="407" parent="343" name="date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="401" parent="342" name="PRIMARY">
+    <key id="408" parent="343" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="402" parent="343" name="userID">
+    <column id="409" parent="344" name="userID">
       <Position>1</Position>
       <DataType>int(1)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="403" parent="343" name="userName">
+    <column id="410" parent="344" name="userName">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="404" parent="343" name="userAcc">
+    <column id="411" parent="344" name="userAcc">
       <Position>3</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="405" parent="343" name="userPassword">
+    <column id="412" parent="344" name="userPassword">
       <Position>4</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="406" parent="343" name="userType">
+    <column id="413" parent="344" name="userType">
       <Position>5</Position>
-      <DataType>tinyint(4)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="407" parent="343" name="PRIMARY">
+    <column id="414" parent="344" name="userEmail">
+      <Position>6</Position>
+      <DataType>tinytext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="415" parent="344" name="FKUserTypeForRoleID">
+      <ColNames>userType</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="416" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="408" parent="344" name="venID">
+    <foreign-key id="417" parent="344" name="FKUserTypeForRoleID">
+      <ColNames>userType</ColNames>
+      <RefSchemaName>itp4511_project</RefSchemaName>
+      <RefTableName>role</RefTableName>
+      <RefColNames>roleID</RefColNames>
+    </foreign-key>
+    <column id="418" parent="345" name="venID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="409" parent="344" name="venName">
+    <column id="419" parent="345" name="venName">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="410" parent="344" name="venType">
+    <column id="420" parent="345" name="venType">
       <Position>3</Position>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="411" parent="344" name="venCapacity">
+    <column id="421" parent="345" name="venCapacity">
       <Position>4</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="412" parent="344" name="venLocation">
+    <column id="422" parent="345" name="venLocation">
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="413" parent="344" name="venDescription">
+    <column id="423" parent="345" name="venDescription">
       <Position>6</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="414" parent="344" name="venPersonInCharge">
+    <column id="424" parent="345" name="venPersonInCharge">
       <Position>7</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="415" parent="344" name="venBookingFee">
+    <column id="425" parent="345" name="venBookingFee">
       <Position>8</Position>
       <DataType>double|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="416" parent="344" name="venImage">
+    <column id="426" parent="345" name="venImage">
       <Position>9</Position>
       <DataType>mediumblob|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="417" parent="344" name="venCampus">
+    <column id="427" parent="345" name="venCampus">
       <Position>10</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="418" parent="344" name="PRIMARY">
+    <key id="428" parent="345" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>venID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="419" parent="346" name="userID">
+    <column id="429" parent="347" name="userID">
       <Position>1</Position>
       <DataType>int(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="420" parent="346" name="userName">
+    <column id="430" parent="347" name="userName">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="421" parent="346" name="userAcc">
+    <column id="431" parent="347" name="userAcc">
       <Position>3</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="422" parent="346" name="userPassword">
+    <column id="432" parent="347" name="userPassword">
       <Position>4</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="423" parent="346" name="userType">
+    <column id="433" parent="347" name="userType">
       <Position>5</Position>
-      <DataType>tinyint(4)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="424" parent="346" name="bookID">
+    <column id="434" parent="347" name="bookID">
       <Position>6</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="425" parent="346" name="bookDate">
+    <column id="435" parent="347" name="bookDate">
       <Position>7</Position>
-      <DataType>date|0s</DataType>
+      <DataType>timestamp|0s</DataType>
     </column>
-    <column id="426" parent="346" name="bookReceipt">
+    <column id="436" parent="347" name="bookReceipt">
       <Position>8</Position>
       <DataType>mediumblob|0s</DataType>
     </column>
-    <column id="427" parent="346" name="bookReceiptName">
+    <column id="437" parent="347" name="bookReceiptName">
       <Position>9</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="428" parent="346" name="bookStatus">
+    <column id="438" parent="347" name="bookStatus">
       <Position>10</Position>
       <DataType>tinyint(4)|0s</DataType>
     </column>
-    <column id="429" parent="346" name="bookFKmemberID">
+    <column id="439" parent="347" name="bookFKmemberID">
       <Position>11</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="430" parent="346" name="bookFKGuestList">
+    <column id="440" parent="347" name="bookFKGuestList">
       <Position>12</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="431" parent="346" name="sessionID">
+    <column id="441" parent="347" name="sessionID">
       <Position>13</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="432" parent="346" name="sessionDate">
+    <column id="442" parent="347" name="sessionDate">
       <Position>14</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="433" parent="346" name="sessionStartTime">
+    <column id="443" parent="347" name="sessionStartTime">
       <Position>15</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="434" parent="346" name="sessionEndTime">
+    <column id="444" parent="347" name="sessionEndTime">
       <Position>16</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="435" parent="346" name="sessionCampus">
+    <column id="445" parent="347" name="sessionCampus">
       <Position>17</Position>
       <DataType>int(20)|0s</DataType>
     </column>
-    <column id="436" parent="346" name="sessionStatus">
+    <column id="446" parent="347" name="sessionStatus">
       <Position>18</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="437" parent="346" name="sessionFKbookingRecord">
+    <column id="447" parent="347" name="sessionFKbookingRecord">
       <Position>19</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="438" parent="346" name="sessionFKGuestlist">
+    <column id="448" parent="347" name="sessionFKGuestlist">
       <Position>20</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="439" parent="346" name="venID">
+    <column id="449" parent="347" name="venID">
       <Position>21</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="440" parent="346" name="venName">
+    <column id="450" parent="347" name="venName">
       <Position>22</Position>
       <DataType>varchar(25)|0s</DataType>
     </column>
-    <column id="441" parent="346" name="venType">
+    <column id="451" parent="347" name="venType">
       <Position>23</Position>
       <DataType>varchar(15)|0s</DataType>
     </column>
-    <column id="442" parent="346" name="venCapacity">
+    <column id="452" parent="347" name="venCapacity">
       <Position>24</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="443" parent="346" name="venLocation">
+    <column id="453" parent="347" name="venLocation">
       <Position>25</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="444" parent="346" name="venDescription">
+    <column id="454" parent="347" name="venDescription">
       <Position>26</Position>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <column id="445" parent="346" name="venPersonInCharge">
+    <column id="455" parent="347" name="venPersonInCharge">
       <Position>27</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="446" parent="346" name="venBookingFee">
+    <column id="456" parent="347" name="venBookingFee">
       <Position>28</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="447" parent="346" name="venImage">
+    <column id="457" parent="347" name="venImage">
       <Position>29</Position>
       <DataType>mediumblob|0s</DataType>
     </column>
-    <column id="448" parent="346" name="venCampus">
+    <column id="458" parent="347" name="venCampus">
       <Position>30</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="449" parent="346" name="guestListID">
+    <column id="459" parent="347" name="guestListID">
       <Position>31</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="450" parent="346" name="guestlistNGuestID">
+    <column id="460" parent="347" name="guestlistNGuestID">
       <Position>32</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="451" parent="346" name="guestlistNGuestFKguestlistID">
+    <column id="461" parent="347" name="guestlistNGuestFKguestlistID">
       <Position>33</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="452" parent="346" name="guestlistNGuestFKguestID">
+    <column id="462" parent="347" name="guestlistNGuestFKguestID">
       <Position>34</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="453" parent="346" name="guestID">
+    <column id="463" parent="347" name="guestID">
       <Position>35</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="454" parent="346" name="guestName">
+    <column id="464" parent="347" name="guestName">
       <Position>36</Position>
       <DataType>varchar(25)|0s</DataType>
     </column>
-    <column id="455" parent="346" name="guestEmail">
+    <column id="465" parent="347" name="guestEmail">
       <Position>37</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="456" parent="346" name="guestFKmemberID">
+    <column id="466" parent="347" name="guestFKmemberID">
       <Position>38</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="457" parent="349" name="sessionID">
+    <column id="467" parent="350" name="sessionID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="458" parent="349" name="sessionDate">
+    <column id="468" parent="350" name="sessionDate">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="459" parent="349" name="sessionStartTime">
+    <column id="469" parent="350" name="sessionStartTime">
       <Position>3</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="460" parent="349" name="sessionEndTime">
+    <column id="470" parent="350" name="sessionEndTime">
       <Position>4</Position>
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="461" parent="349" name="sessionCampus">
+    <column id="471" parent="350" name="sessionCampus">
       <Position>5</Position>
       <DataType>int(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="462" parent="349" name="sessionStatus">
+    <column id="472" parent="350" name="sessionStatus">
       <Position>6</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="463" parent="349" name="sessionFKbookingRecord">
+    <column id="473" parent="350" name="sessionFKbookingRecord">
       <Position>7</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="464" parent="349" name="sessionFKGuestlist">
+    <column id="474" parent="350" name="sessionFKGuestlist">
       <Position>8</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="465" parent="349" name="guestlistNGuestID">
+    <column id="475" parent="350" name="guestlistNGuestID">
       <Position>9</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="466" parent="349" name="guestlistNGuestFKguestlistID">
+    <column id="476" parent="350" name="guestlistNGuestFKguestlistID">
       <Position>10</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="467" parent="349" name="guestlistNGuestFKguestID">
+    <column id="477" parent="350" name="guestlistNGuestFKguestID">
       <Position>11</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="468" parent="349" name="guestID">
+    <column id="478" parent="350" name="guestID">
       <Position>12</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="469" parent="349" name="guestName">
+    <column id="479" parent="350" name="guestName">
       <Position>13</Position>
       <DataType>varchar(25)|0s</DataType>
     </column>
-    <column id="470" parent="349" name="guestEmail">
+    <column id="480" parent="350" name="guestEmail">
       <Position>14</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="471" parent="349" name="guestFKmemberID">
+    <column id="481" parent="350" name="guestFKmemberID">
       <Position>15</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="472" parent="350" name="guestlistNGuestID">
+    <column id="482" parent="351" name="guestlistNGuestID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="473" parent="350" name="guestlistNGuestFKguestlistID">
+    <column id="483" parent="351" name="guestlistNGuestFKguestlistID">
       <Position>2</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="474" parent="350" name="guestlistNGuestFKguestID">
+    <column id="484" parent="351" name="guestlistNGuestFKguestID">
       <Position>3</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="475" parent="350" name="sessionID">
+    <column id="485" parent="351" name="sessionID">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="476" parent="350" name="sessionDate">
+    <column id="486" parent="351" name="sessionDate">
       <Position>5</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="477" parent="350" name="sessionStartTime">
+    <column id="487" parent="351" name="sessionStartTime">
       <Position>6</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="478" parent="350" name="sessionEndTime">
+    <column id="488" parent="351" name="sessionEndTime">
       <Position>7</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="479" parent="350" name="sessionCampus">
+    <column id="489" parent="351" name="sessionCampus">
       <Position>8</Position>
       <DataType>int(20)|0s</DataType>
     </column>
-    <column id="480" parent="350" name="sessionStatus">
+    <column id="490" parent="351" name="sessionStatus">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="481" parent="350" name="sessionFKbookingRecord">
+    <column id="491" parent="351" name="sessionFKbookingRecord">
       <Position>10</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="482" parent="350" name="sessionFKGuestlist">
+    <column id="492" parent="351" name="sessionFKGuestlist">
       <Position>11</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="483" parent="350" name="venID">
+    <column id="493" parent="351" name="venID">
       <Position>12</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="484" parent="350" name="venName">
+    <column id="494" parent="351" name="venName">
       <Position>13</Position>
       <DataType>varchar(25)|0s</DataType>
     </column>
-    <column id="485" parent="350" name="venType">
+    <column id="495" parent="351" name="venType">
       <Position>14</Position>
       <DataType>varchar(15)|0s</DataType>
     </column>
-    <column id="486" parent="350" name="venCapacity">
+    <column id="496" parent="351" name="venCapacity">
       <Position>15</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="487" parent="350" name="venLocation">
+    <column id="497" parent="351" name="venLocation">
       <Position>16</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="488" parent="350" name="venDescription">
+    <column id="498" parent="351" name="venDescription">
       <Position>17</Position>
       <DataType>varchar(200)|0s</DataType>
     </column>
-    <column id="489" parent="350" name="venPersonInCharge">
+    <column id="499" parent="351" name="venPersonInCharge">
       <Position>18</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="490" parent="350" name="venBookingFee">
+    <column id="500" parent="351" name="venBookingFee">
       <Position>19</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="491" parent="350" name="venImage">
+    <column id="501" parent="351" name="venImage">
       <Position>20</Position>
       <DataType>mediumblob|0s</DataType>
     </column>
-    <column id="492" parent="350" name="venCampus">
+    <column id="502" parent="351" name="venCampus">
       <Position>21</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="493" parent="351" name="bookID">
+    <column id="503" parent="352" name="bookID">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="494" parent="351" name="bookDate">
+    <column id="504" parent="352" name="bookDate">
       <Position>2</Position>
-      <DataType>date|0s</DataType>
+      <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="495" parent="351" name="bookReceipt">
+    <column id="505" parent="352" name="bookReceipt">
       <Position>3</Position>
       <DataType>mediumblob|0s</DataType>
     </column>
-    <column id="496" parent="351" name="bookReceiptName">
+    <column id="506" parent="352" name="bookReceiptName">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="497" parent="351" name="bookStatus">
+    <column id="507" parent="352" name="bookStatus">
       <Position>5</Position>
       <DataType>tinyint(4)|0s</DataType>
     </column>
-    <column id="498" parent="351" name="bookFKmemberID">
+    <column id="508" parent="352" name="bookFKmemberID">
       <Position>6</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="499" parent="351" name="bookFKGuestList">
+    <column id="509" parent="352" name="bookFKGuestList">
       <Position>7</Position>
       <DataType>int(10)|0s</DataType>
     </column>
-    <column id="500" parent="351" name="bookReceiptDate">
+    <column id="510" parent="352" name="bookReceiptDate">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <argument id="501" parent="353" name="camp">
+    <column id="511" parent="353" name="userID">
+      <Position>1</Position>
+      <DataType>int(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="512" parent="353" name="userName">
+      <Position>2</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="513" parent="353" name="userAcc">
+      <Position>3</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="514" parent="353" name="userPassword">
+      <Position>4</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="515" parent="353" name="userType">
+      <Position>5</Position>
+      <DataType>int(10)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="516" parent="353" name="userEmail">
+      <Position>6</Position>
+      <DataType>tinytext|0s</DataType>
+    </column>
+    <column id="517" parent="353" name="roleID">
+      <Position>7</Position>
+      <DataType>int(10)|0s</DataType>
+    </column>
+    <column id="518" parent="353" name="roleTitle">
+      <Position>8</Position>
+      <DataType>tinytext|0s</DataType>
+    </column>
+    <argument id="519" parent="355" name="camp">
       <Position>1</Position>
       <DataType>int(255)|0s</DataType>
     </argument>

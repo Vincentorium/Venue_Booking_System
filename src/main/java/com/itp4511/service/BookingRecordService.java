@@ -23,12 +23,17 @@ public class BookingRecordService {
 
         int input = 0;
         int bookingID;
-        input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
-                + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
+//        input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
+//                + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
+
+
+
+        input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(  `bookFKmemberID`)"
+                + "VALUES ( ?)",      bookingMemberID);
 
         Object o=       bookingRecordDAO.queryScalar("SELECT `bookID`FROM `bookingrecord`  " +
                 "ORDER BY bookID DESC " +
-                "LIMIT 1;",BookingRecord.class, null);
+                "LIMIT 1;",BookingRecord.class);
 
         bookingID=(int)o;
         for(int i=0;i<bachList.length;i++){
@@ -43,6 +48,11 @@ public class BookingRecordService {
 
         return input > 0;
     }
+
+
+
+
+
 
       public List<BookingSession_Multi> getBookingByID(int memberID){
         List<BookingSession_Multi> rs= multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +

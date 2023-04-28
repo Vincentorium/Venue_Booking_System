@@ -54,12 +54,12 @@ public class MHLView {
                     String acc = Utility.readString(20);
                     System.out.println("ps");
                     String pwd = Utility.readString(20);
-                    User user = userService.getUserByIDAndPwd(acc, pwd);
+                    Userinfo user = userService.getUserByAccAndPwd(acc, pwd);
                     if (user != null) {
                         System.out.println("ok, " + user.getUserName());
                     }
                     //endregion
-                //region Case2 dipslay avaiable venue"
+                    //region Case2 dipslay avaiable venue"
                 case "2":
                     System.out.println("=================Display Order=================");
                     List<Venue> venueList = venueService.getAllVenue();
@@ -83,7 +83,7 @@ public class MHLView {
 
                         case "1":
 
-                            List<Session> sessionList = sessionService.displaySessionByDate("2023-04-12");
+                            List<Session> sessionList = sessionService.displaySessionByDate(1, "2023-04-12");
                             System.out.println("=================Session available=================");
                             for (Session s : sessionList) {
 
@@ -99,6 +99,19 @@ public class MHLView {
                             List<Session> sessionListByIdandDate = sessionService.displaySessionByDateAndCampus(1, "2023-04-12");
                             System.out.println("=================Session available=================");
                             for (Session s : sessionListByIdandDate) {
+
+                                System.out.print("Campus: " + s.getSessionCampus());
+                                System.out.println("          Date: " + s.getSessionDate());
+                                System.out.print("Start: " + s.getSessionStartTime());
+                                System.out.println(" ---  End: " + s.getSessionEndTime());
+                            }
+                            break;
+                        case "3":
+
+
+                            List<Session> sessionListByIdandDate2 = sessionService.displaySessionByDateAndCampus(1, "2023-04-12");
+                            System.out.println("=================Session available=================");
+                            for (Session s : sessionListByIdandDate2) {
 
                                 System.out.print("Campus: " + s.getSessionCampus());
                                 System.out.println("          Date: " + s.getSessionDate());
@@ -374,7 +387,7 @@ public class MHLView {
                             List<BookingInfo_MM> bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
                             System.out.println("=================select booking to modif available=================");
                             System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
-                            for (BookingInfo_MM s : bookingObjectForEditSession ) {
+                            for (BookingInfo_MM s : bookingObjectForEditSession) {
                                 System.out.print("  " + s.getBookId());
                                 System.out.print("         " + s.getUserName());
 
@@ -388,7 +401,7 @@ public class MHLView {
                             }
 
                             System.out.println("Select a session to modify");
-                            sessionSelected= 0;
+                            sessionSelected = 0;
                             sessionSelected = Utility.readInt();
 
                             System.out.println("Display avaialbe venue and date");
@@ -397,7 +410,7 @@ public class MHLView {
                             List<Session> sessionListByIdandDate = sessionService.displaySessionByDateAndCampus(1, "2023-04-12");
                             System.out.println("=================Session available=================");
                             for (Session s : sessionListByIdandDate) {
-                                System.out.println("Session ID"+s.getSessionId());
+                                System.out.println("Session ID" + s.getSessionId());
                                 System.out.print("Campus: " + s.getSessionCampus());
                                 System.out.println("          Date: " + s.getSessionDate());
                                 System.out.print("Start: " + s.getSessionStartTime());
@@ -407,18 +420,15 @@ public class MHLView {
                             int sessionSelectedAsnewOne = 0;
                             sessionSelectedAsnewOne = Utility.readInt();
 
-                            boolean updateSuccesss=sessionService.updateSessionSetBefore(sessionSelected,sessionSelectedAsnewOne);
+                            boolean updateSuccesss = sessionService.updateSessionSetBefore(sessionSelected, sessionSelectedAsnewOne);
 
-                            if(updateSuccesss){
-
-
+                            if (updateSuccesss) {
 
 
-
-                                 bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
+                                bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
                                 System.out.println("=================display session after modification=================");
                                 System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
-                                for (BookingInfo_MM s : bookingObjectForEditSession ) {
+                                for (BookingInfo_MM s : bookingObjectForEditSession) {
                                     System.out.print("  " + s.getBookId());
                                     System.out.print("         " + s.getUserName());
 
@@ -432,10 +442,7 @@ public class MHLView {
                                 }
 
 
-
                             }
-
-
 
 
                             break;
@@ -469,7 +476,7 @@ public class MHLView {
 
                             break;
                         case "2":
-
+//                            "\t\t 2 add a new guest "
                             List<Guest> guestList2 = guestService.getRelevantGuestByMemberID(1);
                             System.out.println("=================your guests=================");
                             for (Guest s : guestList2) {
@@ -480,7 +487,7 @@ public class MHLView {
 
                             System.out.println("=================add a new guest=================");
 
-                            boolean isInsertGuest=guestService.addGuest(1,"Emil","emil@gmail.com");
+                            boolean isInsertGuest = guestService.addGuest(1, "Emil", "emil@gmail.com");
 
                             List<Guest> guest = guestService.getRelevantGuestByMemberID(1);
 
@@ -492,10 +499,6 @@ public class MHLView {
                             }
 
                             System.out.println("=================add a new guest=================");
-
-
-
-
 
 
                             break;
@@ -514,12 +517,12 @@ public class MHLView {
                             System.out.println("=================delete a guest=================");
                             int guestIDForDel = 0;
                             System.out.println("select your a guest to delete");
-                            guestIDForDel  = Utility.readInt();
+                            guestIDForDel = Utility.readInt();
 
 
-                            boolean isInsertGuest3=guestService.deleteGuest (guestIDForDel );
+                            boolean isInsertGuest3 = guestService.deleteGuest(guestIDForDel);
 
-                            guests3 = guestService.getRelevantGuestByMemberID(guestIDForDel );
+                            guests3 = guestService.getRelevantGuestByMemberID(guestIDForDel);
 
                             System.out.println("\n=================your guests=================");
                             for (Guest s : guests3) {
@@ -529,10 +532,6 @@ public class MHLView {
                             }
 
                             System.out.println("=================add a new guest=================");
-
-
-
-
 
 
                             break;

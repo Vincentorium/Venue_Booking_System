@@ -38,7 +38,7 @@ import javax.servlet.http.Part;
  * @author Vincent
  */
 @MultipartConfig
-@WebServlet(name = "LoginController", urlPatterns = {"/ma2in"})
+@WebServlet(name = "LoginController", urlPatterns = {"/main222"})
 public class LoginController extends HttpServlet {
 
     private UserDB db;

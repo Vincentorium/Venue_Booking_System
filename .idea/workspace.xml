@@ -7,267 +7,229 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f1a288b-cf82-48a1-bdb4-f86aadf486c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__axis_axis_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__backport_util_concurrent_backport_util_concurrent_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__batik_batik_awt_util_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__batik_batik_dom_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__batik_batik_svggen_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__batik_batik_util_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__bsh_bsh_2_0b1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cas_casclient_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_activiti_activiti_bpmn_converter_5_12_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_activiti_activiti_bpmn_layout_5_12_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_activiti_activiti_bpmn_model_5_12_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_activiti_activiti_engine_5_12_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_core_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_data_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_event_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_hession_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_htmlparser_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_http_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_mvc_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_persistent_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_schedule_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_soa_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_tabpane_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_taglib_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_util_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_bboss_velocity_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_pdp_pdp_ewebeditor_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_pdp_pdp_parameters_handler_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_pdp_pdp_system_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_plugins_bboss_jodconverter_core_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_plugins_bboss_plugin_wordpdf_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_rpc_bboss_rpc_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_security_bboss_security_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_security_bboss_security_web_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_security_bboss_security_web_inf_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bbossgroups_security_bboss_ticket_5_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_caucho_hessian_4_0_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_cloudhopper_proxool_proxool_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_cloudhopper_proxool_proxool_cglib_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_uuid_java_uuid_generator_3_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jfinal_cos_2017_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_novell_ldap_jldap_2009_10_07.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sleepycat_je_5_0_73.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_woodstock_dependlibs_jh_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_xjc_2_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_M4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_trilead_trilead_ssh2_1_0_0_build215.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_java6_2_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_discovery_commons_discovery_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__concurrent_concurrent_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__exml_exml_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_12_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_resource_connector_api_1_6_alpha_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_m10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jgraph_jgraph_5_13_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jacob_project_jacob_1_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jtds_jtds_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__odmg_odmg_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_axis_axis_jaxrpc_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_email_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_soap_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_databinding_jaxb_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_jaxws_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_simple_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_transports_http_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_wsdl_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_activation_1_1_spec_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_annotation_1_0_spec_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jaxws_2_2_spec_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_smartcn_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_demo_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_facet_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_neethi_neethi_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_pdfbox_app_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_10_FINAL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_excelant_3_10_FINAL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_10_FINAL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_10_FINAL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_scratchpad_3_10_FINAL.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ws_xmlschema_xmlschema_core_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_swizzle_swizzle_stream_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fontbox_fontbox_0_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_commonman_commons_management_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasig_cas_client_cas_client_core_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasypt_jasypt_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_10_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_swtgraphics2d_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgroups_jgroups_3_6_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_livetribe_livetribe_jsr223_2_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lucee_itext_2_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openoffice_bootstrap_connector_0_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openoffice_juh_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openoffice_jurt_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openoffice_ridl_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openoffice_unoil_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_backward_compat_2_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tinyjee_jgraphx_jgraphx_1_10_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__pdfbox_pdfbox_0_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__rsslibj_rsslibj_1_0RC2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__swarmcache_swarmcache_1_0RC2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__trove_trove_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_4d_b4_min.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_1_1_4c.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingInfo_MMDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithsessionandguestname_MultiDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionbyguestidDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/BrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController_BU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/PhoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/errMessage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/PhoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/complaint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/complaintTable_cancel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/confirmationCode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/favBox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/general.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/logIn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/logIn2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/mail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/misc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/signUp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/switch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tableSheet copy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tableSheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/venuList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/123123.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/5366d0160924ab18972ba27b65b0f1cd7b899e519d6f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/962bd40735fae6cd7b89e42d5ff9182442a7d933a16f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/AverageVSSpecificjpg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/CompanyImageLHC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/ShoppingCart1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Snipaste_2022-06-05_17-46-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Snipaste_2022-06-05_17-47-19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Snipaste_2023-03-17_08-47-30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Staff3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Staff4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/User1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/User2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/airplaneIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/attachIcon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/attachIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/attachIcon.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusChaiWan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusLWL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusTM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusTsingYi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cdust.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/daysOnIssue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/errImg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/fatRat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/iconCmt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/iconFav.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/iveIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/middleIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/pp2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/rat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/rep1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/replyIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/searc2h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/search.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/voteUp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/attachments/2022-11-21-11-46-58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/complaintData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/complaintData_Operator.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleReport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/insertMail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/insertReportStatus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/logIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/searchFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/searchFuncTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/searchFunc_Switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getAllReports.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getAllReportsIntoInbox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getMailRecords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getMailReplay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getRemarkForPost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getReports.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getReportsForTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getReportsForTableForAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/inserMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateMailReadStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateReportAttribute.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateReportStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateStatusForOfficer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/640ef16739fe4..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641195eb44084..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411979790e07..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197a169c99..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197dbb50af..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197fa759d6..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119827818f5..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119912c6940..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411998b391bc..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641199d3ae910..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119b26e7cf7..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119b6b0da80..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119bd0f272a..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119c7c23b85..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119cb5b8b35..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119d349db48..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119e7b6ed9d..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a01b474f6..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a02d5334c..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a0e86d606..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a52b7221a..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a56d9bba3..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a5c606c53..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a6420aa1a..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a66dd0327..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aecd6913f..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aed7772c7..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aef6ca20a..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411bd3e1ab58..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411be0dcc700..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d052e6c2f..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d21115460..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d2e8414a1..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64131bd38a6a1..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64131c0809630..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641329ee3cdd4..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64132d8b318ea..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64132f700cab8..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641334597c862..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413375fb792c..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641337e907c62..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413386b8471d..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413481dee7ac..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413491001047..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64141e23a7f31..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641421ce93648..jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/registerPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ITP4511_EA_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ITP4511_EA_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/c3p0-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/hspedu/dao_/dao/BasicDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/hspedu/dao_/dao/UserInfoDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/hspedu/dao_/domain/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/hspedu/dao_/test/TestDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/hspedu/dao_/utils/C3p0Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/dba.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/CalculateBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/Phone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/dbutils/BrandsDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/dbutils/UserDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/servlet/BrandController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/servlet/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/servlet/PhoneController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/test/TestCreateDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/test/C3p0Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/test/DBUtils_USE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/test/TestCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/glassfish-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/c3p0-0.9.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-dbutils-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/hamcrest-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/hamcrest-core-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/junit-4.13.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.49.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ojdbc5-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ons-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/oraclepki-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/osdt_cert-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/osdt_core-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/simplefan-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ucp-11.2.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/brands.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/loginError.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/phoneList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/welcome.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithguestsession_MultiDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistenguest_Mm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistenguest_Mm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithguestsession_Multi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/UserInfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/Guestlistwithguestsession_MultiDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlistenguest_Mm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlistenguest_Mm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guestlistwithguestsession_Multi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ITP4511_EA_Project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/dao/UserInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingInfo_MM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingInfo_MM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/UserInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/BookingRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/BookingRecordService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/GuestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/GuestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/GuestlistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/GuestlistService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/SessionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/utils/C3p0Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/utils/C3p0Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/view/MHLView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/view/MHLView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ict/servlet/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ict/servlet/BrandController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ict/servlet/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ict/servlet/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ict/servlet/PhoneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ict/servlet/PhoneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/dao/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/dao/UserInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistenguest_Mm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistenguest_Mm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/BookingRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/BookingRecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestlistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestlistService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/SessionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/C3p0Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/C3p0Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/view/MHLView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/view/MHLView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/BrandController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/test/TestCreateDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/test/TestCreateDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/PhoneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/PhoneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/loginError.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -317,14 +279,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bookingrecord: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="guestlist: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
@@ -340,100 +294,18 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ITP4511_EA_Project" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="518" lean-forward="true" selection-start-line="518" selection-end-line="518" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1635#1657#0" />
-                <element signature="e#2195#2233#0" />
-                <element signature="e#2628#2668#0" />
-                <element signature="e#5261#5294#0" />
-                <element signature="e#6630#6667#0" />
-                <element signature="e#8417#8468#0" />
-                <element signature="e#16575#16601#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getGeustlistBySessionID#0;class#GuestlistService#0" />
-                <element signature="method#getGeustlistWithGuestNameByGuestListID#0;class#GuestlistService#0" />
-                <element signature="method#getGeustlistByBookingID#0;class#GuestlistService#0" />
-                <element signature="method#getAllVenue#0;class#GuestlistService#0" />
-                <element signature="method#addGuestlist#0;class#GuestlistService#0" />
-                <element signature="method#addGustIntoList#0;class#GuestlistService#0" />
-                <element signature="method#deleteGustIntoList#0;class#GuestlistService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ict/dbutils/BrandsDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+            <state relative-caret-position="255">
+              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getGuestNotListedOnASessionByMemberID#0;class#GuestService#0" />
-                <element signature="method#addGuest#0;class#GuestService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#displaySessionByDate#0;class#SessionService#0" />
-                <element signature="method#updateSession#0;class#SessionService#0" />
-                <element signature="method#updateSession#1;class#SessionService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionbyguestid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3279#3280#0" expanded="true" />
-                <element signature="e#3307#3308#0" expanded="true" />
-                <element signature="e#3357#3358#0" expanded="true" />
-                <element signature="e#3397#3398#0" expanded="true" />
-                <element signature="e#3514#3515#0" expanded="true" />
-                <element signature="e#3554#3555#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#1806#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -451,37 +323,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bachList</find>
-      <find>index</find>
-      <find>guestlistwithguestsession_MultiDAO</find>
-      <find>guestlistenguest_MmDAO</find>
-      <find>insertBookingRecords</find>
-      <find>add Customer</find>
-      <find>javax.servlet</find>
-      <find>smartupload</find>
-      <find>Post</find>
-      <find>servlet-api</find>
-      <find>getBookingAllInfoByMemberID</find>
-      <find>bookingAllInfoByMemberID</find>
-      <find>bookingObject</find>
+      <find>sessionSe</find>
+      <find>tablePostTitle</find>
+      <find>create guest list for your session</find>
+      <find>inseruser</find>
+      <find>each</find>
       <find>getGeustlistBySessionID</find>
-      <find>addGustIntoList</find>
-      <find>&quot;.*&quot;.*\+</find>
-      <find>\\n</find>
-      <find>getGuestNotListedOnASessionByMemberID</find>
-      <find>Guest not list o</find>
-      <find>elect your a session</find>
-      <find>System.out.println(&quot;mysql&quot;)</find>
-      <find>displaySessionByDate</find>
-      <find>displaySessionByDateAndCampus</find>
-      <find>oldOne</find>
-      <find>insertOneSession</find>
-      <find>mysql</find>
-      <find>guest</find>
-      <find>guestlist</find>
-      <find>long</find>
+      <find>getGeustlistBySessionID</find>
+      <find>venu</find>
+      <find>bookingTableModal</find>
+      <find>bookingRC</find>
+      <find>getBookingRC</find>
+      <find>bookingtab</find>
       <find>\n</find>
+      <find>displaySessionByDateAndCampus</find>
+      <find>bookingController</find>
+      <find>form-group</find>
+      <find>sessionId</find>
+      <find>processedSessions</find>
+      <find>sessionService</find>
+      <find>Public Health</find>
+      <find>session</find>
+      <find>usern</find>
+      <find>long</find>
+      <find>queryScalar()</find>
+      <find>userID=</find>
+      <find>loginController</find>
+      <find>UserInfo</find>
+      <find>userID</find>
+      <find>hearder__a header__signIn dept</find>
+      <find>List</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -489,57 +364,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Bookingrecord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestlistDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithguestsession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestlistwithguestsessionDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistwithguestsessionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/GuestlistbybookingidMulti.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistbybookingid_MultiDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistenguest_MmDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookinginfoMm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BokingInfo_MMDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BokingInfo_MMDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/PhoneController.java" />
-        <option value="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/index.jsp" />
-        <option value="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/brands.jsp" />
-        <option value="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/login.jsp" />
-        <option value="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/BrandController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController_BU.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/errMessage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist_Custom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithguestsession_Multi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistenguest_Mm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithsessionandguestname.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithsessionandguestname_Multi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithsessionandguestname_Multi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithsessionandguestname_MultiDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionbyguestid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionbyguestidDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BrandController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/BrandController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/brandControllerr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/BrandControllerForTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BrandControllerForTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/misc.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getReportsIntoInbox.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/modal.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login_.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/logIn.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/loginError.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/venuList.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/signup.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" />
       </list>
     </option>
   </component>
@@ -569,10 +444,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-231" />
-    <option name="y" value="255" />
-    <option name="width" value="2580" />
-    <option name="height" value="1287" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="2579" />
+    <option name="height" value="1293" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -593,41 +468,6 @@
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="ITP4511_EA_Project_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="ITP4511_EA_Project_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="ITP4511_EA_Project_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -650,111 +490,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ict" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ict" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ict" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -766,7 +501,18 @@
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -783,7 +529,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itp4511/domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itp4511/dao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -791,21 +537,25 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2102102" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511\domain" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\classes\artifacts\ITP4511_EA_Project_war_exploded\WEB-INF\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itp4511.service" />
+      <recent name="com.itp4511.controller" />
+      <recent name="ict.servlet" />
       <recent name="com.itp4511.dao" />
       <recent name="com.itp4511.domain" />
-      <recent name="com.itp4511.servlet" />
-      <recent name="com.itp4511.service" />
-      <recent name="com.hspedu.dao_.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp" />
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\css" />
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\js" />
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511\controller" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511" />
     </key>
   </component>
@@ -821,7 +571,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MHLView.mainMenuw">
+  <component name="RunManager" selected="GlassFish Server.GlassFish 4.0.01">
     <configuration name="GlassFish 4.0.01" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.0.01" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -1025,13 +775,11 @@
       <workItem from="1681967602591" duration="613000" />
       <workItem from="1681968239447" duration="1522000" />
       <workItem from="1682219961044" duration="9472000" />
+      <workItem from="1682571098786" duration="74084000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SessionService_updateSessionSetBefore - 2023.04.23 at 13h 04m 59s.xml">
-      <configuration name="SessionService.updateSessionSetBefore" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MHLView_mainMenuw - 2023.04.23 at 13h 05m 06s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
@@ -1059,11 +807,14 @@
     <history-entry file="MHLView_mainMenuw - 2023.04.23 at 14h 03m 11s.xml">
       <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MHLView_mainMenuw - 2023.04.27 at 10h 26m 23s.xml">
+      <configuration name="MHLView.mainMenuw" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172803000" />
+    <option name="totallyTimeSpent" value="255678000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -1076,67 +827,67 @@
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.19024684" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.749577" visible="true" weight="0.19506322" />
       <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.23780856" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.250423" side_tool="true" visible="true" weight="0.19506322" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.13065326" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31572327" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.61383647" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43522012" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.25660378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914573" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.32788944" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3018868" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32824427" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.326972" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500301" side_tool="true" weight="0.32830188" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.39874214" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18341708" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.3962264" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18219177" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955974" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32955974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984948" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32992172" />
-      <window_info anchor="right" id="PlantUML" order="4" weight="0.32992172" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="JSF" order="7" weight="0.32992172" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.20830825" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="CDI" order="11" weight="0.32992172" />
-      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32992172" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32972324" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.2077062" />
+      <window_info anchor="right" id="JSF" order="5" weight="0.32972324" />
+      <window_info anchor="right" id="PlantUML" order="6" weight="0.32992172" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="CDI" order="9" weight="0.32972324" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32971668" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.24368231" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49726027" visible="true" weight="0.19494584" />
       <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.23780856" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5027397" side_tool="true" weight="0.19494584" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.13065326" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.49497488" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37878788" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31643835" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.61383647" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3520548" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32914573" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.32788944" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3316583" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.32734805" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500301" side_tool="true" weight="0.32830188" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.40075377" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18341708" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.39863014" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18219177" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955974" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32955974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1147,7 +898,7 @@
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="JSF" order="7" weight="0.32992172" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.17749698" />
+      <window_info anchor="right" id="Database" order="8" weight="0.20830825" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="CDI" order="11" weight="0.32992172" />
@@ -1174,15 +925,99 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java</url>
-          <line>60</line>
+          <line>42</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java</url>
-          <line>65</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java</url>
+          <line>163</line>
           <properties />
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java</url>
@@ -1192,9 +1027,25 @@
           </properties>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js</url>
+          <line>80</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="GlassfishConfiguration">
+        <watch expression="sessionObjs" language="JAVA" />
+        <watch expression="bachList" language="JAVA" />
+        <watch expression="bachList[0][0]" language="JAVA" />
+      </configuration>
       <configuration name="JUnit">
         <watch expression="guestlist.get(0)" />
       </configuration>
@@ -1204,130 +1055,35 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>bachList[0][0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bachList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sessionObjs</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>String[] jsonStrings = request.getParameterValues(&quot;data&quot;);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/loginError.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/servlet/PhoneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/welcome.jsp" />
-    <entry file="file://$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/login.jsp" />
-    <entry file="file://$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/errMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController_BU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/servlet/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingInfo_MMDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-559">
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1338,182 +1094,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist_Custom.java" />
-    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/guestlist" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistbybookingid_MultiDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-          <caret line="78" column="14" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
-          <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
-          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
-          <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
-          <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
-          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
-          <caret line="141" column="14" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
-          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
-          <caret line="150" column="14" selection-start-line="150" selection-start-column="14" selection-end-line="150" selection-end-column="14" />
-          <caret line="154" column="45" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
-          <caret line="159" column="14" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
-          <caret line="163" column="34" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
-          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
-          <caret line="172" column="41" selection-start-line="172" selection-start-column="41" selection-end-line="172" selection-end-column="41" />
-          <caret line="177" column="14" selection-start-line="177" selection-start-column="14" selection-end-line="177" selection-end-column="14" />
-          <caret line="181" column="41" selection-start-line="181" selection-start-column="41" selection-end-line="181" selection-end-column="41" />
-          <caret line="186" column="14" selection-start-line="186" selection-start-column="14" selection-end-line="186" selection-end-column="14" />
-          <caret line="190" column="30" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="30" />
-          <caret line="213" column="14" selection-start-line="213" selection-start-column="14" selection-end-line="213" selection-end-column="14" />
-          <caret line="217" column="38" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getBookingByID#0;class#BookingRecordService#0" />
-            <element signature="method#getBookingAllInfoByBookingID#0;class#BookingRecordService#0" />
-            <element signature="method#updateBookingImgnfoByMemberID#0;class#BookingRecordService#0" />
-            <element signature="method#updateBookingAllInfoByMemberID#0;class#BookingRecordService#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithguestsession_MultiDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithsessionandguestname_MultiDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="110" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="110" />
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithguestsession_Multi.java" />
-    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/collation/utf8_general_mysql500_ci" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Multi_BookingSessionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistenguest_Mm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithsessionandguestname_Multi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3401#3402#0" expanded="true" />
-            <element signature="e#3446#3447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="85">
+          <caret line="313" column="62" selection-start-line="313" selection-start-column="62" selection-end-line="313" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        <state relative-caret-position="251">
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getGeustlistBySessionID#0;class#GuestlistService#0" />
             <element signature="method#getGeustlistWithGuestNameByGuestListID#0;class#GuestlistService#0" />
             <element signature="method#getGeustlistByBookingID#0;class#GuestlistService#0" />
-            <element signature="method#getAllVenue#0;class#GuestlistService#0" />
             <element signature="method#addGuestlist#0;class#GuestlistService#0" />
             <element signature="method#addGustIntoList#0;class#GuestlistService#0" />
             <element signature="method#deleteGustIntoList#0;class#GuestlistService#0" />
@@ -1521,100 +1133,335 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="44" />
+        <state relative-caret-position="17">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/view/sessionbyguestid">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionbyguestid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/errMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistwithsessionandguestname_Multi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/phoneList.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="34" column="62" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReports.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/loginError.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login_.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/registerPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/venuList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReportsIntoInbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/PhoneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/logIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/view/userinfo">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="6b39addb-9dcf-4ec1-b550-e88953c2c1ec">
+        <state projectRestartId="b1f1dba0-a604-42ec-90f1-1f4cc091e9dc">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7.jar!/org/apache/commons/dbutils/AbstractQueryRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="226" column="39" lean-forward="true" selection-start-line="226" selection-start-column="39" selection-end-line="226" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionbyguestidDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="32" />
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionbyguestid.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Venue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3279#3280#0" expanded="true" />
-            <element signature="e#3307#3308#0" expanded="true" />
-            <element signature="e#3357#3358#0" expanded="true" />
-            <element signature="e#3397#3398#0" expanded="true" />
-            <element signature="e#3514#3515#0" expanded="true" />
-            <element signature="e#3554#3555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#displaySessionByDate#0;class#SessionService#0" />
-            <element signature="method#updateSession#0;class#SessionService#0" />
-            <element signature="method#updateSession#1;class#SessionService#0" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="518" lean-forward="true" selection-start-line="518" selection-end-line="518" />
+        <state relative-caret-position="253">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1635#1657#0" />
-            <element signature="e#2195#2233#0" />
-            <element signature="e#2628#2668#0" />
-            <element signature="e#5261#5294#0" />
-            <element signature="e#6630#6667#0" />
-            <element signature="e#8417#8468#0" />
-            <element signature="e#16575#16601#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getGuestNotListedOnASessionByMemberID#0;class#GuestService#0" />
-            <element signature="method#addGuest#0;class#GuestService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="92" lean-forward="true" selection-start-line="91" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="681" column="98" selection-start-line="681" selection-start-column="86" selection-end-line="681" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="76" column="59" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="106" selection-start-line="25" selection-start-column="106" selection-end-line="25" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ict/dbutils/BrandsDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#1806#0" expanded="true" />
           </folding>
         </state>
       </provider>

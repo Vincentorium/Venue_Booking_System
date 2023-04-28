@@ -1,0 +1,90 @@
+*,*::after,*::before{
+
+    box-sizing: border-box;
+}
+
+.modal  {
+ 
+  position: fixed; 
+    top: 200px;
+    left: 50%;
+      
+     transform: translate(-50%,-50%) scale(0);/*scale
+     make it disapper*/
+     transition: 200ms ease-in-out;
+    
+     border-radius: 10px;
+     z-index:30;/*疊層屬性：控制疊層優先級。在這是顯示在灰屏上*/
+    background-color:white;/*avoid blending with overlap*/
+
+    width:auto;
+   height: auto;
+
+    
+  }
+/* selector 那裏是active class， 即不存在一個單獨從active sheet*/
+.modal.active{
+
+   transform: translate(-50%,-21%) scale(1);
+}
+  .modal-header {
+    padding:10px 15px;
+    display:flex; /*turn the inside item into inline-block*/ 
+    justify-content:space-between;
+    border-bottom: 1px solid black;
+  }
+
+   .modal-header .title{
+    
+    font-size:1.25rem;
+    font-weight:bold;
+   }
+/*設置.header下 close button樣式
+類之間的sub設置
+*/
+
+   .modal-header .close-button{
+
+    cursor:pointer; /*遊標變成 手 樣式 */
+    border:none;
+    outline:none;
+    background:none;
+    font-size:1.25rem;
+    font-weight: bold;
+    
+
+   }
+
+   .modal-body{
+    padding:10px 15px;
+ 
+   }
+
+   /*一個底面，聚焦作用-到pop-up上*/
+   #overlay{
+    position: fixed;
+    opacity: 0; /*make overlay invisible*/
+     transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.5); /* 50% transparent */
+    pointer-events: none;/* 將其設置默認是無，只有在active時才開啓
+    
+    make overlap 
+    doesn't capture click events, other you can't click "open
+    model" under it. 即這個ovarlay不會被選中？*/
+   }
+ 
+   /*改變overlap的性質：讓他顯現，以及獲得pointer-event即後面的
+   獲得不了*/
+   #overlay.active{
+    opacity: 1;
+    pointer-events: all;
+     /*The opacity CSS property sets the opacity of an 
+     element. Opacity is the degree to which content 
+     behind an element is hidden, and is the opposite of 
+     transparency.*/
+
+   }

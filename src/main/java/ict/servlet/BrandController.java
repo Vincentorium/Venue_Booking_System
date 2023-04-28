@@ -24,6 +24,7 @@ import javax.servlet.annotation.WebServlet;
  *
  * @author Vincent
  */
+
 @WebServlet(name = "brandController", urlPatterns = {"/brandController"})
 
 public class BrandController extends HttpServlet {
@@ -44,7 +45,7 @@ public class BrandController extends HttpServlet {
             rd.forward(request, response);
         } else {
             PrintWriter out = response.getWriter();
-            out.println("NO such action :" + action);
+            out.println("NO such22 action :" + action);
         }
 
     }

@@ -1,0 +1,135 @@
+  *:focus {
+    outline: none;
+  }
+/* .emailForPassword1stCTN{
+
+  display: flex;
+} */
+  .confirmationCodeInput,
+  .emailInputboxInput[type="text"] {
+    background:
+      url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAABGdBTUEAALGPC/xhBQAAATZJREFUOBHVUTFLw0AYzV2yd1PBP6AdHYKjk0MCgls3tyylP0GK4D8QBAXB2UlIyN7FIX9A6NKhdOnmEOiQa3xP7guhHKXc5sHxvnvfey/3XVSapjdBEDy3bXsK9F5KqRUyxhoJLwwDYXzT6LUXetUojhkUhuEFYOYROrNeWo94Q1mLsiyvtNYjEEsh9+CSWnqgWYiuCzTGzPGed3mef+CLZxA/QrQRYQ837FFDLT30Sr8LxOgn2O8QfOFNhkVR3MM0hPBTxKzJsUcNtfTQK5ouUAjgZdM0FcRvURTVGOkWeM1t65o9aqjt+f5KlSTJFpXabdjzD/AhjuMnnquqmgCm2AOeXYuBravR5zDeN88Y7bzPu+rIRe5yhwSJx/WG0vPC/xG49prNbVpz5Ax/ceXuH87ajOwXFL5zqj68AcMAAAAASUVORK5CYII=') 22px center no-repeat;
+
+    border-color: #4A4A4A;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px;
+    border-radius: 40px 0 0 40px;
+    box-sizing: content-box;
+    color: rgb(1, 1, 1);
+    margin: 0;
+    font-size: 1em;
+    width: 80px;
+    height: 37px;
+    /* 讓輸入框兩邊都是有padding。*/
+    padding: 0 30px 0 50px;
+ 
+    transition:0.5s;
+  }
+.emailInputboxInput:hover{
+  width: 120px;
+}
+  .confirmationCodeInput {
+    background: 0;
+  }
+ 
+.confirmationCodeInput{
+    transform: scale(0);
+    border-width: 1px 1px 1px 1px;
+    margin-right: 20px;
+    width: 160px;
+    border-radius: 40px 40px 40px 40px;
+       transition:0.5s;
+}
+
+/* #emailIndicatorCTN{
+
+  height: 100px;
+} */
+#emailForPassword1stCTN__codeConfirmationbtn{
+   transform: scale(0);
+   transition:0.5s;
+}
+.confirmationCodeInput.active,#emailForPassword1stCTN__codeConfirmationbtn.active
+ 
+{
+  transform: scale(1);
+
+}
+
+ 
+  .inputwrapper {
+    position: relative;
+    /*document flow: 跟着input[text]*/
+    display: inline-block;
+  }
+
+
+
+
+
+  /* input[type="submit"] {
+    display: none;
+  } */
+
+
+  #buttonValidation {
+    position: relative;
+    left: -25px;
+    top:-1px;
+    height: 40px;
+
+    width: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #4f0606;
+
+  }
+
+  #buttonValidation2 {
+    opacity: 0;
+  }
+
+  /* Reset password */
+
+ .resetPassword__msg{
+  
+   text-align: center;
+   
+  
+ }
+ 
+
+/* 
+.login_username,.login_password,.resetPassword__inputPassword0Ipt,
+  .resetPassword__inputPassword2Ipt,
+  .resetPassword__inputPassword1Ipt[type="text"]
+   */
+   .loginFormInput{  
+    border-color: #4A4A4A;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 40px 40px 40px 40px;
+    box-sizing: content-box;
+    color: rgb(1, 1, 1);
+    margin: 0;
+    font-size: 1em;
+    width: 180px;
+    height: 37px;
+    /* 讓輸入框兩邊都是有padding。*/
+    transition:0.5s;
+     padding: 0 20px 0 20px;
+  }
+  
+  .resetPassword__loginName,.resetPassword__indicator{
+
+  display:block;;
+}
+
+.login_username{
+
+  margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+}

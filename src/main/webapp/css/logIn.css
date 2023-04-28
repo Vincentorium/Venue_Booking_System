@@ -1,0 +1,167 @@
+*{
+  font-family:Aharoni;  
+}
+
+body{
+  background-color: white;
+}
+.preLink{
+  display: none;
+}
+/* 
+#username, #password,  #fullname, #comfirm_password,#username2, #password2,#email{
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+  color: black;
+} */
+  a {
+ 
+  font-family: Arial Black;
+
+  text-decoration: none;
+ 
+    color: inherit; 
+
+}
+/* the normal title within the form*/
+h5{
+  margin: 20px;
+  color: black;
+}
+.header__LogOut{
+  display: none;
+
+}
+.header__LogOut.active{
+  display: inline-block;
+
+}
+.codeErrMsg{
+
+   margin: 10px;
+}
+ 
+ 
+.login_indicatorBox{
+  margin: 5px 0 10px 0;
+}
+.loginCtnTitle{
+margin:  10px 100px 10px 100px;
+
+}
+ .login_errorMes{
+  padding-bottom: 5px;
+ }
+/* Initiate basic container of moda */
+
+
+
+.active{
+  display: block;
+}
+/*  */
+
+#container2{
+text-align: left;
+  
+}
+.reservationMsgBox{
+  margin:5px 0 5px 0;
+}
+
+
+
+/*table   reserveTable*/
+ 
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+ 
+/*table   reserveTable*/
+ 
+
+
+
+ .emailForPassword1stCTN_warmMes {
+  display:none;
+}
+
+.system_name{
+  margin: auto;
+  top: 100px;
+  text-align:center; 
+}
+
+.loginFormButton,.submit{
+  color: white;  
+  background: #df1235;
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.submit:hover{
+  background: #db6937;
+}
+
+
+/* .loginInputBox{
+
+
+} */
+
+#copyright{
+  text-align: center;
+  color: #a3a2a3;
+  margin: -200px 0px 0px 0px;
+  font-size: 14px;
+}
+
+input{
+  padding: 5px;
+  border: none; 
+  border:solid 1px #ccc;
+  border-radius: 5px;
+}
+.inputHongKong{
+  background-color:rgb(255, 255, 255);
+
+  padding: 5px;
+  margin-left: 40px;
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+

@@ -1,0 +1,15 @@
+{ 
+	
+ 	"ComplaintDate": ["18 Jan 2023","19 Jan 2023","1 Jan 2023"],
+	"Nature": ["Waste Pollution", "Pest Control","Air Pollution"],
+    "Specification": ["Dumpling", "Rat", "Dust"],
+	"IncidentDate": ["18 Jan 2023", "19 Jan 2023", "19 Jan 2023"],
+	"Description": ["Dumpling", "Rat", "Dust", "Leung"],
+	"Location":["Tsim Sha Tsui", "Mong Kok", "Tsim Sha Tsui"],  
+	"Attachment":["Yes", "Yes", "Yes", "male"],
+	"Name":["林立志", "林立志", "林立志", "male"],
+	"PhoneNo":["5132 2345", "5232 2345", "5324 5231", "male"],
+	"Status":["Wait in line", "Under review", "Under review", "male"]
+}
+ 
+ 
