@@ -13,11 +13,11 @@ import java.sql.SQLException;
 public class C3p0Utils {
     static Logger logger = Logger.getLogger(C3p0Utils.class.getName());
 
-    //通过标识名来创建相应连接池
+
     static ComboPooledDataSource dataSource = new ComboPooledDataSource("mysql");
 
     /**
-     * //从连接池中取用一个连接
+     * //
      * @return
      */
 
@@ -39,7 +39,7 @@ public class C3p0Utils {
     }
 
     /**
-     * 释放连接回连接池
+     *  
      */
 
     public static void closeAll(Connection conn, PreparedStatement pst, ResultSet rs) {

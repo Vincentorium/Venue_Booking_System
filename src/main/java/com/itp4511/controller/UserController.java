@@ -60,21 +60,21 @@ public class UserController extends HttpServlet {
 
                         String account=   request.getParameter("account");
                         String password =   request.getParameter("password");
-                        Userinfo serInfo = userService.getUserByAccAndPwd(account,password);
+                        Userinfo userInfo = userService.getUserByAccAndPwd(account,password);
 
 
 
-                        if (serInfo!=null) {
+                        if (userInfo!=null) {
 
 
-                        request.setAttribute("u", serInfo);
+                        request.setAttribute("u", userInfo);
 
                             HttpSession session = request.getSession();
                             session.setAttribute("authenticated", true);
 
-                            session.setAttribute("username", serInfo.getUserName());
-                            session.setAttribute("userID",String.valueOf( serInfo.getUserId()));
-                            session.setAttribute("roleTitle", serInfo.getRoleTitle());//role of user
+                            session.setAttribute("username", userInfo.getUserName());
+                            session.setAttribute("userID",String.valueOf( userInfo.getUserId()));
+                            session.setAttribute("roleTitle", userInfo.getRoleTitle());//role of user
                             response.sendRedirect("/mainPage.jsp");
 
 

@@ -99,9 +99,21 @@ function checkSession() {
 
         usernmae = $(".header__singUp").html();
 
-
+    loginCustomizeForUser()
 
 
 }
 
 
+
+function loginCustomizeForUser(){
+    if(userType!="Member"){
+        $(".mgntFunction").removeClass(boxHide)
+        $(".memberFunction").addClass(boxHide)
+       }else{
+
+
+
+    }
+
+}

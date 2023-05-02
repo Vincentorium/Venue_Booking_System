@@ -7,229 +7,228 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f1a288b-cf82-48a1-bdb4-f86aadf486c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/PhoneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/complaint.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/complaintTable_cancel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/confirmationCode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/favBox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/general.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/logIn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/logIn2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/mail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/misc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/signUp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/switch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tableSheet copy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/tableSheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/venuList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/123123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/5366d0160924ab18972ba27b65b0f1cd7b899e519d6f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/962bd40735fae6cd7b89e42d5ff9182442a7d933a16f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/AverageVSSpecificjpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/CompanyImageLHC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/ShoppingCart1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Snipaste_2022-06-05_17-46-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Snipaste_2022-06-05_17-47-19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Snipaste_2023-03-17_08-47-30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Staff3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/Staff4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/User1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/User2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/airplaneIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/attachIcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/attachIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/attachIcon.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusChaiWan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusLWL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusTM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/campusTsingYi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/cdust.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/daysOnIssue.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/errImg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/fatRat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/iconCmt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/iconFav.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/iveIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/middleIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/pp2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/rat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/rep1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/replyIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/searc2h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/search.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/voteUp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/attachments/2022-11-21-11-46-58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/complaintData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/complaintData_Operator.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/insertMail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/insertReportStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/logIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/searchFunc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/searchFuncTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/searchFunc_Switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getAllReports.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getAllReportsIntoInbox.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getMailRecords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getMailReplay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getRemarkForPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getReports.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getReportsForTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/getReportsForTableForAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/inserMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateMailReadStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateReportAttribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateReportStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/updateStatusForOfficer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/640ef16739fe4..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641195eb44084..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411979790e07..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197a169c99..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197dbb50af..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197fa759d6..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119827818f5..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119912c6940..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411998b391bc..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641199d3ae910..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119b26e7cf7..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119b6b0da80..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119bd0f272a..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119c7c23b85..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119cb5b8b35..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119d349db48..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119e7b6ed9d..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a01b474f6..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a02d5334c..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a0e86d606..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a52b7221a..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a56d9bba3..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a5c606c53..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a6420aa1a..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a66dd0327..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aecd6913f..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aed7772c7..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aef6ca20a..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411bd3e1ab58..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411be0dcc700..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d052e6c2f..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d21115460..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d2e8414a1..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64131bd38a6a1..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64131c0809630..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641329ee3cdd4..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64132d8b318ea..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64132f700cab8..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641334597c862..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413375fb792c..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641337e907c62..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413386b8471d..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413481dee7ac..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413491001047..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/64141e23a7f31..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/php/uploads/641421ce93648..jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/registerPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/TotalPriceTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/TotalPriceTLD.tld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITP4511_EA_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ITP4511_EA_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Resources/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Resources/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/PhoneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/BrandController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/LoginController_BU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/PhoneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/brands.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/venuList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/venuList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/errMessage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/complaintData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/complaintData_Operator.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ITP4511_EA_Project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/dao/UserInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/phoneList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getAllReports.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getAllReportsIntoInbox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getMailRecords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getMailReplay.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getRemarkForPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getReports.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getReportsForTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/getReportsForTableForAdmin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/inserMail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/updateMailReadStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/updateReportAttribute.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/updateReportStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/updateStatusForOfficer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/640ef16739fe4..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641195eb44084..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411979790e07..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197a169c99..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197dbb50af..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641197fa759d6..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119827818f5..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119912c6940..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411998b391bc..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641199d3ae910..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119b26e7cf7..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119b6b0da80..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119bd0f272a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119c7c23b85..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119cb5b8b35..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119d349db48..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64119e7b6ed9d..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a01b474f6..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a02d5334c..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a0e86d606..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a52b7221a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a56d9bba3..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a5c606c53..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a6420aa1a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411a66dd0327..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aecd6913f..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aed7772c7..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411aef6ca20a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411bd3e1ab58..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411be0dcc700..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d052e6c2f..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d21115460..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6411d2e8414a1..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64131bd38a6a1..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64131c0809630..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641329ee3cdd4..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64132d8b318ea..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64132f700cab8..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641334597c862..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413375fb792c..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641337e907c62..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413386b8471d..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413481dee7ac..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/6413491001047..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/64141e23a7f31..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/php/uploads/641421ce93648..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/controller/BookingController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/controller/BookingController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/controller/BookingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/controller/GuestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/controller/GuestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/controller/PhoneController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/controller/SessionObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/dao/BasicDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/dao/BasicDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingInfo_MM$Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingInfo_MM$Userinfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingInfo_MM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingInfo_MM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/BookingRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/BookingRecordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/GuestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/GuestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/SessionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/view/MHLView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/view/MHLView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ict/servlet/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ict/servlet/BrandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ict/servlet/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ict/servlet/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ict/servlet/PhoneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ict/servlet/PhoneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/dao/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/dao/UserInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord_Custom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/BookingRecord_Custom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/domain/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/servlet/BrandController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/servlet/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/servlet/LoginController_BU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/servlet/PhoneController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/utils/DBUtils_USE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/utils/DBUtils_USE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itp4511/utils/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itp4511/utils/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/BookingController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/BookingController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/BookingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/GuestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/GuestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/PhoneController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/SessionObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/dao/BasicDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/dao/BasicDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM$Userinfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM$Userinfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingRecord_Custom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/BookingRecord_Custom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistenguest_Mm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Guestlistenguest_Mm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/domain/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/BookingRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/BookingRecordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestlistService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/GuestlistService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/SessionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/SessionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/C3p0Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/C3p0Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/view/MHLView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/view/MHLView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/BrandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/PhoneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/ict/servlet/PhoneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/servlet/BrandController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/servlet/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/servlet/LoginController_BU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/servlet/PhoneController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/DBUtils_USE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/DBUtils_USE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/classes/com/itp4511/utils/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/brands.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/applyFrom.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/applyFrom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/venuList.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/css/venuList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/errMessage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/index_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/complaintData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/complaintData_Operator.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/getGeusts.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/getGeusts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/handleGeneral.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/handleGeneral.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/inserBooking.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/js/inserBooking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/loginError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/login_.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/mainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/phoneList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getAllReports.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getAllReportsIntoInbox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getMailRecords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getMailReplay.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getRemarkForPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getReports.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getReportsForTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/getReportsForTableForAdmin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/inserMail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/updateMailReadStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/updateReportAttribute.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/updateReportStatus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/updateStatusForOfficer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/640ef16739fe4..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641195eb44084..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411979790e07..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641197a169c99..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641197dbb50af..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641197fa759d6..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119827818f5..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119912c6940..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411998b391bc..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641199d3ae910..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119b26e7cf7..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119b6b0da80..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119bd0f272a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119c7c23b85..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119cb5b8b35..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119d349db48..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64119e7b6ed9d..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a01b474f6..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a02d5334c..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a0e86d606..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a52b7221a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a56d9bba3..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a5c606c53..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a6420aa1a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411a66dd0327..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411aecd6913f..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411aed7772c7..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411aef6ca20a..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411bd3e1ab58..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411be0dcc700..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411d052e6c2f..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411d21115460..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6411d2e8414a1..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64131bd38a6a1..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64131c0809630..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641329ee3cdd4..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64132d8b318ea..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64132f700cab8..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641334597c862..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6413375fb792c..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641337e907c62..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6413386b8471d..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6413481dee7ac..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/6413491001047..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/64141e23a7f31..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/php/uploads/641421ce93648..jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/testForMaven-1.0-SNAPSHOT/welcome.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -299,14 +298,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ict/dbutils/BrandsDB.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleMail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="369">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="455" column="43" selection-start-line="455" selection-start-column="43" selection-end-line="455" selection-end-column="43" />
               <folding>
-                <element signature="e#0#1806#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1635#1657#0" />
+                <element signature="e#2204#2242#0" />
+                <element signature="e#2657#2697#0" />
+                <element signature="e#5304#5336#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/Test2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/TestDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-110">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -317,33 +401,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sessionSe</find>
-      <find>tablePostTitle</find>
-      <find>create guest list for your session</find>
-      <find>inseruser</find>
-      <find>each</find>
-      <find>getGeustlistBySessionID</find>
-      <find>getGeustlistBySessionID</find>
-      <find>venu</find>
-      <find>bookingTableModal</find>
-      <find>bookingRC</find>
-      <find>getBookingRC</find>
-      <find>bookingtab</find>
-      <find>\n</find>
-      <find>displaySessionByDateAndCampus</find>
-      <find>bookingController</find>
-      <find>form-group</find>
-      <find>sessionId</find>
-      <find>processedSessions</find>
-      <find>sessionService</find>
-      <find>Public Health</find>
-      <find>session</find>
       <find>usern</find>
       <find>long</find>
       <find>queryScalar()</find>
@@ -353,6 +417,27 @@
       <find>userID</find>
       <find>hearder__a header__signIn dept</find>
       <find>List</find>
+      <find>mailRecord</find>
+      <find>favElements favElement2</find>
+      <find>favElements favElement</find>
+      <find>ive</find>
+      <find>member</find>
+      <find>custo</find>
+      <find>header__userMngt</find>
+      <find>venues</find>
+      <find>venue</find>
+      <find>complaints</find>
+      <find>bookingFormSubmit</find>
+      <find>add a new guest</find>
+      <find>sendBtn venuAddGuest--in venuAddGuest--in--cancel</find>
+      <find>venu-apply-form-displayVnue--details</find>
+      <find>Test venue list</find>
+      <find>venue-form-apply-request-summary</find>
+      <find>bookingRecordTbdy</find>
+      <find>username</find>
+      <find>serInfo</find>
+      <find>getGeustList</find>
+      <find>inputDisplay--mainMailBox</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -364,44 +449,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithsessionandguestname_Multi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Guestlistwithsessionandguestname_MultiDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionbyguestid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionbyguestidDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BrandController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/BrandController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/brandControllerr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/PhoneController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ict/servlet/BrandControllerForTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BrandControllerForTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/misc.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/getReportsIntoInbox.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/modal.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Role.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/logIn.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/loginError.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/venuList.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/signup.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java" />
@@ -409,12 +468,38 @@
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/venuList.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/general.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/servlet/TotalPriceTag.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/TotalPriceTLD.tld" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/header.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/loginError.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java" />
+        <option value="$PROJECT_DIR$/src/main/Resources/c3p0-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" />
       </list>
     </option>
   </component>
@@ -446,7 +531,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
-    <option name="width" value="2579" />
+    <option name="width" value="2580" />
     <option name="height" value="1293" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -458,6 +543,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -496,6 +582,82 @@
               <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -509,16 +671,12 @@
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -529,7 +687,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itp4511/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -541,22 +699,23 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511\servlet" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511\domain" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\classes\artifacts\ITP4511_EA_Project_war_exploded\WEB-INF\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.itp4511.service" />
       <recent name="com.itp4511.controller" />
+      <recent name="com.itp4511.service" />
       <recent name="ict.servlet" />
       <recent name="com.itp4511.dao" />
       <recent name="com.itp4511.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\WEB-INF\lib" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\css" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\js" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511\controller" />
-      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\java\com\itp4511" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -775,7 +934,9 @@
       <workItem from="1681967602591" duration="613000" />
       <workItem from="1681968239447" duration="1522000" />
       <workItem from="1682219961044" duration="9472000" />
-      <workItem from="1682571098786" duration="74084000" />
+      <workItem from="1682571098786" duration="88957000" />
+      <workItem from="1682827933369" duration="423000" />
+      <workItem from="1683035454959" duration="4835000" />
     </task>
     <servers />
   </component>
@@ -812,7 +973,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255678000" />
+    <option name="totallyTimeSpent" value="275809000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -827,35 +988,35 @@
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.749577" visible="true" weight="0.19506322" />
-      <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.23780856" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5955056" visible="true" weight="0.2203492" />
+      <window_info id="Structure" order="1" sideWeight="0.40449437" side_tool="true" weight="0.19987959" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.250423" side_tool="true" visible="true" weight="0.19506322" />
+      <window_info id="Favorites" order="6" sideWeight="0.40449437" side_tool="true" weight="0.19987959" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.31572327" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61383647" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.25660378" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47924528" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21132076" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37861636" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32824427" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.326972" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32704404" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.32578617" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.29937106" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500301" side_tool="true" weight="0.32830188" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50090307" side_tool="true" visible="true" weight="0.24402516" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.3962264" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18219177" />
-      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32876712" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18113208" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32830188" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955974" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32955974" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49909693" visible="true" weight="0.24402516" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984948" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32972324" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.2077062" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3293197" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2077062" />
       <window_info anchor="right" id="JSF" order="5" weight="0.32972324" />
       <window_info anchor="right" id="PlantUML" order="6" weight="0.32992172" />
       <window_info anchor="right" id="Palette" order="7" />
@@ -866,26 +1027,26 @@
       <window_info anchor="right" id="Bean Validation" order="12" weight="0.32971668" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49726027" visible="true" weight="0.19494584" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7478849" visible="true" weight="0.19506322" />
       <window_info id="Structure" order="1" sideWeight="0.5021645" side_tool="true" weight="0.23780856" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5027397" side_tool="true" weight="0.19494584" />
+      <window_info id="Favorites" order="6" sideWeight="0.25211507" side_tool="true" weight="0.19506322" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.31643835" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.31572327" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.61383647" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3520548" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25660378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.32734805" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32824427" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49969897" weight="0.326972" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.29937106" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500301" side_tool="true" weight="0.32830188" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.39863014" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49969897" weight="0.3962264" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.18219177" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32955974" />
@@ -893,20 +1054,46 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984948" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32992172" />
-      <window_info anchor="right" id="PlantUML" order="4" weight="0.32992172" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="JSF" order="7" weight="0.32992172" />
-      <window_info anchor="right" id="Database" order="8" weight="0.20830825" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="CDI" order="11" weight="0.32992172" />
-      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32992172" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3293197" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2077062" />
+      <window_info anchor="right" id="JSF" order="5" weight="0.32972324" />
+      <window_info anchor="right" id="PlantUML" order="6" weight="0.32992172" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="CDI" order="9" weight="0.32972324" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="12" weight="0.32971668" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -934,18 +1121,6 @@
           <line>163</line>
           <properties />
           <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java</url>
-          <line>110</line>
-          <properties />
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
@@ -985,39 +1160,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java</url>
           <line>48</line>
           <properties />
           <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java</url>
-          <line>62</line>
-          <properties />
-          <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java</url>
@@ -1035,7 +1204,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
@@ -1080,96 +1248,30 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingInfo_MMDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="57" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="313" column="62" selection-start-line="313" selection-start-column="62" selection-end-line="313" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="17" column="79" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getGeustlistWithGuestNameByGuestListID#0;class#GuestlistService#0" />
-            <element signature="method#getGeustlistByBookingID#0;class#GuestlistService#0" />
-            <element signature="method#addGuestlist#0;class#GuestlistService#0" />
-            <element signature="method#addGustIntoList#0;class#GuestlistService#0" />
-            <element signature="method#deleteGustIntoList#0;class#GuestlistService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionbyguestid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/errMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="51">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
@@ -1181,251 +1283,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="-136">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistenguest_Mm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord_Custom.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/phoneList.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="34" column="62" selection-end-line="68" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReports.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/loginError.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login_.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/registerPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/venuList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReportsIntoInbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="-1530">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/PhoneController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/logIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/view/userinfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b1f1dba0-a604-42ec-90f1-1f4cc091e9dc">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guestlistbybookingid_Multi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Venue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserInfoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="92" lean-forward="true" selection-start-line="91" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="681" column="98" selection-start-line="681" selection-start-column="86" selection-end-line="681" selection-end-column="98" />
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="-456">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/errMessage.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/brands.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index_2.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/loginError.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/PhoneController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/TotalPriceTLD.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
+      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1434,35 +1435,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="76" column="59" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="59" />
+        <state relative-caret-position="118">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/sessionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="17">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/insertMail.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/insertReportStatus.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/ReportController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="106" selection-start-line="25" selection-start-column="106" selection-end-line="25" selection-end-column="106" />
+        <state relative-caret-position="272">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ict/dbutils/BrandsDB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getMailContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state>
           <folding>
-            <element signature="e#0#1806#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#7#13#0" expanded="true" />
+            <element signature="e#14#20#0" expanded="true" />
+            <element signature="e#21#27#0" expanded="true" />
+            <element signature="e#28#34#0" expanded="true" />
+            <element signature="e#35#41#0" expanded="true" />
+            <element signature="e#42#48#0" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleModal.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="71" column="85" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getGeusts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="155" column="19" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleMail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/C3p0Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="455" column="43" selection-start-line="455" selection-start-column="43" selection-end-line="455" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1635#1657#0" />
+            <element signature="e#2204#2242#0" />
+            <element signature="e#2657#2697#0" />
+            <element signature="e#5304#5336#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/TestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>

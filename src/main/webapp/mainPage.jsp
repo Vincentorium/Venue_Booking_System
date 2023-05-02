@@ -1,6 +1,7 @@
+<%@ taglib prefix="test" uri="/test/" %>
 <!DOCTYPE html>
 <html lang="en">
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%><!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +88,7 @@
 <body>
 
 <%
-    String username="Human";
+    String username="";
     String role= "";
     String userID= "";
       session = request.getSession(false);
@@ -112,7 +113,7 @@
         <div class="reportsBoxForModal">
             <div class="loginCtnTitle">
                 <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
-                <h2 class="boxTitle">Complaint</h2>
+                <h2 class="boxTitle">Booking Form</h2>
 
 
                 <img class="closeIcon close" src="./images/exit.png" data-close-button alt="">
@@ -124,23 +125,24 @@
 
                 <hr>
 
-                <!--SOF postContainer-->
+
 
                 <div class="cmtContainer">
                     <div class="venue-form-apply-request-summary">
 
-                        Request:
-                        <label for="">Prices: $50 * 3 session</label>
-                        <table>
-                            <tr>
-                                <th>campus1</th>
-                                <th>campus2</th>
-                            </tr>
-                            <tr>
-                                <td>session: 09~10</td>
-                                <td>session: 11~12</td>
-                            </tr>
-                        </table>
+                        <!--SOF postContainer
+                                                <label for="">Prices: $50 * 3 session</label>
+                                                <table>
+                                                    <tr>
+                                                        <th>campus1</th>
+                                                        <th>campus2</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>session: 09~10</td>
+                                                        <td>session: 11~12</td>
+                                                    </tr>
+                                                </table>
+                                        -->
                     </div>
 
                     <form action="" class="venBookingForm">
@@ -158,7 +160,7 @@
 
                             <input class="venu-apply-input--date" type="date">
                             <fieldset class="venue-apply-form-sessionsSelected">
-                                <legend>Session selected:</legend>
+                                <legend>Timeslot selected:</legend>
                                 <div class="venue-apply-form-sessionsSelected-box">
 
                                 </div>
@@ -167,7 +169,7 @@
 
                             <br>
                             <fieldset class="venue-apply-form-sessionsSelected">
-                                <legend>Generate guest List:</legend>
+                                <legend>Template for guest invitation:</legend>
 
 
                                 <div class="ven-apply-form-guestListInsideBox">
@@ -175,21 +177,12 @@
                                     <table class="guestForBookingBox"></table>
 
                                     <br>
-                                    <br>
 
-                                    <br>
-
-                                    <details clas="templateForInvation">
-                                        <summary>Template for guest invatation</summary>
-                                        <br><textarea name="" id="" cols="30" rows="10"></textarea>
-
-                                </div>
-                                </details>
                             </fieldset>
                             <br>
                             <br>
-                            <input type="button" class="bookingFormSubmit" value="Submit">
-                            <input type="button" value="Add another Request">
+                            <input type="button" class="btnGeneral bookingFormSubmit" value="Submit">
+                            <input type="button" class="btnGeneral" value="Add another Request">
 
 
                         </div>
@@ -205,8 +198,7 @@
 
                         <details clas="venu-apply-form-displayVnue--details">
                             <summary class="formTitle postSideFunction venu-apply-form-displayVnue">Venue Info
-                                (resize, if venus is lost focus; and the picInsie auto rezies if add antoher request for
-                                venue)
+
                             </summary>
                             <div class="favElements favElement1 venu-apply-form-displayVnue--venusSelected"
                                  data-modal-target="#modal" data-default="orderList">
@@ -231,23 +223,12 @@
 
 
                         <details clas="venu-apply-form-displayVnue--details" open>
-                            <summary class="formTitle postSideFunction venu-apply-form-displayVnue">Session:
+                            <summary class="formTitle postSideFunction venu-apply-form-displayVnue">Timeslot: 28-04-2023
                             </summary>
 
 
                             <div class="venu-apply-form-disply-sessions">
-                                <div class="venu-apply-form-session1">
-                                    09:00 ~ 09:59
-                                </div>
-                                <div class="venu-apply-form-session2">10:00 ~ 10:59 (已滿)</div>
-                                <div class="venu-apply-form-session3">11:00 ~ 11:59</div>
-                                <div class="venu-apply-form-session4">12:00 ~ 12:59</div>
-                                <div class="venu-apply-form-session5">13:00 ~ 13:59</div>
-                                <div class="venu-apply-form-session2">14:00 ~ 14:59</div>
-                                <div class="venu-apply-form-session3">15:00 ~ 15:59</div>
-                                <div class="venu-apply-form-session4">16:00 ~ 16:59</div>
-                                <div class="venu-apply-form-session5">17:00 ~ 17:59</div>
-                                <div class="venu-apply-form-session2">18:00 ~ 18:59</div>
+
 
                             </div>
 
@@ -283,7 +264,7 @@
 
         <div class="venueListModal_box ">
             <div class="venueAddGuestBox">
-                <input type="button" class="venuAddGuest--out" value="add a new guest">
+                <input type="button" class="venuAddGuest--out btnGeneral" value="Add a new guest">
                 <form action="" id="venueForm--addGuest" class="venueForm--addGuest demonHide">
                     <table>
                         <tr>
@@ -293,8 +274,8 @@
                         </tr>
                         <tr>
 
-                            <td><input type="submit" class="sendBtn venuAddGuest--in" value="Add"></td>
-                            <td><input type="button" class="sendBtn venuAddGuest--in venuAddGuest--in--cancel"
+                            <td><input type="submit" class="btnGeneral venuAddGuest--in" value="Add"></td>
+                            <td><input type="button" class="btnGeneral venuAddGuest--in venuAddGuest--in--cancel"
                                        value="Cancel">
                             </td>
                         </tr>
@@ -310,35 +291,7 @@
 
             <table id="mytable" class="mytable table table-bordered table-striped guestsFormTable">
                 <thead>
-                <tr>
 
-                    <th>#
-                    </th>
-                    <th>name</th>
-                    <th>email</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-
-                    <td><input type="checkbox" name="id1" value="1"></td>
-                    <td>a1</td>
-                    <td>a2</td>
-
-                </tr>
-                <tr>
-
-                    <td><input type="checkbox" name="id2" value="2"></td>
-                    <td>b1</td>
-                    <td>b2</td>
-
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="id3" value="3"></td>
-                    <td>c1</td>
-                    <td>c2</td>
-
-                </tr>
 
                 </tbody>
 
@@ -348,7 +301,7 @@
         <!--EO booking table elements -->
     </div>
     <div class="userMngtModal  modalGeneral   ">
-        Test venue list
+        Guests
         <div class="userMngtModal_title">
             <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
 
@@ -456,6 +409,8 @@
 
             <!--BO booking table elements -->
             <div class="bookingTableBox">
+                <div class="bookingTableTitle"> Booking Request Records</div>
+
                 <div class="form-group">
                     <select name="state" id="maxRows" class="form-control" style="width:150px;">
                         <option value="5000">Show All</option>
@@ -488,7 +443,7 @@
                         <th>Notification</th>
                         <th>Status</th>
                         <th>Remark</th>
-                        <th>Remark By Staff</th>
+
                         <th>Save</th>
                     </tr>
                     </thead>
@@ -645,20 +600,10 @@
               <a id="homenTitle" class="header__home" href="index.html" onmouseout=" mouseOut(this)"> Home</a>
 
             -->
-            <a id="menu2" class=""></a>
+            <a id="menu2" class="">VTC Venue Booking System</a>
             <div class="headerFun">
 
 
-                <a id="menu2" class="header__myOrder   headerActive preLink" data-modal-target="#modal"
-                   data-default="orderList">Booking List</a>
-
-
-                <a id="menu2" class="header_Complaint headerActive preLink " href="indexOfComplaint.html">Complaint
-                    List</a>
-                <a id="menu2" class="headerActive searchFlightHeaderLink preLink adminFunLin">Search Flight
-                </a>
-                <a id="menu2" class="headerActive cmtManagement preLink adminFunLin">Complaint
-                    Management</a>
 
 
                 <a id="header__createAccount" data-modal-target="#modal" data-default="createAccForOperator"
@@ -667,21 +612,21 @@
             <div class="headerLoginOut">
 
                 <a data-modal-target="#bookingTableModal" data-default="bookingTableModal"
-                   class="hearder__a header__signIn  ">Booking Request Record</a>
+                   class="hearder__a header__signIn  memberFunction">Booking Request Record</a>
                 <a data-modal-target=".venueListModal" data-default=".venueListModal"
-                   class="hearder__a header__venueList  ">venue booking </a>
+                   class="hearder__a header__venueList memberFunction ">Guest Managment </a>
 
                 <a data-modal-target=".userMngtModal" data-default=".userMngtModal"
-                   class="hearder__a header__userMngt  ">User
+                   class="hearder__a header__userMngt  mgntFunction boxHide">User
                     Management
                 </a>
 
-                <a data-modal-target="#mailRecord" data-default="mailRecord" class="hearder__a header__signIn  ">mail
-                    Record</a>
 
-                <a data-modal-target="#modal" data-default="signIn" class="hearder__a header__dept dept"><%= role %></a>
 
                 <a data-modal-target="#modal" data-default="signUp" class="hearder__a header__singUp userName" data-userid="<%= userID %>" > <%= username %> </a>
+
+                （                <a data-modal-target="#modal" data-default="signIn" class="hearder__a header__dept dept"><%= role %></a>）
+
                 <a class="hearder__a demoLogOut">Log Out</a>
             </div>
         </div>
@@ -773,149 +718,13 @@
             <!-- SearchBox __________________________________________-->
             <div class="SearchBox">
 
-
-                <!-- SOF complaintFuncBox-->
-                <div class="complaintFuncBox">
-
-                    <!-- SOF filter Form -->
-                    <div class="filterForm">
-
-                        <div class="filterFormFirstFlood">
-                            <div class="filter_loc">
-
-
-                                <div class="filterBox">
-                                    <select class="filter__formInput filter__formInputFix inputHongKong" type="text"
-                                            required="required"
-                                            value="Hong Kong">
-                                        <option value="YMT">Yau Ma Tei</option>
-                                        <option value="TST">Tsim Sha Tsui</option>
-                                        <option value="MK">Mong Kok</option>
-
-                                    </select>
-                                    <span class="  fliter_placehoderFix">Areas</span>
-
-                                </div>
-
-                                <div class="filterBox">
-
-
-                                    <span class="filterBox__airlineIcon"></span>
-
-
-                                    <select class="filter__formInput filter__formInput--locFrm" type="text"
-                                            required="required"
-                                            value="Hong Kong">
-                                        <option value="YMT">Streets</option>
-                                        <option value="TST"> Shanghai Street</option>
-                                        <option value="MK"> Temple Street</option>
-                                        <option value="YMT"> Public Square Street</option>
-                                        <option value="TST"> Jade Street</option>
-
-
-                                    </select>
-                                    <span class="fliter_placehoder"> </span>
-
-
-                                    <!hover change to click and float -->
-
-
-                                </div>
-                            </div>
-                            <div class="filter_date">
-
-
-                                <div class="filterBox">
-
-                                    <input id="filter__formInput" class="filter__formInput filter__formInput--date"
-                                           required="required"
-                                           name="date" type="text" onfocus="(this.type='date')"
-                                           onblur="if(!this.value)this.type='text'">
-                                    <span class="fliter_placehoder">Start Date</span>
-                                </div>
-
-                                <div class="filterBox">
-
-                                    <input list="Date" class="filter__formInput filter__formInput--time " type="text"
-                                           required="required">
-
-                                    <datalist id="Date">
-                                        <option value="1:00"/>
-                                        <option value="2:00"/>
-                                        <option value="3:00"/>
-                                        <option value="9:00"/>
-                                        <option value="10:00"/>
-                                        <option value="11:00"/>
-                                        <option value="12:50"/>
-                                        <option value="18:00"/>
-                                        <option value="22:00"/>
-                                    </datalist>
-                                    <span class="fliter_placehoder">End Date</span>
-                                </div>
-
-
-                                <input class="shouldBeHide" type="text">
-
-                            </div>
-
-
-                        </div>
-
-
-                        <div class="filterFormFirstFlood">
-                            <div class="filter_date">
-
-
-                                <div class="filterBox">
-
-                                    <input list="Dated" class="filter__formInput filter__formInput--time inputSecFloor"
-                                           type="text"
-                                           required="required">
-
-                                    <span class="fliter_placehoder fliter_placehoder_secFloor">keyword</span>
-                                </div>
-
-
-                                <input class="shouldBeHide" type="text">
-
-                            </div>
-                            <!--
-                      <button type="button" class="filterForm__searchBtn"><img src="/images/search.jpg" alt=""> Search</button>
-            --> <img class="searchIcon filterForm__searchBtn" src="./images/search.svg" alt="">
-                        </div>
-
-
-                    </div>
-                    <!-- EOF filter Form -->
-
-
-                    <!-- SOF 5 switch box -->
-                    <div class="switchBox">
-                        <!-- SOF 5 top box -->
-
-                        <!-- EOF 5 top box -->
-
-                        <!-- partial:index.partial.html -->
-                        <div class="switch-button "><span class="activeSwitch"></span>
-
-                            <button class="switch-button-case left active-case"> Inbox</button>
-                            <button class="switch-button-case right demonSwitchRight">Case</button>
-                        </div>
-
-                    </div> <!-- EOF 5 switch box -->
-
-
-                </div>
-                <!-- EOF complaintFuncBox-->
-
-
                 <div class="searchFlight">
 
                     <!-- SOF dataBox Form -->
                     <div class="container" style="margin-top:35px">
 
 
-                        <label class="collectionLabel" for="">Ive venues: </label>
+                        <label class="collectionLabel" for="">VTC venues: </label>
                         <div class="favEleBox">
                             <div class="favElements favElement1" data-modal-target="#modal" data-default="orderList">
                                 <div class="allPostPicBox">
@@ -923,12 +732,11 @@
 
                                 </div>
                                 <div class="urgentBox main-container-infoBox-title">
-                                    Tuen Mun - XX Park
+                                   Chai Wan - Venue
                                 </div>
                                 <div class="allPostFuncRow">
-                                    <span class="tagArea">Capacity</span>
-                                    <span class="tagArea">Type</span>
-                                    <span class="tagArea">feature</span>
+                                    <span class="tagArea">Capacity: 10</span>
+                                    <span class="tagArea">Fee: 300 per session</span>
                                 </div>
 
 
@@ -940,12 +748,12 @@
 
                                 </div>
                                 <div class="urgentBox main-container-infoBox-title">
-                                    Tuen Mun - XX Park
+                                    Lee Wai Lee - Venue
                                 </div>
                                 <div class="allPostFuncRow">
 
-                                    <span class="tagArea">wild animal</span>
-                                    <span class="tagArea">wild animal</span>
+                                    <span class="tagArea">Capacity: 12</span>
+                                    <span class="tagArea">Fee: 350 per session</span>
                                 </div>
 
 
@@ -956,13 +764,12 @@
 
                                 </div>
                                 <div class="urgentBox main-container-infoBox-title">
-                                    Tuen Mun - XX Park
+                                    Tsing Yi - venue
                                 </div>
                                 <div class="allPostFuncRow">
 
-                                    <span class="tagArea">Capacity</span>
-                                    <span class="tagArea">Type</span>
-                                    <span class="tagArea">feature</span>
+                                    <span class="tagArea">Capacity: 15</span>
+                                    <span class="tagArea">Fee: 400 per session</span>
                                 </div>
 
 
@@ -974,16 +781,32 @@
 
                                 </div>
                                 <div class="urgentBox main-container-infoBox-title">
-                                    Tuen Mun - venue
+                                    Sha Tin - venue
                                 </div>
                                 <div class="allPostFuncRow">
 
-                                    <span class="tagArea">wild animal</span>
-                                    <span class="tagArea">wild animal</span>
+                                    <span class="tagArea">Capacity: 20</span>
+                                    <span class="tagArea">Fee: 450 per session</span>
                                 </div>
 
 
                             </div>
+                            <div class="favElements favElement2">
+                                <div class="allPostPicBox">
+                                    <img class="allPostPostImg" src="./images/campus2.jpg">
+
+                                </div>
+                                <div class="urgentBox main-container-infoBox-title">
+                                    Tuen Mun - venue
+                                </div>
+                                <div class="allPostFuncRow">
+                                    <span class="tagArea">Capacity: 25</span>
+                                    <span class="tagArea">Fee: 500 per session</span>
+                                </div>
+
+
+                            </div>
+
 
 
                             <!-- SOF list of under reivew -->

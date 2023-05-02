@@ -4,13 +4,11 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.itp4511.domain.BookingInfo_MM;
-import com.itp4511.domain.Guest;
-import com.itp4511.domain.Guestlistwithsessionandguestname_Multi;
-import com.itp4511.domain.Session;
+import com.itp4511.domain.*;
 import com.itp4511.service.*;
 import com.itp4511.utils.Utility;
-import lombok.NoArgsConstructor;
+import com.itp4511.domain.SessionObj;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,12 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 /*
@@ -59,10 +53,12 @@ public class BookingController extends HttpServlet {
         //for ajax to take successful json string.
         ObjectNode responseJson = JsonNodeFactory.instance.objectNode();
         responseJson.put("status", "ok");
+        int type=0;
+        if(request.getParameter("type")==null)
 
-
-        int type = Integer.parseInt(request.getParameter("type"));
-
+          type =2;
+          else
+            type=Integer.parseInt(request.getParameter("type"));
         //set insert type = others
         switch (type) {
 
@@ -75,12 +71,12 @@ public class BookingController extends HttpServlet {
                 try {
                     List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
                     ObjectMapper mapper = new ObjectMapper();
-                    // 在此處將日期格式化
+
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                     mapper.setDateFormat(dateFormat);
                     String json = mapper.writeValueAsString(displaySessionByID);
 
-                    response.getWriter().write(json); // 將 JSON 傳遞給客戶端
+                    response.getWriter().write(json);
                 } catch (IOException e) {
                     responseJson.put("message", "fail： "+e.getMessage());
                     response.getWriter().write(responseJson.toString());
@@ -93,21 +89,11 @@ public class BookingController extends HttpServlet {
             //region 2: book a venue with session
             case 2:
 
-
-                /*
-                 *1.createbooking, inser into JS
-                 *2.sessionGuestList, create and insert into JS
-                 *3.sessionStatus : specified by user = chagne to by default
-                 *4.sessionID: specified by user
-                 *5.array with selected guestID
-                 * bookingID,--,sessionStatus,sessionID
-                 * id,status,sessionID,Guest array
-                 * */
                 Object[][] bachList=null;
 
 
                 try {
-                    // 讀取 POST 請求中名為 'result' 的數據
+
                     BufferedReader reader = request.getReader();
                     StringBuilder sb = new StringBuilder();
                     String line;
@@ -410,31 +396,5 @@ public class BookingController extends HttpServlet {
 
 
         }
-    }
-}
-@NoArgsConstructor
-class SessionObj {
-    private String sessionID;
-    private int[] guestList;
-
-    public SessionObj(String sessionID, int[] guestList) {
-        this.sessionID = sessionID;
-        this.guestList = guestList;
-    }
-
-    public String getSessionID() {
-        return sessionID;
-    }
-
-    public void setSessionID(String sessionID) {
-        this.sessionID = sessionID;
-    }
-
-    public int[] getGuestList() {
-        return guestList;
-    }
-
-    public void setGuestList(int[] guestList) {
-        this.guestList = guestList;
     }
 }

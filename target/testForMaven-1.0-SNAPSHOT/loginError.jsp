@@ -17,6 +17,9 @@
             <% out.println("<a href='login.jsp' >Login again</a>"); %>
         </p>
         <p>
+            <% out.println("<a href='signup.jsp' >Sign Up</a>"); %>
+        </p>
+        <p>
             <% out.println("<a href='mainPage.jsp' >Go to Main Page</a>"); %>
         </p>
 

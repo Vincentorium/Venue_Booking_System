@@ -300,11 +300,34 @@ function getBookingRCIntoTable() {
 
         let  gueslistRS =getGeustListBySessionID(rc.sessionID);
         let  guestLit=""
+        let  mailContetnForBookingDisplay=rc.bookReceipt
+
         let noOfSessionOfARequest=2;
-        $.each($(bookingRC),function (i,rc) {
+        let submitButton =
+              ' <div class="mailAttachBox mailAttachBox--mainMailBox">'
+            +'       <input type="file" id="file-input--mainMailBox" class="fileInput fileInput--mainMailBox inputDisplay--mainMailBox file-input-mail-JS 0" />'
+            +'       <div class="preview preview--mainMailBox"></div>'
+
+            +'   </div>'
+
+            +'                        <div class="uploadForAttach">'
+            +'                          <label for="file-input--mainMailBox">'
+            +'                            <img src="./images/attachIcon.png" />'
+            +'                          </label>'
+            +'                        </div>'
+        $.each($(gueslistRS),function (i,rc) {
 
             guestLit+='       <li>'+ rc.guestName+'</li>'
         })
+
+
+
+            if(mailContetnForBookingDisplay==null){
+                mailContetnForBookingDisplay=
+                    "Please upload you receipt soon!"
+                +submitButton
+
+            }
 
 
 
@@ -313,30 +336,30 @@ function getBookingRCIntoTable() {
                         ' <tr>'
                         +'   <td  >'+rc.sessionFKbookingRecord+'</td>'
                         +'   <td  >'+rc.bookDate+'</td>'
-                        +'   <td>'+rc.venName+'<</td>'
-                        +'   <td>>'+rc.sessionDate+'</td>'
-                        +'   <td>'+rc.sessionDate+'</td>'
+                        +'   <td>'+rc.venName+' </td>'
+                        +'   <td> '+rc.sessionDate+'</td>'
                         +'   <td>'+rc.sessionStartTime+'</td>'
+                        +'   <td>'+rc.sessionEndTime+'</td>'
                         +'   <td>'
                         +'     <ol>'
                         +guestLit
                         +'     </ol>'
                         +'   </td>'
                         +'   <td>'+rc.venBookingFee+'</td>'
-                        +'   <td rowspan='+noOfSessionOfARequest+'><a href=""> 20230311-receipt</a><button>Delete</button></td>'
+                        +'   <td  >'+mailContetnForBookingDisplay+'</td>'
                         +'   <td>Notificaiton template</td>'
-                        +'   <td rowspan='+noOfSessionOfARequest+' >'+rc.bookStatus
+                        +'   <td >'+rc.bookStatus
                         +'   </td>'
                         +'   <td><textarea class="bookingRemark bookingRemark--user" name="" id="" cols="30"'
                         +'       rows="10">'+rc.bookRemark+'</textarea></td>'
-                        +'   <td><textarea class="bookingRemark bookingRemark--staff" name="" id="" cols="30"'
-                        +'       rows="10">'+rc.bookRemark+'</textarea></td>'
+
                         +'   <td><input type="button" value="Save"></td>'
                         +' </tr>'
 
                 })
 
-
+//    +'   <td><textarea class="bookingRemark bookingRemark--staff" name="" id="" cols="30"'
+  //  +'       rows="10">'+rc.bookRemark+'</textarea></td>'
 
         $(".bookingRecordTbdy").html(content);
 

@@ -32,7 +32,7 @@ function getGeustListBySessionID(sessionID) {
         dataType: "json",
         data: {
             type: 4,
-            userID: sessionID
+            sessionID: sessionID
         },
         async: false,
 

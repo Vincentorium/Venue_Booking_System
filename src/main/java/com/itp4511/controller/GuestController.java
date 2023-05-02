@@ -105,10 +105,10 @@ public class GuestController extends HttpServlet {
 
 
             case 4://display guestList
-                int sessionSelected = Integer.parseInt(request.getParameter("sessionSelected"));
+                int sessionID = Integer.parseInt(request.getParameter("sessionID"));
 
                 try {
-                    List<Guestlistwithsessionandguestname_Multi> guestlist = guestlistService.getGeustlistBySessionID(sessionSelected);
+                    List<Guestlistwithsessionandguestname_Multi> guestlist = guestlistService.getGeustlistBySessionID(sessionID);
 
 
                     json = mapper.writeValueAsString(guestlist);
@@ -123,118 +123,6 @@ public class GuestController extends HttpServlet {
                     response.getWriter().write(responseJson.toString());
                 }
                 break;
-
-
-//
-//            case 4://display guestList
-//                int idForGest = Integer.parseInt(request.getParameter("userID"));
-//                 isDelete = guestService.deleteGuest(idForDel);
-//
-//                if (isDelete) {
-//
-//                    responseJson.put("message", "delete ok");
-//                    response.getWriter().write(responseJson.toString());
-//
-//                }
-//
-//                break;
-//
-//
-//
-//
-//            case 5:
-//
-//                List<Guest> guestList1 = guestService.getRelevantGuestByMemberID(1);
-//                System.out.println("=================Session available=================");
-//                for (Guest s : guestList1) {
-//
-//                    System.out.println("ID: " + s.getGuestId());
-//                    System.out.print("Name: " + s.getGuestName());
-//                }
-//
-//                break;
-//            case 6:
-////                            "\t\t 2 add a new guest "
-//                List<Guest> guestList2 = guestService.getRelevantGuestByMemberID(1);
-//                System.out.println("=================your guests=================");
-//                for (Guest s : guestList2) {
-//
-//                    System.out.println("ID: " + s.getGuestId());
-//                    System.out.print("Name: " + s.getGuestName());
-//                }
-//
-//                System.out.println("=================add a new guest=================");
-//
-//                boolean isInsertGuest1=guestService.addGuest(1,"Emil","emil@gmail.com");
-//
-//                List<Guest> guest = guestService.getRelevantGuestByMemberID(1);
-//
-//                System.out.println("\n=================your guests=================");
-//                for (Guest s : guest) {
-//
-//                    System.out.println("ID: " + s.getGuestId());
-//                    System.out.print("Name: " + s.getGuestName());
-//                }
-//
-//                System.out.println("=================add a new guest=================");
-//
-//
-//
-//
-//
-//
-//                break;
-//
-//
-//            case 7:
-//
-//                List<Guest> guests3 = guestService.getRelevantGuestByMemberID(1);
-//                System.out.println("=================your guests=================");
-//                for (Guest s : guests3) {
-//
-//                    System.out.println("ID: " + s.getGuestId());
-//                    System.out.print("Name: " + s.getGuestName());
-//                }
-//
-//                System.out.println("=================delete a guest=================");
-//                int guestIDForDel = 0;
-//                System.out.println("select your a guest to delete");
-//                guestIDForDel  = Utility.readInt();
-//
-//
-//                boolean isInsertGuest3=guestService.deleteGuest (guestIDForDel );
-//
-//                guests3 = guestService.getRelevantGuestByMemberID(guestIDForDel );
-//
-//                System.out.println("\n=================your guests=================");
-//                for (Guest s : guests3) {
-//
-//                    System.out.print("ID: " + s.getGuestId());
-//                    System.out.print("Name: " + s.getGuestName());
-//                }
-//
-//                System.out.println("=================add a new guest=================");
-//
-//
-//
-//
-//
-//
-//                break;
-//
-//
-//
-
-
-
-
-
-
-
-
-
-
-
 
 
 

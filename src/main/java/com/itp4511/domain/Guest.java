@@ -1,7 +1,9 @@
 package com.itp4511.domain;
 
 
-public class Guest {
+import java.io.Serializable;
+
+public class Guest implements Serializable {
 
   private int guestId;
   private String guestName;

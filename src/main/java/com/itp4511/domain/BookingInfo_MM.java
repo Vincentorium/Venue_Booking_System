@@ -1,7 +1,9 @@
 package com.itp4511.domain;
 
 
-public class BookingInfo_MM {
+import java.io.Serializable;
+
+public class BookingInfo_MM implements Serializable {
 
   private int userId;
   private String userName;
