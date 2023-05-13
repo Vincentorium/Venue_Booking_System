@@ -24,7 +24,7 @@ import javax.servlet.annotation.WebServlet;
  * @author Vincent
  */
 
-@WebServlet(name = "brandController", urlPatternqs = {"/brandController"})
+@WebServlet(name = "brandController", urlPatterns = {"/brandController"})
 
 public class BrandController extends HttpServlet {
 
