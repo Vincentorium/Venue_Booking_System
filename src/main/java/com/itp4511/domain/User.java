@@ -5,13 +5,13 @@ import java.io.Serializable;
 public class User implements Serializable{
 
 
-  private long userId;
+  private int userId;
   private String userName;
   private String userAcc;
   private String userPassword;
   private byte userType;
 
-  public User(long userId, String userName, String userAcc, String userPassword, byte userType) {
+  public User(int userId, String userName, String userAcc, String userPassword, byte userType) {
     this.userId = userId;
     this.userName = userName;
     this.userAcc = userAcc;
@@ -22,11 +22,11 @@ public class User implements Serializable{
   public User() {
   }
 
-  public long getUserId() {
+  public int getUserId() {
     return userId;
   }
 
-  public void setUserId(long userId) {
+  public void setUserId(int userId) {
     this.userId = userId;
   }
 
@@ -58,7 +58,7 @@ public class User implements Serializable{
   }
 
 
-  public long getUserType() {
+  public int getUserType() {
     return userType;
   }
 

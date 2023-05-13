@@ -1,10 +1,11 @@
 package com.itp4511.domain;
 
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
 
-public class BookingRecord {
+public class BookingRecord implements Serializable {
 
   private long bookId;
   private java.sql.Date bookDate;

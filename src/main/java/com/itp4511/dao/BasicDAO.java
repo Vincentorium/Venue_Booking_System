@@ -16,7 +16,6 @@ public class BasicDAO<T> {
 
     private QueryRunner qr = new QueryRunner();
 
-    //開發通用的dml方法，針對任意的表
 
     public int update(String sql, Object... parameters){
 

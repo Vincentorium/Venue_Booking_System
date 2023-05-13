@@ -26,7 +26,7 @@ import javax.servlet.annotation.WebServlet;
  *
  * @author Vincent
  */
-@WebServlet(name = "getPhone", urlPatterns = {"/getPhones"})
+@WebServlet(name = "getPhone", urlPatterns = {"/getPhonesMy"})
 
 public class PhoneController extends HttpServlet {
 
