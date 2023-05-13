@@ -1,7 +1,9 @@
 <%@ taglib prefix="test" uri="/test/" %>
 <!DOCTYPE html>
 <html lang="en">
-<%@page contentType="text/html" pageEncoding="UTF-8"%><!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +89,7 @@
 
 <body>
 
-<%
+    <%
     String username="";
     String role= "";
     String userID= "";
@@ -104,33 +106,33 @@
 
 
 
-<div class="modalBox">
+    <div class="modalBox">
 
-    <!-- SOF modal booking form Box-->
-    <div class="modal modalGeneral " id="modal">
-
-
-        <div class="reportsBoxForModal">
-            <div class="loginCtnTitle">
-                <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
-                <h2 class="boxTitle">Booking Form</h2>
+        <!-- SOF modal booking form Box-->
+        <div class="modal modalGeneral " id="modal">
 
 
-                <img class="closeIcon close" src="./images/exit.png" data-close-button alt="">
-            </div>
-
-            <!--SOF order ______________________________________________________ -->
-            <div class="containerOrderList modalGeneral" id="containerOrderList">
-
-
-                <hr>
+            <div class="reportsBoxForModal">
+                <div class="loginCtnTitle">
+                    <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
+                    <h2 class="boxTitle">Booking Form</h2>
 
 
+                    <img class="closeIcon close" src="./images/exit.png" data-close-button alt="">
+                </div>
 
-                <div class="cmtContainer">
-                    <div class="venue-form-apply-request-summary">
+                <!--SOF order ______________________________________________________ -->
+                <div class="containerOrderList modalGeneral" id="containerOrderList">
 
-                        <!--SOF postContainer
+
+                    <hr>
+
+
+
+                    <div class="cmtContainer">
+                        <div class="venue-form-apply-request-summary">
+
+                            <!--SOF postContainer
                                                 <label for="">Prices: $50 * 3 session</label>
                                                 <table>
                                                     <tr>
@@ -143,873 +145,769 @@
                                                     </tr>
                                                 </table>
                                         -->
-                    </div>
-
-                    <form action="" class="venBookingForm">
-                        <div class="ven-apply-form-box">
-
-                            <label for="venueDropDownList">Venus</label>
-                            <select class="venu-apply-input--campus" id="venueDropDownList">
-                                <option value="1">Tuen Mun</option>
-                                <option value="2">Sha Tin</option>
-                                <option value="QY">Tsing Yi</option>
-                                <option value="LWL">Lee Wai Lee</option>
-                                <option value="CW">Chai Wan</option>
-                            </select>
-                            <br><label for="">date</label>
-
-                            <input class="venu-apply-input--date" type="date">
-                            <fieldset class="venue-apply-form-sessionsSelected">
-                                <legend>Timeslot selected:</legend>
-                                <div class="venue-apply-form-sessionsSelected-box">
-
-                                </div>
-                            </fieldset>
-
-
-                            <br>
-                            <fieldset class="venue-apply-form-sessionsSelected">
-                                <legend>Template for guest invitation:</legend>
-
-
-                                <div class="ven-apply-form-guestListInsideBox">
-
-                                    <table class="guestForBookingBox"></table>
-
-                                    <br>
-
-                            </fieldset>
-                            <br>
-                            <br>
-                            <input type="button" class="btnGeneral bookingFormSubmit" value="Submit">
-                            <input type="button" class="btnGeneral" value="Add another Request">
-
-
                         </div>
-                    </form>
-                    <!--SOF sideFunction-->
-                    <div class="cmtHistory">
 
-                        <br>
+                        <form action="" class="venBookingForm">
+                            <div class="ven-apply-form-box">
 
-                        <!-- <div class="formTitle postSideFunction venu-apply-form-displayVnue"> Venu selected:venus lost focus
+                                <label for="venueDropDownList">Venus</label>
+                                <select class="venu-apply-input--campus" id="venueDropDownList">
+                                    <option value="1">Tuen Mun</option>
+                                    <option value="2">Sha Tin</option>
+                                    <option value="QY">Tsing Yi</option>
+                                    <option value="LWL">Lee Wai Lee</option>
+                                    <option value="CW">Chai Wan</option>
+                                </select>
+                                <br><label for="">date</label>
+
+                                <input class="venu-apply-input--date" type="date">
+                                <fieldset class="venue-apply-form-sessionsSelected">
+                                    <legend>Timeslot selected:</legend>
+                                    <div class="venue-apply-form-sessionsSelected-box">
+
+                                    </div>
+                                </fieldset>
+
+
+                                <br>
+                                <fieldset class="venue-apply-form-sessionsSelected">
+                                    <legend>Template for guest invitation:</legend>
+
+
+                                    <div class="ven-apply-form-guestListInsideBox">
+
+                                        <table class="guestForBookingBox"></table>
+
+                                        <br>
+
+                                </fieldset>
+                                <br>
+                                <br>
+                                <input type="button" class="btnGeneral bookingFormSubmit" value="Submit">
+                                <input type="button" class="btnGeneral" value="Add another Request">
+
+
+                            </div>
+                        </form>
+                        <!--SOF sideFunction-->
+                        <div class="cmtHistory">
+
+                            <br>
+
+                            <!-- <div class="formTitle postSideFunction venu-apply-form-displayVnue"> Venu selected:venus lost focus
                                 cause this window to resize
                                 to a snap </div> -->
 
-                        <details clas="venu-apply-form-displayVnue--details">
-                            <summary class="formTitle postSideFunction venu-apply-form-displayVnue">Venue Info
+                            <details clas="venu-apply-form-displayVnue--details">
+                                <summary class="formTitle postSideFunction venu-apply-form-displayVnue">Venue Info
 
-                            </summary>
-                            <div class="favElements favElement1 venu-apply-form-displayVnue--venusSelected"
-                                 data-modal-target="#modal" data-default="orderList">
-                                <div class="allPostPicBox">
-                                    <img class="allPostPostImg" src="./images/campusLWL.jpg">
+                                </summary>
+                                <div class="favElements favElement1 venu-apply-form-displayVnue--venusSelected"
+                                    data-modal-target="#modal" data-default="orderList">
+                                    <div class="allPostPicBox">
+                                        <img class="allPostPostImg" src="./images/campusLWL.jpg">
+
+                                    </div>
+                                    <div class="urgentBox main-container-infoBox-title">
+                                        Tuen Mun - XX Park
+                                    </div>
+                                    <div class="allPostFuncRow">
+                                        <span class="tagArea">Capacity</span>
+                                        <span class="tagArea">Type</span>
+                                        <span class="tagArea">feature</span>
+                                    </div>
+
 
                                 </div>
-                                <div class="urgentBox main-container-infoBox-title">
-                                    Tuen Mun - XX Park
+
+
+                            </details>
+
+
+                            <details clas="venu-apply-form-displayVnue--details" open>
+                                <summary
+                                    class="formTitle postSideFunction venu-apply-form-displayVnue venu-apply-form-displayVnue--date">
+                                    Timeslot: 03-05-2023
+                                </summary>
+
+
+                                <div class="venu-apply-form-disply-sessions">
+
+
                                 </div>
-                                <div class="allPostFuncRow">
-                                    <span class="tagArea">Capacity</span>
-                                    <span class="tagArea">Type</span>
-                                    <span class="tagArea">feature</span>
-                                </div>
 
 
-                            </div>
+                            </details>
 
 
-                        </details>
-
-
-                        <details clas="venu-apply-form-displayVnue--details" open>
-                            <summary class="formTitle postSideFunction venu-apply-form-displayVnue">Timeslot: 28-04-2023
-                            </summary>
-
-
-                            <div class="venu-apply-form-disply-sessions">
-
-
-                            </div>
-
-
-                        </details>
-
+                        </div>
+                        <!--EOD sideFunction-->
 
                     </div>
-                    <!--EOD sideFunction-->
+                    <!--SOF postContainer-->
+
 
                 </div>
-                <!--SOF postContainer-->
 
 
+                <!-- eof booking -->
+
+
+            </div> <!-- EOF modal-->
+        </div>
+        <!-- EOF modal booking form Box-->
+        <div class="venueListModal  modalGeneral   ">
+            Test venue list
+            <div class="venueListModal_title">
+                <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
+
+
+                <img class="  closeIcon close" data-close-button src="./images/exit.png" data-close-button alt="">
             </div>
 
 
-            <!-- eof booking -->
+            <div class="venueListModal_box ">
+                <div class="venueAddGuestBox">
+                    <input type="button" class="venuAddGuest--out btnGeneral" value="Add a new guest">
+                    <form action="" id="venueForm--addGuest" class="venueForm--addGuest demonHide">
+                        <table>
+                            <tr>
+
+                                <td> name<input type="text" name="name"></td>
+                                <td> email<input type="text" name="email"></td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="submit" class="btnGeneral venuAddGuest--in" value="Add"></td>
+                                <td><input type="button" class="btnGeneral venuAddGuest--in venuAddGuest--in--cancel"
+                                        value="Cancel">
+                                </td>
+                            </tr>
+
+                        </table>
 
 
-        </div> <!-- EOF modal-->
-    </div>
-    <!-- EOF modal booking form Box-->
-    <div class="venueListModal  modalGeneral   ">
-        Test venue list
-        <div class="venueListModal_title">
-            <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
+                    </form>
 
-
-            <img class="  closeIcon close" data-close-button src="./images/exit.png" data-close-button alt="">
-        </div>
-
-
-        <div class="venueListModal_box ">
-            <div class="venueAddGuestBox">
-                <input type="button" class="venuAddGuest--out btnGeneral" value="Add a new guest">
-                <form action="" id="venueForm--addGuest" class="venueForm--addGuest demonHide">
-                    <table>
-                        <tr>
-
-                            <td> name<input type="text" name="name"></td>
-                            <td> email<input type="text" name="email"></td>
-                        </tr>
-                        <tr>
-
-                            <td><input type="submit" class="btnGeneral venuAddGuest--in" value="Add"></td>
-                            <td><input type="button" class="btnGeneral venuAddGuest--in venuAddGuest--in--cancel"
-                                       value="Cancel">
-                            </td>
-                        </tr>
-
-                    </table>
-
-
-                </form>
-
+                </div>
             </div>
+            <form class="venueForm" id="venueForm" action="">
+
+                <table id="mytable" class="mytable table table-bordered table-striped guestsFormTable">
+                    <thead>
+
+
+                        </tbody>
+
+                </table>
+
+            </form>
+            <!--EO booking table elements -->
         </div>
-        <form class="venueForm" id="venueForm" action="">
-
-            <table id="mytable" class="mytable table table-bordered table-striped guestsFormTable">
-                <thead>
-
-
-                </tbody>
-
-            </table>
-
-        </form>
-        <!--EO booking table elements -->
-    </div>
-    <div class="userMngtModal  modalGeneral   ">
-        Guests
-        <div class="userMngtModal_title">
-            <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
+        <div class="userMngtModal  modalGeneral   ">
+            Guests
+            <div class="userMngtModal_title">
+                <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
 
 
-            <img class="  closeIcon close" data-close-button src="./images/exit.png" data-close-button alt="">
-        </div>
-
-
-        <div class="userMngtModal_box ">
-            <div class="userMngtBox">
-                <input type="button" class="userMngt--out" value="add a new guest">
-                <form action="" id="userMngtForm--addUser" class="userMngtForm--addUser demonHide">
-                    <table>
-                        <tr>
-
-                            <td> name<input type="text" name="name"></td>
-                            <td> email<input type="text" name="email"></td>
-                        </tr>
-                        <tr>
-
-                            <td><input type="button" class="sendBtn userMngt--in" value="Add"></td>
-                            <td><input type="button" class="sendBtn userMngt--in userMngt--in--cancel" value="Cancel">
-                            </td>
-                        </tr>
-
-                    </table>
-
-
-                </form>
-
+                <img class="  closeIcon close" data-close-button src="./images/exit.png" data-close-button alt="">
             </div>
+
+
+            <div class="userMngtModal_box ">
+                <div class="userMngtBox">
+                    <input type="button" class="userMngt--out" value="add a new guest">
+                    <form action="" id="userMngtForm--addUser" class="userMngtForm--addUser demonHide">
+                        <table>
+                            <tr>
+
+                                <td> name<input type="text" name="name"></td>
+                                <td> email<input type="text" name="email"></td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="button" class="sendBtn userMngt--in" value="Add"></td>
+                                <td><input type="button" class="sendBtn userMngt--in userMngt--in--cancel"
+                                        value="Cancel">
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                    </form>
+
+                </div>
+            </div>
+            <form class="userMngtForm" id="userMngtForm" action="">
+
+                <table id="mytable" class="mytable table table-bordered table-striped">
+                    <thead>
+                        <tr>
+
+                            <th>#
+                            </th>
+                            <th>account</th>
+                            <th>password</th>
+                            <th>full name</th>
+                            <th>email</th>
+                            <th>BookingStatus</th>
+                            <th>Bookings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>id</td>
+                            <td>accountName1</td>
+                            <td>ps</td>
+                            <td>fullName</td>
+                            <td>email@</td>
+                            <td><input type="checkbox" name="id2" value="2">disable</td>
+                            <td><input class="userMngt_displayUser" type="button" value="Booking Hisotry"></td>
+                        </tr>
+                        <tr>
+
+                            <td>id</td>
+                            <td>accountName1</td>
+                            <td>ps</td>
+                            <td>fullName</td>
+                            <td>email@</td>
+                            <td><input type="checkbox" class="userBookingRight" name="id2" value="2">disable</td>
+                            <td><input class="userMngt_displayUser" type="button" value="Booking Hisotry"></td>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>accountName1</td>
+                            <td>ps</td>
+                            <td>fullName</td>
+                            <td>email@</td>
+                            <td><input class="userBookingRight" type="checkbox" name="id2" value="2">disable</td>
+                            <td><input class="userMngt_displayUser" type="button" value="Booking Hisotry"></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <input type="submit" class="sendBtn userMngtDeleteClickGuest" value="delete">
+            </form>
+            <!--EO booking table elements -->
         </div>
-        <form class="userMngtForm" id="userMngtForm" action="">
-
-            <table id="mytable" class="mytable table table-bordered table-striped">
-                <thead>
-                <tr>
-
-                    <th>#
-                    </th>
-                    <th>account</th>
-                    <th>password</th>
-                    <th>full name</th>
-                    <th>email</th>
-                    <th>BookingStatus</th>
-                    <th>Bookings</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-
-                    <td>id</td>
-                    <td>accountName1</td>
-                    <td>ps</td>
-                    <td>fullName</td>
-                    <td>email@</td>
-                    <td><input type="checkbox" name="id2" value="2">disable</td>
-                    <td><input class="userMngt_displayUser" type="button" value="Booking Hisotry"></td>
-                </tr>
-                <tr>
-
-                    <td>id</td>
-                    <td>accountName1</td>
-                    <td>ps</td>
-                    <td>fullName</td>
-                    <td>email@</td>
-                    <td><input type="checkbox" class="userBookingRight" name="id2" value="2">disable</td>
-                    <td><input class="userMngt_displayUser" type="button" value="Booking Hisotry"></td>
-                </tr>
-                <tr>
-                    <td>id</td>
-                    <td>accountName1</td>
-                    <td>ps</td>
-                    <td>fullName</td>
-                    <td>email@</td>
-                    <td><input class="userBookingRight" type="checkbox" name="id2" value="2">disable</td>
-                    <td><input class="userMngt_displayUser" type="button" value="Booking Hisotry"></td>
-                </tr>
-
-                </tbody>
-
-            </table>
-
-            <input type="submit" class="sendBtn userMngtDeleteClickGuest" value="delete">
-        </form>
-        <!--EO booking table elements -->
-    </div>
 
 
-    <!-- SOF Booking-->
-    <div class="bookingTableModal modalGeneral ">
-        <div class="loginCtnTitle">
-            <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
+        <!-- SOF Booking-->
+        <div class="bookingTableModal modalGeneral ">
+            <div class="loginCtnTitle">
+                <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
 
 
-            <img class="closeIcon close" src="./images/exit.png" data-close-button alt="">
-        </div>
-        <div class="tableContainer">
+                <img class="closeIcon close" src="./images/exit.png" data-close-button alt="">
+            </div>
+            <div class="tableContainer">
 
-            <!-- <div class="mailModal-title">
+                <!-- <div class="mailModal-title">
                   <img class="closeIcon close mail-List-Close" src="./images/exit.png" data-close-button alt="">
 
 
                 </div> -->
 
-            <!--BO booking table elements -->
-            <div class="bookingTableBox">
-                <div class="bookingTableTitle"> Booking Request Records</div>
+                <!--BO booking table elements -->
+                <div class="bookingTableBox">
+                    <div class="bookingTableTitle"> Booking Request Records</div>
 
-                <div class="form-group">
-                    <select name="state" id="maxRows" class="form-control" style="width:150px;">
-                        <option value="5000">Show All</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="50">50</option>
-                        <option value="75">75</option>
-                        <option value="100">100</option>
-                    </select>
+                    <div class="form-group">
+                        <select name="state" id="maxRows" class="form-control" style="width:150px;">
+                            <option value="5000">Show All</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="75">75</option>
+                            <option value="100">100</option>
+                        </select>
 
+                    </div>
+
+                    <table id="mytable" class="mytable table table-bordered table-striped">
+                        <thead>
+                            <tr>
+
+                                <th>#</th>
+                                <th>Request Date</th>
+                                <th>Status</th>
+                                <th>Session Info</th>
+
+
+                                <th>Receipt</th>
+
+
+                                <th>Save</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bookingRecordTbdy">
+
+                        </tbody>
+
+                    </table>
+
+
+                    <div class=' pagination-container'>
+                        <nav>
+                            <ul class="pagination">
+
+                                <li data-page="prev">
+                                    <span>
+                                        < <span class="sr-only">(current)
+                                    </span>
+                                    </span>
+                                </li>
+                                <!--  Here the JS Function Will Add the Rows -->
+                        </nav>
+                    </div>
                 </div>
 
-                <table id="mytable" class="mytable table table-bordered table-striped">
-                    <thead>
-                    <tr>
-
-                        <th>#</th>
-                        <th>Request Date</th>
-                        <th>Venue</th>
-                        <th>Session Date</th>
-                        <th>Start Time</th>
-                        <th>End Time</th>
-                        <th>Gueset List</th>
-
-                        <th>Price</th>
-
-                        <th>Receipt</th>
-                        <th>Notification</th>
-                        <th>Status</th>
-                        <th>Remark</th>
-
-                        <th>Save</th>
-                    </tr>
-                    </thead>
-                    <tbody class="bookingRecordTbdy">
-                    <tr>
-                        <td rowspan="2">1</td>
-                        <td rowspan="2">10 mar 2023</td>
-                        <td>Sha Tin</td>
-                        <td>12 mar 2023</td>
-                        <td>11:00</td>
-                        <td>11:59</td>
-                        <td>
-                            <ol>
-                                <li>meow</li>
-                                <li>moew</li>
-                                <li>mweo</li>
-                            </ol>
-                        </td>
-                        <td>$200</td>
-                        <td rowspan="2"><a href=""> 20230311-receipt</a>
-                            <button>Delete</button>
-                        </td>
-                        <td>Notificaiton template</td>
-                        <td><textarea class="bookingRecor--notification" name="" id="" cols="30"
-                                      rows="10">remark</textarea>
-                        </td>
-                        <td><textarea class="bookingRemark bookingRemark--user" name="" id="" cols="30"
-                                      rows="10">remark</textarea></td>
-                        <td><textarea class="bookingRemark bookingRemark--staff" name="" id="" cols="30"
-                                      rows="10">remark</textarea></td>
-                        <td><input type="button" value="Save"></td>
-                    </tr>
-                    <tr>
-
-                        <td>Tuen Mun</td>
-                        <td>13 mar 2023</td>
-                        <td>11:00</td>
-                        <td>11:59</td>
-                        <td>
-                            <ol>
-                                <li>meow</li>
-                                <li>moew</li>
-                                <li>mweo</li>
-                            </ol>
-                        </td>
-                        <td>$300</td>
-
-                        <td>pending</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">2</td>
-                        <td rowspan="2">23 mar 2023</td>
-                        <td>Sha Tin</td>
-                        <td>24 mar 2023</td>
-                        <td>11:00</td>
-                        <td>11:59</td>
-                        <td>
-                            <ol>
-                                <li>meow</li>
-                                <li>moew</li>
-                                <li>mweo</li>
-                            </ol>
-                        </td>
-                        <td>$200</td>
-                        <td rowspan="2">
-
-                            <!--SO mailBoxFunctionInsideRep-->
-                            <div class="maiBoxFunInsideRep">
-
-                                <!--  image file and close button-->
-                                <span class="file-input-Ctn file-input-Ctn-mail demonHide">
-                      <input type="file" name="file-input" class="file-input file-input-mail file-input-mail-JS"
-                             id="file-input">
-                      <span class="file-input-cancel">X</span>
-                    </span>
-
-                                <!--  button and label and image-->
-                                <div class="mailBoxFunctionInsideRep">
-                                    <input type="text" class="mailTitleJS demonHide" value="Reply: '+data.title">
-                                    <button class="sendBtn sendCmtBtnGP2 mailSubmitButton"
-                                            data-submitctn=".mailSubmitBox"
-                                            data-close-button>Upload
-                                    </button>
-                                    <div class="uploadForAttach">
-                                        <label for="file-input">
-                                            <img src="./images/attachIcon.png"/>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--EO mailBoxFunctionInsideRep-->
-
-                        <td>pending</td>
-                    </tr>
-                    <tr>
-
-                        <td>Sha Tin</td>
-                        <td>26 mar 2023</td>
-                        <td>11:00</td>
-                        <td>11:59</td>
-                        <td>
-                            <ol>
-                                <li>meow</li>
-                                <li>moew</li>
-                                <li>mweo</li>
-                            </ol>
-                        </td>
-                        <td>$200</td>
-
-                        <td>pending</td>
-                    </tr>
-                    </tbody>
-
-                </table>
-                <div class=' pagination-container'>
-                    <nav>
-                        <ul class="pagination">
-
-                            <li data-page="prev">
-                  <span>
-                    < <span class="sr-only">(current)
-                  </span>
-                  </span>
-                            </li>
-                            <!--  Here the JS Function Will Add the Rows -->
-                    </nav>
-                </div>
+                <li data-page="next" id="prev">
+                    <span> > <span class="sr-only">(current)</span></span>
+                </li>
+                </ul>
+                <!--EO booking table elements -->
             </div>
-
-            <li data-page="next" id="prev">
-                <span> > <span class="sr-only">(current)</span></span>
-            </li>
-            </ul>
-            <!--EO booking table elements -->
         </div>
+        <!-- EOF Booking-->
     </div>
-    <!-- EOF Booking-->
-</div>
 
 
-</div>
+    </div>
 
-<div class="homePageCTN">
+    <div class="homePageCTN">
 
-    <div id="loginScreen">
+        <div id="loginScreen">
 
 
-        <div id="header">
-            <span class="comLog"></span>
+            <div id="header">
+                <span class="comLog"></span>
 
-            <!--
+                <!--
 
               <a id="homenTitle" class="header__home" href="index.html" onmouseout=" mouseOut(this)"> Home</a>
 
             -->
-            <a id="menu2" class="">VTC Venue Booking System</a>
-            <div class="headerFun">
+                <a id="menu2" class="">VTC Venue Booking System</a>
+                <div class="headerFun">
 
 
 
 
-                <a id="header__createAccount" data-modal-target="#modal" data-default="createAccForOperator"
-                   class="header__createAccount adminFunLin">Create Account</a>
+                    <a id="header__createAccount" data-modal-target="#modal" data-default="createAccForOperator"
+                        class="header__createAccount adminFunLin">Create Account</a>
+                </div>
+                <div class="headerLoginOut">
+
+                    <a data-modal-target="#bookingTableModal" data-default="bookingTableModal"
+                        class="hearder__a header__signIn  memberFunction">Booking Request Record</a>
+                    <a data-modal-target=".venueListModal" data-default=".venueListModal"
+                        class="hearder__a header__venueList memberFunction ">Guest Managment </a>
+
+                    <a data-modal-target=".userMngtModal" data-default=".userMngtModal"
+                        class="hearder__a header__userMngt  mgntFunction boxHide">User
+                        Management
+                    </a>
+
+
+
+                    <a data-modal-target="#modal" data-default="signUp" class="hearder__a header__singUp userName"
+                        data-userid="<%= userID %>"> <%= username %> </a>
+
+                    （ <a data-modal-target="#modal" data-default="signIn"
+                        class="hearder__a header__dept dept"><%= role %></a>）
+
+                    <a class="hearder__a demoLogOut">Log Out</a>
+                </div>
             </div>
-            <div class="headerLoginOut">
 
-                <a data-modal-target="#bookingTableModal" data-default="bookingTableModal"
-                   class="hearder__a header__signIn  memberFunction">Booking Request Record</a>
-                <a data-modal-target=".venueListModal" data-default=".venueListModal"
-                   class="hearder__a header__venueList memberFunction ">Guest Managment </a>
-
-                <a data-modal-target=".userMngtModal" data-default=".userMngtModal"
-                   class="hearder__a header__userMngt  mgntFunction boxHide">User
-                    Management
-                </a>
-
-
-
-                <a data-modal-target="#modal" data-default="signUp" class="hearder__a header__singUp userName" data-userid="<%= userID %>" > <%= username %> </a>
-
-                （                <a data-modal-target="#modal" data-default="signIn" class="hearder__a header__dept dept"><%= role %></a>）
-
-                <a class="hearder__a demoLogOut">Log Out</a>
-            </div>
         </div>
 
-    </div>
+        <div class="NonLogin">
+            <div>
+                <a class="allPostTitle mailIconInsideRep" data-modal-target="#modal" data-default="tablePostTitle"
+                    data-idForMysql=1>
+                    <i class="fa fa-plus my-float" id="float">Book your venue </i>
+                </a>
 
-    <div class="NonLogin">
-        <div>
-            <a class="allPostTitle mailIconInsideRep" data-modal-target="#modal" data-default="tablePostTitle"
-               data-idForMysql=1>
-                <i class="fa fa-plus my-float" id="float">Book your venue </i>
-            </a>
-
-            <!-- SOF modal Mail Box-->
-            <div class="mailModal modalGeneral ">
-                <div class="mailModal-title">
-                    <img class="closeIcon close mail-List-Close" src="./images/exit.png" data-close-button alt="">
+                <!-- SOF modal Mail Box-->
+                <div class="mailModal modalGeneral ">
+                    <div class="mailModal-title">
+                        <img class="closeIcon close mail-List-Close" src="./images/exit.png" data-close-button alt="">
 
 
-                </div>
-                <div class="mailbox-mainLayer">
-                    <div class="mailbox-mainLayer-top">
-                        <div class="mailBoxFilterTitle"> Mail</div>
-                        <div class="mail-list-filter-Box">
-
-                            <div>
-                                User: <input type="text">
-                                Keyword: <input type="text">
-                            </div>
-                            <button class="mailbox-filterButton">Search</button>
-                        </div>
                     </div>
+                    <div class="mailbox-mainLayer">
+                        <div class="mailbox-mainLayer-top">
+                            <div class="mailBoxFilterTitle"> Mail</div>
+                            <div class="mail-list-filter-Box">
 
-                    <div class="mail-record-box" id="mail-record-box">
-                        <div class="mailModal-sideBar ">
-
-
-                            <div class="mail-button mail-button-inbox mailbuttonHover">
-                                Inbox
-                            </div>
-                            <div class="mail-button mail-button-sent">
-                                Sent
+                                <div>
+                                    User: <input type="text">
+                                    Keyword: <input type="text">
+                                </div>
+                                <button class="mailbox-filterButton">Search</button>
                             </div>
                         </div>
-                        <div class="maibox-list">
-                            <div class=" ">
 
-                                </h3>
+                        <div class="mail-record-box" id="mail-record-box">
+                            <div class="mailModal-sideBar ">
+
+
+                                <div class="mail-button mail-button-inbox mailbuttonHover">
+                                    Inbox
+                                </div>
+                                <div class="mail-button mail-button-sent">
+                                    Sent
+                                </div>
                             </div>
-                            <div id="mail-record-box-table" class="mail-record-box-table">
+                            <div class="maibox-list">
+                                <div class=" ">
+
+                                    </h3>
+                                </div>
+                                <div id="mail-record-box-table" class="mail-record-box-table">
 
 
-                            </div>
+                                </div>
 
 
-                            <div class=" complaintTableBottomFunc mail-reocrd-table-pagination">
+                                <div class=" complaintTableBottomFunc mail-reocrd-table-pagination">
 
 
-                            </div>
-                            <!-- <div class="mail-record-table-container">
+                                </div>
+                                <!-- <div class="mail-record-table-container">
                           <nav>
                             <ul class="mail-record-table-pagination"> </ul>
 
                           </nav> -->
 
 
-                        </div>
-                        <div class="mail-content-ctn">
-                            <div class="mail-content"></div>
+                            </div>
+                            <div class="mail-content-ctn">
+                                <div class="mail-content"></div>
+
+                            </div>
+
 
                         </div>
-
-
                     </div>
-                </div>
-            </div> <!-- EOF modal Mail Box-->
+                </div> <!-- EOF modal Mail Box-->
 
 
-        </div>
+            </div>
 
-        <div class="sideNavBar">
+            <div class="sideNavBar">
 
-        </div>
+            </div>
 
-        <!-- SOF Main page -->
-        <div class="postContentBox">
-
-
-            <!-- SearchBox __________________________________________-->
-            <div class="SearchBox">
-
-                <div class="searchFlight">
-
-                    <!-- SOF dataBox Form -->
-                    <div class="container" style="margin-top:35px">
+            <!-- SOF Main page -->
+            <div class="postContentBox">
 
 
-                        <label class="collectionLabel" for="">VTC venues: </label>
-                        <div class="favEleBox">
-                            <div class="favElements favElement1" data-modal-target="#modal" data-default="orderList">
-                                <div class="allPostPicBox">
-                                    <img class="allPostPostImg" src="./images/campusLWL.jpg">
+                <!-- SearchBox __________________________________________-->
+                <div class="SearchBox">
+
+                    <div class="searchFlight">
+
+                        <!-- SOF dataBox Form -->
+                        <div class="container" style="margin-top:35px">
+
+
+                            <label class="collectionLabel" for="">VTC venues: </label>
+                            <div class="favEleBox">
+                                <div class="favElements favElement1" data-modal-target="#modal"
+                                    data-default="orderList">
+                                    <div class="allPostPicBox">
+                                        <img class="allPostPostImg" src="./images/campusLWL.jpg">
+
+                                    </div>
+                                    <div class="urgentBox main-container-infoBox-title">
+                                        Chai Wan - Venue
+                                    </div>
+                                    <div class="allPostFuncRow">
+                                        <span class="tagArea">Capacity: 10</span>
+                                        <span class="tagArea">Fee: 300 per session</span>
+                                    </div>
+
 
                                 </div>
-                                <div class="urgentBox main-container-infoBox-title">
-                                   Chai Wan - Venue
-                                </div>
-                                <div class="allPostFuncRow">
-                                    <span class="tagArea">Capacity: 10</span>
-                                    <span class="tagArea">Fee: 300 per session</span>
-                                </div>
 
+                                <div class="favElements favElement2">
+                                    <div class="allPostPicBox">
+                                        <img class="allPostPostImg" src="./images/campusTM.jpg">
 
-                            </div>
+                                    </div>
+                                    <div class="urgentBox main-container-infoBox-title">
+                                        Lee Wai Lee - Venue
+                                    </div>
+                                    <div class="allPostFuncRow">
 
-                            <div class="favElements favElement2">
-                                <div class="allPostPicBox">
-                                    <img class="allPostPostImg" src="./images/campusTM.jpg">
+                                        <span class="tagArea">Capacity: 12</span>
+                                        <span class="tagArea">Fee: 350 per session</span>
+                                    </div>
 
-                                </div>
-                                <div class="urgentBox main-container-infoBox-title">
-                                    Lee Wai Lee - Venue
-                                </div>
-                                <div class="allPostFuncRow">
-
-                                    <span class="tagArea">Capacity: 12</span>
-                                    <span class="tagArea">Fee: 350 per session</span>
-                                </div>
-
-
-                            </div>
-                            <div class="favElements favElement1" data-modal-target="#modal" data-default="orderList">
-                                <div class="allPostPicBox">
-                                    <img class="allPostPostImg" src="./images/campusTsingYi.jpg">
 
                                 </div>
-                                <div class="urgentBox main-container-infoBox-title">
-                                    Tsing Yi - venue
-                                </div>
-                                <div class="allPostFuncRow">
+                                <div class="favElements favElement1" data-modal-target="#modal"
+                                    data-default="orderList">
+                                    <div class="allPostPicBox">
+                                        <img class="allPostPostImg" src="./images/campusTsingYi.jpg">
 
-                                    <span class="tagArea">Capacity: 15</span>
-                                    <span class="tagArea">Fee: 400 per session</span>
-                                </div>
+                                    </div>
+                                    <div class="urgentBox main-container-infoBox-title">
+                                        Tsing Yi - venue
+                                    </div>
+                                    <div class="allPostFuncRow">
+
+                                        <span class="tagArea">Capacity: 15</span>
+                                        <span class="tagArea">Fee: 400 per session</span>
+                                    </div>
 
 
-                            </div>
-
-                            <div class="favElements favElement2">
-                                <div class="allPostPicBox">
-                                    <img class="allPostPostImg" src="./images/campusChaiWan.png">
-
-                                </div>
-                                <div class="urgentBox main-container-infoBox-title">
-                                    Sha Tin - venue
-                                </div>
-                                <div class="allPostFuncRow">
-
-                                    <span class="tagArea">Capacity: 20</span>
-                                    <span class="tagArea">Fee: 450 per session</span>
                                 </div>
 
+                                <div class="favElements favElement2">
+                                    <div class="allPostPicBox">
+                                        <img class="allPostPostImg" src="./images/campusChaiWan.png">
 
-                            </div>
-                            <div class="favElements favElement2">
-                                <div class="allPostPicBox">
-                                    <img class="allPostPostImg" src="./images/campus2.jpg">
+                                    </div>
+                                    <div class="urgentBox main-container-infoBox-title">
+                                        Sha Tin - venue
+                                    </div>
+                                    <div class="allPostFuncRow">
+
+                                        <span class="tagArea">Capacity: 20</span>
+                                        <span class="tagArea">Fee: 450 per session</span>
+                                    </div>
+
 
                                 </div>
-                                <div class="urgentBox main-container-infoBox-title">
-                                    Tuen Mun - venue
-                                </div>
-                                <div class="allPostFuncRow">
-                                    <span class="tagArea">Capacity: 25</span>
-                                    <span class="tagArea">Fee: 500 per session</span>
+                                <div class="favElements favElement2">
+                                    <div class="allPostPicBox">
+                                        <img class="allPostPostImg" src="./images/campus2.jpg">
+
+                                    </div>
+                                    <div class="urgentBox main-container-infoBox-title">
+                                        Tuen Mun - venue
+                                    </div>
+                                    <div class="allPostFuncRow">
+                                        <span class="tagArea">Capacity: 25</span>
+                                        <span class="tagArea">Fee: 500 per session</span>
+                                    </div>
+
+
                                 </div>
 
 
-                            </div>
+
+                                <!-- SOF list of under reivew -->
+                                <div id="tableDIv" class="tableDIv allPostTableBox">
 
 
-
-                            <!-- SOF list of under reivew -->
-                            <div id="tableDIv" class="tableDIv allPostTableBox">
-
-
-                                <!--  <tbody class="forInsert">
+                                    <!--  <tbody class="forInsert">
                               </tbody> -->
 
 
-                                <div class="forInsert Insert_UnGroup demonHide">
+                                    <div class="forInsert Insert_UnGroup demonHide">
 
 
-                                    <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
+                                        <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
 
-                                        <div class="BookingTabel_bookingBox rowCTM3">
+                                            <div class="BookingTabel_bookingBox rowCTM3">
 
-                                            <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
-                                            <span class="allPostStatusDptTitle">No. of Participants: 4</span>
+                                                <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
+                                                <span class="allPostStatusDptTitle">No. of Participants: 4</span>
 
-                                            <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
+                                                <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
 
-                                                Diplay Participants
+                                                    Diplay Participants
+                                                </div>
+                                            </div>
+                                            <div class=" rowCTM3 session-checkIn-tickBox">
+
+
+                                                <div class="session-checkIn-tickBox--innerBox">
+
+
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Name</th>
+                                                                <th>Email</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Member_name</td>
+                                                                <td>Member_name@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Meow</td>
+                                                                <td>meow@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Moew</td>
+                                                                <td>moew@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Mweo</td>
+                                                                <td>Mweo@gmail.com</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class=" rowCTM3 session-checkIn-tickBox">
 
 
-                                            <div class="session-checkIn-tickBox--innerBox">
+                                        <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
+
+                                            <div class="BookingTabel_bookingBox rowCTM3">
+
+                                                <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
+                                                <span class="allPostStatusDptTitle">No. of Participants: 4</span>
+
+                                                <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
+
+                                                    Diplay Participants
+                                                </div>
+                                            </div>
+                                            <div class=" rowCTM3 session-checkIn-tickBox">
 
 
-                                                <table>
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Name</th>
-                                                        <th>Email</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Member_name</td>
-                                                        <td>Member_name@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Meow</td>
-                                                        <td>meow@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Moew</td>
-                                                        <td>moew@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Mweo</td>
-                                                        <td>Mweo@gmail.com</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="session-checkIn-tickBox--innerBox">
 
 
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Name</th>
+                                                                <th>Email</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Member_name</td>
+                                                                <td>Member_name@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Meow</td>
+                                                                <td>meow@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Moew</td>
+                                                                <td>moew@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Mweo</td>
+                                                                <td>Mweo@gmail.com</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
+
+                                            <div class="BookingTabel_bookingBox rowCTM3">
+
+                                                <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
+                                                <span class="allPostStatusDptTitle">No. of Participants: 4</span>
+
+                                                <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
+
+                                                    Diplay Participants
+                                                </div>
+                                            </div>
+                                            <div class=" rowCTM3 session-checkIn-tickBox">
+
+
+                                                <div class="session-checkIn-tickBox--innerBox">
+
+
+                                                    <table>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Name</th>
+                                                                <th>Email</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Member_name</td>
+                                                                <td>Member_name@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Meow</td>
+                                                                <td>meow@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Moew</td>
+                                                                <td>moew@gmail.com</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><input type="checkbox" name="" id=""></td>
+                                                                <td>Mweo</td>
+                                                                <td>Mweo@gmail.com</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
 
-                                    <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
-
-                                        <div class="BookingTabel_bookingBox rowCTM3">
-
-                                            <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
-                                            <span class="allPostStatusDptTitle">No. of Participants: 4</span>
-
-                                            <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
-
-                                                Diplay Participants
-                                            </div>
-                                        </div>
-                                        <div class=" rowCTM3 session-checkIn-tickBox">
-
-
-                                            <div class="session-checkIn-tickBox--innerBox">
-
-
-                                                <table>
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Name</th>
-                                                        <th>Email</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Member_name</td>
-                                                        <td>Member_name@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Meow</td>
-                                                        <td>meow@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Moew</td>
-                                                        <td>moew@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Mweo</td>
-                                                        <td>Mweo@gmail.com</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
-
-                                        <div class="BookingTabel_bookingBox rowCTM3">
-
-                                            <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
-                                            <span class="allPostStatusDptTitle">No. of Participants: 4</span>
-
-                                            <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
-
-                                                Diplay Participants
-                                            </div>
-                                        </div>
-                                        <div class=" rowCTM3 session-checkIn-tickBox">
-
-
-                                            <div class="session-checkIn-tickBox--innerBox">
-
-
-                                                <table>
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Name</th>
-                                                        <th>Email</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Member_name</td>
-                                                        <td>Member_name@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Meow</td>
-                                                        <td>meow@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Moew</td>
-                                                        <td>moew@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><input type="checkbox" name="" id=""></td>
-                                                        <td>Mweo</td>
-                                                        <td>Mweo@gmail.com</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+                                <!--complaint start-->
 
 
-                            </div>
-                            <!--complaint start-->
+                            </div><!-- EOF list of under reivew  -->
 
+                            <!-- SOF complaintTable-->
 
-                        </div><!-- EOF list of under reivew  -->
-
-                        <!-- SOF complaintTable-->
-
+                        </div>
                     </div>
                 </div>
+                <!-- SearchBox -->
+
+
+                <!-- SOF modal-->
+
+
+                <!-- EOF Main page -->
             </div>
-            <!-- SearchBox -->
 
 
-            <!-- SOF modal-->
-
-
-            <!-- EOF Main page -->
-        </div>
-
-
-    </div><!-- homePageCTN -->
+        </div><!-- homePageCTN -->
 
 </body>

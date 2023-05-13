@@ -1,5 +1,5 @@
 .ven-apply-form-box{
-      position: fixed;
+    position: fixed;
     left: 30px;
     top: 135px;
     width: 500px;
@@ -8,6 +8,7 @@
     margin: 15px;
     padding: 14px;
     margin: 15px;
+    overflow: scroll;
 }
 .venu-apply-input{
 

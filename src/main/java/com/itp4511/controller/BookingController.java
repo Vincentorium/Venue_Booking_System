@@ -69,7 +69,9 @@ public class BookingController extends HttpServlet {
 
                 int id = Integer.parseInt(request.getParameter("userID"));
                 try {
-                    List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
+                   // List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
+
+                    List<BookingSession_Multi> displaySessionByID = bookingRecordService.getBookingByID(id);
                     ObjectMapper mapper = new ObjectMapper();
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -113,7 +115,7 @@ public class BookingController extends HttpServlet {
                     for (SessionObj s : sessionObjs) {
                         bachList[i][0] = 0;
                         bachList[i][1] = 0;
-                        bachList[i][2] = 3;
+                        bachList[i][2] = 1;
                         bachList[i][3] = Integer.parseInt(s.getSessionID());
                         bachList[i][4] =   s.getGuestList();
                         i++;
@@ -147,177 +149,47 @@ public class BookingController extends HttpServlet {
 
             //region 3: Update all attributes including receipt
             case 3:
-                System.out.println("=================Update receipt=================");
 
 
-                boolean isSuccess = bookingRecordService.updateBookingAllInfoByMemberID(1, "testImagePath");
-                System.out.println("=================Session available=================");
 
 
-                //DMLBach
-                //"UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionStatus`=? where  `sessionID`=?"
-                //1.create book
-                //2.create session
+                try {
+                    List<BookingInfo_MM> displaySessionByID = sessionService.displayBookingInfoNeedApproval();
+                    ObjectMapper mapper = new ObjectMapper();
 
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                    mapper.setDateFormat(dateFormat);
+                    String json = mapper.writeValueAsString(displaySessionByID);
+
+                    response.getWriter().write(json);
+                } catch (IOException e) {
+                    responseJson.put("message", "fail： "+e.getMessage());
+                    response.getWriter().write(responseJson.toString());
+                }
 
                 break;
+
+
             //endregion
 
 
             //region 4: add or remove guest from guestlist within the booking record
             case 4:
-                System.out.println("=================Update receipt=================");
 
+                int idForAppr = Integer.parseInt(request.getParameter("id"));
+                try {
+                  boolean isApproved = bookingRecordService.approveBooking(idForAppr);
+                    ObjectMapper mapper = new ObjectMapper();
 
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                    mapper.setDateFormat(dateFormat);
+                    String json = mapper.writeValueAsString("OKOK");
 
-                            /*
-                              原則，區分一對多的，單個的，一堆多的，單獨來出來熱處理
-                                   1.輸入id——或選中
-                                    2.彈出值
-                                    3.進行修改
-                                    4.查驗是否更改，進行更新
-*/
-                                 /*    1.輸入id——或選中
-                                        1.直接展示table*/
-
-                List<BookingInfo_MM> bookingObject = bookingRecordService.getBookingAllInfoByMemberID(1);
-                System.out.println("=================select booking to modif available=================");
-                System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
-                for (BookingInfo_MM s : bookingObject) {
-                    System.out.print("  " + s.getBookId());
-                    System.out.print("         " + s.getUserName());
-
-                    System.out.print("  " + s.getSessionId());
-                    System.out.print("  " + s.getSessionDate());
-
-                    System.out.print("  " + s.getSessionCampus());
-                    System.out.print("  " + s.getSessionStartTime());
-                    System.out.print("  " + s.getSessionEndTime());
-                    System.out.println("  " + s.getGuestName());
+                    response.getWriter().write(json);
+                } catch (IOException e) {
+                    responseJson.put("message", "fail： "+e.getMessage());
+                    response.getWriter().write(responseJson.toString());
                 }
-
-
-/* handle session and image
-                            BookingInfo_MM targetObject=null;
-                              int sessionSelected=0;
-                            System.out.println("select your a session");
-                            sessionSelected=Utility.readInt();
-                            for (BookingInfo_MM s : bookingObject) {
-
-                                if(s.getBookId()==1){
-                                    targetObject=s;
-                                    sessionSelected=s.getSessionId();
-                                System.out.println("Booking No.:" + s.getBookId() + "_______________________________");
-                                System.out.println("Member Name: " + s.getUserName());
-                                System.out.println("Booking ID: " + s.getBookId());
-                                System.out.println("Session Date: " + s.getSessionDate());
-
-                                System.out.println("Campus: " + s.getSessionCampus());
-                                System.out.println("From: " + s.getSessionStartTime());
-                                System.out.println("To: " + s.getSessionEndTime());
-                                System.out.println("Guest:: " + s.getGuestName());
-                                }
-                            }
-
-                            targetObject.setBookReceiptName("eee");
-*/
-
-                System.out.println("handle a guest list");
-                int sessionSelected = 0;
-                System.out.println("select your a session");
-                sessionSelected = Utility.readInt();
-                //是用一個獲得的javean好，還是新的？。  一用全局，一對多用service獲得
-                List<Guestlistwithsessionandguestname_Multi> guestlist = guestlistService.getGeustlistBySessionID(sessionSelected);
-
-                System.out.println("Session:" + sessionSelected + " guest");
-                System.out.println("Guest ID  " + "   guest name");
-                for (Guestlistwithsessionandguestname_Multi s : guestlist) {
-
-                    System.out.print(s.getGuestId() + "   ");
-                    System.out.println(s.getGuestName() + "  ");
-
-                }
-                System.out.println("Guest not list on sesion");
-
-                List<Guest> guetCollectionOfMember = guestService.getGuestNotListedOnASessionByMemberID(1, sessionSelected);
-                System.out.println("Guest of user_____________________");
-                for (Guest s : guetCollectionOfMember) {
-
-                    System.out.print(s.getGuestId() + "   ");
-                    System.out.println(s.getGuestName() + "  ");
-
-                }
-
-                int guestListID = guestlist.get(0).getGuestlistNGuestFKguestlistId();
-
-
-                int guestID = 0;
-                System.out.println("select your a guest to add");
-                guestID = Utility.readInt();
-
-                guestlistService.addGustIntoList(guestListID, guestID);
-
-
-                List<Guestlistwithsessionandguestname_Multi> guestlistBySession = guestlistService.getGeustlistBySessionID(sessionSelected);
-
-                System.out.println(guestlistBySession.size() + "guest is selected");
-
-
-                for (Guestlistwithsessionandguestname_Multi l : guestlistBySession) {
-
-                    System.out.print("name: " + l.getGuestName());
-                    System.out.print("  " + l.getSessionStartTime());
-                    System.out.println(" ~ " + l.getSessionEndTime());
-
-                }
-
-//
-
-
-                guestID = 0;
-                System.out.println("select your a guest to delete");
-                guestID = Utility.readInt();
-
-                guestlistService.deleteGustIntoList(guestListID, guestID);
-
-
-                guestlistBySession = guestlistService.getGeustlistBySessionID(sessionSelected);
-
-                System.out.println(guestlistBySession.size() + "guest is selected");
-                System.out.println("After delete ");
-
-                for (Guestlistwithsessionandguestname_Multi l : guestlistBySession) {
-
-                    System.out.print("name: " + l.getGuestName());
-                    System.out.print("  " + l.getSessionStartTime());
-                    System.out.println(" ~ " + l.getSessionEndTime());
-
-                }
-
-
-                        /*
-                                    2.彈出值
-
-                                    3.進行修改
-                                    4.查驗是否更改，進行更新
-
-
-                                    1.獲得這個javabeans-arraylist的guest
-
-                                    2.刪除，添加
-
-                            *
-                            * */
-
-
-                //  boolean isSuccess=bookingRecordService.updateBookingAllInfoByMemberID(1,"testImagePath");
-                System.out.println("=================Session available=================");
-
-
-                //DMLBach
-                //"UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionStatus`=? where  `sessionID`=?"
-                //1.create book
-                //2.create session
 
 
                 break;
@@ -346,10 +218,6 @@ public class BookingController extends HttpServlet {
                     System.out.println("  " + s.getGuestName());
                 }
 
-                System.out.println("Select a session to modify");
-                sessionSelected = 0;
-                sessionSelected = Utility.readInt();
-
                 System.out.println("Display avaialbe venue and date");
 
 
@@ -366,29 +234,7 @@ public class BookingController extends HttpServlet {
                 int sessionSelectedAsnewOne = 0;
                 sessionSelectedAsnewOne = Utility.readInt();
 
-                boolean updateSuccesss = sessionService.updateSessionSetBefore(sessionSelected, sessionSelectedAsnewOne);
 
-                if (updateSuccesss) {
-
-
-                    bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
-                    System.out.println("=================display session after modification=================");
-                    System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
-                    for (BookingInfo_MM s : bookingObjectForEditSession) {
-                        System.out.print("  " + s.getBookId());
-                        System.out.print("         " + s.getUserName());
-
-                        System.out.print("         " + s.getSessionId());
-                        System.out.print("  " + s.getSessionDate());
-
-                        System.out.print("  " + s.getSessionCampus());
-                        System.out.print("  " + s.getSessionStartTime());
-                        System.out.print("  " + s.getSessionEndTime());
-                        System.out.println("  " + s.getGuestName());
-                    }
-
-
-                }
 
 
                 break;

@@ -40,6 +40,7 @@ $(document).ready(function () {
 
                 const modal = button.closest('.modalGeneral')
                 closeModal(modal)
+                $(".venue-apply-form-sessionsSelected-box").html("")
             })
 
 
@@ -68,6 +69,7 @@ $(document).ready(function () {
             getSessionByDate(1, currentDate);
 
             getGetListForBooking();
+            $('.venu-apply-input--date').html('Timeslot: '+currentDate)
 
             $(".venu-apply-input--date").val(currentDate)
             $('#containerOrderList table tbody tr').attr('display', 'table-row')
@@ -137,6 +139,10 @@ $(document).ready(function () {
         const modals = document.querySelectorAll('.modal.active')
         modals.forEach(modals => {
             closeModal(modals)
+
+
+
+
         })
 
 

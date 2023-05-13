@@ -43,6 +43,35 @@ public class SessionService {
                 "  where u.userID=?  ", BookingInfo_MM.class, userID);
 
     }
+
+    public List<BookingInfo_MM> displaySessionBookingID(int bookID) {
+        List<BookingInfo_MM> result=null;
+        try {
+            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `session` as s " +
+                    "left join bookingrecord as b on s.sessionFKbookingRecord=b.bookID " +
+                    "left join venue as v on v.venID=sessionCampus " +
+                    "  left join user as u on u.userID=b.bookFKmemberID" +
+                    "  where s.sessionFKbookingRecord=?  ", BookingInfo_MM.class, bookID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+
+    }
+
+
+
+    public List<BookingInfo_MM> displayBookingInfoNeedApproval() {
+        List<BookingInfo_MM> result=null;
+        try {
+            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` "
+                    , BookingInfo_MM.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return  result;
+//where b.bookStatus=1
+    }
     public List<Session> displaySessionByDateAndCampus(int campus, String date) {
 
         return sessionDAO.queryMulti("SELECT * FROM `session` where sessionCampus=? and sessionDate =?", Session.class, campus, Date.valueOf(date));

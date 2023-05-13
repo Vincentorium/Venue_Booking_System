@@ -49,7 +49,7 @@
             <div class="loginBtn">
                 <input type="hidden" name="type" value=1>
                 <input class="loginSubmit" type="submit" value="Sign In" class="submit" />
-                <h5 ><a href="signup.jsp"></a> Sign Up</h5>
+                <h5 ><a href="signup.jsp">Sign Up</a> </h5>
             </div>
             <!-- "   -->
 

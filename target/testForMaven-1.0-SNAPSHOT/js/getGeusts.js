@@ -46,6 +46,9 @@ function getGeustListBySessionID(sessionID) {
     return result
 }
 
+
+
+
 function getGeustIntoGuestMngt(userID, type) {
     let result = getGeusts(userIDSession, 1)
     let content
@@ -148,8 +151,8 @@ function deleteUser(userID) {
         },//EDF AJAX sucess FUNCTION
 
         error: function (xhr, status, error) {
+            alert("Sorry, the guest is on the guest list of venue")
 
-            console.log('An error occurred while updating status');
         }
 
 

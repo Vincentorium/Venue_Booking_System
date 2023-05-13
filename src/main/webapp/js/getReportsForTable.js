@@ -31,8 +31,8 @@ $.ajax({
    
 
           
-        
-        header="<tr><th>"
+
+        header=" <tr><th>"
                                     +"Report Date"
                                     +"</th><th>"
                                     +"Nature"

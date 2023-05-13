@@ -61,12 +61,13 @@ public class GuestService {
         int isSucess = 0;
 
 
-
-
-        isSucess = guestDAO.update("DELETE FROM `guest` WHERE  guestID=?",
-                guestID);
-
-
+        try {
+            isSucess = guestDAO.update("DELETE FROM `guest` WHERE  guestID=?",
+                    guestID);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
 
 
         return isSucess>0;

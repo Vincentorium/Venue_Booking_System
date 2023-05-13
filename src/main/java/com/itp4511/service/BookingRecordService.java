@@ -65,6 +65,8 @@ public class BookingRecordService {
 
 
 
+
+
     public List<BookingInfo_MM> getBookingAllInfoByMemberID(int memberID){
 
         String sql="SELECT *  " +
@@ -136,29 +138,29 @@ public class BookingRecordService {
     }
 
     public boolean updateBookingImgnfoByMemberID(int memberID,String imageName){
-        int isSuccess;
-        String sql="\n" +
-                "update  bookingrecord as b  \n" +
-                "                   left join user as u  \n" +
-                "                   on b.bookFKmemberID=u.userID \n" +
-                "                                        left join session as s   \n" +
-                "                                        on b.bookID=s.sessionFKbookingRecord  \n" +
-                "                                        left join venue as v \n" +
-                "                                        on s.sessionCampus=v.venID \n" +
-                "                                        left join guestlist as gl  \n" +
-                "                                        on s.sessionFKGuestlist=gl.guestListID  \n" +
-                "                                        left join guestlistenguest_mm as glmm  \n" +
-                "                                        on gl.guestListID=glmm.guestlistNGuestFKguestlistID  \n" +
-                "                                        left join guest as g  \n" +
-                "                                        on glmm.guestlistNGuestFKguestID=g.guestID   \n" +
-                "                                      \n" +
-                "                                        set b.bookReceiptName=\"tetttttst\",b.bookStatus=\"test\",\n" +
-                "                                            v.venName\n" +
-                "                                        \n" +
-                "                                          WHERE b.bookID=1\n";
+        int isSuccess=0;
+        try {
+            String sql="\n" +
+                    "UPDATE `bookingrecord` SET `bookReceipt`=? , bookStatus=? WHERE `bookID`=?";
 
-        isSuccess=    bookingRecordDAO.update(sql, imageName,memberID);
-        return isSuccess>1;
+            isSuccess=    bookingRecordDAO.update(sql, imageName,1,memberID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return isSuccess>0;
+    }
+
+    public boolean approveBooking(int memberID){
+        int isSuccess=0;
+        try {
+            String sql="\n" +
+                    "UPDATE `bookingrecord` SET bookStatus=2 WHERE `bookID`=?";
+
+            isSuccess=    bookingRecordDAO.update(sql, memberID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return isSuccess>0;
     }
 
 
@@ -186,31 +188,6 @@ public class BookingRecordService {
                 "                                        \n" +
                 "                                          WHERE b.bookID=1\n";
 
-        //已經處理好uopload picture
-        //如何update guestlist是一個問題。涉及到刪除就有的，弄新
-        /*
-        之前用arraylist放數據，是不是應該用javabean來放嗯好？
-        1.對於需要edit的對象，用query獲取對象
-        2.再雜講值輸出當默認值，若不更改空值，便保留默認
-
-        ————————
-        1.輸入id——或選中
-        2.彈出值
-        3.進行修改
-        4.查驗是否更改，進行更新
-
-        1.輸入id——或選中
-            1.直接展示table
-        2.彈出值
-
-        3.進行修改
-        4.查驗是否更改，進行更新
-
-
-        1.獲得這個javabeans-arraylist的guest
-
-        2.刪除，添加
-*/
 
 
         isSuccess=    bookingRecordDAO.update(sql, imageName,memberID);

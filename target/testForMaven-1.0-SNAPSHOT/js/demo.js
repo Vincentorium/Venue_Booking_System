@@ -1,62 +1,5 @@
 
 $(document).ready(function () {
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 var userName= $.cookie('name')
 
@@ -77,22 +20,10 @@ $('.complaintButton1').click(function(){
 
 $('.demoLogOut').click(function(){
 
-
-		if($('.userName').html()==="Vincent"){
-				
-				$('.favBox,.complaint2,.cmtHistory,.cmtSumbitBox').removeClass('demonHide');
-				
-				$('.managementFunc').addClass('demonHide');
-			
-				$('.containerOrderList').removeClass('containerOrderListDemo');
-			
-				$('.demonSwitchRight').html('Table')
-				
-				$('.complaintNature_edit').addClass('demonHide');
-
-			 
-			}
-window.location.href = "index.html";
+    $.removeCookie('userID' , {path: '/'  });
+    $.removeCookie('userType' , {path: '/'  });
+    $.removeCookie('userName' , {path: '/'  });
+window.location.href = "login.jsp";
 	
 })
 

@@ -59,7 +59,8 @@ public class GuestlistService {
         int isUpdateGuestList[];
         int isUpdate = 0;
         Object[][] bachListAfterGuest = new Object[bachList.length][4];
-        Object[][] guestCollection = new Object[bachList.length][3];
+     //   Object[][] guestCollection = new Object[bachList.length][3];
+        //Object[][] guestCollection = new Object[bachList.length][3];
 
         for (int k = 0; k < bachList.length; k++) {
 
@@ -80,6 +81,25 @@ public class GuestlistService {
             bachListAfterGuest[k][3] =bachList[k][3];
 
             //get guest data from bach
+
+            Object[][] guestCollection = new Object[((int[]) bachList[k][4]).length][3];
+            try {
+                for (int i = 0; i < ((int[]) bachList[k][4]).length; i++) {
+
+
+                        guestCollection[i][0] = 0;
+                        guestCollection[i][1] = guestListID;
+                        guestCollection[i][2] = ((int[]) (bachList[k][4]))[i];
+
+
+            }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+                e.printStackTrace();
+            }
+
+
+/*
             for (int i = 0; i < bachList.length; i++) {
                 for (int j = 0; j < ((int[]) (bachList[i][4])).length; j++) {
 
@@ -88,8 +108,18 @@ public class GuestlistService {
                     guestCollection[i][2] = ((int[]) (bachList[i][4]))[j];
 
                 }
-
             }
+*/
+
+
+/*
+                for (int j = 0; j < ((int[]) (bachList[0][4])).length; j++) {
+
+                    guestCollection[j][0] = 0;
+                    guestCollection[j][1] = guestListID;
+                    guestCollection[j][2] = ((int[]) (bachList[i][4]))[j];
+
+                }*/
 
 
             isUpdateGuestList = guestlistenguest_MmDAO.updateBach("INSERT INTO `guestlistenguest_mm` (`guestlistNGuestID`, `guestlistNGuestFKguestlistID`, `guestlistNGuestFKguestID`) VALUES (?,?,?);", guestCollection);

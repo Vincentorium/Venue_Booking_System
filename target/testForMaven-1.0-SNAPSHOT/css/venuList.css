@@ -138,3 +138,44 @@
 
 
 }
+
+
+.thumbnails {
+
+    height: 50px;
+    margin-left:15px;
+}
+
+
+.thumbnails:hover{
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%,-50%) scale(1);
+    transition: 0s;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    z-index: 100;
+    width: 500px;
+
+}
+
+.thumbnails{
+    transition: none;
+
+}
+
+
+
+.thumbnail {
+
+    width: 150px;
+    height: 50px;
+    margin-left:15px;
+}
+.fileInput{
+    display: none;
+}

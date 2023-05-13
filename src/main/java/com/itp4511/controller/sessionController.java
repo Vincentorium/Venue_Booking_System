@@ -3,6 +3,7 @@ package com.itp4511.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.itp4511.domain.BookingInfo_MM;
 import com.itp4511.domain.Guest;
 import com.itp4511.domain.Session;
 import com.itp4511.service.*;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 
@@ -85,7 +87,36 @@ public class sessionController extends HttpServlet {
                         }
                         break;
 
+
+                    case 3:
+
+                        int  bookID = Integer.parseInt(request.getParameter("bookID"));
+                        try {
+                            List<BookingInfo_MM>  displaySessionBookingID = sessionService.displaySessionBookingID(bookID);
+
+
+
+                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+
+                        ObjectMapper mapper2 = new ObjectMapper();
+                            mapper2.setDateFormat(dateFormat);
+                        String json2 = mapper2.writeValueAsString(displaySessionBookingID);
+
+
+                        response.getWriter().write(json2); //  convey json to client
+                        } catch (NumberFormatException e) {
+                            System.out.printf(e.getMessage());
+                            e.printStackTrace();
+                        }
+
+
+                        break;
+
                 }
+
+
+
 
 
 

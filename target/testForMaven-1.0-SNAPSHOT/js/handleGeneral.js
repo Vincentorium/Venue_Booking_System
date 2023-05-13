@@ -4,7 +4,7 @@ var userIDSession;
 //for operator to update report status between unapprove and approve fo
 $(document).on('click', '.submitButton', function (e) {
 
-    let submitButtonType = $(this).data("submit_button");
+    let submitButtonType = $(this).data("submit_type");
     let submitBox = $($(this).data("submit_box"))
     let tempArrMultiForSingeReport = []
 
@@ -12,36 +12,14 @@ $(document).on('click', '.submitButton', function (e) {
         tempArrMultiForSingeReport.push(value.files[0]);
     })
     switch (submitButtonType) {
-        case "reportSubmit":
+        case "bookingRecord":
 
 
-            if (!submitBox.find(".submitNotifyUser").is(':checked')) {
-                var status = $('.repSubmitStatus').val() == "unchange" ? null : $('.repSubmitStatus').val()
-                alert("Successfully update the status to -> " + status + "!")
-                updateReportStatus(tempArrMultiForSingeReport)
-
-            } else {
-                //if multi button is clicked
-                /*  if(!getRevelantReportsForUpdate($(this).data("rep_street"))===false){
-                       $('.relevantReportsBox').addClass("activeRelevantReps")
-                           e.preventDefault();}
-                  else{
-                    e.preventDefault();
-                    return
-
-                  }
-                  */
-            }
-
+            updateBookingWithAttach(submitBox)
             break;
-        case "relevantReportsSubmit":
+        case "ApproveBooking":
 
-            if (updateMultiReportsStatus(tempArrMultiForSingeReport)) {
-                let status = $('.repSubmitStatus').val() == "unchange" ? null : $('.repSubmitStatus').val()
-                alert("Successfully update the status to " + status + "!")
-
-
-            }
+            approveBooking(submitBox)
 
             break;
 
@@ -89,8 +67,6 @@ checkSession()
 function checkSession() {
 
 
-
-
             userIDSession = $(".header__singUp").data("userid");
 
 
@@ -98,6 +74,10 @@ function checkSession() {
 
 
         usernmae = $(".header__singUp").html();
+
+    $.cookie('userName', usernmae, { expires: 7, path: '/' });
+    $.cookie('userType', userType, { expires: 7, path: '/' });
+    $.cookie('userID', userIDSession, { expires: 7, path: '/' });
 
     loginCustomizeForUser()
 

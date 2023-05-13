@@ -95,7 +95,7 @@ $(".mail-list-content-mailBoxFunctionBox").removeClass("demonHide")
 
 
 
- 
+
 
 function clearMailBox(box){
     inputID__mainMailBox=0;
@@ -134,7 +134,7 @@ var  inputID__singleReportAttach=0
     $(document).on('change',".inputDisplay--mainMailBox", function(e) {
 
 
-
+        let box=$(this)
         $(this).addClass("fileInputed--mainMailBox")
         $(this).removeAttr('id');
 
@@ -156,7 +156,7 @@ var  inputID__singleReportAttach=0
                 id:"file-input--mainMailBox"
 
             });
-            $('.preview--mainMailBox').before(newInput);
+            box.parent().find('.preview--mainMailBox').before(newInput);
 
 
             removeBtn.on('click', function() {
@@ -168,7 +168,9 @@ var  inputID__singleReportAttach=0
             });
 
             var previewDiv = $('<div>').append(img).append(removeBtn);
-            $('.preview--mainMailBox').append(previewDiv);
+//        $(this).parent().find('.preview--mainMailBox').append(previewDiv);
+            box.parent().find('.preview--mainMailBox').append(previewDiv);
+
         };
         reader.readAsDataURL($(this).get(0).files[0]);
 
