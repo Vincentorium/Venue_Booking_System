@@ -6,6 +6,56 @@ $(document).ready(function () {
 })
 
 
+
+
+//Venue Timeslot event:clicking a timeslot box will add it to selected box of user
+$(document).on('click', '.venu-apply-form-session', function (e) {
+
+    e.stopPropagation();
+
+    if(  $(this).hasClass("sessionBooked"))
+        return;
+    let content = $('.venue-apply-form-sessionsSelected-box').html();
+    content +=
+
+        '  <div class="venu-session-selected" id=' + $(this).data("sessionid")+' )>'
+
+        + ' <input type="hidden"  class="sessionSelected" value=' + $(this).data("sessionid") + '>'
+        + $(".venu-apply-input--campus option:selected").html()
+        + '<span class="cancelSessionSelected">X</span>'
+
+        + $(".venu-apply-form-displayVnue--date").html()
+
+        + "<br>"
+        + $(this).html()
+        + getGetListForBooking(userIDSession, $(this).data("sessionid"))
+        + '</div>'
+
+        $(this).addClass("sessionBooked");
+    $('.venue-apply-form-sessionsSelected-box').html(content);
+
+})
+
+
+
+
+
+//<editor-fold desc="Booking Venues ">
+
+
+var BookingDateSelected = getCurrentDate()
+var BookingCampusSelected = 1
+
+//Selecting a date triggers refreshing venue timeslot
+$(document).on('change', '.venu-apply-input--date', function (e) {
+
+    e.stopPropagation();
+    BookingDateSelected = $(this).val();
+    $('.venu-apply-form-displayVnue--date').html('Timeslot: '+$(this).val())
+    getSessionByDate(BookingCampusSelected, BookingDateSelected)
+
+});
+
 function getSessionByDate(campID, date) {
 
 
@@ -42,7 +92,7 @@ function getSessionByDate(campID, date) {
 
 
                 content +=
-                    '<div class="venu-apply-form-session ' + sessionCssStatus + '"   data-sessionID=' + rc.sessionId + '  >' + rc.sessionStartTime + " ~ " + rc.sessionEndTime + sessionNote + '</div>';
+                    '<div class="venu-apply-form-session ' + sessionCssStatus + '"   data-sessionID=' + rc.sessionId + " id=" + rc.sessionId +  '  >' + rc.sessionStartTime + " ~ " + rc.sessionEndTime + sessionNote + '</div>';
 
 
             });//end of $.each
@@ -65,63 +115,28 @@ function getSessionByDate(campID, date) {
 }//EOF GETREPORTS FUNCTION
 
 
-
-$(document).on('click', '.venu-apply-form-session', function (e) {
-
-    e.stopPropagation();
-
-    let content = $('.venue-apply-form-sessionsSelected-box').html();
-    content +=
-
-        '  <div class="venu-session-selected">'
-
-        + ' <input type="hidden"  class="sessionSelected" value=' + $(this).data("sessionid") + '>'
-        + $(".venu-apply-input--campus option:selected").html()
-        + '<span class="cancelSessionSelected">X</span>'
-
-        + $(".venu-apply-form-displayVnue--date").html()
-
-        + "<br>"
-        + $(this).html()
-        + getGetListForBooking(userIDSession, $(this).data("sessionid"))
-        + '</div>'
-
-    $('.venue-apply-form-sessionsSelected-box').html(content);
-
-})
-
-$(document).on('click', '.cancelSessionSelected', function (e) {
-
-    e.stopPropagation();
-
-
-    $(this).parent().remove()
-
-
-})
-
-
-var BookingDateSelected = getCurrentDate()
-var BookingCampusSelected = 1
-$(document).on('change', '.venu-apply-input--date', function (e) {
-
-    e.stopPropagation();
-    BookingDateSelected = $(this).val();
-    $('.venu-apply-form-displayVnue--date').html('Timeslot: '+$(this).val())
-    getSessionByDate(BookingCampusSelected, BookingDateSelected)
-
-})
-
-
+//Selecting a campus triggers refreshing venue timeslot
 $(document).on('change', '.venu-apply-input--campus', function (e) {
 
     e.stopPropagation();
 
     BookingCampusSelected = $(this).val();
     getSessionByDate(BookingCampusSelected, BookingDateSelected)
-})
+});
 
 
+
+
+$(document).on('click', '.cancelSessionSelected', function (e) {
+    e.stopPropagation();
+    $(".venu-apply-form-disply-sessions").find("#"+ $(this).parent().attr("id") +"").removeClass("sessionBooked")
+    $(this).parent().remove()
+});
+
+//</editor-fold>
+
+
+//get guest list for session
 function getGetListForBooking(userID = userIDSession, sessionID) {
 
 
@@ -136,14 +151,6 @@ function getGetListForBooking(userID = userIDSession, sessionID) {
 
 
         content +=
-
-            //
-            //
-            //  ' <tr>'
-            // +' <td>'+'  <input type="checkbox" name="session_'+sessionID+'_guest"  value=' + rc.guestId + ' > '+'</td>'
-            // +' <td> '+rc.guestName+'</td>'
-            // +' </tr>'
-
 
             ' <tr>'
             + ' <td>' + '  <input type="checkbox" class="guestID"  value=' + rc.guestId + ' > ' + '</td>'
@@ -274,7 +281,7 @@ function getBookingRC(userID) {
 
 
 
-//<editor-fold desc="Function For Booking table">
+//<editor-fold desc="Function For Booking table for display records for a user">
 function statusContentFun(bookStatus){
 
 

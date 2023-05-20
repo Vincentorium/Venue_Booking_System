@@ -1,7 +1,7 @@
 .sessionBooked{
     cursor: not-allowed!important;
     background-color: grey;
-    pointer-events: none;
+
 }
 .venu-session-selected{
     padding: 5px;
