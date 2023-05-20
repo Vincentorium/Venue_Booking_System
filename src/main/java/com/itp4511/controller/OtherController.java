@@ -9,7 +9,10 @@ import com.itp4511.service.*;
 import com.itp4511.utils.Utility;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -44,102 +47,100 @@ public class OtherController extends HttpServlet {
 
     private BookingRecordService bookingRecordService = new BookingRecordService();
 
-
-        protected void doPost2(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-         //   Part fileName = request.getPart("image");
-
-            String uploadPath= null;  // upload path where we have to upload our actual image
-
-            System.out.println("In do post method of Add Image servlet.");
-            Part file = request.getPart("image");
-
-//        String imageFileName=file.getSubmittedFileName();  // get selected image file name
-
-            String cd = file.getHeader("Content-Disposition");
-//截取不同类型的文件需要自行判断
-            String imageFileName = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
-
-
-            System.out.println("Selected Image File Name : "+imageFileName);
-
-            uploadPath = "./"+imageFileName;
-            System.out.println("Upload Path : "+uploadPath);
-            // 获取文件部分（file part）
-            Part filePart = request.getPart("testForm"); // "file" 是 HTML 表单字段的名称
-
-            // 获取文本部分（text part）
-            String fileName = request.getParameter("image"); // "name" 是 HTML 表单字段的名称
-
-            //
-       ///     String fileName = extractFileName(filePart);
-            String extension = getExtension(fileName);
-
-            // 构建上传目标路径（destination path）
-            String uploadDir = "/path/to/uploads";
-            String filePath = uploadDir + File.separator + UUID.randomUUID().toString() + "." + extension;
-
-            // 将文件写入磁盘
-            filePart.write(filePath);
-
-            // 发送响应给客户端
-            response.setContentType("text/html");
-            response.getWriter().println("File " + fileName + " has been uploaded successfully!");
-        }
-
+    public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
+        int bookingID = -1;
 
-        String uploadPath= null;  // upload path where we have to upload our actual image
+        if (ServletFileUpload.isMultipartContent(request)) {
 
-            System.out.println("In do post method of Add Image servlet.");
-        Part file = request.getPart("image");
+            LOG.debug("Confirm the content is multi one");
 
-            String id=request.getParameter("id");
-//        String imageFileName=file.getSubmittedFileName();  // get selected image file name
+            DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
 
-            String cd = file.getHeader("Content-Disposition");
+            //new a object to handle content
+            ServletFileUpload servletFileUpload =
+                    new ServletFileUpload(diskFileItemFactory);
+            //handle chinese input
+            servletFileUpload.setHeaderEncoding("utf-8");
 
-        String imageFileName = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
+            try {
+                //parse the content into a list with attribute relating to form dom
+                List<FileItem> list = servletFileUpload.parseRequest(request);
 
-
-            System.out.println("Selected Image File Name : "+imageFileName);
-
-
-        uploadPath = "./uploads/"+imageFileName;
-//            uploadPath = "./uploads/"+imageFileName;
-            System.out.println("Upload Path : "+uploadPath);
-
-
+                for (FileItem fileItem : list) {
+                    LOG.debug("Handle the item " + fileItem.toString());
 
 
-        try
-        {
+                    if (fileItem.isFormField()) {//如果是true就是文本 input text
+                        LOG.debug("Entering conditional statement to check and confirm file is text. ");
 
 
-            FileOutputStream fos=new FileOutputStream(uploadPath);
-            InputStream is=file.getInputStream();
+                        //bookingID= fileItem.getString("utf-8"); //name of pic when upload :文件名
+                        bookingID = Integer.parseInt(fileItem.getString());
+                        LOG.debug("bookingID=" + bookingID);
 
-            byte[] data=new byte[is.available()];
-            is.read(data);
-            fos.write(data);
-            fos.close();
-            boolean isSent=bookingRecordService.updateBookingImgnfoByMemberID(Integer.parseInt(request.getParameter("id")),imageFileName);
+                    } else {//是一个文件
+                        LOG.debug("Entering conditional statement to check and confirm element is file. ");
+
+                         String name = fileItem.getName(); //輸入的名字
+
+                        //get the name of input
+                        if (fileItem.getFieldName().equals("image")) {
+                            LOG.debug("Name of file upload=" + name);
+                        }
 
 
-      //**********************
+                        String fileRealPath = "K:\\IT\\Project\\ITP4511_EA_PROJECT\\src\\main\\webapp\\uploads\\";
 
+                        File fileRealPathDirectory = new File(fileRealPath + Utility.getYearMonthDay());
+
+                        if (!fileRealPathDirectory.exists()) {
+                            try {
+                                if (fileRealPathDirectory.mkdirs()) {
+
+                                    LOG.debug("File " + fileRealPathDirectory + " created successfully");
+                                } else {
+                                    LOG.debug("File " + fileRealPathDirectory + " could not be created");
+                                }
+                            } catch (Exception e) {
+                                LOG.error("An I/O error occurred while creating the directory: ", e);
+                            }
+                        }
+
+
+                        name = UUID.randomUUID().toString() + "_" + System.currentTimeMillis() + "_" + name;
+                        String fileFullPath = fileRealPathDirectory + "/" + name;
+                        fileItem.write(new File(fileFullPath));// how to see if write successfully
+
+                        LOG.debug("The path for saving the file is " + fileRealPathDirectory);
+
+
+                        if (bookingID != -1) {
+                            try {
+                                bookingRecordService.updateBookingImgnfoByMemberID(bookingID, (Utility.getYearMonthDay() + name));
+                                LOG.debug("Successfully Update the book receipt to bookingID: "+ bookingID +" with path+receipt: "+ (Utility.getYearMonthDay() + name) );
+                            } catch (NumberFormatException e) {
+                                LOG.debug("Fail to update the book receipt, err info is ", e);
+                            }
+                        }
+
+
+                        response.setContentType("text/html;charset=utf-8");
+                        response.getWriter().write("upload successfully~");
+
+
+                    }
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Not a file .");
         }
-
-        catch(Exception e)
-        {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-
-        //getting database connection (jdbc code)
-
-
     }
+
 }

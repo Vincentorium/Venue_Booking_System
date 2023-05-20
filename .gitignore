@@ -1,4 +1,2 @@
 #  Ignore ItelliJ IDEA files
-artifacts/
-workspace.xml
 target/

@@ -65,11 +65,11 @@ function getSessionByDate(campID, date) {
 }//EOF GETREPORTS FUNCTION
 
 
- 
+
 $(document).on('click', '.venu-apply-form-session', function (e) {
 
     e.stopPropagation();
- 
+
     let content = $('.venue-apply-form-sessionsSelected-box').html();
     content +=
 
@@ -80,7 +80,7 @@ $(document).on('click', '.venu-apply-form-session', function (e) {
         + '<span class="cancelSessionSelected">X</span>'
 
         + $(".venu-apply-form-displayVnue--date").html()
-       
+
         + "<br>"
         + $(this).html()
         + getGetListForBooking(userIDSession, $(this).data("sessionid"))
@@ -93,7 +93,7 @@ $(document).on('click', '.venu-apply-form-session', function (e) {
 $(document).on('click', '.cancelSessionSelected', function (e) {
 
     e.stopPropagation();
-     
+
 
     $(this).parent().remove()
 
@@ -107,7 +107,7 @@ $(document).on('change', '.venu-apply-input--date', function (e) {
 
     e.stopPropagation();
     BookingDateSelected = $(this).val();
-$('.venu-apply-form-displayVnue--date').html('Timeslot: '+$(this).val())
+    $('.venu-apply-form-displayVnue--date').html('Timeslot: '+$(this).val())
     getSessionByDate(BookingCampusSelected, BookingDateSelected)
 
 })
@@ -334,9 +334,9 @@ function getGuestListIntoBoxForBookingBySessionDI(sessionID){
         guest=rc.guestName == null?"" : rc.guestName
 
         result+=
-        '    <li>'
-        +guest
-        +'    </li>'
+            '    <li>'
+            +guest
+            +'    </li>'
 
 
 
@@ -355,14 +355,14 @@ function getSessionIntoTalbe(bookID) {
     let data=""
     let guestInfo=""
 
-  let head='    <table>'
-      +'      <thead>'
-      +'        <th>Venue</th>'
-      +'        <th>Session Date</th>'
-      +'        <th>Start Time</th>'
-      +'        <th>End Time</th>'
-      +'        <th>Gueset List</th>'
-      +'      </thead>'
+    let head='    <table>'
+        +'      <thead>'
+        +'        <th>Venue</th>'
+        +'        <th>Session Date</th>'
+        +'        <th>Start Time</th>'
+        +'        <th>End Time</th>'
+        +'        <th>Gueset List</th>'
+        +'      </thead>'
 
     $.each($(sessionInfo), function (i, rc) {
         guestInfo=""
@@ -378,7 +378,7 @@ function getSessionIntoTalbe(bookID) {
 
     })
 
-        result=head+data+'    </table>'
+    result=head+data+'    </table>'
 
 
     return result
@@ -404,12 +404,7 @@ function getBookingRCIntoTable() {
         let gueslistRS = getGeustListBySessionID(rc.sessionID);
         let guestLit = ""
         let mailContetnForBookingDisplay = rc.bookReceipt
-
-
-
         let sessionInfoContent=getSessionIntoTalbe(rc.bookId)
-
-
 
 
         let type = ( 	$.cookie("userType")=="Staff" || $.cookie("userType")=="Senior Management")? 1:0
@@ -453,15 +448,16 @@ function getBookingRCIntoTable() {
         }
         else
         {
+
             mailContetnForBookingDisplay =
 
                 "<div  class='attachTitleBox'><span class='attachTitle'></span>"
                 + "<div class='attachPic'>"
 
-                + '<img class="thumbnails" src="./images/' + rc.bookReceipt + '" alt="No"       ></a>'
-
-                + "</div>"
-                + "</div>"
+                + '<img class="thumbnails" src="/uploads/' + rc.bookReceipt + '" alt="No"       ></a>'
+            console.log("Path Save to db is: " + rc.bookReceipt)
+            + "</div>"
+            + "</div>"
         }
 
 
@@ -501,17 +497,14 @@ function updateBookingWithAttach(bookingBox) {
     var imageData = new FormData();
 
     imageData.append('id', id);
-
-
-    imageData.append('type', 'uploadReceipt')
+//    imageData.append('type', 'uploadReceipt')
 
 //    let imagebookingBox=bookingBox.children(".bookingAttach").children(".mailAttachBox").children(".fileInput").value.file[0]
     let imagebookingBox = bookingBox.find(".fileInputed--mainMailBox")
     // let imag=imagebookingBox.files[0]
 //.children(".mailAttachBox").children(".fileInput").value.file[0]
-    $(imagebookingBox).each(function (index, value) {
-        imageData.append('image', value.files[0]);
-    })
+    imageData.append('image',  $(imagebookingBox).get(0).files[0]);
+
 
     $.ajax({
 
@@ -522,11 +515,11 @@ function updateBookingWithAttach(bookingBox) {
         contentType: false,
         success: function (response) {
 
-   
+
 
             alert("updated!");
 
-getBookingRCIntoTable()
+            getBookingRCIntoTable()
         },
 
     });//EO ajax

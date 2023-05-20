@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+status = "warn"  日誌框架本身內部的的輸出日誌級別
+monitorInterval="5" 自動加載配置文件的間隔時間，不低於5秒  —— 似乎是熱更新，即在啟動文件時，更改log文件配置文件後，更新時間
+-->
+<Configuration status="warn" monitorInterval="5">
+<!--
+幾種配置屬性進行管理
+使用時通過:${name}
+-->
+
+
+<!--  日誌文件的存放目錄-->
+    <properties>
+        <property name="LOG_HOME">D:/logs</property>
+    </properties>
+
+
+<!--控制輸出   /   target=控制顏色 -->
+    <Appenders>
+
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %c{36}:%L -
+-- %m%n"/>
+        </Console>
+
+<!--日誌文件輸出-->
+        <File name="file" fileName="${LOG_HOME}/myfile.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] %l
+  - %m%n"/>
+        </File>
+
+
+
+<!--高效率文件大寫-->
+        <RandomAccessFile name="accessFile" fileName="${LOG_HOME}/myAcclog.log">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] %l
+  - %m%n"/>
+        </RandomAccessFile>
+
+
+<!--        日誌文件，按規則劃分-->
+        <RollingFile name="rollingFile" fileName="${LOG_HOME}/myrollog.log"
+                     filePattern="D:/logs/$${date:yyyy-MM-dd}/myrollog-%d{yyyyMM-dd-HH-mm}-%i.log">
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] %l
+  - %msg%n"/>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+
+<!--            在同一個目錄下，文件的個數限定為30個，超過進行覆蓋-->
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+    </Appenders>
+
+
+
+    <Loggers>
+
+
+<!--define async logger
+
+
+-->
+<!--        <AsyncLogger name="com.itheima" level="trace"-->
+<!--                     includeLocation="false" additivity="false">-->
+<!--            <AppenderRef ref="file"/>-->
+<!--        </AsyncLogger>-->
+
+
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+
+            <AppenderRef ref="accessFile"/>
+
+        </Root>
+    </Loggers>
+</Configuration>

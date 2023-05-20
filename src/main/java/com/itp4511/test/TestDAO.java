@@ -1,17 +1,20 @@
 package com.itp4511.test;
 
+import com.itp4511.controller.OtherController;
 import com.itp4511.dao.UserDAO;
 import com.itp4511.dao.UserInfoDAO;
 import com.itp4511.domain.*;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 public class TestDAO {
-
+    public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
     @Test
     public void testUserInfoDAO(){
-
+        LOG.debug("test log");
 /*
         UserInfoDAO userInfoDAO=new UserInfoDAO();
         List<UserInfo> userInfoList= userInfoDAO.queryMulti("select * from user where id >= ?",UserInfo.class,1);
