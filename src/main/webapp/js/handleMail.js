@@ -135,8 +135,8 @@ var  inputID__singleReportAttach=0
 
 
         let box=$(this)
-        $(this).addClass("fileInputed--mainMailBox")
-        $(this).removeAttr('id');
+        box.addClass("fileInputed--mainMailBox")
+        box.removeAttr('id');
 
         var newInput
         var reader = new FileReader();
@@ -160,10 +160,10 @@ var  inputID__singleReportAttach=0
 
 
             removeBtn.on('click', function() {
-                $(this).parent().remove();
+                box.parent().remove();
 
 
-                $("."+$(this).data("close")).remove()
+                $("."+box.data("close")).remove()
 
             });
 

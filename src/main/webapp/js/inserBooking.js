@@ -430,13 +430,13 @@ function getBookingRCIntoTable() {
 
         let submitButton =
             ' <div class="mailAttachBox mailAttachBox--mainMailBox">'
-            + '       <input type="file" id="file-input--mainMailBox" class="fileInput fileInput--mainMailBox inputDisplay--mainMailBox file-input-mail-JS 0" name="image0" />'
+            + '       <input type="file" id="file-input--mainMailBox_ '+ rc.bookId+'" class="fileInput fileInput--mainMailBox inputDisplay--mainMailBox file-input-mail-JS 0" name="image0" />'
             + '       <div class="preview preview--mainMailBox"></div>'
 
             + '   </div>'
 
             + '                        <div class="uploadForAttach">'
-            + '                          <label for="file-input--mainMailBox">'
+            + '                          <label for="file-input--mainMailBox_ '+ rc.bookId+'"   >'
             + '                            <img src="./images/attachIcon.png" />'
             + '                          </label>'
             + '                        </div>'
