@@ -106,7 +106,7 @@ margin: 50px;
 
 
 
-.tableContainer table, .tableContainer table tbody {
+.tableContainer>table, .tableContainer>table>tbody {
     width: 1200px;
 }
 .mytable {
@@ -125,14 +125,15 @@ margin: 50px;
 
 
 .mytable td, .mytable th {
-    border: 1px solid #ddd;
+    border: 1px solid #7b5f5f;
+
     padding: 8px;
 }
  
 
- .mytable tbody tr:hover     {
-    background-color: #651818 !important;
-    color: white;
+ .mytable>tbody>tr:hover     {
+     background-color: #a07b7b !important;
+     color: white;
 }
  
 
@@ -151,3 +152,6 @@ margin: 50px;
     border-collapse: collapse;
     width: 100%;
 }
+ .bookingRecordsBox-sessionBox{
+     width: 1000px;
+ }

@@ -75,3 +75,8 @@ position: relative;
     height: auto;
     min-height: 50px;
 }
+
+.venue-apply-form-submitButBox{
+
+    display: flex;
+}

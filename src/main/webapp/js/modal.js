@@ -60,6 +60,8 @@ $(document).ready(function () {
 
             el.style.top = (160 + scrollPosition) + 'px';
             console.log(el)
+
+            //Loading booking form
         } else if (defaulModal == 'tablePostTitle') {
             $(modal).addClass('active');
 
@@ -72,6 +74,10 @@ $(document).ready(function () {
             $('.venu-apply-input--date').html('Timeslot: '+currentDate)
 
             $(".venu-apply-input--date").val(currentDate)
+            $(".venu-apply-form-displayVnue--date").html("Date: "+currentDate)
+
+
+
             $('#containerOrderList table tbody tr').attr('display', 'table-row')
 
         } else if (defaulModal == 'mailRecord') {

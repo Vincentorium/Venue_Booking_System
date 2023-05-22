@@ -161,6 +161,7 @@
                                 <br><label for="">date</label>
 
                                 <input class="venu-apply-input--date" type="date">
+
                                 <fieldset class="venue-apply-form-sessionsSelected">
                                     <legend>Timeslot selected:</legend>
                                     <div class="venue-apply-form-sessionsSelected-box">
@@ -168,7 +169,7 @@
                                     </div>
                                 </fieldset>
 
-
+                                <%--
                                 <br>
                                 <fieldset class="venue-apply-form-sessionsSelected">
                                     <legend>Template for guest invitation:</legend>
@@ -181,12 +182,14 @@
                                         <br>
 
                                 </fieldset>
+                                     --%>
                                 <br>
                                 <br>
+                                <div class="venue-apply-form-submitButBox">
                                 <input type="button" class="btnGeneral bookingFormSubmit" value="Submit">
-                                <input type="button" class="btnGeneral" value="Add another Request">
 
 
+                                </div>
                             </div>
                         </form>
                         <!--SOF sideFunction-->
@@ -257,7 +260,7 @@
         </div>
         <!-- EOF modal booking form Box-->
         <div class="venueListModal  modalGeneral   ">
-            Test venue list
+            Venue list
             <div class="venueListModal_title">
                 <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
 

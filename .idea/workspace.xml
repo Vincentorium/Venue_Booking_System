@@ -7,8 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48b353e2-82ac-4247-96db-9d9b4ea93a2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,49 +29,66 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/OtherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/applyFrom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="377">
+              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bookingForm.css">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="-561">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46" />
+            <state relative-caret-position="245">
+              <caret line="364" column="32" lean-forward="true" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="60" />
+              <folding>
+                <element signature="n#!!block;n#getSessionByDate#0" />
+                <element signature="n#!!block;n#getGetListForBooking#0" />
+                <element signature="n#!!block;n#addBooking#0" />
+                <element signature="n#!!block;n#getBookingRC#0" />
+                <element signature="n#!!block;n#statusContentFun#0" />
+                <element signature="n#!!block;n#getSessionInfoByBookID#0" />
+                <element signature="n#!!block;n#getGuestListIntoBoxForBookingBySessionDI#0" />
+                <element signature="n#!!block;n#updateBookingWithAttach#0" />
+                <element signature="n#!!block;n#approveBooking#0" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleMail.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tableBooking.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="165" column="25" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
+            <state relative-caret-position="177">
+              <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tableSheet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1598">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -84,6 +106,18 @@
       <find>venu-session-selected</find>
       <find>log</find>
       <find>file-input--mainMailBox</find>
+      <find>venu-apply-form-displayVnue</find>
+      <find>venu-apply-form-displayVnu</find>
+      <find>Timeslot</find>
+      <find>btnGeneral bookingFormSubmit</find>
+      <find>getSessionIntoTalbe</find>
+      <find>getSessionByDate</find>
+      <find>venu-apply-form-displayVnue</find>
+      <find>sessionInfoContent</find>
+      <find>1400</find>
+      <find>Test venue list</find>
+      <find>hov</find>
+      <find>.mytable th</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -98,8 +132,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/OtherController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleVenue.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/modal.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" />
       </list>
     </option>
   </component>
@@ -152,6 +191,43 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -421,7 +497,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27000000" />
+    <option name="totallyTimeSpent" value="33271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
@@ -438,12 +514,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32955974" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33459118" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35849056" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32955974" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3610063" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3672956" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32955974" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32955974" />
@@ -507,12 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/7980acc4-df34-4b90-bcf2-151cc0519b2a_1684573398625_Snipaste_2023-02-08_14-51-35.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/cc20b839-bef6-46d9-8d7a-f39bbc8fab6a_1684574195613_download (5).png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/WEB-INF/TotalPriceTLD.tld">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -572,35 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="420" column="60" lean-forward="true" selection-start-line="420" selection-start-column="60" selection-end-line="420" selection-end-column="60" />
-          <folding>
-            <element signature="e#2634#2847#0" />
-            <element signature="n#!!block;n#getSessionByDate#0" />
-            <element signature="e#2874#3012#0" />
-            <element signature="n#!!block;n#getGetListForBooking#0" />
-            <element signature="e#4105#5299#0" />
-            <element signature="n#!!block;n#addBooking#0" />
-            <element signature="n#!!block;n#getBookingRC#0" />
-            <element signature="n#!!block;n#statusContentFun#0" />
-            <element signature="n#!!block;n#getSessionInfoByBookID#0" />
-            <element signature="n#!!block;n#getGuestListIntoBoxForBookingBySessionDI#0" />
-            <element signature="n#!!block;n#getSessionIntoTalbe#0" />
-            <element signature="n#!!block;n#updateBookingWithAttach#0" />
-            <element signature="n#!!block;n#approveBooking#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleReport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -614,7 +655,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bookingForm.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -625,25 +666,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/9c16caf6-8a0e-41cd-9510-1f17f8ad84d7_1684574747540_Snipaste_2023-03-04_13-15-44.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/7980acc4-df34-4b90-bcf2-151cc0519b2a_1684573398625_Snipaste_2023-02-08_14-51-35.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/b8e12a67-db5a-4277-8263-c2ced9106932_1684574741855_Snipaste_2023-03-21_20-15-15.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/cc20b839-bef6-46d9-8d7a-f39bbc8fab6a_1684574195613_download (5).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/efe03715-278c-4530-bda7-1154ca213c43_1684574105951_Snipaste_2023-03-09_00-52-54.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/22/fc0ebc07-4206-46e0-ab2d-d7cefd0f196f_1684741917365_download.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/applyFrom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        <state relative-caret-position="377">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46" />
+        <state relative-caret-position="187">
+          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleVenue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleMail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="103">
           <caret line="165" column="25" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="364" column="32" lean-forward="true" selection-start-line="364" selection-start-column="32" selection-end-line="364" selection-end-column="60" />
+          <folding>
+            <element signature="n#!!block;n#getSessionByDate#0" />
+            <element signature="n#!!block;n#getGetListForBooking#0" />
+            <element signature="n#!!block;n#addBooking#0" />
+            <element signature="n#!!block;n#getBookingRC#0" />
+            <element signature="n#!!block;n#statusContentFun#0" />
+            <element signature="n#!!block;n#getSessionInfoByBookID#0" />
+            <element signature="n#!!block;n#getGuestListIntoBoxForBookingBySessionDI#0" />
+            <element signature="n#!!block;n#updateBookingWithAttach#0" />
+            <element signature="n#!!block;n#approveBooking#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="259" column="14" lean-forward="true" selection-start-line="259" selection-start-column="14" selection-end-line="259" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tableSheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1598">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tableBooking.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
         </state>
       </provider>
     </entry>

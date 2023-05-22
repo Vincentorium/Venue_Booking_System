@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
 
-//Venue Timeslot event:clicking a timeslot box will add it to selected box of user
+//Venue Timeslot Box event:clicking a timeslot box will add it to selected box of user
 $(document).on('click', '.venu-apply-form-session', function (e) {
 
     e.stopPropagation();
@@ -21,13 +21,13 @@ $(document).on('click', '.venu-apply-form-session', function (e) {
         '  <div class="venu-session-selected" id=' + $(this).data("sessionid")+' )>'
 
         + ' <input type="hidden"  class="sessionSelected" value=' + $(this).data("sessionid") + '>'
-        + $(".venu-apply-input--campus option:selected").html()
-        + '<span class="cancelSessionSelected">X</span>'
+        +'<div>'+ $(".venu-apply-input--campus option:selected").html()
+        + '<span class="cancelSessionSelected">X</span> </div>'
 
-        + $(".venu-apply-form-displayVnue--date").html()
+        + '<div>' + $(".venu-apply-form-displayVnue--date").html()+'</div>'
 
-        + "<br>"
-        + $(this).html()
+
+        + '<div>' + $(this).html() +'</div>'
         + getGetListForBooking(userIDSession, $(this).data("sessionid"))
         + '</div>'
 
@@ -130,7 +130,7 @@ $(document).on('change', '.venu-apply-input--campus', function (e) {
 $(document).on('click', '.cancelSessionSelected', function (e) {
     e.stopPropagation();
     $(".venu-apply-form-disply-sessions").find("#"+ $(this).parent().attr("id") +"").removeClass("sessionBooked")
-    $(this).parent().remove()
+    $(this).parent().parent().remove()
 });
 
 //</editor-fold>
@@ -362,7 +362,7 @@ function getSessionIntoTalbe(bookID) {
     let data=""
     let guestInfo=""
 
-    let head='    <table>'
+    let head='    <table class="bookingRecordsBox-sessionBox">'
         +'      <thead>'
         +'        <th>Venue</th>'
         +'        <th>Session Date</th>'
