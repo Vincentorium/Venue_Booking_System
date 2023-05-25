@@ -1,4 +1,6 @@
 var modal
+//configure search data
+
 
 $(document).ready(function () {
     var openModalButtons
@@ -94,17 +96,25 @@ $(document).ready(function () {
 
 
         } else if (defaulModal == 'bookingTableModal') {
-            getBookingRCIntoTable()
-            $('.mail-button-inbox').addClass('mailbuttonHover')
-            $('.mail-button-sent').removeClass('mailbuttonHover')
-            $('.bookingTableModal').addClass('active');
-            $('.mail-record-box').addClass('active');
-            getMailRecords(0)
-            getMailContent(mailLastestOne)
 
 
-            getPagination(mytable)
-            $('.mail-record-box table tbody tr').attr('display', 'table-row')
+                getMemberIDAndUserName();//for search
+                    //3
+
+
+                getBookingRCIntoTable(userDataForConfigure.bookingRecordSearchLeft,userDataForConfigure.memberIDForLoadBooking);
+
+
+                $('.mail-button-inbox').addClass('mailbuttonHover')
+                $('.mail-button-sent').removeClass('mailbuttonHover')
+                $('.bookingTableModal').addClass('active');
+                $('.mail-record-box').addClass('active');
+                getMailRecords(0)
+                getMailContent(mailLastestOne)
+
+
+                getPagination(mytable)
+                $('.mail-record-box table tbody tr').attr('display', 'table-row')
 
 
         } else if (defaulModal == '.venueListModal') {

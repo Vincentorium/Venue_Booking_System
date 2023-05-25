@@ -8,6 +8,8 @@ import com.itp4511.domain.*;
 import com.itp4511.service.*;
 import com.itp4511.utils.Utility;
 import com.itp4511.domain.SessionObj;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 import javax.servlet.ServletException;
@@ -43,7 +45,7 @@ public class BookingController extends HttpServlet {
     private GuestService guestService = new GuestService();
     private GuestlistService guestlistService = new GuestlistService();
 
-
+    public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
@@ -67,11 +69,11 @@ public class BookingController extends HttpServlet {
 
 
 
-                int id = Integer.parseInt(request.getParameter("userID"));
+                int memberID = Integer.parseInt(request.getParameter("memberID"));
                 try {
                    // List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
 
-                    List<BookingSession_Multi> displaySessionByID = bookingRecordService.getBookingByID(id);
+                    List<BookingSession_Multi> displaySessionByID = bookingRecordService.getBookingByID(memberID);
                     ObjectMapper mapper = new ObjectMapper();
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -151,10 +153,27 @@ public class BookingController extends HttpServlet {
             case 3:
 
 
+                LOG.debug("Enter case 3 ");
 
+                int memberUnapproved = 0;
+                try {
+                    memberUnapproved = Integer.parseInt(request.getParameter("memberID"));
+                } catch (NumberFormatException e) {
+                    LOG.debug("err when parse para ID "+e.getMessage());
+                }
 
                 try {
-                    List<BookingInfo_MM> displaySessionByID = sessionService.displayBookingInfoNeedApproval();
+
+                    List<BookingInfo_MM> displaySessionByID = null;
+                    try {
+
+                        // displaySessionByID = bookingRecordService.getBookingByID(memberUnapproved);
+
+                         displaySessionByID = sessionService.displayBookingInfoNeedApproval(memberUnapproved);
+                    } catch (Exception e) {
+                        LOG.debug(e.getMessage());
+                    }
+
                     ObjectMapper mapper = new ObjectMapper();
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -196,49 +215,56 @@ public class BookingController extends HttpServlet {
             //endregion
 
 
-            //region 5: Update session
+            //region 5: get booking record approved with userID
             case 5:
 
-                System.out.println("=================Session update=================");
-                System.out.println("=================Display Session available=================");
 
-                List<BookingInfo_MM> bookingObjectForEditSession = bookingRecordService.getBookingAllInfoByMemberID(1);
-                System.out.println("=================select booking to modif available=================");
-                System.out.println("Booking No.:" + "Member Name: " + "Session id: " + "Session Date: " + "Campus: " + "From: " + "To: " + "Guest:: ");
-                for (BookingInfo_MM s : bookingObjectForEditSession) {
-                    System.out.print("  " + s.getBookId());
-                    System.out.print("         " + s.getUserName());
+                int memberForAppr = Integer.parseInt(request.getParameter("memberID"));
 
-                    System.out.print("  " + s.getSessionId());
-                    System.out.print("  " + s.getSessionDate());
 
-                    System.out.print("  " + s.getSessionCampus());
-                    System.out.print("  " + s.getSessionStartTime());
-                    System.out.print("  " + s.getSessionEndTime());
-                    System.out.println("  " + s.getGuestName());
+                try {
+                    List<BookingInfo_MM> displaySessionByID = sessionService.displayBookingInfoApproved(memberForAppr);
+                    ObjectMapper mapper = new ObjectMapper();
+
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                    mapper.setDateFormat(dateFormat);
+                    String json = mapper.writeValueAsString(displaySessionByID);
+
+                    response.getWriter().write(json);
+                } catch (IOException e) {
+                    responseJson.put("message", "fail： "+e.getMessage());
+                    response.getWriter().write(responseJson.toString());
                 }
-
-                System.out.println("Display avaialbe venue and date");
-
-
-                List<Session> sessionListByIdandDate = sessionService.displaySessionByDateAndCampus(1, "2023-04-12");
-                System.out.println("=================Session available=================");
-                for (Session s : sessionListByIdandDate) {
-                    System.out.println("Session ID" + s.getSessionId());
-                    System.out.print("Campus: " + s.getSessionCampus());
-                    System.out.println("          Date: " + s.getSessionDate());
-                    System.out.print("Start: " + s.getSessionStartTime());
-                    System.out.println(" ---  End: " + s.getSessionEndTime());
-                }
-                System.out.println("Select a session as lastest one");
-                int sessionSelectedAsnewOne = 0;
-                sessionSelectedAsnewOne = Utility.readInt();
-
-
-
 
                 break;
-            //endregion w w w
+
+
+            //endregion
+
+
+            //region 6: display booking by id
+            case 6:
+
+                int memberIDForOthersRecords = Integer.parseInt(request.getParameter("memberID"));
+                try {
+                    // List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
+
+                    List<BookingSession_Multi> displaySessionByID = bookingRecordService.getBookingByIDForNonUnapprovedRecord(memberIDForOthersRecords);
+                    ObjectMapper mapper = new ObjectMapper();
+
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                    mapper.setDateFormat(dateFormat);
+                    String json = mapper.writeValueAsString(displaySessionByID);
+
+                    response.getWriter().write(json);
+                } catch (IOException e) {
+                    responseJson.put("message", "fail： "+e.getMessage());
+                    response.getWriter().write(responseJson.toString());
+                }
+
+                break;
+
+            //endregion
 
 
         }

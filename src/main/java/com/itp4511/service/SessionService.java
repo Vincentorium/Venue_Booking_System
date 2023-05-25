@@ -2,8 +2,10 @@ package com.itp4511.service;
 
 
 import com.itp4511.dao.BookingInfo_MMDAO;
+import com.itp4511.dao.Multi_BookingSessionDAO;
 import com.itp4511.dao.SessionDAO;
 import com.itp4511.dao.SessionbyguestidDAO;
+import com.itp4511.domain.BookingSession_Multi;
 import com.itp4511.domain.Session;
 import com.itp4511.domain.Sessionbyguestid;
 import com.itp4511.domain.BookingInfo_MM;
@@ -16,7 +18,7 @@ import java.util.List;
 public class SessionService {
 
     private SessionDAO sessionDAO = new SessionDAO();
-
+    private Multi_BookingSessionDAO multi_BookingSessionDAO = new Multi_BookingSessionDAO();
     private SessionbyguestidDAO sessionbyguestidDAO = new SessionbyguestidDAO();
     BookingInfo_MMDAO bookingInfo_MMDAO =new BookingInfo_MMDAO();
 
@@ -61,13 +63,38 @@ public class SessionService {
 
 
 
-    public List<BookingInfo_MM> displayBookingInfoNeedApproval() {
+    public List<BookingInfo_MM> displayBookingInfoNeedApproval(int memberUnapproved) {
         List<BookingInfo_MM> result=null;
         try {
-            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` "
-                    , BookingInfo_MM.class);
+
+            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` where bookStatus = 1 and bookFKmemberID = ?"
+                          + " order by bookStatus ,bookDate Desc"
+                    , BookingInfo_MM.class,memberUnapproved);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        return  result;
+//where b.bookStatus=1
+    }
+
+
+
+
+
+
+
+
+
+
+    public List<BookingInfo_MM> displayBookingInfoApproved(int memberID) {
+        List<BookingInfo_MM> result=null;
+        try {
+            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` where bookStatus !=1" +
+                            " and bookFKmemberID = ? order by bookStatus ,bookDate Desc"
+
+                    , BookingInfo_MM.class, memberID);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());;
         }
         return  result;
 //where b.bookStatus=1

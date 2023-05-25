@@ -57,13 +57,20 @@ public class BookingRecordService {
       public List<BookingSession_Multi> getBookingByID(int memberID){
         List<BookingSession_Multi> rs= multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
                 "LEFT JOIN user as u " +
-                "on b.bookFKmemberID=u.userID WHERE bookFKmemberID=? ", BookingSession_Multi.class,memberID);
+                "on b.bookFKmemberID=u.userID WHERE bookFKmemberID=? and bookStatus in (0,1) "
+                + " order by bookStatus ,bookDate Desc", BookingSession_Multi.class,memberID);
         return rs;
     }
 
 
 
-
+    public List<BookingSession_Multi> getBookingByIDForNonUnapprovedRecord(int memberID){
+        List<BookingSession_Multi> rs= multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
+                "LEFT JOIN user as u " +
+                "on b.bookFKmemberID=u.userID WHERE bookFKmemberID=? and bookStatus not in (0) "
+                +" order by bookStatus", BookingSession_Multi.class,memberID);
+        return rs;
+    }
 
 
 

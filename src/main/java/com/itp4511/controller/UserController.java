@@ -3,6 +3,7 @@ package com.itp4511.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.itp4511.domain.BookingInfo_MM;
 import com.itp4511.domain.Session;
 import com.itp4511.domain.User;
 import com.itp4511.domain.Userinfo;
@@ -16,9 +17,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
-
+import com.itp4511.domain.User;
+import org.jfree.util.Log;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -28,17 +31,17 @@ import java.util.List;
 /**
  * @author Vincent
  */
-@WebServlet(name = "userController", urlPatterns = {"/userController"})
+@WebServlet(name = "userControllerTest", urlPatterns = {"/userControllerTest"})
 
 public class UserController extends HttpServlet {
 
 
 
     private UserService userService = new UserService();
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        // protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("test");
 
 
         response.setContentType("application/json");
@@ -117,7 +120,37 @@ public class UserController extends HttpServlet {
                             rd.forward(request, response);
 
                         }
+                        break;
 
+
+
+                    case 3:
+
+
+
+
+
+                        try {
+
+                            List<Userinfo> getAllUserInfo = null;
+                            try {
+                                getAllUserInfo = userService.getMembers();
+                            } catch (Exception e) {
+                                Log.debug(e.getMessage());
+                            }
+                            ObjectMapper mapper = new ObjectMapper();
+
+                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+                            mapper.setDateFormat(dateFormat);
+                            String json = mapper.writeValueAsString(getAllUserInfo);
+
+                            response.getWriter().write(json);
+                        } catch (IOException e) {
+                            responseJson.put("message", "fail： "+e.getMessage());
+                            response.getWriter().write(responseJson.toString());
+                        }
+
+                        break;
 
                 }
 

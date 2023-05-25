@@ -6,9 +6,10 @@ import com.itp4511.domain.BookingRecord;
 import com.itp4511.domain.User;
 
 import com.itp4511.domain.Userinfo;
-import ict.bean.UserInfo;
+
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 public class UserService {
 
@@ -74,6 +75,24 @@ public class UserService {
         try {
 
             user = userDAO.querySingle("SELECT * FROM `user` WHERE userID=?", User.class, userID);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        return user;
+
+
+    }
+
+
+    public List<Userinfo> getMembers() {
+
+
+        List<Userinfo>  user = null;
+        try {
+
+            user = userInfoDAO.queryMulti("SELECT * FROM `user`   left join role on userType = roleID where roleID=3;", Userinfo.class);
         } catch (Exception e) {
             e.printStackTrace();
         }

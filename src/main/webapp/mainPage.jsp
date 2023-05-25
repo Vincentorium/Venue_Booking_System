@@ -61,6 +61,7 @@
     <script defer src="js\handleBooking.js"></script>
     <script defer src="js\bookingFunction.js"></script>
     <script defer src="js\handleForm.js"></script>
+    <script defer src="js\handleBookingRecord.js"></script>
 
 
     <link href="css\index.css" rel="stylesheet">
@@ -417,7 +418,36 @@
 
                 <!--BO booking table elements -->
                 <div class="bookingTableBox">
-                    <div class="bookingTableTitle"> Booking Request Records</div>
+                    <div class="bookingTableTitle">
+                        <span class="bookingRecord-search-label">User Name</span>
+
+                        <select class="booking_records_search_userName">
+
+
+
+
+                        </select>
+
+
+
+                        <div class="switch-button "><span class="activeSwitch"></span>
+
+                            <button class="switch-button-case left active-case"> Unapproved</button>
+                            <button class="switch-button-case right demonSwitchRight">Others</button>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
 
                     <div class="form-group">
                         <select name="state" id="maxRows" class="form-control" style="width:150px;">
@@ -446,7 +476,7 @@
                                 <th>Receipt</th>
 
 
-                                <th>Save</th>
+                                <th class="booking-record-table-funcTH">Function</th>
                             </tr>
                         </thead>
                         <tbody class="bookingRecordTbdy">
@@ -469,6 +499,7 @@
                                 <!--  Here the JS Function Will Add the Rows -->
                         </nav>
                     </div>
+                    <div class="booking-record-text"></div>
                 </div>
 
                 <li data-page="next" id="prev">
@@ -717,179 +748,179 @@
                                     <!--  <tbody class="forInsert">
                               </tbody> -->
 
-
-                                    <div class="forInsert Insert_UnGroup demonHide">
-
-
-                                        <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
-
-                                            <div class="BookingTabel_bookingBox rowCTM3">
-
-                                                <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
-                                                <span class="allPostStatusDptTitle">No. of Participants: 4</span>
-
-                                                <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
-
-                                                    Diplay Participants
-                                                </div>
-                                            </div>
-                                            <div class=" rowCTM3 session-checkIn-tickBox">
+                                    <!--
+                                                                       <div class="forInsert Insert_UnGroup demonHide">
 
 
-                                                <div class="session-checkIn-tickBox--innerBox">
+                                                                           <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
+
+                                                                               <div class="BookingTabel_bookingBox rowCTM3">
+
+                                                                                   <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
+                                                                                   <span class="allPostStatusDptTitle">No. of Participants: 4</span>
+
+                                                                                   <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
+
+                                                                                       Diplay Participants
+                                                                                   </div>
+                                                                               </div>
+                                                                               <div class=" rowCTM3 session-checkIn-tickBox">
 
 
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th>#</th>
-                                                                <th>Name</th>
-                                                                <th>Email</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Member_name</td>
-                                                                <td>Member_name@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Meow</td>
-                                                                <td>meow@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Moew</td>
-                                                                <td>moew@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Mweo</td>
-                                                                <td>Mweo@gmail.com</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                                                   <div class="session-checkIn-tickBox--innerBox">
 
 
-                                                </div>
-                                            </div>
-                                        </div>
+                                                                                       <table>
+                                                                                           <thead>
+                                                                                               <tr>
+                                                                                                   <th>#</th>
+                                                                                                   <th>Name</th>
+                                                                                                   <th>Email</th>
+                                                                                               </tr>
+                                                                                           </thead>
+                                                                                           <tbody>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Member_name</td>
+                                                                                                   <td>Member_name@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Meow</td>
+                                                                                                   <td>meow@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Moew</td>
+                                                                                                   <td>moew@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Mweo</td>
+                                                                                                   <td>Mweo@gmail.com</td>
+                                                                                               </tr>
+                                                                                           </tbody>
+                                                                                       </table>
 
 
-                                        <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
-
-                                            <div class="BookingTabel_bookingBox rowCTM3">
-
-                                                <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
-                                                <span class="allPostStatusDptTitle">No. of Participants: 4</span>
-
-                                                <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
-
-                                                    Diplay Participants
-                                                </div>
-                                            </div>
-                                            <div class=" rowCTM3 session-checkIn-tickBox">
+                                                                                   </div>
+                                                                               </div>
+                                                                           </div>
 
 
-                                                <div class="session-checkIn-tickBox--innerBox">
+                                                                           <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
+
+                                                                               <div class="BookingTabel_bookingBox rowCTM3">
+
+                                                                                   <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
+                                                                                   <span class="allPostStatusDptTitle">No. of Participants: 4</span>
+
+                                                                                   <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
+
+                                                                                       Diplay Participants
+                                                                                   </div>
+                                                                               </div>
+                                                                               <div class=" rowCTM3 session-checkIn-tickBox">
 
 
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th>#</th>
-                                                                <th>Name</th>
-                                                                <th>Email</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Member_name</td>
-                                                                <td>Member_name@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Meow</td>
-                                                                <td>meow@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Moew</td>
-                                                                <td>moew@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Mweo</td>
-                                                                <td>Mweo@gmail.com</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                                                   <div class="session-checkIn-tickBox--innerBox">
 
 
-                                                </div>
-                                            </div>
-                                        </div>
+                                                                                       <table>
+                                                                                           <thead>
+                                                                                               <tr>
+                                                                                                   <th>#</th>
+                                                                                                   <th>Name</th>
+                                                                                                   <th>Email</th>
+                                                                                               </tr>
+                                                                                           </thead>
+                                                                                           <tbody>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Member_name</td>
+                                                                                                   <td>Member_name@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Meow</td>
+                                                                                                   <td>meow@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Moew</td>
+                                                                                                   <td>moew@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Mweo</td>
+                                                                                                   <td>Mweo@gmail.com</td>
+                                                                                               </tr>
+                                                                                           </tbody>
+                                                                                       </table>
 
 
-                                        <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
-
-                                            <div class="BookingTabel_bookingBox rowCTM3">
-
-                                                <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
-                                                <span class="allPostStatusDptTitle">No. of Participants: 4</span>
-
-                                                <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
-
-                                                    Diplay Participants
-                                                </div>
-                                            </div>
-                                            <div class=" rowCTM3 session-checkIn-tickBox">
+                                                                                   </div>
+                                                                               </div>
+                                                                           </div>
 
 
-                                                <div class="session-checkIn-tickBox--innerBox">
+                                                                           <div class="allPostSpecificPost complaintPost1 session-checkIn-box">
+
+                                                                               <div class="BookingTabel_bookingBox rowCTM3">
+
+                                                                                   <span class="allPostStatusDptTitle">Session: 9:00 - 9:59</span>
+                                                                                   <span class="allPostStatusDptTitle">No. of Participants: 4</span>
+
+                                                                                   <div class="mngtFunction postMngtStatus session-checkIn-displayButton">
+
+                                                                                       Diplay Participants
+                                                                                   </div>
+                                                                               </div>
+                                                                               <div class=" rowCTM3 session-checkIn-tickBox">
 
 
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th>#</th>
-                                                                <th>Name</th>
-                                                                <th>Email</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Member_name</td>
-                                                                <td>Member_name@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Meow</td>
-                                                                <td>meow@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Moew</td>
-                                                                <td>moew@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td><input type="checkbox" name="" id=""></td>
-                                                                <td>Mweo</td>
-                                                                <td>Mweo@gmail.com</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                                                   <div class="session-checkIn-tickBox--innerBox">
 
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                                                       <table>
+                                                                                           <thead>
+                                                                                               <tr>
+                                                                                                   <th>#</th>
+                                                                                                   <th>Name</th>
+                                                                                                   <th>Email</th>
+                                                                                               </tr>
+                                                                                           </thead>
+                                                                                           <tbody>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Member_name</td>
+                                                                                                   <td>Member_name@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Meow</td>
+                                                                                                   <td>meow@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Moew</td>
+                                                                                                   <td>moew@gmail.com</td>
+                                                                                               </tr>
+                                                                                               <tr>
+                                                                                                   <td><input type="checkbox" name="" id=""></td>
+                                                                                                   <td>Mweo</td>
+                                                                                                   <td>Mweo@gmail.com</td>
+                                                                                               </tr>
+                                                                                           </tbody>
+                                                                                       </table>
 
 
+                                                                                   </div>
+                                                                               </div>
+                                                                           </div>
+                                                                       </div>
+
+                                                                        -->
                                 </div>
                                 <!--complaint start-->
 

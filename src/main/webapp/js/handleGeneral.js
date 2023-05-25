@@ -1,6 +1,5 @@
 var userIDSession;
-
-
+var userDataForConfigure={}
 //for operator to update report status between unapprove and approve fo
 $(document).on('click', '.submitButton', function (e) {
 
@@ -88,11 +87,19 @@ function checkSession() {
 
 function loginCustomizeForUser(){
     if(userType!="Member"){
+
+
+
+        userDataForConfigure.memberIDForLoadBooking=1
+        userDataForConfigure.bookingRecordSearchLeft=3
+        userDataForConfigure.bookingRecordSearchRight=5
         $(".mgntFunction").removeClass(boxHide)
         $(".memberFunction").addClass(boxHide)
+
        }else{
-
-
+        userDataForConfigure.memberIDForLoadBooking=userIDSession
+        userDataForConfigure.bookingRecordSearchLeft=1
+        userDataForConfigure.bookingRecordSearchRight=6
 
     }
 

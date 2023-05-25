@@ -248,16 +248,17 @@ function addBooking(formData) {
 }
 
 
-function getBookingRC(userID) {
+function getBookingRC(type=null,memberID=null) {
 
     //type 3 for get all record un approved for user
-    let type =  $.cookie('userType')=="Staff"?3:1;
+
+
     let result = ""
     $.ajax({
 
         type: 'POST',
 
-        data: {userID: userID, type: type},
+        data: { type: type,memberID:memberID},
         async: false,
         url: "/bookingController",
         success: function (data) {
@@ -345,10 +346,6 @@ function getGuestListIntoBoxForBookingBySessionDI(sessionID){
             +guest
             +'    </li>'
 
-
-
-
-
     })
 
 
@@ -358,7 +355,7 @@ function getGuestListIntoBoxForBookingBySessionDI(sessionID){
 }
 function getSessionIntoTalbe(bookID) {
 
-    let sessionInfo=getSessionInfoByBookID(bookID);
+    let sessionDS=getSessionInfoByBookID(bookID);
     let data=""
     let guestInfo=""
 
@@ -371,7 +368,7 @@ function getSessionIntoTalbe(bookID) {
         +'        <th>Gueset List</th>'
         +'      </thead>'
 
-    $.each($(sessionInfo), function (i, rc) {
+    $.each($(sessionDS), function (i, rc) {
         guestInfo=""
         guestInfo=getGuestListIntoBoxForBookingBySessionDI(rc.sessionId);
         data+=
@@ -397,96 +394,51 @@ function getSessionIntoTalbe(bookID) {
 
 
 
-
-function getBookingRCIntoTable() {
-    let bookingRC = getBookingRC(userIDSession)
-
-
+var getBookingRCIntoTable=
+//<editor-fold desc="Handle Booking Record">
+function getBookingRCIntoTable(searchType=null ,memberID=null) {
+    let bookingRC = getBookingRC(searchType,memberID)
     let content = ""
-
-
+    let noRecordMessage=$(".booking-record-text")
+    noRecordMessage.html("");
+    if (bookingRC.length!=0) {
     $.each($(bookingRC), function (i, rc) {
 
 
-        let gueslistRS = getGeustListBySessionID(rc.sessionID);
-        let guestLit = ""
-        let mailContetnForBookingDisplay = rc.bookReceipt
-        let sessionInfoContent=getSessionIntoTalbe(rc.bookId)
 
+            let sessionInfoContent = getSessionIntoTalbe(rc.bookId) //
+            let statusContent = statusContentFun(rc.bookStatus); // display the relveant text to according to status num
+            let attachmentBox = getAttachmentBox(rc.bookReceipt, rc.bookId)//see if there is a attachment uploaed
+            let dataCustomizedForUserType = getDataCustomizedForUserType(searchType);
 
-        let type = ( 	$.cookie("userType")=="Staff" || $.cookie("userType")=="Senior Management")? 1:0
-        let buttonValue="Save"
-        let submitType="bookingRecord"
+            //loading 不同type的區別
+            // 不同狀態
 
-        let statusContent= statusContentFun(rc.bookStatus );
+            /*
+            one search with multi condition
+            *  1. staff  => load only wait to approve
+            *       getBookingRC()
+            *  2. customer => load all relevant to cusotmer
+            *       getBookingRC
+            * */
+            content +=
 
+                ' <tr class="bookingRCBoxGeneral specificBookingRC_' + i + '" data-bookingid=' + rc.bookId + '>'
+                + '   <td  >' + rc.bookId + '</td>'
+                + '   <td  >' + rc.bookDate + '</td>'
+                + '   <td >' + statusContent + '</td>'
 
-        if(type==1){
-            buttonValue="Approve"
-            submitType="ApproveBooking"
-        }
+                + '   <td>' + sessionInfoContent + ' </td>'
+                + '   <td  class="bookingAttach" >' + attachmentBox + '</td>'
+                + '   <td><input type="button" class="submitButton submitBookingRecord" value="' + dataCustomizedForUserType.buttonValue + '" data-submit_box=".specificBookingRC_' + i + '"  data-submit_type="' + dataCustomizedForUserType.submitType + '">  </td>'
+                + ' </tr>'
 
-
-
-        let submitButton =
-            ' <div class="mailAttachBox mailAttachBox--mainMailBox">'
-            + '       <input type="file" id="file-input--mainMailBox_ '+ rc.bookId+'" class="fileInput fileInput--mainMailBox inputDisplay--mainMailBox file-input-mail-JS 0" name="image0" />'
-            + '       <div class="preview preview--mainMailBox"></div>'
-
-            + '   </div>'
-
-            + '                        <div class="uploadForAttach">'
-            + '                          <label for="file-input--mainMailBox_ '+ rc.bookId+'"   >'
-            + '                            <img src="./images/attachIcon.png" />'
-            + '                          </label>'
-            + '                        </div>'
-        $.each($(gueslistRS), function (i, rc) {
-
-            guestLit += '       <li>' + rc.guestName + '</li>'
-        })
-
-
-        // check if there is a attachment
-        if (mailContetnForBookingDisplay == null) {
-            mailContetnForBookingDisplay =
-                "Upload here!"
-                + submitButton
-
-        }
-        else
-        {
-
-            mailContetnForBookingDisplay =
-
-                "<div  class='attachTitleBox'><span class='attachTitle'></span>"
-                + "<div class='attachPic'>"
-
-                + '<img class="thumbnails" src="/uploads/' + rc.bookReceipt + '" alt="No"       ></a>'
-            console.log("Path Save to db is: " + rc.bookReceipt)
-            + "</div>"
-            + "</div>"
-        }
-
-
-        content +=
-
-            ' <tr class="bookingRCBoxGeneral specificBookingRC_' + i + '" data-bookingid=' + rc.bookId + '>'
-            + '   <td  >' + rc.bookId + '</td>'
-            + '   <td  >' + rc.bookDate + '</td>'
-            + '   <td >' + statusContent
-            + '   </td>'
-
-
-            + '   <td>' + sessionInfoContent + ' </td>'
-
-
-            + '   <td  class="bookingAttach" >' + mailContetnForBookingDisplay + '</td>'
-
-
-            + '   <td><input type="button" class="submitButton submitBookingRecord" value="'+buttonValue+'" data-submit_box=".specificBookingRC_' + i + '"  data-submit_type="'+submitType+'">  </td>'
-            + ' </tr>'
 
     })
+    }else{
+        noRecordMessage.html("No Record Found.")
+
+    }
 
 //    +'   <td><textarea class="bookingRemark bookingRemark--staff" name="" id="" cols="30"'
     //  +'       rows="10">'+rc.bookRemark+'</textarea></td>'
@@ -494,6 +446,89 @@ function getBookingRCIntoTable() {
     $(".bookingRecordTbdy").html(content);
 
 }
+function getDataCustomizedForUserType(searchType ){
+    let type = ( 	$.cookie("userType")=="Staff" || $.cookie("userType")=="Senior Management")? 1:0
+    let jsData = {};
+    if (type == 1) {
+//        $(".booking-record-table-funcTH").html("")
+        if(searchType==5){
+            jsData.buttonValue = "N/A";
+            jsData.submitType = "NA";
+
+        }else{
+        jsData.buttonValue = "Approve";
+        jsData.submitType = "ApproveBooking";
+        }
+    }else{
+
+        jsData.buttonValue="Save"
+        jsData.submitType="bookingRecord"
+    }
+   return jsData;
+}
+
+function getSubmitButton(bookingId){
+    let submitButton =
+        ' <div class="mailAttachBox mailAttachBox--mainMailBox">'
+        + '       <input type="file" id="file-input--mainMailBox_ '+ bookingId+'" class="fileInput fileInput--mainMailBox inputDisplay--mainMailBox file-input-mail-JS 0" name="image0" />'
+        + '       <div class="preview preview--mainMailBox"></div>'
+
+        + '   </div>'
+
+        + '                        <div class="uploadForAttach">'
+        + '                          <label for="file-input--mainMailBox_ '+ bookingId+'"   >'
+        + '                            <img src="./images/attachIcon.png" />'
+        + '                          </label>'
+        + '                        </div>'
+
+    return submitButton;
+}
+
+
+function getAttachmentBox(bookReceiptPath,bookID){
+    let attachmentBox=""
+
+
+
+    if (bookReceiptPath == null) {
+        attachmentBox =
+            "Upload here!"
+            +  getSubmitButton(bookID)
+
+    }
+    else
+    {
+
+        attachmentBox =
+
+            "<div  class='attachTitleBox'><span class='attachTitle'></span>"
+            + "<div class='attachPic'>"
+
+            + '<img class="thumbnails" src="/uploads/' + bookReceiptPath + '" alt="No"       ></a>'
+
+            + "</div>"
+            + "</div>"
+    }
+
+return attachmentBox
+}
+
+
+//</editor-fold>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -510,7 +545,28 @@ function updateBookingWithAttach(bookingBox) {
     let imagebookingBox = bookingBox.find(".fileInputed--mainMailBox")
     // let imag=imagebookingBox.files[0]
 //.children(".mailAttachBox").children(".fileInput").value.file[0]
-    imageData.append('image',  $(imagebookingBox).get(0).files[0]);
+
+
+
+
+    try {
+        if (imagebookingBox.length !== 0) {
+            imageData.append('image', $(imagebookingBox).get(0).files[0]);
+        } else {
+            throw new Error('Please upload a receipt');
+        }
+    } catch (error) {
+        alert(error.message);
+        return;
+    }
+
+
+
+
+
+
+
+
 
 
     $.ajax({
@@ -526,7 +582,7 @@ function updateBookingWithAttach(bookingBox) {
 
             alert("updated!");
 
-            getBookingRCIntoTable()
+            getBookingRCIntoTable(userDataForConfigure.bookingRecordSearchLeft,userIDSession)
         },
 
     });//EO ajax
@@ -553,7 +609,8 @@ function approveBooking(bookingBox) {
 
 
             alert("Approve sucessfully");
-            getBookingRCIntoTable()
+            var memberID=$(".booking_records_search_userName").val();
+            getBookingRCIntoTable(userDataForConfigure.bookingRecordSearchLeft,memberID)
 
         },
 

@@ -1,0 +1,157 @@
+ 
+
+
+  .bookingTableModal {
+
+      position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 30;
+    background-color: white;
+    width: auto;
+    height: auto;
+ 
+   
+}
+ .active{
+ transform: translate(-50%,-21%) scale(1);
+}
+
+.pagination {
+      display: flex;
+      padding-left: 0;
+      margin: 20px 0;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #000000;
+      cursor: pointer;
+
+list-style: none;
+    }
+
+
+    .pagination>li>a,
+    .pagination>li>span {
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      margin-left: -1px;
+      line-height: 1.42857143;
+
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      font-weight: 900;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+
+
+    .paginationPageNumActive {
+      background-color: #2196F3 !important;
+      color: white;
+    }
+
+    .paginationPageNumActive .pagination>li>span {
+      background-color: #2196F3 !important;
+      color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     .tableContainer  {
+margin: 50px;
+    padding: 37px;
+  width: 2000px;
+    height: 600px;
+  
+    background-color: white;
+    border-radius: 5px;
+    border-top: 10px solid #800000;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    top: 100px;
+    text-align: center;
+    
+   
+}   
+
+
+
+.tableContainer>table, .tableContainer>table>tbody {
+    width: 1200px;
+}
+.mytable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mytable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #352424;
+    color: white;
+}
+
+
+.mytable td, .mytable th {
+    border: 1px solid #7b5f5f;
+
+    padding: 8px;
+}
+ 
+
+ .mytable>tbody>tr:hover     {
+     background-color: #a07b7b !important;
+     color: white;
+}
+ 
+
+ .mytable tbody tr td[rowspan] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.mytable tbody tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#reserveTable, tr, th, td, #reserveTable, tr, th, td {
+    text-align: center;
+}.mytable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+ .bookingRecordsBox-sessionBox{
+     width: 1000px;
+ }
