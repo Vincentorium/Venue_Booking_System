@@ -153,11 +153,7 @@
 
                                 <label for="venueDropDownList">Venus</label>
                                 <select class="venu-apply-input--campus" id="venueDropDownList">
-                                    <option value="1">Tuen Mun</option>
-                                    <option value="2">Sha Tin</option>
-                                    <option value="QY">Tsing Yi</option>
-                                    <option value="LWL">Lee Wai Lee</option>
-                                    <option value="CW">Chai Wan</option>
+
                                 </select>
                                 <br><label for="">date</label>
 
@@ -187,6 +183,7 @@
                                 <br>
                                 <br>
                                 <div class="venue-apply-form-submitButBox">
+                                    <div class="bookingForm_totalPrice">Total Price: $ 0.00</div>
                                 <input type="button" class="btnGeneral bookingFormSubmit" value="Submit">
 
 
@@ -230,8 +227,10 @@
 
                             <details clas="venu-apply-form-displayVnue--details" open>
                                 <summary
-                                    class="formTitle postSideFunction venu-apply-form-displayVnue venu-apply-form-displayVnue--date">
-                                    Timeslot: 03-05-2023
+                                    class="formTitle postSideFunction venu-apply-form-displayVnue ">
+
+                                    <span class="venu-apply-form-displayVnue--date"></span>
+                                    <span class="bookingform--timeslot--price"></span>
                                 </summary>
 
 
@@ -471,12 +470,10 @@
                                 <th>Request Date</th>
                                 <th>Status</th>
                                 <th>Session Info</th>
-
-
+                                <th>Booking Fee</th>
                                 <th>Receipt</th>
-
-
                                 <th class="booking-record-table-funcTH">Function</th>
+
                             </tr>
                         </thead>
                         <tbody class="bookingRecordTbdy">

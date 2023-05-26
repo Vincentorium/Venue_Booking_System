@@ -15,11 +15,14 @@ public class BookingRecord implements Serializable {
   private long bookFKmemberId;
   private long bookFkGuestList;
   private java.sql.Timestamp bookReceiptDate;
+  private double bookFee;
 
   public BookingRecord() {
   }
 
-  public BookingRecord(long bookId, Date bookDate, String bookReceipt, String bookReceiptName, long bookStatus, long bookFKmemberId, long bookFkGuestList, Timestamp bookReceiptDate) {
+
+
+  public BookingRecord(long bookId, Date bookDate, String bookReceipt, String bookReceiptName, long bookStatus, long bookFKmemberId, long bookFkGuestList, Timestamp bookReceiptDate, double bookFee) {
     this.bookId = bookId;
     this.bookDate = bookDate;
     this.bookReceipt = bookReceipt;
@@ -28,6 +31,7 @@ public class BookingRecord implements Serializable {
     this.bookFKmemberId = bookFKmemberId;
     this.bookFkGuestList = bookFkGuestList;
     this.bookReceiptDate = bookReceiptDate;
+    this.bookFee = bookFee;
   }
 
   public long getBookId() {
@@ -100,5 +104,11 @@ public class BookingRecord implements Serializable {
   public void setBookReceiptDate(java.sql.Timestamp bookReceiptDate) {
     this.bookReceiptDate = bookReceiptDate;
   }
+  public void setBookFee(double bookFee) {
+    this.bookFee = bookFee;
+  }
 
+  public double getBookFee() {
+    return bookFee;
+  }
 }

@@ -43,6 +43,7 @@ public class BookingInfo_MM implements Serializable {
   private String guestName;
   private String guestEmail;
   private int guestFKmemberId;
+  private double bookFee;
 
 
   public int getUserId() {
@@ -382,8 +383,19 @@ public class BookingInfo_MM implements Serializable {
     return guestFKmemberId;
   }
 
+
+
   public void setGuestFKmemberId(int guestFKmemberId) {
     this.guestFKmemberId = guestFKmemberId;
+  }
+
+
+  public void setBookFee(double bookFee) {
+    this.bookFee = bookFee;
+  }
+
+  public double getBookFee() {
+    return bookFee;
   }
 
     public static class Userinfo {
@@ -468,6 +480,7 @@ public class BookingInfo_MM implements Serializable {
       public void setRoleTitle(String roleTitle) {
         this.roleTitle = roleTitle;
       }
+
 
     }
 }

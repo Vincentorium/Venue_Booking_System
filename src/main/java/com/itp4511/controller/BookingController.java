@@ -94,7 +94,8 @@ public class BookingController extends HttpServlet {
             case 2:
 
                 Object[][] bachList=null;
-
+                Integer bookingMemberID=null;
+                Double bookingFee=null;
 
                 try {
 
@@ -120,6 +121,8 @@ public class BookingController extends HttpServlet {
                         bachList[i][2] = 1;
                         bachList[i][3] = Integer.parseInt(s.getSessionID());
                         bachList[i][4] =   s.getGuestList();
+                        bookingMemberID =s.getUserID();
+                        bookingFee=s.getTotalPrice();
                         i++;
 
                     }
@@ -134,7 +137,7 @@ public class BookingController extends HttpServlet {
 
 
                 try {
-                    boolean isUpdate = bookingRecordService.insertBookingRecords(1, bachList);
+                    boolean isUpdate = bookingRecordService.insertBookingRecords(bookingMemberID, bookingFee,bachList);
                     if (isUpdate) {
                         responseJson.put("message", "add ok");
 

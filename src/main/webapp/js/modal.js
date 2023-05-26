@@ -71,14 +71,13 @@ $(document).ready(function () {
 
             let currentDate = getCurrentDate();
             getSessionByDate(1, currentDate);
-
+            bookingForm_populateVenueDropDownListForSelectVenue()
             getGetListForBooking();
             $('.venu-apply-input--date').html('Timeslot: '+currentDate)
 
             $(".venu-apply-input--date").val(currentDate)
-            $(".venu-apply-form-displayVnue--date").html("Date: "+currentDate)
-
-
+            $(".venu-apply-form-displayVnue--date").html("Date: "+currentDate )
+            $(".bookingform--timeslot--price").html(  " | Price: "+venueSelectedPrice)
 
             $('#containerOrderList table tbody tr').attr('display', 'table-row')
 
@@ -95,7 +94,7 @@ $(document).ready(function () {
             $('.mail-record-box table tbody tr').attr('display', 'table-row')
 
 
-        } else if (defaulModal == 'bookingTableModal') {
+        } else if (defaulModal == 'bookingTableModal') { //bookingRecords
 
 
                 getMemberIDAndUserName();//for search

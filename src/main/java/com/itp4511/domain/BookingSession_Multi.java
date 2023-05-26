@@ -14,7 +14,7 @@ public class BookingSession_Multi implements Serializable {
   private long bookFkSession;
   private long bookFkGuestList;
   private String userName;
-
+  private double bookFee;
 
   public long getBookId() {
     return bookId;
@@ -94,6 +94,14 @@ public class BookingSession_Multi implements Serializable {
 
   public void setUserName(String userName) {
     this.userName = userName;
+  }
+
+  public void setBookFee(double bookFee) {
+    this.bookFee = bookFee;
+  }
+
+  public double getBookFee() {
+    return bookFee;
   }
 
 }

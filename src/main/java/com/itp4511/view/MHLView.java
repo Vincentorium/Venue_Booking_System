@@ -191,7 +191,7 @@ public class MHLView {
                             Object[][] bachList1 = new Object[][]{
                                     {0, 2, 9}
                             };
-                            boolean isUpdate = bookingRecordService.insertBookingRecords(1, bachList);
+                            boolean isUpdate =false;// bookingRecordService.insertBookingRecords(1, bachList);
                             if (isUpdate) {
                                 System.out.println("ok");
                             }

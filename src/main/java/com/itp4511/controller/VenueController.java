@@ -1,10 +1,16 @@
 package com.itp4511.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.itp4511.domain.BookingSession_Multi;
 import com.itp4511.domain.User;
 import com.itp4511.domain.Userinfo;
+import com.itp4511.domain.Venue;
 import com.itp4511.service.UserService;
+import com.itp4511.service.VenueService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,6 +20,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.List;
 
 
 /*
@@ -25,14 +33,14 @@ import java.io.IOException;
 /**
  * @author Vincent
  */
-@WebServlet(name = "userController", urlPatterns = {"/userController"})
+@WebServlet(name = "venueController", urlPatterns = {"/venueController"})
 
 public class VenueController extends HttpServlet {
 
 
 
     private UserService userService = new UserService();
-
+    private VenueService venueService = new VenueService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -40,12 +48,8 @@ public class VenueController extends HttpServlet {
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
-
+        Gson gson = new Gson();
         //for ajax to take successful json string.
-        ObjectNode responseJson = JsonNodeFactory.instance.objectNode();
-        responseJson.put("status", "ok");
-
-
 
         int type =  Integer.parseInt(request.getParameter("type"));
 
@@ -55,33 +59,33 @@ public class VenueController extends HttpServlet {
 
                     case 1:
 
-                        String account=   request.getParameter("account");
-                        String password =   request.getParameter("password");
-                        Userinfo userInfo = userService.getUserByAccAndPwd(account,password);
 
 
 
-                        if (userInfo!=null) {
+
+                        Gson gsonHandleFloat = new GsonBuilder()
+                                .serializeSpecialFloatingPointValues()
+                                .create();
+
+                        try {
+                            // List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
 
 
-                        request.setAttribute("u", userInfo);
+                            List<Venue> venueList = venueService.getAllVenue();
 
-                            HttpSession session = request.getSession();
-                            session.setAttribute("authenticated", true);
+                            String json=gsonHandleFloat.toJson(venueList);
 
-                            session.setAttribute("username", userInfo.getUserName());
-                            session.setAttribute("userID",String.valueOf( userInfo.getUserId()));
-                            session.setAttribute("roleTitle", userInfo.getRoleTitle());//role of user
-                            response.sendRedirect("/mainPage.jsp");
+//                            ObjectMapper mapper = new ObjectMapper();
+//                            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//                            mapper.setDateFormat(dateFormat);
+//                            String json = mapper.writeValueAsString(venueList);
 
+                               response.getWriter().write(json);
 
-                        } else {
-                            request.getSession().invalidate();
-                            RequestDispatcher rd;
-                            rd = getServletContext().getRequestDispatcher("/loginError.jsp");
-                            rd.forward(request, response);
-
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }
+
                         break;
                     case 2:
 

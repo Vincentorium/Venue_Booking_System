@@ -18,7 +18,7 @@ $(document).on('click', '.venu-apply-form-session', function (e) {
     let content = $('.venue-apply-form-sessionsSelected-box').html();
     content +=
 
-        '  <div class="venu-session-selected" id=' + $(this).data("sessionid")+' )>'
+        '  <div class="venu-session-selected" id=' + $(this).data("sessionid")+' data-price='+venueSelectedPrice+' )>'
 
         + ' <input type="hidden"  class="sessionSelected" value=' + $(this).data("sessionid") + '>'
         +'<div>'+ $(".venu-apply-input--campus option:selected").html()
@@ -28,12 +28,13 @@ $(document).on('click', '.venu-apply-form-session', function (e) {
 
 
         + '<div>' + $(this).html() +'</div>'
+        + '<div>Price: ' + venueSelectedPrice  +'</div>'
         + getGetListForBooking(userIDSession, $(this).data("sessionid"))
         + '</div>'
 
         $(this).addClass("sessionBooked");
     $('.venue-apply-form-sessionsSelected-box').html(content);
-
+    calTotalPriceForTimeSlotSelected();
 })
 
 
@@ -122,15 +123,100 @@ $(document).on('change', '.venu-apply-input--campus', function (e) {
 
     BookingCampusSelected = $(this).val();
     getSessionByDate(BookingCampusSelected, BookingDateSelected)
+    venueSelectedPrice= $(this).find('option:selected').data('price')
+    $(".bookingform--timeslot--price").html(" | Price: "+   venueSelectedPrice)
+
+
 });
 
 
+
+function bookingForm_displayVenuePrice(){
+
+
+
+}
+var totalPrice;
+function calTotalPriceForTimeSlotSelected(){
+
+      totalPrice=0;
+
+
+
+    $('.venu-session-selected').each(function() {
+         totalPrice += parseFloat($(this).data('price'));
+
+    });
+
+$(".bookingForm_totalPrice").html("Total Price: $ "+ format(totalPrice))
+
+
+}
+//get data of venue
+var venueJS={};
+var venueSelectedPrice;
+
+const format = (num, decimals) => num.toLocaleString('en-US', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+});
+function bookingForm_populateVenueDropDownListForSelectVenue(){
+    let venueInof=getVenueInfo();
+    let content="";
+
+
+
+    $.each(venueInof,function (i,rc) {
+
+
+        venueSelectedPrice_temp=(i==0?rc.venBookingFee:venueSelectedPrice);
+        venueSelectedPrice=format(venueSelectedPrice_temp)
+       content+=
+'            <option value="'+rc.venID+'"   data-price="'+format(rc.venBookingFee) +'"    >' +  rc.venName +'</option>'
+
+    })
+    $(".venu-apply-input--campus").html(content);
+
+}
+function getVenueInfo(){
+
+    let result;
+    $.ajax({
+        async: false,
+        url: "/venueController",
+        type: 'POST',
+        data:{type:1},
+        success: function (ds) {
+
+            $.each(ds,function (index,rc) {
+
+
+
+            })
+            result=ds;
+
+        },//EDF AJAX sucess FUNCTION
+
+        error: function (xhr, status, error) {
+
+            console.log('An error occurred while updating status');
+        }
+
+
+    });//EOF AJAX*/
+
+    return result;
+
+
+
+}
 
 
 $(document).on('click', '.cancelSessionSelected', function (e) {
     e.stopPropagation();
     $(".venu-apply-form-disply-sessions").find("#"+ $(this).parent().attr("id") +"").removeClass("sessionBooked")
     $(this).parent().parent().remove()
+    calTotalPriceForTimeSlotSelected();
 });
 
 //</editor-fold>
@@ -190,6 +276,8 @@ $(".bookingFormSubmit").click(function (e) {
         });
 
         sessionObj.guestList = guestList;
+        sessionObj.userID=userIDSession
+        sessionObj.totalPrice=totalPrice
 
         result[i] = sessionObj;
     });
@@ -429,8 +517,10 @@ function getBookingRCIntoTable(searchType=null ,memberID=null) {
                 + '   <td >' + statusContent + '</td>'
 
                 + '   <td>' + sessionInfoContent + ' </td>'
+                + '   <td  > $ ' + format(rc.bookFee )+ '</td>'
                 + '   <td  class="bookingAttach" >' + attachmentBox + '</td>'
                 + '   <td><input type="button" class="submitButton submitBookingRecord" value="' + dataCustomizedForUserType.buttonValue + '" data-submit_box=".specificBookingRC_' + i + '"  data-submit_type="' + dataCustomizedForUserType.submitType + '">  </td>'
+
                 + ' </tr>'
 
 

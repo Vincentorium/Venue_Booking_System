@@ -7,388 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48b353e2-82ac-4247-96db-9d9b4ea93a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/TotalPriceTLD.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/c3p0-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/BookingController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/BookingController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/GuestController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/OtherController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/ReportController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/VenueController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/controller/sessionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/BasicDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/BookingInfo_MMDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/BookingRecordDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/GuestDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/GuestlistDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/Guestlistbybookingid_MultiDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/Guestlistenguest_MmDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/Guestlistwithsessionandguestname_MultiDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/Multi_BookingSessionDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/SessionDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/SessionbyguestidDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/UserDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/UserInfoDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/dao/VenueDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM$Userinfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/BookingInfo_MM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/BookingRecord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/BookingRecord_Custom.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/BookingSession_Multi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Guest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Guestlist.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Guestlistbybookingid_Multi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Guestlistenguest_Mm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Guestlistwithsessionandguestname_Multi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Session.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/SessionObj.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Sessionbyguestid.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Userinfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/domain/Venue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/service/BookingRecordService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/service/GuestService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/service/GuestlistService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/service/SessionService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/service/VenueService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/servlet/TotalPriceTag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/test/Test2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/test/TestDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/utils/C3p0Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/utils/DBUtils_USE.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/utils/Utility.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/com/itp4511/view/MHLView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/dba.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/Brand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/CalculateBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/Phone.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/bean/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/dbutils/BrandsDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/dbutils/UserDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/servlet/BrandController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/servlet/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/servlet/PhoneController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/ict/test/TestCreateDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/classes/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/glassfish-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/HikariCP-java6-2.3.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/activiti-bpmn-converter-5.12.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/activiti-bpmn-layout-5.12.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/activiti-bpmn-model-5.12.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/activiti-engine-5.12.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ant-1.9.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/asm-5.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/axis-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/axis-jaxrpc-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/backport-util-concurrent-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/batik-awt-util-1.6-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/batik-dom-1.6-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/batik-svggen-1.6-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/batik-util-1.6-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-core-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-data-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-event-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-hession-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-htmlparser-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-http-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-jodconverter-core-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-mvc-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-persistent-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-plugin-wordpdf-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-rpc-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-schedule-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-security-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-security-web-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-security-web-inf-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-soa-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-tabpane-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-taglib-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-ticket-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-util-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bboss-velocity-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bootstrap-connector-0.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/bsh-2.0b1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/c3p0-0.9.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cas-client-core-3.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/casclient-2.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cglib-nodep-3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-dbutils-1.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-discovery-0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-email-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-fileupload-1.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-logging-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-management-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-net-3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/commons-validator-1.5.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/concurrent-1.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/connector-api-1.6-alpha-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cos-2017.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cxf-rt-bindings-soap-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cxf-rt-databinding-jaxb-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cxf-rt-frontend-jaxws-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cxf-rt-frontend-simple-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cxf-rt-transports-http-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/cxf-rt-wsdl-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/druid-1.0.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/exml-7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/filters-2.0.235-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/fontbox-0.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/geronimo-activation_1.1_spec-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/geronimo-annotation_1.0_spec-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/geronimo-jaxws_2.2_spec-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/hamcrest-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/hamcrest-core-2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/hessian-4.0.38.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/httpclient-4.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/httpcore-4.4.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/httpmime-4.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/icu4j-4.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/itext-2.1.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jackson-annotations-2.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jackson-core-2.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jackson-databind-2.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jackson-dataformat-xml-2.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jacob-1.14.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jasypt-1.9.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/java-uuid-generator-3.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/javassist-3.12.0.GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/javax.ws.rs-api-2.0-m10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jaxb-api-2.2.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jaxb-core-2.2.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jaxb-impl-2.2.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jaxb-xjc-2.2.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jaxen-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jcommon-1.0.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jdom-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/je-5.0.73.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jfreechart-1.0.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jgraph-5.13.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jgraphx-1.10.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jgroups-3.6.1.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jh-2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jldap-2009-10-07.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jsch-0.1.38.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jta-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jtds-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/juh-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/junit-4.13.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jurt-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/jxl-2.6.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/kaptcha-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/livetribe-jsr223-2.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/log4j-api-2.11.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/log4j-core-2.11.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/log4j-slf4j-impl-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-analyzers-common-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-analyzers-smartcn-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-core-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-demo-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-facet-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-queries-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-queryparser-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/lucene-sandbox-4.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mail-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mongo-java-driver-3.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mybatis-3.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.49.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/neethi-3.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/netty-3.2.10.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/odmg-3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ojdbc5-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ons-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/oraclepki-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/oro-2.0.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/osdt_cert-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/osdt_core-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/pdfbox-0.7.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/pdfbox-app-2.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/pdp-ewebeditor-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/pdp-parameters-handler-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/pdp-system-5.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/pinyin4j-2.5.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/poi-3.10-FINAL.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/poi-excelant-3.10-FINAL.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/poi-ooxml-3.10-FINAL.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/poi-ooxml-schemas-3.10-FINAL.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/poi-scratchpad-3.10-FINAL.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/proxool-0.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/proxool-cglib-0.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/qdox-2.0-M4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/quartz-2.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/quartz-backward-compat-2.1.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ridl-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/rsslibj-1.0RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/simplefan-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/stax2-api-3.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/swarmcache-1.0RC2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/swizzle-stream-1.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/swtgraphics2d-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/testng-6.9.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/trilead-ssh2-1.0.0-build215.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/trove-1.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/ucp-11.2.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/unoil-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/woodstox-core-asl-4.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/wsdl4j-1.6.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xalan-2.7.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xml-resolver-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xmlbeans-2.4.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xmlpull-1.1.3.4d_b4_min.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xmlschema-core-2.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xpp3-1.1.4c.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/lib/xstream-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/applyFrom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/bookingForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/complaint.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/complaintTable_cancel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/confirmationCode.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/favBox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/general.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/logIn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/logIn2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/mail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/misc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/searchForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/signUp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/switch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/tableBooking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/tableSheet copy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/tableSheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/css/venuList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/123123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/5366d0160924ab18972ba27b65b0f1cd7b899e519d6f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/962bd40735fae6cd7b89e42d5ff9182442a7d933a16f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/AverageVSSpecificjpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/CompanyImageLHC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/ShoppingCart1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/Snipaste_2022-06-05_17-46-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/Snipaste_2022-06-05_17-47-19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/Snipaste_2023-03-17_08-47-30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/Staff3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/Staff4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/User1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/User2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/airplaneIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/attachIcon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/attachIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/attachIcon.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/campus2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/campusChaiWan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/campusLWL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/campusTM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/campusTsingYi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/cdust.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/daysOnIssue.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/errImg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/fatRat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/iconCmt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/iconFav.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/iveIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/jesse-adair--TB5K8VZ3hw-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/middleIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/pp2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/rat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/rep1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/replyIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/searc2h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/search.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/slip1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/slip2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/slip3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/slip5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/slip6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/images/voteUp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/attachments/2022-11-21-11-46-58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/bookingFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/checkBookingWithouReceipt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/getGeusts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/getMailContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/getMailRecords.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/getReports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/getReportsForTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleBooking.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleBookingRecord.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleGeneral.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleMail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/handleVenue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/inserBooking.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/insertMail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/insertReportStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/loadMainPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/logIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/searchFunc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/searchFuncTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/searchFunc_Switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/js/switch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/loginError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/mainPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/registerPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/signup.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/uploads/2023/5/20/7980acc4-df34-4b90-bcf2-151cc0519b2a_1684573398625_Snipaste_2023-02-08_14-51-35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/uploads/2023/5/20/9c16caf6-8a0e-41cd-9510-1f17f8ad84d7_1684574747540_Snipaste_2023-03-04_13-15-44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/uploads/2023/5/20/b8e12a67-db5a-4277-8263-c2ced9106932_1684574741855_Snipaste_2023-03-21_20-15-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/uploads/2023/5/20/cc20b839-bef6-46d9-8d7a-f39bbc8fab6a_1684574195613_download (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/uploads/2023/5/20/efe03715-278c-4530-bda7-1154ca213c43_1684574105951_Snipaste_2023-03-09_00-52-54.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/artifacts/ITP4511_EA_Project_war_exploded/uploads/2023/5/22/fc0ebc07-4206-46e0-ab2d-d7cefd0f196f_1684741917365_download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/handleBookingRecord.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/2023/5/25/53fd4ee5-c0e2-41a1-b4ae-d2d2fe18aa37_1685022810160_Snipaste_2023-05-25_21-52-55.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/uploads/2023/5/25/f17f1383-3b00-4d80-abcf-3f2ab036e402_1685023878218_Snipaste_2023-05-25_21-52-55.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ITP4511_EA_Project_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/switch.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/switch.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -397,6 +16,51 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itp4511_project@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itp4511_project: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookingrecord: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -409,8 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBookingRecord.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="74" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+            <state relative-caret-position="-869">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -418,10 +91,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="396" column="25" selection-start-line="396" selection-start-column="4" selection-end-line="396" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="518" column="41" selection-start-line="518" selection-start-column="41" selection-end-line="518" selection-end-column="41" />
               <folding>
                 <element signature="n#!!block;n#getSessionByDate#0" />
+                <element signature="n#!!block;n#getVenueInfo#0" />
                 <element signature="n#!!block;n#addBooking#0" />
                 <element signature="n#!!block;n#getSessionInfoByBookID#0" />
               </folding>
@@ -430,19 +104,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="125">
+              <caret line="185" column="70" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="592">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Venue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -451,36 +173,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mailContetnForBookingDisplay</find>
-      <find>approveBooking</find>
-      <find>bookingTableModal</find>
-      <find>switch-button-case right demonSwitchRight</find>
-      <find>switch</find>
-      <find>bookStatus</find>
-      <find>displayBookingInfoApproved</find>
-      <find>&lt;th</find>
-      <find>UI</find>
-      <find>updateBookingWithAttach</find>
-      <find>mytable table table-bordered table-striped</find>
-      <find>userIDSession</find>
-      <find>user name</find>
-      <find>memberID</find>
-      <find>userID</find>
-      <find>sessionService</find>
+      <find>venueDefaultPrice</find>
+      <find>bookingrecord</find>
+      <find>BookingRecord</find>
+      <find>date</find>
+      <find>result</find>
       <find>SessionObj</find>
-      <find>responseJson</find>
-      <find>userService</find>
-      <find>booking_records_search_userName</find>
-      <find>pagination-container</find>
-      <find>multi_BookingSessionDAO</find>
-      <find>userDataForConfigure</find>
-      <find>getBookingRCIntoTable</find>
-      <find>userDataForConfigure.bookingRecordSearchLeft</find>
-      <find>switch-button</find>
-      <find>forInsert Insert_UnGroup demonHide</find>
-      <find>getbooking</find>
-      <find>getbookingRCinto</find>
-      <find>displayBookingInfoNeedApproval</find>
+      <find>venu-apply-form-displayVnue--date</find>
+      <find>bookingControl</find>
+      <find>memberID</find>
+      <find>insertBookingRecords</find>
+      <find>Session Info</find>
+      <find>bookingTableModal</find>
+      <find>getDataCustomizedForUserType</find>
+      <find>update</find>
+      <find>totalPrice</find>
+      <find>current</find>
+      <find>containerOrderList</find>
+      <find>price</find>
+      <find>campus</find>
+      <find>data-price</find>
+      <find>fix</find>
+      <find>option</find>
+      <find>venueSelectedPrice</find>
+      <find>float</find>
+      <find>venu-apply-form-session</find>
+      <find>Total Price</find>
+      <find>bookingForm_totalPrice</find>
+      <find>td</find>
+      <find>control</find>
+      <find>bookingController</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -500,16 +222,24 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/modal.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/handleBookingRecord.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/switch.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Venue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/Bookingrecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/modal.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/mainPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" />
       </list>
     </option>
   </component>
@@ -538,7 +268,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -601,7 +331,25 @@
               <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ict" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -609,7 +357,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -622,60 +369,46 @@
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="2023" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="2023" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="2023" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="20" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="2023" type="462c0819:PsiDirectoryNode" />
-              <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="22" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.google.code.gson:gson:2.10.1" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.google.code.gson:gson:2.10.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="gson-2.10.1.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.google.code.gson:gson:2.10.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="gson-2.10.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.google.code.gson:gson:2.10.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="gson-2.10.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.google.code.gson:gson:2.10.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="gson-2.10.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+              <item name="gson" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -685,14 +418,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/itp4511/dao" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -894,6 +628,7 @@
       <workItem from="1684809695980" duration="793000" />
       <workItem from="1684813768231" duration="10199000" />
       <workItem from="1685004570474" duration="18771000" />
+      <workItem from="1685075600708" duration="27943000" />
     </task>
     <servers />
   </component>
@@ -915,7 +650,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72428000" />
+    <option name="totallyTimeSpent" value="100371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -928,31 +663,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6356275" visible="true" weight="0.2588802" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63095236" visible="true" weight="0.26189044" />
       <window_info id="Structure" order="1" sideWeight="0.3639775" side_tool="true" weight="0.2588802" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.3639775" side_tool="true" weight="0.2588802" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Web" order="6" sideWeight="0.36437246" side_tool="true" visible="true" weight="0.2588802" />
+      <window_info id="Web" order="6" sideWeight="0.3690476" side_tool="true" visible="true" weight="0.26189044" />
       <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32951653" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32955974" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32830188" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32955974" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37861636" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42893082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32955974" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32955974" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3672956" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36603773" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32955974" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32955974" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32955974" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32955974" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32951653" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -962,7 +697,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Bean Validation" order="7" weight="0.32992172" />
       <window_info anchor="right" id="JSF" order="8" />
-      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32972324" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info anchor="right" id="Theme Preview" order="11" />
       <window_info anchor="right" id="CDI" order="12" />
@@ -1034,109 +769,64 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java</url>
-          <line>224</line>
+          <line>227</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java</url>
+          <line>400</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js</url>
+          <line>171</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GlassfishConfiguration">
+        <watch expression="venueList" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>venueList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
-      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleForm.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReports.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/9c16caf6-8a0e-41cd-9510-1f17f8ad84d7_1684574747540_Snipaste_2023-03-04_13-15-44.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/b8e12a67-db5a-4277-8263-c2ced9106932_1684574741855_Snipaste_2023-03-21_20-15-15.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleVenue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleMail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="165" column="25" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tableSheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1598">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/tableBooking.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/itp4511/controller/BookingController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="151" column="94" selection-start-line="151" selection-start-column="94" selection-end-line="151" selection-end-column="94" />
-          <folding>
-            <element signature="e#0#6887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1223,13 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ict/servlet/BrandController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1241,23 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/logIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1300,41 +966,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/uploads/2023/5/20/7980acc4-df34-4b90-bcf2-151cc0519b2a_1684573398625_Snipaste_2023-02-08_14-51-35.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="745" lean-forward="true" selection-start-line="745" selection-end-line="745" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="101" column="23" lean-forward="true" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="140" column="41" lean-forward="true" selection-start-line="140" selection-start-column="41" selection-end-line="140" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="171" column="74" lean-forward="true" selection-start-line="171" selection-start-column="74" selection-end-line="171" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3252#3289#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/switch.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1349,43 +980,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="60" column="57" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="57" />
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/VenueDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="218">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://895ad8ac-9339-4bd0-8d57-c8abb5845b0c/schema/itp4511_project/table/bookingrecord">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="840f59d9-d159-4c6d-b4f0-0b5ea84c91c8">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/Bookingrecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingInfo_MM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="398" column="3" selection-start-line="398" selection-start-column="3" selection-end-line="398" selection-end-column="3" />
+          <folding>
+            <element signature="e#7500#7501#0" expanded="true" />
+            <element signature="e#7532#7533#0" expanded="true" />
+            <element signature="e#7564#7565#0" expanded="true" />
+            <element signature="e#7588#7589#0" expanded="true" />
+            <element signature="e#7426#9005#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2204#2205#0" expanded="true" />
+            <element signature="e#2367#2368#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/logIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingSession_Multi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/VenueService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Venue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="80" column="31" lean-forward="true" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar!/com/google/gson/GsonBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/VenueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/mainPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="185" column="70" selection-start-line="185" selection-start-column="48" selection-end-line="185" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBookingRecord.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="74" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+        <state relative-caret-position="-869">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/inserBooking.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="396" column="25" selection-start-line="396" selection-start-column="4" selection-end-line="396" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="518" column="41" selection-start-line="518" selection-start-column="41" selection-end-line="518" selection-end-column="41" />
           <folding>
             <element signature="n#!!block;n#getSessionByDate#0" />
+            <element signature="n#!!block;n#getVenueInfo#0" />
             <element signature="n#!!block;n#addBooking#0" />
             <element signature="n#!!block;n#getSessionInfoByBookID#0" />
           </folding>

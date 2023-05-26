@@ -1,2 +1,3 @@
 #  Ignore ItelliJ IDEA files
 target/
+classes/

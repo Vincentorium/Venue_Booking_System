@@ -4,7 +4,7 @@ package com.itp4511.domain;
 
 public class Venue {
 
-  private long venId;
+  private long venID;
   private String venName;
   private String venType;
   private long venCapacity;
@@ -19,8 +19,8 @@ public class Venue {
   public Venue() {
   }
 
-  public Venue(long venId, String venName, String venType, long venCapacity, String venLocation, String venDescription, String venPersonInCharge, double venBookingFee, String venImage, String venCampus) {
-    this.venId = venId;
+  public Venue(long venID, String venName, String venType, long venCapacity, String venLocation, String venDescription, String venPersonInCharge, double venBookingFee, String venImage, String venCampus) {
+    this.venID = venID;
     this.venName = venName;
     this.venType = venType;
     this.venCapacity = venCapacity;
@@ -32,12 +32,12 @@ public class Venue {
     this.venCampus = venCampus;
   }
 
-  public long getVenId() {
-    return venId;
+  public long getVenID() {
+    return venID;
   }
 
-  public void setVenId(long venId) {
-    this.venId = venId;
+  public void setVenID(long venID) {
+    this.venID = venID;
   }
 
 

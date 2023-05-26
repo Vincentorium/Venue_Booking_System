@@ -1,10 +1,13 @@
 package com.itp4511.service;
+import com.itp4511.controller.OtherController;
 import com.itp4511.dao.BookingRecordDAO;
 import com.itp4511.dao.Multi_BookingSessionDAO;
 import com.itp4511.dao.BookingInfo_MMDAO;
 import com.itp4511.domain.BookingInfo_MM;
 import com.itp4511.domain.BookingRecord;
 import com.itp4511.domain.BookingSession_Multi;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 import java.util.List;
@@ -17,9 +20,9 @@ public class BookingRecordService {
 
     private SessionService sessionService = new SessionService();
 
+    public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
 
-
-    public boolean insertBookingRecords(int bookingMemberID,Object[][] bachList ) {
+    public boolean insertBookingRecords(int bookingMemberID,double bookingFee,Object[][] bachList ) {
 
         int input = 0;
         int bookingID;
@@ -27,9 +30,12 @@ public class BookingRecordService {
 //                + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
 
 
-
-        input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(  `bookFKmemberID`)"
-                + "VALUES ( ?)",      bookingMemberID);
+        try {
+            input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(  `bookFKmemberID`, `bookFee`  )"
+                    + "VALUES ( ?,?)",      bookingMemberID,bookingFee);
+        } catch (Exception e) {
+                LOG.debug(e.getMessage());
+        }
 
         Object o=       bookingRecordDAO.queryScalar("SELECT `bookID`FROM `bookingrecord`  " +
                 "ORDER BY bookID DESC " +
