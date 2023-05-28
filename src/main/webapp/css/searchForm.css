@@ -47,11 +47,7 @@ font-weight: 900;
 .tableComplaint{
     font-size: 14px;
 }
-.filterFormFirstFlood{
-    width: 1200px;
-    display: flex;
-        height: 75px;
-}
+
 .managementFunc{
        height: 80px;
     width: 240px;
@@ -105,13 +101,7 @@ font-size: 12px;
     width:20px;
     height:20px;
 }
-.filterForm__searchBtn{
-    margin-top: 2px;
-    margin-left: 205px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
+
 .postBox_contentBox_contentBox_title{
    cursor: grab;
 }
@@ -235,7 +225,7 @@ font-size: 12px;
             width: 181px;
         }
 
-        .filterBox .fliter_placehoder {
+         .fliter_placehoder {
             position: absolute;
             left: 0px;
             padding: 10px;
@@ -277,23 +267,38 @@ font-size: 12px;
 
         }
 
-        .filterBox input:valid~.fliter_placehoder,
-        .filterBox input:focus~.fliter_placehoder {
+        /*.filterBox input:valid~.fliter_placehoder,*/
+        /*.filterBox input:focus~.fliter_placehoder {*/
 
-            color: #ffffff;
-            /* transform: translateX(10px) translateX(-7px);*/
+        /*    color: #ffffff;*/
+        /*    !* transform: translateX(10px) translateX(-7px);*!*/
 
-            transform: translate(10px, -7px);
-            font-size: 0.75em;
-            background-color: #01254c;
+        /*    transform: translate(10px, -7px);*/
+        /*    font-size: 0.75em;*/
+        /*    background-color: #01254c;*/
 
-            padding: 0 2px;
-         
-            letter-spacing: 0.2em;
+        /*    padding: 0 2px;*/
+        /* */
+        /*    letter-spacing: 0.2em;*/
 
 
-        }
+        /*}*/
 
+ .fliter_placehoder {
+
+    color: #ffffff;
+    /* transform: translateX(10px) translateX(-7px);*/
+
+    transform: translate(10px, -7px);
+    font-size: 0.75em;
+    background-color: #01254c;
+
+    padding: 0 2px;
+
+    letter-spacing: 0.2em;
+
+
+}
 
 
         .filterBox__airlineIcon {

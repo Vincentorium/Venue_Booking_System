@@ -102,6 +102,7 @@ public class BookingController extends HttpServlet {
                     BufferedReader reader = request.getReader();
                     StringBuilder sb = new StringBuilder();
                     String line;
+                    //can check if a array?
                     while ((line = reader.readLine()) != null) {
                         sb.append(line);
                     }

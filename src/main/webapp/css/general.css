@@ -14,3 +14,6 @@
 .btnGeneral:hover{
        background-color: grey;
 }
+.containerHide{
+       display: none;
+}

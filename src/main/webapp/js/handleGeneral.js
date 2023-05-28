@@ -1,5 +1,11 @@
 var userIDSession;
 var userDataForConfigure={}
+const format = (num, decimals) => num.toLocaleString('en-US', {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+});
+
+
 //for operator to update report status between unapprove and approve fo
 $(document).on('click', '.submitButton', function (e) {
 
@@ -104,3 +110,21 @@ function loginCustomizeForUser(){
     }
 
 }
+
+
+//header click event to switch function
+$(".header__statistic").click(function (e){
+    $(".stat_container").removeClass("containerHide");
+    $(".favEleBox").addClass("containerHide");
+
+
+    stat_loadChartByDefaultVal()
+
+})
+$(".header__Venues").click(function (e){
+    $(".stat_container").addClass("containerHide");
+    $(".favEleBox").removeClass("containerHide");
+
+
+
+})

@@ -1,0 +1,33 @@
+.stat_chartContainerLineTable--barChart_title,.stat_chartContainerLineTable_title{
+    width: 547px;
+    color: white;
+    background-color: #5656b2;
+    font-size: 30px;
+}
+#mainPageForm{
+    display: flex;
+
+}
+.filterFormFirstFlood{
+    width: 300px;
+    display: flex;
+    height: 75px;
+    margin-left: 126px;
+}
+.filterForm__searchBtn{
+    margin-top: 2px;
+    margin-left: 205px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.stat_ErrMessage{
+    text-align: center;
+    margin-top: 65px;
+    font-size: 40px;
+    height: 300px;
+    width: 100%;
+}
+

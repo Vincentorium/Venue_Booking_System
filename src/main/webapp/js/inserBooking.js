@@ -156,10 +156,7 @@ $(".bookingForm_totalPrice").html("Total Price: $ "+ format(totalPrice))
 var venueJS={};
 var venueSelectedPrice;
 
-const format = (num, decimals) => num.toLocaleString('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-});
+
 function bookingForm_populateVenueDropDownListForSelectVenue(){
     let venueInof=getVenueInfo();
     let content="";
