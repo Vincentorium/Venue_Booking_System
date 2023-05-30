@@ -74,9 +74,9 @@ public class GuestController extends HttpServlet {
             case 2: //add guest
                 String name = request.getParameter("name");
                 String email = request.getParameter("email");
+                int memberID=Integer.parseInt( request.getParameter("memberID"));
 
-
-                boolean isInsertGuest = guestService.addGuest(1, name, email);
+                boolean isInsertGuest = guestService.addGuest(memberID, name, email);
 
 
                 if (isInsertGuest) {

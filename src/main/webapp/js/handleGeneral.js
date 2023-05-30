@@ -1,5 +1,5 @@
 var userIDSession;
-var userDataForConfigure={}
+var userDataForConfigure = {}
 const format = (num, decimals) => num.toLocaleString('en-US', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
@@ -66,54 +66,13 @@ function getCurrentDate() {
 var userType
 var usernmae
 $(document)
-$(document).ready(function() {
-checkSession()
-    })
-function checkSession() {
-
-
-            userIDSession = $(".header__singUp").data("userid");
-
-
-            userType = $(".header__dept").html();
-
-
-        usernmae = $(".header__singUp").html();
-
-    $.cookie('userName', usernmae, { expires: 7, path: '/' });
-    $.cookie('userType', userType, { expires: 7, path: '/' });
-    $.cookie('userID', userIDSession, { expires: 7, path: '/' });
-
-    loginCustomizeForUser()
-
-
-}
-
-
-
-function loginCustomizeForUser(){
-    if(userType!="Member"){
-
-
-
-        userDataForConfigure.memberIDForLoadBooking=1
-        userDataForConfigure.bookingRecordSearchLeft=3
-        userDataForConfigure.bookingRecordSearchRight=5
-        $(".mgntFunction").removeClass(boxHide)
-        $(".memberFunction").addClass(boxHide)
-
-       }else{
-        userDataForConfigure.memberIDForLoadBooking=userIDSession
-        userDataForConfigure.bookingRecordSearchLeft=1
-        userDataForConfigure.bookingRecordSearchRight=6
-
-    }
-
-}
+$(document).ready(function () {
+    checkSession()
+})
 
 
 //header click event to switch function
-$(".header__statistic").click(function (e){
+$(".header__statistic").click(function (e) {
     $(".stat_container").removeClass("containerHide");
     $(".favEleBox").addClass("containerHide");
 
@@ -121,10 +80,14 @@ $(".header__statistic").click(function (e){
     stat_loadChartByDefaultVal()
 
 })
-$(".header__Venues").click(function (e){
+$(".header__Venues").click(function (e) {
     $(".stat_container").addClass("containerHide");
     $(".favEleBox").removeClass("containerHide");
 
 
-
 })
+
+function clearFormInput(form) {
+    $(form).find("input:not([type='submit'], [type='button'])").val("");
+
+}

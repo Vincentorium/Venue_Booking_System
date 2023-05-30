@@ -15,19 +15,19 @@
 
 .venueListModal {
     overflow: scroll;
-    
+
     position: fixed;
     top: 200px;
     left: 50%;
     width: 500jpx;
-   transform: translate(-50%,-50%) scale(0); 
+   transform: translate(-50%,-50%) scale(0);
     transition: 200ms ease-in-out;
     border-radius: 10px;
     z-index: 30;
     background-color: white;
     width: 505px;
     height: 500px;
-  
+
 }
 
 .venueListModal_title{
@@ -91,7 +91,7 @@
     background-color: white;
     width: 1439px;
     height: 720px;
-  
+
 }
 
 .userMngtModal_title{

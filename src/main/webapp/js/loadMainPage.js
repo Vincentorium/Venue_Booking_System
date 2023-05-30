@@ -6,10 +6,7 @@ $(document).ready(function(){
  
 
 
- loginCustomizeForUser()
-   
-   getReortForTable()
-    modal()
+   modal()
 
 
 
@@ -20,15 +17,6 @@ $(document).ready(function(){
 
 
 
-
-
-  function loginCustomizeForUser(){
-   
-      $('.userName').html($.cookie('userName'));
-       $('.dept').html($.cookie('userType'));
-
-      }
-   
 
 //$(".sideNavBar").load("./component/sideNavBar.html");
  

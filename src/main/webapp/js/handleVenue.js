@@ -30,8 +30,8 @@ $(document).ready(function(){
     $(document).on("submit","#venueForm--addGuest",function(e){
         e.preventDefault();
 
-        let formData = $(this).serializeArray();
-        inserUser(formData)
+
+        inserUser(this)
 
     });
 

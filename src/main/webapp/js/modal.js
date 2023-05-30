@@ -129,8 +129,25 @@ $(document).ready(function () {
 
     function closeModal(modal) {
 
-        modal.classList.remove('active');
+        switch ($(modal).data("modalname")) {
 
+            case "bookingTableModal":
+
+                $(".activeSwitch").css("left","0%")
+                $(".left").addClass("active-case")
+                $(".right").removeClass("active-case")
+
+                if (userType != "Member") {
+                    $('.booking_records_search_userName option:first').prop('selected', true);
+                    userDataForConfigure.memberIDForLoadBooking=1;
+                }
+                break;
+            default:
+
+                break;
+
+        }
+        modal.classList.remove('active');
 
     }
 

@@ -900,15 +900,7 @@ $('.searchFlightHeaderLink').click(function(){
 
 
 
- 
-$(document).on('click','.cmtInProgress',function(){
-   
-  //clear the html, should don't need to remove
-  
-  window.location.href = "indexOfComplaint2.html";
-  
 
-})
 
 
 

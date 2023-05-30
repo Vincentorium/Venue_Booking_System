@@ -100,9 +100,11 @@ function getGeustIntoGuestMngt(userID, type) {
 }
 
 
-function inserUser(formData) {
-
+function inserUser(formDOM) {
+    let formData = $(formDOM).serializeArray();
     formData.push({name: "type", value: 2});
+    formData.push({name: "memberID", value: userIDSession});
+
 
 //    ,type:2
     $.ajax({
@@ -116,6 +118,7 @@ function inserUser(formData) {
 
             alert("Update Successfully!");
             getGeustIntoGuestMngt(userIDSession, 1);//#temp need cookie
+            clearFormInput(formDOM);
         },//EDF AJAX sucess FUNCTION
 
         error: function (xhr, status, error) {

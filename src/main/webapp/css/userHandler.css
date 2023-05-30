@@ -1,0 +1,69 @@
+.login_Container{
+
+    position: fixed;
+    transform: translate(-50%,-21%) scale(0);
+    top: 28%;
+    left: 50%;
+    z-index: 15;
+
+
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+
+    background-color: #fdfdfd;
+    width: auto;
+    height: auto;
+
+
+}
+
+.loginForm_wrapper{
+
+    margin: 50px;
+    padding: 10px;
+    width: 330px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 10px solid #800000;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    top: 100px;
+    text-align: center;
+    left:50%;
+    z-index: 10;
+    /*display: none;*/
+
+
+
+}
+
+.loginForm_Button  {
+    color: white;
+    background: #df1235;
+    width: 200px;
+    height: 30px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.login_form_homePageButton{
+    font-family: Arial Black;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.loginForm_loginCtnTitle,.loginForm_loginCtnTitle>img{
+
+    margin: 14px;
+
+}
+.loginFunctionWrapper{
+
+    display: flex;
+    gap: 54px;
+    margin-bottom: 10px;
+}
