@@ -4,10 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.itp4511.domain.BookingInfo_MM;
-import com.itp4511.domain.Guest;
 import com.itp4511.domain.Session;
 import com.itp4511.service.*;
-import com.itp4511.utils.Utility;
+import com.itp4511.service.impl.GuestServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,7 +37,7 @@ public class sessionController extends HttpServlet {
     private VenueService venueService = new VenueService();
     private SessionService sessionService = new SessionService();
     private BookingRecordService bookingRecordService = new BookingRecordService();
-    private GuestService guestService = new GuestService();
+    private GuestServiceImpl guestService = new GuestServiceImpl();
     private GuestlistService guestlistService = new GuestlistService();
 
 

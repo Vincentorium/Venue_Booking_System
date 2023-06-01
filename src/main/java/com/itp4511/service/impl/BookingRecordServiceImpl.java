@@ -1,88 +1,107 @@
-package com.itp4511.service;
+package com.itp4511.service.impl;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.reflect.TypeToken;
+import com.itp4511.dao.BookingInfo_MMDAO;
 import com.itp4511.dao.BookingRecordDAO;
 import com.itp4511.dao.Multi_BookingSessionDAO;
-import com.itp4511.dao.BookingInfo_MMDAO;
+import com.itp4511.dao.impl.BookingRecordDAOImpl;
 import com.itp4511.domain.BookingInfo_MM;
 import com.itp4511.domain.BookingRecord;
 import com.itp4511.domain.BookingSession_Multi;
+import com.itp4511.domain.SessionObj;
+import com.itp4511.service.BookingRecordService;
+import com.itp4511.service.BookingRecordServiceInterfae;
+import com.itp4511.service.SessionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+import java.io.IOException;
 import java.util.List;
 
-public class BookingRecordService {
+public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
+
+    private BookingRecordDAOImpl bookingRecordDAOImpl = new BookingRecordDAOImpl();
 
     private BookingRecordDAO bookingRecordDAO = new BookingRecordDAO();
+
     private Multi_BookingSessionDAO multi_BookingSessionDAO = new Multi_BookingSessionDAO();
     private BookingInfo_MMDAO bokingInfo_MMDAO = new BookingInfo_MMDAO();
 
     private SessionService sessionService = new SessionService();
 
-     public static final Logger LOG = LoggerFactory.getLogger(BookingRecordService.class);
-
-    public boolean insertBookingRecords(int bookingMemberID,double bookingFee,Object[][] bachList ) {
-
-        int input = 0;
-        int bookingID;
-//        input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
-//                + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
+    public static final Logger LOG = LoggerFactory.getLogger(BookingRecordServiceImpl.class);
 
 
+    //<editor-fold desc=" service refined">
+    public boolean insertBookingRecords(StringBuilder bookingSessionsJSArrayStr) {
+
+
+        Object[][] bachList = null;
+        Integer bookingMemberID = null;
+        Double bookingFee = null;
+
+
+        Gson gson = new Gson();
+
+        List<SessionObj> sessionObjs = null;
         try {
-            input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(  `bookFKmemberID`, `bookFee`  )"
-                    + "VALUES ( ?,?)",      bookingMemberID,bookingFee);
+            //   JsonObject jsonObject = gson.fromJson(sb.toString() , JsonObject.class);
+            sessionObjs = gson.fromJson(bookingSessionsJSArrayStr.toString(), new TypeToken<List<SessionObj>>() {
+            });
+        } catch (JsonSyntaxException e) {
+            LOG.debug(e.getMessage());
         } catch (Exception e) {
-                LOG.debug(e.getMessage());
-        }
+            LOG.debug(e.getMessage());
 
-        Object o=       bookingRecordDAO.queryScalar("SELECT `bookID`FROM `bookingrecord`  " +
-                "ORDER BY bookID DESC " +
-                "LIMIT 1;",BookingRecord.class);
-
-        bookingID=(int)o;
-        for(int i=0;i<bachList.length;i++){
-
-            bachList[i][0]=bookingID;
         }
 
 
+        bachList = new Object[sessionObjs.size()][5];
 
-        if(sessionService.updateSession(bachList))
-            System.out.println("ok");
+        int i = 0;
+        for (SessionObj s : sessionObjs) {
+            bachList[i][0] = 0;
+            bachList[i][1] = 0;
+            bachList[i][2] = 1;
+            bachList[i][3] = Integer.parseInt(s.getSessionID());
+            bachList[i][4] = s.getGuestList();
+            bookingMemberID = s.getUserID();
+            bookingFee = s.getTotalPrice();
+            i++;
 
-        return input > 0;
+        }
+
+
+        return bookingRecordDAOImpl.insertBookingRecords(bookingMemberID, bookingFee, bachList);
+
+
     }
+    //</editor-fold>
 
 
-
-
-
-
-      public List<BookingSession_Multi> getBookingByID(int memberID){
-        List<BookingSession_Multi> rs= multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
+    public List<BookingSession_Multi> getBookingByID(int memberID) {
+        List<BookingSession_Multi> rs = multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
                 "LEFT JOIN user as u " +
                 "on b.bookFKmemberID=u.userID WHERE bookFKmemberID=? and bookStatus in (0,1) "
-                + " order by bookStatus ,bookDate Desc", BookingSession_Multi.class,memberID);
+                + " order by bookStatus ,bookDate Desc", BookingSession_Multi.class, memberID);
         return rs;
     }
 
 
-
-    public List<BookingSession_Multi> getBookingByIDForNonUnapprovedRecord(int memberID){
-        List<BookingSession_Multi> rs= multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
+    public List<BookingSession_Multi> getBookingByIDForNonUnapprovedRecord(int memberID) {
+        List<BookingSession_Multi> rs = multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
                 "LEFT JOIN user as u " +
                 "on b.bookFKmemberID=u.userID WHERE bookFKmemberID=? and bookStatus not in (0) "
-                +" order by bookStatus", BookingSession_Multi.class,memberID);
+                + " order by bookStatus", BookingSession_Multi.class, memberID);
         return rs;
     }
 
 
+    public List<BookingInfo_MM> getBookingAllInfoByMemberID(int memberID) {
 
-    public List<BookingInfo_MM> getBookingAllInfoByMemberID(int memberID){
-
-        String sql="SELECT *  " +
+        String sql = "SELECT *  " +
                 "   FROM  bookingrecord as b  " +
                 "   left join user as u  " +
                 "   on b.bookFKmemberID=u.userID " +
@@ -99,13 +118,13 @@ public class BookingRecordService {
                 "                        WHERE bookFKmemberID=? " +
                 "                        ORDER BY `b`.`bookID` DESC;";
 
-        List<BookingInfo_MM> bookingInfo_MM =    bokingInfo_MMDAO.queryMulti(sql, BookingInfo_MM.class,memberID);
+        List<BookingInfo_MM> bookingInfo_MM = bokingInfo_MMDAO.queryMulti(sql, BookingInfo_MM.class, memberID);
         return bookingInfo_MM;
     }
 
-        public List<BookingInfo_MM> getBookingByMemberID(int memberID){
+    public List<BookingInfo_MM> getBookingByMemberID(int memberID) {
 
-        String sql="SELECT *  " +
+        String sql = "SELECT *  " +
                 "   FROM  bookingrecord as b  " +
                 "   left join user as u  " +
                 "   on b.bookFKmemberID=u.userID " +
@@ -122,14 +141,14 @@ public class BookingRecordService {
                 "                        WHERE bookFKmemberID=? " +
                 "                        ORDER BY `b`.`bookID` DESC;";
 
-        List<BookingInfo_MM> bookingInfo_MM =    bokingInfo_MMDAO.queryMulti(sql, BookingInfo_MM.class,memberID);
+        List<BookingInfo_MM> bookingInfo_MM = bokingInfo_MMDAO.queryMulti(sql, BookingInfo_MM.class, memberID);
         return bookingInfo_MM;
     }
 
 
-    public List<BookingInfo_MM> getBookingAllInfoByBookingID(int BookingID){
+    public List<BookingInfo_MM> getBookingAllInfoByBookingID(int BookingID) {
 
-        String sql="SELECT *  " +
+        String sql = "SELECT *  " +
                 "   FROM  bookingrecord as b  " +
                 "   left join user as u  " +
                 "   on b.bookFKmemberID=u.userID " +
@@ -146,42 +165,40 @@ public class BookingRecordService {
                 "                        WHERE bookFKmemberID=? " +
                 "                        ORDER BY `b`.`bookID` DESC;";
 
-        List<BookingInfo_MM> bookingInfo_MM =    bokingInfo_MMDAO.queryMulti(sql, BookingInfo_MM.class,BookingID);
+        List<BookingInfo_MM> bookingInfo_MM = bokingInfo_MMDAO.queryMulti(sql, BookingInfo_MM.class, BookingID);
         return bookingInfo_MM;
     }
 
-    public boolean updateBookingImgnfoByMemberID(int memberID,String imageName){
-        int isSuccess=0;
+    public boolean updateBookingImgnfoByMemberID(int memberID, String imageName) {
+        int isSuccess = 0;
         try {
-            String sql="\n" +
+            String sql = "\n" +
                     "UPDATE `bookingrecord` SET `bookReceipt`=? , bookStatus=? WHERE `bookID`=?";
 
-            isSuccess=    bookingRecordDAO.update(sql, imageName,1,memberID);
+            isSuccess = bookingRecordDAO.update(sql, imageName, 1, memberID);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return isSuccess>0;
+        return isSuccess > 0;
     }
 
-    public boolean approveBooking(int memberID){
-        int isSuccess=0;
+    public boolean approveBooking(int memberID) {
+        int isSuccess = 0;
         try {
-            String sql="\n" +
+            String sql = "\n" +
                     "UPDATE `bookingrecord` SET bookStatus=2 WHERE `bookID`=?";
 
-            isSuccess=    bookingRecordDAO.update(sql, memberID);
+            isSuccess = bookingRecordDAO.update(sql, memberID);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return isSuccess>0;
+        return isSuccess > 0;
     }
 
 
-
-
-    public boolean updateBookingAllInfoByMemberID(int memberID,String imageName){
+    public boolean updateBookingAllInfoByMemberID(int memberID, String imageName) {
         int isSuccess;
-        String sql="\n" +
+        String sql = "\n" +
                 "update  bookingrecord as b  \n" +
                 "                   left join user as u  \n" +
                 "                   on b.bookFKmemberID=u.userID \n" +
@@ -202,10 +219,9 @@ public class BookingRecordService {
                 "                                          WHERE b.bookID=1\n";
 
 
+        isSuccess = bookingRecordDAO.update(sql, imageName, memberID);
 
-        isSuccess=    bookingRecordDAO.update(sql, imageName,memberID);
-
-        return isSuccess>1;
+        return isSuccess > 1;
     }
 
 

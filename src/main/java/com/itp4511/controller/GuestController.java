@@ -6,9 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.itp4511.domain.Guest;
 import com.itp4511.domain.Guestlistwithsessionandguestname_Multi;
 import com.itp4511.service.*;
-import com.itp4511.utils.Utility;
-import org.activiti.engine.impl.util.json.JSONArray;
-import org.activiti.engine.impl.util.json.JSONObject;
+import com.itp4511.service.impl.GuestServiceImpl;
 
 
 import javax.servlet.ServletException;
@@ -17,7 +15,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 
@@ -40,7 +37,7 @@ public class GuestController extends HttpServlet {
     private VenueService venueService = new VenueService();
     private SessionService sessionService = new SessionService();
     private BookingRecordService bookingRecordService = new BookingRecordService();
-    private GuestService guestService = new GuestService();
+    private GuestServiceImpl guestService = new GuestServiceImpl();
     private GuestlistService guestlistService = new GuestlistService();
 
 
@@ -76,13 +73,12 @@ public class GuestController extends HttpServlet {
                 String email = request.getParameter("email");
                 int memberID=Integer.parseInt( request.getParameter("memberID"));
 
-                boolean isInsertGuest = guestService.addGuest(memberID, name, email);
+
+                boolean isInsertGuest =  guestService.addGuest(new Guest(null, name, email,memberID));
 
 
                 if (isInsertGuest) {
                     responseJson.put("message", "add ok");
-
-
                     response.getWriter().write(responseJson.toString());
 
                 }

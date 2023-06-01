@@ -73,7 +73,7 @@ monitorInterval="5" 自動加載配置文件的間隔時間，不低於5秒  —
 <!--        </AsyncLogger>-->
 
 
-        <Root level="trace">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
 
             <AppenderRef ref="accessFile"/>

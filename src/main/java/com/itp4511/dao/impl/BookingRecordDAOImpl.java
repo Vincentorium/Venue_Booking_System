@@ -1,43 +1,43 @@
-package com.itp4511.service;
+package com.itp4511.dao.impl;
 
-import com.itp4511.dao.BookingRecordDAO;
-import com.itp4511.dao.Multi_BookingSessionDAO;
-import com.itp4511.dao.BookingInfo_MMDAO;
+import com.itp4511.dao.*;
 import com.itp4511.domain.BookingInfo_MM;
 import com.itp4511.domain.BookingRecord;
 import com.itp4511.domain.BookingSession_Multi;
+import com.itp4511.domain.Guest;
+import com.itp4511.service.BookingRecordServiceInterfae;
+import com.itp4511.service.SessionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import java.util.List;
 
-public class BookingRecordService {
+public class BookingRecordDAOImpl  extends BasicDAO<BookingRecord> implements BookingRecordDAOInterfae {
 
-    private BookingRecordDAO bookingRecordDAO = new BookingRecordDAO();
+
     private Multi_BookingSessionDAO multi_BookingSessionDAO = new Multi_BookingSessionDAO();
     private BookingInfo_MMDAO bokingInfo_MMDAO = new BookingInfo_MMDAO();
 
     private SessionService sessionService = new SessionService();
 
-     public static final Logger LOG = LoggerFactory.getLogger(BookingRecordService.class);
+     public static final Logger LOG = LoggerFactory.getLogger(BookingRecordDAOImpl.class);
 
     public boolean insertBookingRecords(int bookingMemberID,double bookingFee,Object[][] bachList ) {
 
         int input = 0;
         int bookingID;
-//        input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
+//        input= update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
 //                + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
 
 
         try {
-            input= bookingRecordDAO.update("INSERT INTO `bookingRecord`(  `bookFKmemberID`, `bookFee`  )"
+            input= update("INSERT INTO `bookingRecord`(  `bookFKmemberID`, `bookFee`  )"
                     + "VALUES ( ?,?)",      bookingMemberID,bookingFee);
         } catch (Exception e) {
                 LOG.debug(e.getMessage());
         }
 
-        Object o=       bookingRecordDAO.queryScalar("SELECT `bookID`FROM `bookingrecord`  " +
+        Object o=   queryScalar("SELECT `bookID` FROM `bookingrecord`  " +
                 "ORDER BY bookID DESC " +
                 "LIMIT 1;",BookingRecord.class);
 
@@ -156,7 +156,7 @@ public class BookingRecordService {
             String sql="\n" +
                     "UPDATE `bookingrecord` SET `bookReceipt`=? , bookStatus=? WHERE `bookID`=?";
 
-            isSuccess=    bookingRecordDAO.update(sql, imageName,1,memberID);
+            isSuccess=    update(sql, imageName,1,memberID);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -169,7 +169,7 @@ public class BookingRecordService {
             String sql="\n" +
                     "UPDATE `bookingrecord` SET bookStatus=2 WHERE `bookID`=?";
 
-            isSuccess=    bookingRecordDAO.update(sql, memberID);
+            isSuccess=    update(sql, memberID);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -203,7 +203,7 @@ public class BookingRecordService {
 
 
 
-        isSuccess=    bookingRecordDAO.update(sql, imageName,memberID);
+        isSuccess=    update(sql, imageName,memberID);
 
         return isSuccess>1;
     }

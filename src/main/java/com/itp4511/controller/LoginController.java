@@ -56,10 +56,6 @@ public class LoginController extends HttpServlet {
 
 
 
-
-
-
-
         }
 
         Map<String, Object> sessionData = new HashMap<>();

@@ -181,7 +181,6 @@
           <element id="library" level="project" name="Maven: com.bbossgroups:bboss-core:5.0.9" />
           <element id="library" level="project" name="Maven: cglib:cglib-nodep:3.1" />
           <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
@@ -193,6 +192,7 @@
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
         </element>
       </element>
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" />
       <element id="javaee-facet-resources" facet="ITP4511_EA_Project/web/Web" />
     </root>
   </artifact>

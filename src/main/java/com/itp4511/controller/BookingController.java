@@ -4,9 +4,15 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.reflect.TypeToken;
 import com.itp4511.domain.*;
 import com.itp4511.service.*;
-import com.itp4511.utils.Utility;
+import com.itp4511.service.impl.BookingRecordServiceImpl;
+import com.itp4511.service.impl.GuestServiceImpl;
 import com.itp4511.domain.SessionObj;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,8 +48,9 @@ public class BookingController extends HttpServlet {
     private VenueService venueService = new VenueService();
     private SessionService sessionService = new SessionService();
     private BookingRecordService bookingRecordService = new BookingRecordService();
-    private GuestService guestService = new GuestService();
+    private GuestServiceImpl guestService = new GuestServiceImpl();
     private GuestlistService guestlistService = new GuestlistService();
+    private BookingRecordServiceInterfae bookingRecordServiceImpl = new BookingRecordServiceImpl();
 
     public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
 
@@ -90,61 +97,42 @@ public class BookingController extends HttpServlet {
 
             //endregion
 
-            //region 2: book a venue with session
+            //region 2: book  venues with sessions
             case 2:
 
-                Object[][] bachList = null;
-                Integer bookingMemberID = null;
-                Double bookingFee = null;
 
+                LOG.debug("Enter case 2: book  venues with sessions");
+                //1.get data sent in json object from  front side
+                BufferedReader reader = request.getReader();
+                StringBuilder bookingSessionsJSArrayStr = new StringBuilder();
                 try {
+                    //request.getReader() return a BuufferReader object containing the data from fornt-side
 
-                    BufferedReader reader = request.getReader();
-                    StringBuilder sb = new StringBuilder();
                     String line;
                     //can check if a array?
                     while ((line = reader.readLine()) != null) {
-                        sb.append(line);
+                        bookingSessionsJSArrayStr.append(line);
                     }
                     reader.close();
 
 
-                    ObjectMapper objectMapper = new ObjectMapper();
-                    List<SessionObj> sessionObjs = objectMapper.readValue(sb.toString(), new TypeReference<List<SessionObj>>() {
-                    });
-
-                    bachList = new Object[sessionObjs.size()][5];
-
-                    int i = 0;
-                    for (SessionObj s : sessionObjs) {
-                        bachList[i][0] = 0;
-                        bachList[i][1] = 0;
-                        bachList[i][2] = 1;
-                        bachList[i][3] = Integer.parseInt(s.getSessionID());
-                        bachList[i][4] = s.getGuestList();
-                        bookingMemberID = s.getUserID();
-                        bookingFee = s.getTotalPrice();
-                        i++;
-
-                    }
-
-
+                    LOG.debug("Finish reading the data from request");
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    LOG.debug(e.getMessage());
                 }
 
 
                 try {
-                    boolean isUpdate = bookingRecordService.insertBookingRecords(bookingMemberID, bookingFee, bachList);
+                    boolean isUpdate = bookingRecordServiceImpl.insertBookingRecords(bookingSessionsJSArrayStr);
+
                     if (isUpdate) {
-                        responseJson.put("message", "add ok");
-
-
+                        LOG.debug("Add record(s) Successfully");
+                        responseJson.put("message", "Add record(s) Successfully");
                         response.getWriter().write(responseJson.toString());
                     }
                 } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                    e.printStackTrace();
+                    LOG.debug(e.getMessage());
+
                 }
 
                 break;
@@ -227,11 +215,10 @@ public class BookingController extends HttpServlet {
 
                 try {
 
-               //     displaySessionByID = (memberUnapproved == 999 ? sessionService.displayALLBookingInfoNeedApproval() : sessionService.displayBookingInfoNeedApproval(memberUnapproved));
+                    //     displaySessionByID = (memberUnapproved == 999 ? sessionService.displayALLBookingInfoNeedApproval() : sessionService.displayBookingInfoNeedApproval(memberUnapproved));
 
 
-
-                    List<BookingInfo_MM> displaySessionByID = (memberForAppr == 999 ? sessionService.displayAllBookingInfoApproved() :sessionService.displayBookingInfoApproved(memberForAppr));
+                    List<BookingInfo_MM> displaySessionByID = (memberForAppr == 999 ? sessionService.displayAllBookingInfoApproved() : sessionService.displayBookingInfoApproved(memberForAppr));
                     ObjectMapper mapper = new ObjectMapper();
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

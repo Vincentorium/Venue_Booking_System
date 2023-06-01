@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 public class Guest implements Serializable {
 
-  private int guestId;
+  private Integer guestId;
   private String guestName;
   private String guestEmail;
   private int guestFKmemberId;
@@ -13,18 +13,18 @@ public class Guest implements Serializable {
   public Guest() {
   }
 
-  public Guest(int guestId, String guestName, String guestEmail, int guestFKmemberId) {
+  public Guest(Integer guestId, String guestName, String guestEmail, int guestFKmemberId) {
     this.guestId = guestId;
     this.guestName = guestName;
     this.guestEmail = guestEmail;
     this.guestFKmemberId = guestFKmemberId;
   }
 
-  public int getGuestId() {
+  public Integer getGuestId() {
     return guestId;
   }
 
-  public void setGuestId(int guestId) {
+  public void setGuestId(Integer guestId) {
     this.guestId = guestId;
   }
 

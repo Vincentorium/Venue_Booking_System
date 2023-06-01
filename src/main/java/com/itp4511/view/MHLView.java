@@ -2,20 +2,11 @@ package com.itp4511.view;
 
 import com.itp4511.domain.*;
 import com.itp4511.service.*;
-import com.itp4511.utils.C3p0Utils;
+import com.itp4511.service.impl.GuestServiceImpl;
 import com.itp4511.utils.Utility;
-import org.apache.commons.dbutils.QueryRunner;
 import org.junit.Test;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class MHLView {
 
@@ -24,7 +15,7 @@ public class MHLView {
     private VenueService venueService = new VenueService();
     private SessionService sessionService = new SessionService();
     private BookingRecordService bookingRecordService = new BookingRecordService();
-    private GuestService guestService = new GuestService();
+    private GuestServiceImpl guestService = new GuestServiceImpl();
     private GuestlistService guestlistService = new GuestlistService();
 
     //  private BookingRecordService bookingRecordService= new BookingRecordService();
