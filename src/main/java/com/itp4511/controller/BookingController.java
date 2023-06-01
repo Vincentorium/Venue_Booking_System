@@ -46,6 +46,7 @@ public class BookingController extends HttpServlet {
     private GuestlistService guestlistService = new GuestlistService();
 
     public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
@@ -55,12 +56,12 @@ public class BookingController extends HttpServlet {
         //for ajax to take successful json string.
         ObjectNode responseJson = JsonNodeFactory.instance.objectNode();
         responseJson.put("status", "ok");
-        int type=0;
-        if(request.getParameter("type")==null)
+        int type = 0;
+        if (request.getParameter("type") == null)
 
-          type =2;
-          else
-            type=Integer.parseInt(request.getParameter("type"));
+            type = 2;
+        else
+            type = Integer.parseInt(request.getParameter("type"));
         //set insert type = others
         switch (type) {
 
@@ -68,10 +69,9 @@ public class BookingController extends HttpServlet {
             case 1:
 
 
-
                 int memberID = Integer.parseInt(request.getParameter("memberID"));
                 try {
-                   // List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
+                    // List<BookingInfo_MM> displaySessionByID = sessionService.displaySessionByID(id);
 
                     List<BookingSession_Multi> displaySessionByID = bookingRecordService.getBookingByID(memberID);
                     ObjectMapper mapper = new ObjectMapper();
@@ -82,7 +82,7 @@ public class BookingController extends HttpServlet {
 
                     response.getWriter().write(json);
                 } catch (IOException e) {
-                    responseJson.put("message", "fail： "+e.getMessage());
+                    responseJson.put("message", "fail： " + e.getMessage());
                     response.getWriter().write(responseJson.toString());
                 }
 
@@ -93,9 +93,9 @@ public class BookingController extends HttpServlet {
             //region 2: book a venue with session
             case 2:
 
-                Object[][] bachList=null;
-                Integer bookingMemberID=null;
-                Double bookingFee=null;
+                Object[][] bachList = null;
+                Integer bookingMemberID = null;
+                Double bookingFee = null;
 
                 try {
 
@@ -121,13 +121,12 @@ public class BookingController extends HttpServlet {
                         bachList[i][1] = 0;
                         bachList[i][2] = 1;
                         bachList[i][3] = Integer.parseInt(s.getSessionID());
-                        bachList[i][4] =   s.getGuestList();
-                        bookingMemberID =s.getUserID();
-                        bookingFee=s.getTotalPrice();
+                        bachList[i][4] = s.getGuestList();
+                        bookingMemberID = s.getUserID();
+                        bookingFee = s.getTotalPrice();
                         i++;
 
                     }
-
 
 
                 } catch (IOException e) {
@@ -135,10 +134,8 @@ public class BookingController extends HttpServlet {
                 }
 
 
-
-
                 try {
-                    boolean isUpdate = bookingRecordService.insertBookingRecords(bookingMemberID, bookingFee,bachList);
+                    boolean isUpdate = bookingRecordService.insertBookingRecords(bookingMemberID, bookingFee, bachList);
                     if (isUpdate) {
                         responseJson.put("message", "add ok");
 
@@ -163,7 +160,7 @@ public class BookingController extends HttpServlet {
                 try {
                     memberUnapproved = Integer.parseInt(request.getParameter("memberID"));
                 } catch (NumberFormatException e) {
-                    LOG.debug("err when parse para ID "+e.getMessage());
+                    LOG.debug("err when parse para ID " + e.getMessage());
                 }
 
                 try {
@@ -173,7 +170,9 @@ public class BookingController extends HttpServlet {
 
                         // displaySessionByID = bookingRecordService.getBookingByID(memberUnapproved);
 
-                         displaySessionByID = sessionService.displayBookingInfoNeedApproval(memberUnapproved);
+                        displaySessionByID = (memberUnapproved == 999 ? sessionService.displayALLBookingInfoNeedApproval() : sessionService.displayBookingInfoNeedApproval(memberUnapproved));
+
+
                     } catch (Exception e) {
                         LOG.debug(e.getMessage());
                     }
@@ -186,7 +185,7 @@ public class BookingController extends HttpServlet {
 
                     response.getWriter().write(json);
                 } catch (IOException e) {
-                    responseJson.put("message", "fail： "+e.getMessage());
+                    responseJson.put("message", "fail： " + e.getMessage());
                     response.getWriter().write(responseJson.toString());
                 }
 
@@ -201,7 +200,7 @@ public class BookingController extends HttpServlet {
 
                 int idForAppr = Integer.parseInt(request.getParameter("id"));
                 try {
-                  boolean isApproved = bookingRecordService.approveBooking(idForAppr);
+                    boolean isApproved = bookingRecordService.approveBooking(idForAppr);
                     ObjectMapper mapper = new ObjectMapper();
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -210,7 +209,7 @@ public class BookingController extends HttpServlet {
 
                     response.getWriter().write(json);
                 } catch (IOException e) {
-                    responseJson.put("message", "fail： "+e.getMessage());
+                    responseJson.put("message", "fail： " + e.getMessage());
                     response.getWriter().write(responseJson.toString());
                 }
 
@@ -227,7 +226,12 @@ public class BookingController extends HttpServlet {
 
 
                 try {
-                    List<BookingInfo_MM> displaySessionByID = sessionService.displayBookingInfoApproved(memberForAppr);
+
+               //     displaySessionByID = (memberUnapproved == 999 ? sessionService.displayALLBookingInfoNeedApproval() : sessionService.displayBookingInfoNeedApproval(memberUnapproved));
+
+
+
+                    List<BookingInfo_MM> displaySessionByID = (memberForAppr == 999 ? sessionService.displayAllBookingInfoApproved() :sessionService.displayBookingInfoApproved(memberForAppr));
                     ObjectMapper mapper = new ObjectMapper();
 
                     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -236,7 +240,7 @@ public class BookingController extends HttpServlet {
 
                     response.getWriter().write(json);
                 } catch (IOException e) {
-                    responseJson.put("message", "fail： "+e.getMessage());
+                    responseJson.put("message", "fail： " + e.getMessage());
                     response.getWriter().write(responseJson.toString());
                 }
 
@@ -262,7 +266,7 @@ public class BookingController extends HttpServlet {
 
                     response.getWriter().write(json);
                 } catch (IOException e) {
-                    responseJson.put("message", "fail： "+e.getMessage());
+                    responseJson.put("message", "fail： " + e.getMessage());
                     response.getWriter().write(responseJson.toString());
                 }
 

@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(" .a_logOut").click(function () {
         alert("Log Out Successfully")
         $(".nonLoginFuncWrapper").removeClass("containerHide")
-        $(".loginFunctionWrapper").addClass("containerHide")
+        $(".loginFunctionWrapper,.header_userInfoWrapper").addClass("containerHide")
     })
 
     function loginForm_CloseLoginForm() {
@@ -42,6 +42,7 @@ $(document).ready(function () {
             dataType: "json",
             type: 'POST',
             data: dataToController,
+            asyc: false,
             success: function (rs) {
 
                 console.log(rs);
@@ -52,14 +53,17 @@ $(document).ready(function () {
                 loginCustomizeForUser(rs)
             },
             error: function (xhr, status, error) {
-                if (xhr.readyState == 4) {
-                    switch (xhr.responseText) {
 
-                        case "No Result Found Exception":
-                            alert("Wrong Account or Password!")
-                            break
+                switch (xhr.readyState) {
+                     case  4:
+                        switch (xhr.responseText) {
 
-                    }
+                            case "No Result Found Exception":
+                                alert("Wrong Account or Password!")
+                                break
+
+                        }
+                        break;
                 }
 
             }
@@ -70,58 +74,60 @@ $(document).ready(function () {
 
 })
 
-
+var   userRole
 function createCookieForUser(rs) {
 
 
     userIDSession = rs.userID;
 
-
     userType = rs.roleTitle;
-
 
     usernmae = rs.userName;
 
-    $.cookie('userName', usernmae, {expires: 7, path: '/'});
-    $.cookie('userType', userType, {expires: 7, path: '/'});
-    $.cookie('userID', userIDSession, {expires: 7, path: '/'});
+        userRole=rs.roleId;
 
 
 }
 
-
+const currentDate = getCurrentDate();
+const staffDeualDSearchIndex=999
 function loginCustomizeForUser(rs) {
 
 
     $(".loginFormInput").val("")
     $(".nonLoginFuncWrapper").addClass("containerHide")
-    $(".loginFunctionWrapper").removeClass("containerHide")
+    $(".loginFunctionWrapper,.header_userInfoWrapper").removeClass("containerHide")
+
 
     $(".header__dept").html(rs.roleTitle)
     $(".header__singUp").html(rs.userName)
     $(".header__singUp").data("userid", rs.userId);
 
-    userIDSession=rs.userId
+    $(".venu-apply-input--date").prop("min",currentDate);
 
-    if (userType == "Member") {
 
+    userIDSession = rs.userId
+
+    if (userRole == 3) {
 
 
         userDataForConfigure.memberIDForLoadBooking = rs.userId
         userDataForConfigure.bookingRecordSearchLeft = 1
         userDataForConfigure.bookingRecordSearchRight = 6
 
-        $(".header_staffFuncLink, .booking_records_search_userName,.bookingRecord-search-label").addClass("containerHide")
+        $(".header_staffFuncLink, .booking_records_search_userName,.bookingRecord-search-label,.staffFun").addClass("containerHide")
         $(".header_memberFuncLink,.mailIconInsideRep").removeClass("containerHide")
-
+        $(".left").html("Unapproved")
     } else {
 
-        userDataForConfigure.memberIDForLoadBooking = 1
+        userDataForConfigure.memberIDForLoadBooking = staffDeualDSearchIndex
         userDataForConfigure.bookingRecordSearchLeft = 3
         userDataForConfigure.bookingRecordSearchRight = 5
 
-        $(".header_staffFuncLink,.booking_records_search_userName,.bookingRecord-search-label").removeClass("containerHide")
+        $(".header_staffFuncLink,.booking_records_search_userName,.bookingRecord-search-label,.staffFun").removeClass("containerHide")
         $(".header_memberFuncLink,.mailIconInsideRep").addClass("containerHide")
+
+        $(".left").html("Approve")
     }
 
 }

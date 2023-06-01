@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 
 
-            let currentDate = getCurrentDate();
+
             getSessionByDate(1, currentDate);
             bookingForm_populateVenueDropDownListForSelectVenue()
             getGetListForBooking();
@@ -139,7 +139,7 @@ $(document).ready(function () {
 
                 if (userType != "Member") {
                     $('.booking_records_search_userName option:first').prop('selected', true);
-                    userDataForConfigure.memberIDForLoadBooking=1;
+                    userDataForConfigure.memberIDForLoadBooking=staffDeualDSearchIndex;
                 }
                 break;
             default:

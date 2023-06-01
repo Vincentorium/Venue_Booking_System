@@ -20,7 +20,7 @@ public class SessionService {
     private SessionDAO sessionDAO = new SessionDAO();
     private Multi_BookingSessionDAO multi_BookingSessionDAO = new Multi_BookingSessionDAO();
     private SessionbyguestidDAO sessionbyguestidDAO = new SessionbyguestidDAO();
-    BookingInfo_MMDAO bookingInfo_MMDAO =new BookingInfo_MMDAO();
+    BookingInfo_MMDAO bookingInfo_MMDAO = new BookingInfo_MMDAO();
 
     public boolean insertOneSession(java.sql.Time timeslotStart, java.sql.Time timeslotEnd) {
 
@@ -31,11 +31,12 @@ public class SessionService {
         return update > 0;
     }
 
-    public List<Session> displaySessionByDate(int campusID,String date) {
+    public List<Session> displaySessionByDate(int campusID, String date) {
 
-        return sessionDAO.queryMulti("SELECT * FROM `session` where sessionDate =(?) and sessionCampus=?", Session.class, Date.valueOf(date),campusID);
+        return sessionDAO.queryMulti("SELECT * FROM `session` where sessionDate =(?) and sessionCampus=?", Session.class, Date.valueOf(date), campusID);
 
     }
+
     public List<BookingInfo_MM> displaySessionByID(int userID) {
 
         return bookingInfo_MMDAO.queryMulti("SELECT * FROM `session` as s " +
@@ -47,9 +48,9 @@ public class SessionService {
     }
 
     public List<BookingInfo_MM> displaySessionBookingID(int bookID) {
-        List<BookingInfo_MM> result=null;
+        List<BookingInfo_MM> result = null;
         try {
-            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `session` as s " +
+            result = bookingInfo_MMDAO.queryMulti("SELECT * FROM `session` as s " +
                     "left join bookingrecord as b on s.sessionFKbookingRecord=b.bookID " +
                     "left join venue as v on v.venID=sessionCampus " +
                     "  left join user as u on u.userID=b.bookFKmemberID" +
@@ -62,43 +63,74 @@ public class SessionService {
     }
 
 
-
     public List<BookingInfo_MM> displayBookingInfoNeedApproval(int memberUnapproved) {
-        List<BookingInfo_MM> result=null;
+        List<BookingInfo_MM> result = null;
         try {
 
-            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` where bookStatus = 1 and bookFKmemberID = ?"
-                          + " order by bookStatus ,bookDate Desc"
-                    , BookingInfo_MM.class,memberUnapproved);
+            result = bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord`   as b " +
+                    " left join user on b.bookFKmemberID=user.userID " +
+                            "  where bookStatus = 1 and bookFKmemberID = ?"
+                            + " order by bookStatus ,bookDate Desc"
+                    , BookingInfo_MM.class, memberUnapproved);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return  result;
+        return result;
 //where b.bookStatus=1
     }
 
 
+    public List<BookingInfo_MM> displayALLBookingInfoNeedApproval() {
+        List<BookingInfo_MM> result = null;
+        try {
 
-
-
-
-
-
+            result = bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord`  as b  "
+                            + " left join user on b.bookFKmemberID=user.userID"
+                            + " where bookStatus = 1 and bookFKmemberID LIKE '%' "
+                            + " order by bookStatus ,bookDate Desc"
+                    , BookingInfo_MM.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+//where b.bookStatus=1
+    }
 
 
     public List<BookingInfo_MM> displayBookingInfoApproved(int memberID) {
-        List<BookingInfo_MM> result=null;
+        List<BookingInfo_MM> result = null;
         try {
-            result= bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` where bookStatus !=1" +
+            result = bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord`    as b " +
+                            " left join user on b.bookFKmemberID=user.userID " +
+                            " where bookStatus !=1" +
                             " and bookFKmemberID = ? order by bookStatus ,bookDate Desc"
 
                     , BookingInfo_MM.class, memberID);
         } catch (Exception e) {
-            System.out.println(e.getMessage());;
+            System.out.println(e.getMessage());
+            ;
         }
-        return  result;
+        return result;
 //where b.bookStatus=1
     }
+
+    public List<BookingInfo_MM> displayAllBookingInfoApproved() {
+        List<BookingInfo_MM> result = null;
+        try {
+            result = bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord` as b " +
+                            " left join user on b.bookFKmemberID=user.userID " +
+                            " where bookStatus !=1 and bookFKmemberID like '%' " +
+                            "order by bookStatus ,bookDate Desc;"
+
+                    , BookingInfo_MM.class);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            ;
+        }
+        return result;
+//where b.bookStatus=1
+    }
+
     public List<Session> displaySessionByDateAndCampus(int campus, String date) {
 
         return sessionDAO.queryMulti("SELECT * FROM `session` where sessionCampus=? and sessionDate =?", Session.class, campus, Date.valueOf(date));

@@ -26,7 +26,7 @@
 
 
     display: flex;
-    width: 468px;
+    width: 456px;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-around;
@@ -39,4 +39,261 @@
 .bookingRecord-search-label{
     font-size: 10px;
     font-size: larger;
+}
+
+
+
+
+
+.bookingTableModal {
+
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 30;
+    background-color: white;
+    width: auto;
+    height: auto;
+
+
+}
+.active{
+    transform: translate(-50%,-21%) scale(1);
+}
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+
+    list-style: none;
+}
+
+
+.pagination>li>a,
+.pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+.paginationPageNumActive {
+    background-color: #2196F3 !important;
+    color: white;
+}
+
+.paginationPageNumActive .pagination>li>span {
+    background-color: #2196F3 !important;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tableContainer  {
+    margin: 50px;
+    padding: 37px;
+    width: 1500px;
+    height: 600px;
+
+    background-color: white;
+    border-radius: 5px;
+    border-top: 10px solid #800000;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    top: 100px;
+    text-align: center;
+
+
+}
+
+
+
+.tableContainer>table, .tableContainer>table>tbody {
+    width: 1200px;
+}
+.mytable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mytable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #352424;
+    color: white;
+}
+
+
+.mytable td, .mytable th {
+    border: 1px solid #7b5f5f;
+
+    padding: 8px;
+}
+
+
+.mytable>tbody>tr:hover     {
+    background-color: #a07b7b !important;
+    color: white;
+}
+
+
+.mytable tbody tr td[rowspan] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.mytable tbody tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+#reserveTable, tr, th, td, #reserveTable, tr, th, td {
+    text-align: center;
+}.mytable {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+
+.bookingForm_totalPrice{
+
+    margin: 21px;
+}
+
+.venu-session-selected>div {
+    margin-top: 5px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.ven-apply-form-box{
+    position: fixed;
+    left: 30px;
+    top: 67px;
+    width: 500px;
+    height: 600px;
+    border: 1px black solid;
+    margin: 15px;
+    padding: 14px;
+    margin: 15px;
+    overflow: scroll;
+}
+.venu-apply-input{
+
+    margin: 15px;
+}
+
+.ven-apply-form-box>label{
+
+    width: 50px;
+    display: inline-block;
+}
+
+.ven-apply-form-guestListInsideBox{
+    margin-left: 18px;
+}
+.ven-apply-form-guestListInsideBox>label{
+
+    width: 66px;
+    display: inline-block;
+    margin-top: 13px;
+}
+.cmtHistory{
+    height: 618px;
+    right: -585px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fdf7e2;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-left: 20px;
+    width: 250px;
+    width: 550px;
+}
+.venu-apply-form-displayVnue{
+    padding: 10px;
+}
+.venu-apply-form-disply-sessions{
+    display: flex;
+    width: 396px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.venu-apply-form-disply-sessions>div{
+
+    width: 170px;
+    height: 50px;
+    padding: 7px;
+    border: 1px black solid;
+    margin: 10px;
+    cursor: pointer;
+}
+.venue-form-apply-request-summary{
+
+    position: relative;
+    left: 27px;
+    width: 515px;
+    border: 1px solid black;
+}
+
+.venue-apply-form-sessionsSelected {
+    border: 1px black solid;
+    height: auto;
+    min-height: 50px;
+}
+
+.venue-apply-form-submitButBox{
+
+    display: flex;
+}
+
+.venu-apply-input--campus,.venu-apply-input--date{
+    margin-bottom: 10px;
+    margin-left: 23px;
+
 }

@@ -24,6 +24,8 @@ import java.util.List;
 import com.itp4511.utils.*;
 import com.itp4511.domain.User;
 import org.jfree.util.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -37,6 +39,7 @@ import org.jfree.util.Log;
 
 public class UserController extends HttpServlet {
 
+    public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
 
     private UserService userService = new UserService();
 
@@ -87,6 +90,10 @@ public class UserController extends HttpServlet {
 
                 } catch (BusinessException e) {
                     responseData = e.getMessage();
+                    LOG.debug(e.getMessage());
+                }catch (Exception e){
+                    responseData = e.getMessage();
+                    LOG.debug(e.getMessage());
                 }
 
 

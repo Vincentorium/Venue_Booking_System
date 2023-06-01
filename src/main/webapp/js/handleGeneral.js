@@ -75,6 +75,7 @@ $(document).ready(function () {
 $(".header__statistic").click(function (e) {
     $(".stat_container").removeClass("containerHide");
     $(".favEleBox").addClass("containerHide");
+    $(".collectionLabel").html("Statistic");
 
 
     stat_loadChartByDefaultVal()
@@ -83,7 +84,7 @@ $(".header__statistic").click(function (e) {
 $(".header__Venues").click(function (e) {
     $(".stat_container").addClass("containerHide");
     $(".favEleBox").removeClass("containerHide");
-
+    $(".collectionLabel").html("Venues");
 
 })
 

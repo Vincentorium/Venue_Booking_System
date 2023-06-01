@@ -40,9 +40,11 @@ font-weight: 900;
 
 }
 .collectionLabel{
-  display: inline-block;
-  background-color: #01254c;
-    color: #ffffff
+    display: inline-block;
+
+    color: #000000;
+    font-size: x-large;
+    font-style: initial;
 }
 .tableComplaint{
     font-size: 14px;

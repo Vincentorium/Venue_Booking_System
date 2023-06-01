@@ -17,9 +17,11 @@ color: white;
     font-weight: 900;
 }
 .headerLoginOut{
- display:flex;
- gap:54px;
- margin-bottom: 10px;
+  display: flex;
+  gap: 54px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+
 }
 
 body {
@@ -31,12 +33,11 @@ body {
    
 }
 #header {
-  width: 1715;
+
   background-color: #888888;
   padding: 15px;
   display: flex;
-
-  justify-content: space-around;
+  justify-content: space-between;
 }
  .headerFun{
   width:800px;
@@ -173,9 +174,14 @@ justify-content: space-between;
  
 
 #header {
-  order: 1;
-  width: 100%;
-   background-color: transparent;
+  background-image: url(./images/homePageBackgroundPic--trump2.png);
+  width: auto;
+  height: 50px;
+  background-size: 1715px 595px;
+  background-color: #4a82ac;
+  color: white;
+
+
     
 }
 
@@ -204,11 +210,7 @@ justify-content: space-between;
 }
  
 #loginScreen{
-  background-image: url("./images/homePageBackgroundPic--trump2.png");
- 
-  width: auto;
-  height: 50px;
-  background-size:1715px 595px; 
+
 }
 
 

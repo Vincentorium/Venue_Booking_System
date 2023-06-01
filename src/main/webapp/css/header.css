@@ -17,8 +17,7 @@
 }
  .close {
   position: absolute;
-  right: 32px;
-     top: -2px;
+  right: 32px;    top: 10px;
   width: 30px;
   height: 30px;
   opacity: 0.3;

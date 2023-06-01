@@ -67,3 +67,23 @@
     gap: 54px;
     margin-bottom: 10px;
 }
+
+.header_infoContainer{
+
+    display: flex;
+    justify-content: space-between;
+}
+.header_logImgWrapper{
+
+    margin: 2px;
+}
+.header_userInfoWrapper{
+    font-size: 23px;
+
+    padding-top: 13px;
+    padding-right: 45px;
+
+}
+.header_comLog{
+    margin-left: 70px;
+}

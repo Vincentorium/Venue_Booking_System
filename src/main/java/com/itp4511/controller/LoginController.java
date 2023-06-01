@@ -7,8 +7,7 @@ package com.itp4511.controller;
  */
 
 import com.google.gson.Gson;
-import ict.bean.UserInfo;
-import ict.dbutils.UserDB;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

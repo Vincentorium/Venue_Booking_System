@@ -71,7 +71,7 @@ function stat_getLineChart(dataToController) {
                 axisY: {
                     title: "Number of Sales",
                     suffix: "recrods",
-                    minimum: -10
+                    minimum: -5
                 },
                 toolTip: {
                     shared: true
@@ -197,7 +197,8 @@ function stat_getBarChart(dataToController) {
                         objJS.data[0].dataPoints.push({
                             y: data.bookingRevenue,
                             label: "$"+ format(data.bookingRevenue),
-                            indexLabel: data.venName+  " | " +  data.bookingCount
+                            indexLabel: data.venName+  " | " +  data.bookingCount,
+                            indexLabelFontColor: "green",
                          });
 
 

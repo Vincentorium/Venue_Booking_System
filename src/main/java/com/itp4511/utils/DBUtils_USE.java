@@ -1,6 +1,6 @@
 package com.itp4511.utils;
 
-import ict.bean.UserInfo;
+import com.itp4511.domain.Userinfo;
 import org.apache.commons.dbutils.*;
 import org.apache.commons.dbutils.handlers.*;
 
@@ -33,9 +33,9 @@ public class DBUtils_USE {
         String sql = "select * from userinfo";
         try {
 
-            List<UserInfo> list = queryRunner.query(connection, sql, new BeanListHandler<>(UserInfo.class));
+            List<Userinfo> list = queryRunner.query(connection, sql, new BeanListHandler<>(Userinfo.class));
 
-            for (UserInfo user : list) {
+            for (Userinfo user : list) {
 
                 System.out.println(user);
 
@@ -60,7 +60,7 @@ public class DBUtils_USE {
         String sql = "select * from userinfo where id = ?";
         try {
 
-            UserInfo list = queryRunner.query(connection, sql, new BeanHandler<>(UserInfo.class), 1);
+            Userinfo list = queryRunner.query(connection, sql, new BeanHandler<>(Userinfo.class), 1);
             System.out.println(list);
         } catch (SQLException e) {
             e.printStackTrace();

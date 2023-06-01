@@ -70,7 +70,7 @@
     <script defer src="js\handleBooking.js"></script>
     <script defer src="js\bookingFunction.js"></script>
     <script defer src="js\handleForm.js"></script>
-    <script defer src="js\handleBookingRecord.js"></script>
+    <script defer src="js\bookingRecordTable.js"></script>
 
 
     <link href="css\index.css" rel="stylesheet">
@@ -86,7 +86,7 @@
 
     <script defer src="js\handleForm.js"></script>
     <script defer src="js\getGeusts.js"></script>
-    <script defer src="js\inserBooking.js"></script>
+    <script defer src="js\bookingForm.js"></script>
     <script defer src="js\handleBooking.js"></script>
     <script defer src="js\handleStatisticContent.js"></script>
     <script defer src="js\userHandler.js"></script>
@@ -97,7 +97,7 @@
 
     <link href="css\bookingForm.css" rel="stylesheet">
     <link href="css\userHandler.css" rel="stylesheet">
-    <link href="css\tableBooking.css" rel="stylesheet">
+    <link href="css\bookingFormRecords.css" rel="stylesheet">
     <link href="css\bookingForm.css" rel="stylesheet">
     <link href="css\statistic.css" rel="stylesheet">
 
@@ -107,14 +107,13 @@
 <body>
 
 
-
 <div class="modalBox">
 
     <%--SOF Login form    --%>
     <div class="login_Container modalGeneral">
         <div class="loginForm_loginCtnTitle">
             <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
-            <h3 class="boxTitle">VTC Venue Account</h3>
+            <h3 class="boxTitle">User Account</h3>
             <img class="loginForm_closeIcon closeIcon close" src="./images/exit.png" data-close-button alt="">
         </div>
         <div class="loginCtnTitle confirmmsgBox">
@@ -127,20 +126,16 @@
         <div id="loginForm_wrapper" class="loginForm_wrapper">
 
             <div class="login">
-                <div class="login_indicatorBox">
-                    <h3 class="login_indicator">Login</h3>
 
-                </div>
                 <div class="loginInputBox">
                     <form id="loginForm_formDOM" class="loginForm_formDOM" method="POST">
 
                         <input type="text" class="login_username loginFormInput" name="username" placeholder="Account"
-                               pattern="[A-Za-z]*" title="only accept letter, and number" required>
+                              required>
 
                         <input type="password" class="login_password loginFormInput" name="password"
                                placeholder="Password"
-                               title="Must contain at least one number, one lower case letter, one uppercase or special characters, and at least 8 or more characters"
-                               required>
+                             required>
                         <div class="">
                             <input type="submit" class="loginForm_Button" value="Log In">
 
@@ -148,7 +143,6 @@
                     </form>
 
                 </div>
-
 
 
             </div><!-- login end-->
@@ -240,17 +234,18 @@
                     <form action="" class="venBookingForm">
                         <div class="ven-apply-form-box">
 
-                            <label for="venueDropDownList">Venus</label>
+                            <label for="venueDropDownList">Venues:</label>
                             <select class="venu-apply-input--campus" id="venueDropDownList">
 
                             </select>
-                            <br><label for="">date</label>
+                            <br><label for="">Date:</label>
 
-                            <input class="venu-apply-input--date" type="date">
+                            <input class="venu-apply-input--date" type="date"  min="">
 
                             <fieldset class="venue-apply-form-sessionsSelected">
-                                <legend>Timeslot selected:</legend>
+                                <legend>Timeslot Selected:</legend>
                                 <div class="venue-apply-form-sessionsSelected-box">
+
 
                                 </div>
                             </fieldset>
@@ -502,7 +497,7 @@
         <div class="tableContainer">
 
             <!-- <div class="mailModal-title">
-              <img class="closeIcon close mail-List-Close" src="./images/exit.png" data-close-button alt="">
+              <img class="closeIcon close mail-List-Cglose" src="./images/exit.png" data-close-button alt="">
 
 
             </div> -->
@@ -547,6 +542,7 @@
                     <tr>
 
                         <th>#</th>
+                        <th class="bookingRecordTable_customCol  staffFun " >Name</th>
                         <th>Request Date</th>
                         <th>Status</th>
                         <th>Session Info</th>
@@ -563,19 +559,19 @@
                 </table>
 
 
-                <div class=' pagination-container'>
-                    <nav>
-                        <ul class="pagination">
+<%--                <div class=' pagination-container'>--%>
+<%--                    <nav>--%>
+<%--                        <ul class="pagination">--%>
 
-                            <li data-page="prev">
-                                    <span>
-                                        < <span class="sr-only">(current)
-                                    </span>
-                                    </span>
-                            </li>
-                            <!--  Here the JS Function Will Add the Rows -->
-                    </nav>
-                </div>
+<%--                            <li data-page="prev">--%>
+<%--                                    <span>--%>
+<%--                                        < <span class="sr-only">(current)--%>
+<%--                                    </span>--%>
+<%--                                    </span>--%>
+<%--                            </li>--%>
+<%--                            <!--  Here the JS Function Will Add the Rows -->--%>
+<%--                    </nav>--%>
+<%--                </div>--%>
                 <div class="booking-record-text"></div>
             </div>
 
@@ -597,21 +593,43 @@
     <div id="loginScreen">
 
 
+        <div class="header_infoContainer">
+            <div class="header_logImgWrapper">
+                <img src="./images/iveIconTrans.png" width="200px" height="50px" alt="">
+            </div>
+            <div class="header_userInfoWrapper containerHide">
+
+
+                <a data-modal-target="#modal" data-default="signUp" class="hearder__a header__singUp userName"
+                   data-userid="">
+                </a>
+
+                （ <a data-modal-target="#modal" data-default="signIn"
+                     class="hearder__a header__dept dept">
+            </a>）
+            </div>
+        </div>
+
+
         <div id="header">
-            <span class="comLog"></span>
+
 
             <!--
-
+          <span class="comLog"></span>
           <a id="homenTitle" class="header__home" href="index.html" onmouseout=" mouseOut(this)"> Home</a>
 
         -->
-            <a id="menu2" class="">VTC Venue Booking System</a>
-            <div class="headerFun">
+            <div class="header_comLog">
 
-
-                <a id="header__createAccount" data-modal-target="#modal" data-default="createAccForOperator"
-                   class="header__createAccount adminFunLin">Create Account</a>
+                <a id="menu2" class="">Venues Booking System</a>
             </div>
+            <%--            <div class="headerFun">--%>
+
+
+            <%--                <a id="header__createAccount" data-modal-target="#modal" data-default="createAccForOperator"--%>
+            <%--                   class="header__createAccount adminFunLin">Create Account</a>--%>
+            <%--            </div>--%>
+
             <div class="headerLoginOut">
                 <div class="loginFunctionWrapper containerHide">
                     <a class="hearder__a   header__Venues  ">Venues</a>
@@ -622,19 +640,12 @@
                        class="hearder__a header_memberFuncLink  header__venueList">Guest Managment </a>
 
 
-<%--                    <a data-modal-target=".userMngtModal" data-default=".userMngtModal"--%>
-<%--                       class="hearder__a header__userMngt  mgntFunction boxHide">User--%>
-<%--                        Management--%>
-<%--                    </a>--%>
+                    <%--                    <a data-modal-target=".userMngtModal" data-default=".userMngtModal"--%>
+                    <%--                       class="hearder__a header__userMngt  mgntFunction boxHide">User--%>
+                    <%--                        Management--%>
+                    <%--                    </a>--%>
 
 
-                    <a data-modal-target="#modal" data-default="signUp" class="hearder__a header__singUp userName"
-                       data-userid="">
-                    </a>
-
-                    （ <a data-modal-target="#modal" data-default="signIn"
-                         class="hearder__a header__dept dept">
-                </a>）
                     <a class="hearder__a  a_logOut">Log Out</a>
 
                 </div>
@@ -643,6 +654,8 @@
                     <a class="hearder__a  a_logIn">Log In</a>
                 </div>
             </div>
+
+
         </div>
 
     </div>
@@ -738,7 +751,7 @@
                     <div class="container" style="margin-top:35px">
 
 
-                        <label class="collectionLabel" for="">VTC venues: </label>
+                        <label class="collectionLabel" for="">Venues: </label>
                         <!-- SOF center page content-->
 
                         <div class="centerPageContent">
@@ -748,7 +761,7 @@
 
                                     <form id="mainPageForm" method="post" action="">
 
-                                        <div class="filterFormFirstFlood containerHide">
+                                        <div class="stat_filterContainer">
 
                                             <div class="filter_date">
 
@@ -826,11 +839,11 @@
 
                                     </div>
                                     <div class="urgentBox main-container-infoBox-title">
-                                        Chai Wan - Venue
+                                        Chai Wan
                                     </div>
                                     <div class="allPostFuncRow">
                                         <span class="tagArea">Capacity: 10</span>
-                                        <span class="tagArea">Fee: 300 per session</span>
+                                        <span class="tagArea">Fee: $250 Per Hour</span>
                                     </div>
 
 
@@ -844,12 +857,12 @@
 
                                     </div>
                                     <div class="urgentBox main-container-infoBox-title">
-                                        Tsing Yi - venue
+                                        Tsing Yi
                                     </div>
                                     <div class="allPostFuncRow">
 
                                         <span class="tagArea">Capacity: 15</span>
-                                        <span class="tagArea">Fee: 400 per session</span>
+                                        <span class="tagArea">Fee: $400 Per Hour</span>
                                     </div>
 
 
@@ -861,12 +874,12 @@
 
                                     </div>
                                     <div class="urgentBox main-container-infoBox-title">
-                                        Sha Tin - venue
+                                        Sha Tin
                                     </div>
                                     <div class="allPostFuncRow">
 
                                         <span class="tagArea">Capacity: 20</span>
-                                        <span class="tagArea">Fee: 450 per session</span>
+                                        <span class="tagArea">Fee: $350 Per Hour</span>
                                     </div>
 
 
@@ -877,11 +890,11 @@
 
                                     </div>
                                     <div class="urgentBox main-container-infoBox-title">
-                                        Tuen Mun - venue
+                                        Tuen Mun
                                     </div>
                                     <div class="allPostFuncRow">
                                         <span class="tagArea">Capacity: 25</span>
-                                        <span class="tagArea">Fee: 500 per session</span>
+                                        <span class="tagArea">Fee: $300 Per Hour</span>
                                     </div>
 
 
