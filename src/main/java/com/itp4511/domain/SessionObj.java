@@ -4,6 +4,10 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class SessionObj {
+
+
+    private int bookingID;
+    private double totalPrie;
     private String sessionID;
     private int[] guestList;
     private double totalPrice;
@@ -11,11 +15,35 @@ public class SessionObj {
 
 
 
+    private  int guestListID;
+
     public SessionObj(String sessionID, int[] guestList, double totalPrice, int userID) {
         this.sessionID = sessionID;
         this.guestList = guestList;
         this.totalPrice = totalPrice;
         this.userID = userID;
+    }
+    public int getGuestListID() {
+        return guestListID;
+    }
+
+    public void setGuestListID(int guestListID) {
+        this.guestListID = guestListID;
+    }
+    public int getBookingID() {
+        return bookingID;
+    }
+
+    public void setBookingID(int bookingID) {
+        this.bookingID = bookingID;
+    }
+
+    public double getTotalPrie() {
+        return totalPrie;
+    }
+
+    public void setTotalPrie(double totalPrie) {
+        this.totalPrie = totalPrie;
     }
 
     public String getSessionID() {
@@ -33,6 +61,7 @@ public class SessionObj {
     public void setGuestList(int[] guestList) {
         this.guestList = guestList;
     }
+
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }

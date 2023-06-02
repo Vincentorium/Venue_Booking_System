@@ -18,49 +18,27 @@ public class BookingRecordDAOImpl  extends BasicDAO<BookingRecord> implements Bo
     private Multi_BookingSessionDAO multi_BookingSessionDAO = new Multi_BookingSessionDAO();
     private BookingInfo_MMDAO bokingInfo_MMDAO = new BookingInfo_MMDAO();
 
-    private SessionService sessionService = new SessionService();
+
 
      public static final Logger LOG = LoggerFactory.getLogger(BookingRecordDAOImpl.class);
 
-    public boolean insertBookingRecords(int bookingMemberID,double bookingFee,Object[][] bachList ) {
 
-        int input = 0;
-        int bookingID;
-//        input= update("INSERT INTO `bookingRecord`(`bookID`, `bookDate`, `bookStatus`, `bookFKmemberID`)"
-//                + "VALUES (?,now(),?,?)",   null, 0, bookingMemberID);
+    @Override
+    public boolean addBookingRecords(int bookingMemberID, double bookingFee) {
 
-
-        try {
-            input= update("INSERT INTO `bookingRecord`(  `bookFKmemberID`, `bookFee`  )"
-                    + "VALUES ( ?,?)",      bookingMemberID,bookingFee);
-        } catch (Exception e) {
-                LOG.debug(e.getMessage());
-        }
-
-        Object o=   queryScalar("SELECT `bookID` FROM `bookingrecord`  " +
-                "ORDER BY bookID DESC " +
-                "LIMIT 1;",BookingRecord.class);
-
-        bookingID=(int)o;
-        for(int i=0;i<bachList.length;i++){
-
-            bachList[i][0]=bookingID;
-        }
-
-
-
-        if(sessionService.updateSession(bachList))
-            System.out.println("ok");
-
-        return input > 0;
+        return update("INSERT INTO `bookingRecord`(  `bookFKmemberID`, `bookFee`  )"
+                + "VALUES ( ?,?)",      bookingMemberID,bookingFee)>0;
     }
 
 
+    @Override
+    public Object getLatestBookingRecordID() {
+        return  queryScalar("SELECT `bookID` FROM `bookingrecord`  " +
+                "ORDER BY bookID DESC " +
+                "LIMIT 1;",BookingRecord.class);
+    }
 
-
-
-
-      public List<BookingSession_Multi> getBookingByID(int memberID){
+    public List<BookingSession_Multi> getBookingByID(int memberID){
         List<BookingSession_Multi> rs= multi_BookingSessionDAO.queryMulti("SELECT b.*, u.userName FROM `bookingrecord` as b  " +
                 "LEFT JOIN user as u " +
                 "on b.bookFKmemberID=u.userID WHERE bookFKmemberID=? and bookStatus in (0,1) "

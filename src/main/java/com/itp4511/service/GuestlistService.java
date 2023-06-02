@@ -2,6 +2,9 @@ package com.itp4511.service;
 
 import com.itp4511.dao.*;
 import com.itp4511.domain.*;
+import com.itp4511.service.impl.BookingRecordServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -14,15 +17,16 @@ public class GuestlistService {
     private Guestlistenguest_MmDAO guestlistenguest_MmDAO = new Guestlistenguest_MmDAO();
     private Guestlistwithsessionandguestname_MultiDAO guestlistwithsessionandguestname_MultiDAO = new Guestlistwithsessionandguestname_MultiDAO();
 
+    private static final Logger LOG = LoggerFactory.getLogger(GuestlistService.class);
 
     public List<Guestlistwithsessionandguestname_Multi> getGeustlistBySessionID(int sessionID) {
 
 
-        String sql="SELECT * FROM `session` as s " +
+        String sql = "SELECT * FROM `session` as s " +
                 "left join guestlistenguest_mm as mm on s.sessionFKGuestlist=mm.guestlistNGuestFKguestlistID " +
                 "left join guest as g on mm.guestlistNGuestFKguestID=g.guestID " +
                 "where sessionID=?;";
-        return guestlistwithsessionandguestname_MultiDAO.queryMulti (sql, Guestlistwithsessionandguestname_Multi.class, sessionID);
+        return guestlistwithsessionandguestname_MultiDAO.queryMulti(sql, Guestlistwithsessionandguestname_Multi.class, sessionID);
 
     }
 
@@ -30,8 +34,8 @@ public class GuestlistService {
 
         return guestlistwithsessionandguestname_MultiDAO.queryMulti(
                 "SELECT * FROM `guestlistenguest_mm` as mm " +
-                "left join guest as g on mm.guestlistNGuestFKguestID =？" +
-                "where guestlistNGuestFKguestlistID=？;", Guestlistwithsessionandguestname_Multi.class, guestListID);
+                        "left join guest as g on mm.guestlistNGuestFKguestID =？" +
+                        "where guestlistNGuestFKguestlistID=？;", Guestlistwithsessionandguestname_Multi.class, guestListID);
 
     }
 
@@ -55,96 +59,108 @@ public class GuestlistService {
 
     }
 
-    public Object[][] addGuestlist(Object[][] bachList) {
+    public Object[][] addGuestlist(Object[][] batchArr) {
         int isUpdateGuestList[];
         int isUpdate = 0;
-        Object[][] bachListAfterGuest = new Object[bachList.length][4];
-     //   Object[][] guestCollection = new Object[bachList.length][3];
-        //Object[][] guestCollection = new Object[bachList.length][3];
+        final int indexOfGuesetIDArr = 3, attributesOfBatchArr = 3;
+        Object[][] batchArrAfterRemoveGuestArr = new Object[batchArr.length][attributesOfBatchArr];
+        /*
+         * It seems redundant element in array will cause error when updating in data
+         * so need to remove one array element from batchArr making its length from 5 to 4.
+         *
+         * So the guest array (index-4) of batchArr, which contain the guest IDs ,
+         * will be removed after updating many to many relationship with guest list
+         *
+         * by doing this, a batchArrAfterRemoveGuestArr 2D array will replace  batchArr
+         *
+         * */
 
-        for (int k = 0; k < bachList.length; k++) {
+        LOG.debug("T");
 
-            isUpdate = guestlistDAO.update("INSERT INTO `guestlist`(`guestListID`) VALUES (?)", 0);
-            //if(isUpdate!=0){}
-
-
-            Object guestListIDObject = guestlistDAO.queryScalar("SELECT `guestlistID`FROM `guestlist`  " +
-                    " ORDER BY guestlistID DESC " +
-                    " LIMIT 1;", Guestlist.class);
-
-            int guestListID = (int) guestListIDObject;
+        for (int k = 0; k < batchArr.length; k++) {
 
 
-            bachListAfterGuest[k][0] = bachList[k][0];
-            bachListAfterGuest[k][1] = guestListID;
-            bachListAfterGuest[k][2] =bachList[k][2];
-            bachListAfterGuest[k][3] =bachList[k][3];
+            //create guest list
 
-            //get guest data from bach
 
-            Object[][] guestCollection = new Object[((int[]) bachList[k][4]).length][3];
+            isUpdate = addGuestlistForSession();
+
+            int guestListID = getLatestGuestListID();
+
+            LOG.debug("Create Guest List: with ID: " + guestListID);
+
+            //batchArr[k][1]= guestListID
+            batchArrAfterRemoveGuestArr[k][0] = batchArr[k][0];
+            batchArrAfterRemoveGuestArr[k][1] = guestListID;
+            batchArrAfterRemoveGuestArr[k][2] = batchArr[k][2];
+//            batchArrAfterRemoveGuestArr[k][3] =batchArr[k][3];
+
+
+            //get guest data from batch
+
+            Object[][] guestCollection = new Object[((int[]) batchArr[k][indexOfGuesetIDArr]).length][3];
+            int i=0;
             try {
-                for (int i = 0; i < ((int[]) bachList[k][4]).length; i++) {
+                for ( ; i < ((int[]) batchArr[k][indexOfGuesetIDArr]).length; i++) {
 
 
-                        guestCollection[i][0] = 0;
-                        guestCollection[i][1] = guestListID;
-                        guestCollection[i][2] = ((int[]) (bachList[k][4]))[i];
+                    guestCollection[i][0] = null; //guestListNGuest_mm id
+                    guestCollection[i][1] = guestListID; // GuestLisID
+                    guestCollection[i][2] = ((int[]) (batchArr[k][indexOfGuesetIDArr]))[i]; //GuestID
 
-
-            }
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-                e.printStackTrace();
-            }
-
-
-/*
-            for (int i = 0; i < bachList.length; i++) {
-                for (int j = 0; j < ((int[]) (bachList[i][4])).length; j++) {
-
-                    guestCollection[i][0] = 0;
-                    guestCollection[i][1] = guestListID;
-                    guestCollection[i][2] = ((int[]) (bachList[i][4]))[j];
-
+                    LOG.debug("Guest List: " + guestListID + " Guest ID: " + ((int[]) (batchArr[k][indexOfGuesetIDArr]))[i]);
                 }
+            } catch (Exception e) {
+
+                LOG.debug("Fail to create guestCollection array to update many-many table " + e.getMessage());
             }
-*/
 
 
-/*
-                for (int j = 0; j < ((int[]) (bachList[0][4])).length; j++) {
-
-                    guestCollection[j][0] = 0;
-                    guestCollection[j][1] = guestListID;
-                    guestCollection[j][2] = ((int[]) (bachList[i][4]))[j];
-
-                }*/
-
-
-            isUpdateGuestList = guestlistenguest_MmDAO.updateBach("INSERT INTO `guestlistenguest_mm` (`guestlistNGuestID`, `guestlistNGuestFKguestlistID`, `guestlistNGuestFKguestID`) VALUES (?,?,?);", guestCollection);
+            try {
+                isUpdateGuestList = addGuestlistenguest_MMWithGuestListAndGuestID(guestCollection);
+                LOG.debug("Succeed add record for guestList " +guestListID+ " with "+ i+" guest(s)" );
+            } catch (Exception e) {
+                LOG.debug("Fail to create  guestlistenguest_MmDAO : " + e.getMessage());
+            }
 
         }
-        return bachListAfterGuest;
+        return batchArrAfterRemoveGuestArr;
     }
 
-    public void addGustIntoList(int listID,int guestID) {
+    public int[] addGuestlistenguest_MMWithGuestListAndGuestID(Object[][] guestCollection) {
 
-        String sql="INSERT INTO `guestlistenguest_mm`(`guestlistNGuestID`, `guestlistNGuestFKguestlistID`, `guestlistNGuestFKguestID`) VALUES (null,?,?)";
-
-        guestlistenguest_MmDAO.update(sql,listID,guestID);
-
-    }
-    public void deleteGustIntoList( int listID,int guestID) {
-
-            String sql="DELETE FROM `guestlistenguest_mm`  " +
-
-                    "WHERE guestlistNGuestFKguestlistID=? and guestlistNGuestFKguestID=?";
-
-            guestlistenguest_MmDAO.update(sql,listID,guestID);
+        return guestlistenguest_MmDAO.updateBach("INSERT INTO `guestlistenguest_mm` (`guestlistNGuestID`, `guestlistNGuestFKguestlistID`, `guestlistNGuestFKguestID`) VALUES (?,?,?);", guestCollection);
 
     }
 
+    public int getLatestGuestListID() {
+        return (int) guestlistDAO.queryScalar("SELECT `guestlistID`FROM `guestlist`  " +
+                " ORDER BY guestlistID DESC " +
+                " LIMIT 1;", Guestlist.class);
+
+    }
+
+    public int addGuestlistForSession() {
+        return guestlistDAO.update("INSERT INTO `guestlist`(`guestListID`) VALUES (?)", 0);
+    }
+
+    public void addGustIntoList(int listID, int guestID) {
+
+        String sql = "INSERT INTO `guestlistenguest_mm`(`guestlistNGuestID`, `guestlistNGuestFKguestlistID`, `guestlistNGuestFKguestID`) VALUES (null,?,?)";
+
+        guestlistenguest_MmDAO.update(sql, listID, guestID);
+
+    }
+
+    public void deleteGustIntoList(int listID, int guestID) {
+
+        String sql = "DELETE FROM `guestlistenguest_mm`  " +
+
+                "WHERE guestlistNGuestFKguestlistID=? and guestlistNGuestFKguestID=?";
+
+        guestlistenguest_MmDAO.update(sql, listID, guestID);
+
+    }
 
 
 }

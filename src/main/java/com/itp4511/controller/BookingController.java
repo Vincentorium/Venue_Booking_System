@@ -23,6 +23,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -100,9 +101,9 @@ public class BookingController extends HttpServlet {
             //region 2: book  venues with sessions
             case 2:
 
+                LOG.debug("Enter Case 2: Booking  venues with sessions");
 
-                LOG.debug("Enter case 2: book  venues with sessions");
-                //1.get data sent in json object from  front side
+                //1.Parse  json array  from  front side
                 BufferedReader reader = request.getReader();
                 StringBuilder bookingSessionsJSArrayStr = new StringBuilder();
                 try {
@@ -116,17 +117,19 @@ public class BookingController extends HttpServlet {
                     reader.close();
 
 
-                    LOG.debug("Finish reading the data from request");
+                    LOG.debug("Finish reading the JSON Array from request");
                 } catch (IOException e) {
                     LOG.debug(e.getMessage());
                 }
 
 
                 try {
+                    LOG.debug("Call Booking Record Services");
+
                     boolean isUpdate = bookingRecordServiceImpl.insertBookingRecords(bookingSessionsJSArrayStr);
 
                     if (isUpdate) {
-                        LOG.debug("Add record(s) Successfully");
+                        LOG.debug("Add Booking Record(s) Successfully");
                         responseJson.put("message", "Add record(s) Successfully");
                         response.getWriter().write(responseJson.toString());
                     }
@@ -156,7 +159,6 @@ public class BookingController extends HttpServlet {
                     List<BookingInfo_MM> displaySessionByID = null;
                     try {
 
-                        // displaySessionByID = bookingRecordService.getBookingByID(memberUnapproved);
 
                         displaySessionByID = (memberUnapproved == 999 ? sessionService.displayALLBookingInfoNeedApproval() : sessionService.displayBookingInfoNeedApproval(memberUnapproved));
 

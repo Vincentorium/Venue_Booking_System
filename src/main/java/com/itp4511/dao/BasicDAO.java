@@ -1,11 +1,14 @@
 package com.itp4511.dao;
 
+
 import com.itp4511.utils.C3p0Utils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -15,6 +18,7 @@ public class BasicDAO<T> {
 
 
     private QueryRunner qr = new QueryRunner();
+    private static final Logger LOG = LoggerFactory.getLogger(BasicDAO.class);
 
 
     public int update(String sql, Object... parameters){
@@ -38,7 +42,7 @@ public class BasicDAO<T> {
 
 
 
-    public   int[]  updateBach(String sql, Object[][] bachList ) {
+    public   int[]  updateBach(String sql, Object[][] bachList )  {
 
         Connection connection = C3p0Utils.getConnection();
         int affectedRow[]=new int[bachList.length];
@@ -47,8 +51,9 @@ public class BasicDAO<T> {
 
             int result[] = qr.batch(connection, sql, bachList);
            affectedRow=result;
-        } catch (SQLException e) {
+            } catch (SQLException e) {
             e.printStackTrace();
+            LOG.debug("Fail to update session" + e.getMessage());
         } finally {
             C3p0Utils.closeAll(connection, null, null);
         }

@@ -13,6 +13,7 @@ import com.itp4511.domain.BookingSession_Multi;
 import com.itp4511.domain.SessionObj;
 import com.itp4511.service.BookingRecordService;
 import com.itp4511.service.BookingRecordServiceInterfae;
+import com.itp4511.service.GuestlistService;
 import com.itp4511.service.SessionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,20 +32,125 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
 
     private SessionService sessionService = new SessionService();
 
-    public static final Logger LOG = LoggerFactory.getLogger(BookingRecordServiceImpl.class);
-
+    private GuestlistService guestlistService = new GuestlistService();
+    private static final Logger LOG = LoggerFactory.getLogger(BookingRecordServiceImpl.class);
+    private Gson gson = new Gson();
 
     //<editor-fold desc=" service refined">
+
+
     public boolean insertBookingRecords(StringBuilder bookingSessionsJSArrayStr) {
 
 
-        Object[][] bachList = null;
+
+        Object[][] batchArrForGuestList_MM;// array for the batch update of  guestList
+        Object[][] batchArrForSession; // array for batch update of sessions
+        List<SessionObj> sessionObjs; //Object List to store the data from front side
+
+
+
+        sessionObjs = parseIntoObjects(bookingSessionsJSArrayStr);
+ // create bookingID and add the id into object in session list
+        createAndaddBookingIDintoSessionObj(sessionObjs);
+
+
+// create guest list for each sessions selected
+        for (SessionObj sessionObj : sessionObjs) {
+            /*
+             * the relationship between guest and guest list is many to many
+             *
+             * 1.create guestlist and get id of the one
+             * 2.attach id in step 1 to the session and and guest
+             * 3.create the many to many table for guest and guest list form data get in step 2
+             *
+             * */
+
+            //1.
+            guestlistService.addGuestlistForSession();
+            int guestListID = guestlistService.getLatestGuestListID();
+
+            sessionObj.setGuestListID(guestListID);
+
+            LOG.debug("Create Guest List: with ID: " + guestListID);
+            //2.
+            batchArrForGuestList_MM = parseGuestBatchForUpdateObj(sessionObj, guestListID);
+
+            //3.
+            try {
+                guestlistService.addGuestlistenguest_MMWithGuestListAndGuestID(batchArrForGuestList_MM);
+                LOG.debug("Succeed add record for guestList " + guestListID + " with " + " guest(s)");
+            } catch (Exception e) {
+                LOG.debug("Fail to create  guestlistenguest_MmDAO : " + e.getMessage());
+            }
+        }
+//update session with booking ID and GuestList_MM
+        batchArrForSession = parseObjectIntoArr(sessionObjs);
+        return sessionService.updateSession(batchArrForSession);
+
+    }
+
+    private Object[][] parseObjectIntoArr(List<SessionObj> sessionObjs) {
+        int i = 0;
+
+
+        int attributesOfBatchArr = 3;
+
+        int noOfSessionSelected = sessionObjs.size();
+
+//        batchArrAfterRemoveGuestArr = new Object[batchArr.length][attributesOfBatchArr];
+
+
+        Object[][] batchArrAfterRemoveGuestArr = new Object[noOfSessionSelected][attributesOfBatchArr];
+
+        for (SessionObj obj : sessionObjs) {
+
+            batchArrAfterRemoveGuestArr[i][0] = obj.getBookingID();
+            batchArrAfterRemoveGuestArr[i][1] = obj.getGuestListID();
+            batchArrAfterRemoveGuestArr[i][2] = obj.getSessionID();
+            i++;
+            LOG.debug("The session will be update is " + obj.getSessionID() + " with guest lIst ID: " + obj.getGuestListID());
+        }
+
+        return batchArrAfterRemoveGuestArr;
+    }
+
+
+    private Object[][] parseGuestBatchForUpdateObj(SessionObj sessionObj, int guestListID) {
+        //final int indexOfGuesetIDArr = 3;
+
+        int noOfguestInSessionSelected = sessionObj.getGuestList().length;
+
+        Object[][] guestCollection = new Object[noOfguestInSessionSelected][3];
+
+
+        int i = 0;
+        try {
+            for (; i < noOfguestInSessionSelected; i++) {
+
+
+                guestCollection[i][0] = null; //guestListNGuest_mm id
+                guestCollection[i][1] = guestListID; // GuestLisID
+                guestCollection[i][2] = sessionObj.getGuestList()[i]; //GuestID
+
+                LOG.debug(" Guest List: with " + guestListID + " Guest ID: " + sessionObj.getGuestList()[i]);
+            }
+        } catch (Exception e) {
+
+            LOG.debug("Fail to create guestCollection array to update many-many table " + e.getMessage());
+        }
+        return guestCollection;
+    }
+
+
+    private List<SessionObj> parseIntoObjects(StringBuilder bookingSessionsJSArrayStr) {
+
+
         Integer bookingMemberID = null;
         Double bookingFee = null;
+        Object[][] batchArr;
 
 
-        Gson gson = new Gson();
-
+        //parse bookingSessionsJSArrayStr into SessionObj JavaBean
         List<SessionObj> sessionObjs = null;
         try {
             //   JsonObject jsonObject = gson.fromJson(sb.toString() , JsonObject.class);
@@ -58,26 +164,35 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
         }
 
 
-        bachList = new Object[sessionObjs.size()][5];
+        return sessionObjs;
+    }
 
-        int i = 0;
-        for (SessionObj s : sessionObjs) {
-            bachList[i][0] = 0;
-            bachList[i][1] = 0;
-            bachList[i][2] = 1;
-            bachList[i][3] = Integer.parseInt(s.getSessionID());
-            bachList[i][4] = s.getGuestList();
-            bookingMemberID = s.getUserID();
-            bookingFee = s.getTotalPrice();
-            i++;
+    private List<SessionObj> createAndaddBookingIDintoSessionObj(List<SessionObj> sessionObjs) {
 
+        int bookingMemberID = 0;
+        double bookingFee = 0;
+        for (SessionObj sessionObj : sessionObjs) {
+            bookingMemberID = sessionObj.getUserID();
+            bookingFee = sessionObj.getTotalPrice();
         }
 
 
-        return bookingRecordDAOImpl.insertBookingRecords(bookingMemberID, bookingFee, bachList);
+        //update booking Record
+        boolean isAdd = bookingRecordDAOImpl.addBookingRecords(bookingMemberID, bookingFee);
+        LOG.debug("Status of add new booking record is " + isAdd);
 
 
+        Integer bookingID = (Integer) bookingRecordDAOImpl.getLatestBookingRecordID();
+        LOG.debug("The latest BookingID is " + bookingID);
+
+        for (SessionObj sessionObj : sessionObjs) {
+            sessionObj.setBookingID(bookingID);
+        }
+
+        LOG.debug("Attach booking ID to [j][0] of batchArr  for " + sessionObjs.size() + " session(s)");
+        return sessionObjs;
     }
+
     //</editor-fold>
 
 

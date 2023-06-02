@@ -5,31 +5,33 @@ import com.itp4511.domain.BookingSession_Multi;
 
 import java.util.List;
 
-public interface BookingRecordDAOInterfae {
+ public interface BookingRecordDAOInterfae {
 
 
-    public boolean insertBookingRecords(int bookingMemberID, double bookingFee, Object[][] bachList);
+
+     boolean addBookingRecords(int bookingMemberID, double bookingFee);
+
+     Object getLatestBookingRecordID();
+
+     List<BookingSession_Multi> getBookingByID(int memberID);
 
 
-    public List<BookingSession_Multi> getBookingByID(int memberID);
+     List<BookingSession_Multi> getBookingByIDForNonUnapprovedRecord(int memberID);
 
 
-    public List<BookingSession_Multi> getBookingByIDForNonUnapprovedRecord(int memberID);
+     List<BookingInfo_MM> getBookingAllInfoByMemberID(int memberID);
+
+     List<BookingInfo_MM> getBookingByMemberID(int memberID);
 
 
-    public List<BookingInfo_MM> getBookingAllInfoByMemberID(int memberID);
+     List<BookingInfo_MM> getBookingAllInfoByBookingID(int BookingID);
 
-    public List<BookingInfo_MM> getBookingByMemberID(int memberID);
+     boolean updateBookingImgnfoByMemberID(int memberID, String imageName);
 
-
-    public List<BookingInfo_MM> getBookingAllInfoByBookingID(int BookingID);
-
-    public boolean updateBookingImgnfoByMemberID(int memberID, String imageName);
-
-    public boolean approveBooking(int memberID);
+     boolean approveBooking(int memberID);
 
 
-    public boolean updateBookingAllInfoByMemberID(int memberID, String imageName);
+     boolean updateBookingAllInfoByMemberID(int memberID, String imageName);
 
 
 }
