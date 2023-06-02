@@ -78,15 +78,13 @@ public class UserController extends HttpServlet {
                         throw new BusinessException("No Result Found Exception");
                     }
                     responseData = gson.toJson(userInfo);
-//
-//
-//                    HttpSession session = request.getSession();
-//                    session.setAttribute("authenticated", true);
-//
-//                    session.setAttribute("username", userInfo.getUserName());
-//                    session.setAttribute("userID", String.valueOf(userInfo.getUserId()));
-//                    session.setAttribute("roleTitle", userInfo.getRoleTitle());//role of user
-//               //     response.sendRedirect("/mainPage.jsp");
+
+
+                    HttpSession session = request.getSession();
+                    //session.setAttribute("authenticated", true);
+
+                    session.setAttribute("userID", String.valueOf(userInfo.getUserId()));
+                    session.setAttribute("userType", userInfo.getUserType());//role of user
 
                 } catch (BusinessException e) {
                     responseData = e.getMessage();

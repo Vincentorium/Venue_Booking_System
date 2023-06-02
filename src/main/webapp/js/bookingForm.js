@@ -253,6 +253,12 @@ $(".bookingFormSubmit").click(function (e) {
 
     var sessionSelected = $('.venu-session-selected');
 
+    if(sessionSelected.length==0)
+    {
+        alert("Please select a time slot to submit!")
+        return ;
+
+    }
     $.each(sessionSelected, function (i, rc) {
         var sessionObj = {};
 

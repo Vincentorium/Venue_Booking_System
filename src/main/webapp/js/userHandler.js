@@ -51,6 +51,7 @@ $(document).ready(function () {
                 alert("Login Successfully, Welcome " + rs.userName)
                 createCookieForUser(rs);
                 loginCustomizeForUser(rs)
+
             },
             error: function (xhr, status, error) {
 

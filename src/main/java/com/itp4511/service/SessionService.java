@@ -9,7 +9,11 @@ import com.itp4511.domain.BookingSession_Multi;
 import com.itp4511.domain.Session;
 import com.itp4511.domain.Sessionbyguestid;
 import com.itp4511.domain.BookingInfo_MM;
+import com.itp4511.service.impl.BookingRecordServiceImpl;
+import org.jfree.util.Log;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Date;
 import java.util.List;
@@ -21,6 +25,8 @@ public class SessionService {
     private Multi_BookingSessionDAO multi_BookingSessionDAO = new Multi_BookingSessionDAO();
     private SessionbyguestidDAO sessionbyguestidDAO = new SessionbyguestidDAO();
     BookingInfo_MMDAO bookingInfo_MMDAO = new BookingInfo_MMDAO();
+
+    private static final Logger LOG = LoggerFactory.getLogger(BookingRecordServiceImpl.class);
 
     public boolean insertOneSession(java.sql.Time timeslotStart, java.sql.Time timeslotEnd) {
 
@@ -68,7 +74,7 @@ public class SessionService {
         try {
 
             result = bookingInfo_MMDAO.queryMulti("SELECT * FROM `bookingrecord`   as b " +
-                    " left join user on b.bookFKmemberID=user.userID " +
+                            " left join user on b.bookFKmemberID=user.userID " +
                             "  where bookStatus = 1 and bookFKmemberID = ?"
                             + " order by bookStatus ,bookDate Desc"
                     , BookingInfo_MM.class, memberUnapproved);
@@ -150,18 +156,18 @@ public class SessionService {
 
 
     //for the first time update session
-    public boolean updateSession(Object[][] bachList) {
+    public boolean updateSession(Object[][] batchArrWithGuestList) {
 
-        int input[] = new int[bachList.length];
-//addGuestlist
-        GuestlistService guestlistService = new GuestlistService();
-        Object[][] bachListWithGuestList = guestlistService.addGuestlist(bachList); //with relveant ids of booking and guestlist
-        input = sessionDAO.updateBach(
-                "UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionFKGuestlist`=?,`sessionStatus`=? " +
-                        "where  `sessionID`=?", bachListWithGuestList);
+        boolean isUpdate = false;
+
+        isUpdate = sessionDAO.updateBach(
+                "UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionFKGuestlist`=?,`sessionStatus`= 1 " +
+                        "where  `sessionID`=?", batchArrWithGuestList).length > 0;
+
+        LOG.debug("Status of update session with Booking records.. : " + isUpdate);
 
 
-        return input.length > 0;
+        return isUpdate;
     }
 
 
