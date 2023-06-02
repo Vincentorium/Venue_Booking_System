@@ -288,7 +288,7 @@ $(".bookingFormSubmit").click(function (e) {
         success: function (result) {
 
             alert("Update Successfully!");
-            getGeusts(1, 1);//#temp need cookie
+            handleGeusts(1, 1);//#temp need cookie
             $(".venue-apply-form-sessionsSelected-box").html("")
             $("#modal").removeClass('active');
         },//EDF AJAX sucess FUNCTION
@@ -317,7 +317,7 @@ function addBooking(formData) {
         success: function (result) {
 
             alert("Update Successfully!");
-            getGeusts(1, 1);//#temp need cookie
+            handleGeusts(1, 1);//#temp need cookie
         },//EDF AJAX sucess FUNCTION
 
         error: function (xhr, status, error) {
@@ -676,5 +676,17 @@ function approveBooking(bookingBox) {
 
 
 }
+
+
+
+
+$(document).on("change",".file-input",function(){
+    $(this).parent().removeClass('demonHide');
+});
+$(document).on("click",".file-input-cancel",function(){
+    $(this).parent().addClass('demonHide');
+    $(this).prev().val('');
+});
+
 
 

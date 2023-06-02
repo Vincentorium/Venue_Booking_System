@@ -1,9 +1,14 @@
 var userIDSession;
 var userDataForConfigure = {}
+var repID
 const format = (num, decimals) => num.toLocaleString('en-US', {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
 });
+
+
+
+
 
 
 //for operator to update report status between unapprove and approve fo

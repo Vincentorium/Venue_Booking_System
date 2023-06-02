@@ -2,7 +2,7 @@ var mailResult
 var mailLastestOne
 
 
-function getGeusts(userID, type) {
+function handleGeusts(userID, type) {
     let result;
 
     $.ajax({
@@ -50,7 +50,7 @@ function getGeustListBySessionID(sessionID) {
 
 
 function getGeustIntoGuestMngt(userID, type) {
-    let result = getGeusts(userIDSession, 1)
+    let result = handleGeusts(userIDSession, 1)
     let content
     $('.guestsFormTable').html("");
 
