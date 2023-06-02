@@ -1,7 +1,7 @@
-<%@ taglib prefix="test" uri="/test/" %>
+
 <!DOCTYPE html>
 <html lang="en">
-<%@page contentType="text/html" pageEncoding="UTF-8" %>
+
 <!DOCTYPE html>
 
 <head>
@@ -18,7 +18,7 @@
     <link href="css\signUp.css" rel="stylesheet">
     <link href="css\header.css" rel="stylesheet">
     <link href="css\searchForm.css" rel="stylesheet">
-    <link href="css\complaint.css" rel="stylesheet">
+    <link href="css\complaint_redundant.css" rel="stylesheet">
     <link href="css\switch.css" rel="stylesheet">
     <link href="css\applyFrom.css" rel="stylesheet">
 
@@ -33,9 +33,7 @@
 
 
     <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <%--
-      <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-      --%>
+
     <script src="./canvasjs/jquery.canvasjs.min.js"></script>
 
 
@@ -71,12 +69,13 @@
     <script defer src="js\bookingFunction.js"></script>
     <script defer src="js\handleForm.js"></script>
     <script defer src="js\bookingRecordTable.js"></script>
+    <script defer src="js\addEventsToDom.js"></script>
 
 
     <link href="css\index.css" rel="stylesheet">
     <link href="css\tableSheet.css" rel="stylesheet">
     <link href="css\complaintTable.css" rel="stylesheet">
-    <link href="css\favBox.css" rel="stylesheet">
+    <link href="css\venueDisplay.css" rel="stylesheet">
     <link href="css\demo.css" rel="stylesheet">
     <link href="css\mail.css" rel="stylesheet">
 
@@ -85,11 +84,11 @@
     <script defer src="js\handleVenue.js"></script>
 
     <script defer src="js\handleForm.js"></script>
-    <script defer src="js\getGeusts.js"></script>
+    <script defer src="js\handleGeusts.js"></script>
     <script defer src="js\bookingForm.js"></script>
     <script defer src="js\handleBooking.js"></script>
     <script defer src="js\handleStatisticContent.js"></script>
-    <script defer src="js\userHandler.js"></script>
+    <script defer src="js\handleUsers.js"></script>
 
 
     <link href="css\venuList.css" rel="stylesheet">
@@ -102,6 +101,8 @@
     <link href="css\statistic.css" rel="stylesheet">
 
     <link href="css\general.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -109,7 +110,7 @@
 
 <div class="modalBox">
 
-    <%--SOF Login form    --%>
+    <!--SOF Login form    -->
     <div class="login_Container modalGeneral">
         <div class="loginForm_loginCtnTitle">
             <!--  <h2>IVE Airline</h2> <a class="close" data-close-button></a> -->
@@ -192,7 +193,7 @@
         </div><!-- signup_page end-->
 
     </div>
-    <%--EOF Login form    --%>
+    <!--EOF Login form    -->
     <!-- SOF modal booking form Box-->
     <div class="modal modalGeneral " id="modal">
 
@@ -250,7 +251,7 @@
                                 </div>
                             </fieldset>
 
-                            <%--
+                            <!--
                             <br>
                             <fieldset class="venue-apply-form-sessionsSelected">
                                 <legend>Template for guest invitation:</legend>
@@ -263,7 +264,7 @@
                                     <br>
 
                             </fieldset>
-                                 --%>
+                                 -->
                             <br>
                             <br>
                             <div class="venue-apply-form-submitButBox">
@@ -559,19 +560,6 @@
                 </table>
 
 
-<%--                <div class=' pagination-container'>--%>
-<%--                    <nav>--%>
-<%--                        <ul class="pagination">--%>
-
-<%--                            <li data-page="prev">--%>
-<%--                                    <span>--%>
-<%--                                        < <span class="sr-only">(current)--%>
-<%--                                    </span>--%>
-<%--                                    </span>--%>
-<%--                            </li>--%>
-<%--                            <!--  Here the JS Function Will Add the Rows -->--%>
-<%--                    </nav>--%>
-<%--                </div>--%>
                 <div class="booking-record-text"></div>
             </div>
 
@@ -623,12 +611,7 @@
 
                 <a id="menu2" class="">Venues Booking System</a>
             </div>
-            <%--            <div class="headerFun">--%>
 
-
-            <%--                <a id="header__createAccount" data-modal-target="#modal" data-default="createAccForOperator"--%>
-            <%--                   class="header__createAccount adminFunLin">Create Account</a>--%>
-            <%--            </div>--%>
 
             <div class="headerLoginOut">
                 <div class="loginFunctionWrapper containerHide">
@@ -640,17 +623,13 @@
                        class="hearder__a header_memberFuncLink  header__venueList">Guest Managment </a>
 
 
-                    <%--                    <a data-modal-target=".userMngtModal" data-default=".userMngtModal"--%>
-                    <%--                       class="hearder__a header__userMngt  mgntFunction boxHide">User--%>
-                    <%--                        Management--%>
-                    <%--                    </a>--%>
 
 
                     <a class="hearder__a  a_logOut">Log Out</a>
 
                 </div>
                 <div class="nonLoginFuncWrapper">
-                    <%--                    demoLogOut--%>
+
                     <a class="hearder__a  a_logIn">Log In</a>
                 </div>
             </div>

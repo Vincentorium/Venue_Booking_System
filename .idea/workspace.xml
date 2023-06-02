@@ -7,29 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48b353e2-82ac-4247-96db-9d9b4ea93a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionselectedtempDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/SessionselectedtempDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionselectedtemp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionselectedtempService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/SessionselectedtempServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/test/BookingFormTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/test/SessionSelectedTempDOA_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/895ad8ac-9339-4bd0-8d57-c8abb5845b0c/storage_v2/_src_/schema/itp4511_project.YDqHjQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/addEventsToDom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAOInterfae.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAOInterfae.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/BookingRecordDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/BookingRecordDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/BookingRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/BookingRecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itp4511/view/MHLView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itp4511/view/TEST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/complaint.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/complaint_redundant.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/favBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/venueDisplay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/logIn2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/mail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bookingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bookingForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/userHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/userHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkBookingWithouReceipt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeusts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getMailContent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getMailRecords.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getReports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getReportsForTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleReport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/insertMail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/insertReportStatus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/logIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/searchFunc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/searchFuncTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/searchFunc_Switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/userHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleUsers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,44 +101,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/BookingRecordServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="79" column="58" lean-forward="true" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#parseGuestBatchForUpdateObj#0;class#BookingRecordServiceImpl#0" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bookingForm.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="672" column="10" selection-start-line="672" selection-start-column="10" selection-end-line="672" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestlistService.java">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/GuestServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="260">
+              <caret line="1389" column="13" lean-forward="true" selection-start-line="1389" selection-start-column="13" selection-end-line="1389" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#12158#12162#0" expanded="true" />
+                <element signature="e#55744#55750#0" expanded="true" />
+                <element signature="e#55842#55848#0" expanded="true" />
+                <element signature="e#55875#55881#0" expanded="true" />
+                <element signature="e#55901#55907#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/SessionselectedtempServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addEventsToDom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -145,15 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>guestID</find>
-      <find>deleteGuest</find>
-      <find>TypeReference</find>
-      <find>gson</find>
-      <find>java.net.BindException:</find>
-      <find>bookingRecordDAO</find>
-      <find>bookingRecordDAO.</find>
-      <find>queryScalar</find>
-      <find>BookingRecordDAOImpl</find>
       <find>long</find>
       <find>public</find>
       <find>bachListAfterGuest</find>
@@ -175,6 +207,15 @@
       <find>batcharr</find>
       <find>LOG</find>
       <find>batchArrAfterRemoveGuestArr</find>
+      <find>complaint</find>
+      <find>complaint.css</find>
+      <find>getReortForTable</find>
+      <find>fav.cs</find>
+      <find>bookingTableBox</find>
+      <find>geust</find>
+      <find>handleBook.js</find>
+      <find>userHandler</find>
+      <find>&lt;%</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -186,31 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/css/applyFrom.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/tableBooking.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/bookingForm.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/handleBookingRecord.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/inserBooking.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/modal.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/bookingFormRecords.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/header.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/statistic.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/handleStatisticContent.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAOInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/GuestServiceInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/GuestDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestServiceInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/GuestService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/test/TestDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/GuestServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/GuestDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java" />
@@ -225,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/SessionselectedtempServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/SessionselectedtempDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/test/SessionSelectedTempDOA_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/bookingForm.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/userHandler.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/test/BookingFormTest.java" />
@@ -237,6 +252,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/BookingRecordDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/BookingRecordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/logIn2.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/mail.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getMailContent.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getMailRecords.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getReports.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/getReportsForTable.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleReport.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleForm.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/searchFunc.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/searchFuncTable.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/addEventsToDom.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/searchFunc_Switch.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/HandleGeusts.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bookingForm.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/switch.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/checkBookingWithouReceipt.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -380,6 +421,36 @@
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -394,7 +465,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -410,8 +481,8 @@
       <recent name="com.itp4511.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\css" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\js" />
+      <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\css" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\webapp\js\lib" />
       <recent name="K:\IT\Project\ITP4511_EA_PROJECT\src\main\Resources" />
     </key>
@@ -693,6 +764,7 @@
       <workItem from="1685691507834" duration="4403000" />
       <workItem from="1685696259944" duration="51000" />
       <workItem from="1685696344055" duration="11743000" />
+      <workItem from="1685716919017" duration="77000" />
     </task>
     <servers />
   </component>
@@ -729,7 +801,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319574000" />
+    <option name="totallyTimeSpent" value="323393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -744,7 +816,7 @@
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.67948717" visible="true" weight="0.28236002" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67948717" visible="true" weight="0.28958458" />
       <window_info id="Structure" order="1" sideWeight="0.32051283" side_tool="true" weight="0.28236002" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -755,12 +827,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49969897" weight="0.32830188" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40880504" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49969897" weight="0.3937107" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49969897" weight="0.44402516" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49969897" weight="0.32955974" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32955974" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49909693" visible="true" weight="0.4062893" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49909693" visible="true" weight="0.42389938" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500301" side_tool="true" weight="0.509434" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32955974" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32955974" />
@@ -1005,332 +1077,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/DBUtils_USE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/utils/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="1217" lean-forward="true" selection-start-line="1217" selection-end-line="1217" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="521" column="54" lean-forward="true" selection-start-line="521" selection-start-column="54" selection-end-line="521" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar!/com/fasterxml/jackson/core/type/TypeReference.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/StatisticController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar!/com/google/gson/reflect/TypeToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.io.BufferedReader">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.io.BufferedReader</OriginalElement>
-          <nodes>
-            <node x="" y="">java.io.Closeable</node>
-            <node x="" y="">java.lang.Readable</node>
-            <node x="" y="">java.io.BufferedReader</node>
-            <node x="" y="">java.io.Reader</node>
-            <node x="" y="">java.lang.AutoCloseable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="126.0" y="129.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/GuestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/q.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Sessionselectedtemp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_202/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/BookingRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/SessionSelectedTempDOA_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="259" lean-forward="true" selection-start-line="259" selection-end-line="259" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/GuestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/LoginController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/Userinfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/OtherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1157">
-          <caret line="41" column="70" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionselectedtempService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/impl/SessionselectedtempDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/SessionselectedtempDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/GuestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/GuestDOA_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7.jar!/org/apache/commons/dbutils/QueryRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/test/BookingFormTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/StatisticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/StatVenbookingcountDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/domain/SessionObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/SessionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BookingRecordDAOInterfae.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordServiceInterfae.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/BookingRecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/dao/BasicDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1401,6 +1147,167 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/logIn2.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/confirmationCode.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#171#712#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/searchForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="996" lean-forward="true" selection-start-line="996" selection-end-line="996" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mail.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getMailContent.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getMailRecords.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/complaintTable_cancel.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReports.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/getReportsForTable.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleReport.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleForm.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleMail.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/complaint_redundant.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="499" selection-start-line="499" selection-end-line="499" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleStatisticContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/switch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-end-line="78" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/insertMail.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/insertReportStatus.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/logIn.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/searchFunc.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/searchFuncTable.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/searchFunc_Switch.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/demo.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeusts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="175" column="20" lean-forward="true" selection-start-line="175" selection-start-column="20" selection-end-line="175" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBook.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleUsers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/switch.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/checkBookingWithouReceipt.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bookingFormRecords.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleVenue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bookingForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addEventsToDom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="672" column="10" selection-start-line="672" selection-start-column="10" selection-end-line="672" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="1389" column="13" lean-forward="true" selection-start-line="1389" selection-start-column="13" selection-end-line="1389" selection-end-column="13" />
+          <folding>
+            <element signature="e#12158#12162#0" expanded="true" />
+            <element signature="e#55744#55750#0" expanded="true" />
+            <element signature="e#55842#55848#0" expanded="true" />
+            <element signature="e#55875#55881#0" expanded="true" />
+            <element signature="e#55901#55907#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
