@@ -6,40 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48b353e2-82ac-4247-96db-9d9b4ea93a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/addEventsToDom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/complaint.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/complaint_redundant.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/favBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/venueDisplay.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/logIn2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/mail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/searchForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bookingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bookingForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkBookingWithouReceipt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getGeusts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeusts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getMailContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getMailRecords.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getReports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/getReportsForTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleBook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleBooking.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleMail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/handleReport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/insertMail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/insertReportStatus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/loadMainPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/logIn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/searchFunc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/searchFuncTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/searchFunc_Switch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/switch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/userHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/handleUsers.js" afterDir="false" />
-    </list>
+    <list default="true" id="48b353e2-82ac-4247-96db-9d9b4ea93a2a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,76 +68,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/handleGeneral.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state>
+              <caret line="134" selection-start-line="134" selection-end-line="134" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bookingForm.css">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/OtherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="799">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/BookingRecordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingFunction.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="672" column="10" selection-start-line="672" selection-start-column="10" selection-end-line="672" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="1389" column="13" lean-forward="true" selection-start-line="1389" selection-start-column="13" selection-end-line="1389" selection-end-column="13" />
+            <state relative-caret-position="317">
+              <caret line="214" selection-start-line="214" selection-end-line="214" />
               <folding>
-                <element signature="e#12158#12162#0" expanded="true" />
-                <element signature="e#55744#55750#0" expanded="true" />
-                <element signature="e#55842#55848#0" expanded="true" />
-                <element signature="e#55875#55881#0" expanded="true" />
-                <element signature="e#55901#55907#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/addEventsToDom.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="85">
+              <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -310,6 +241,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,47 +297,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="itp4511" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -439,7 +330,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -447,7 +338,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="2023" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="2023" type="462c0819:PsiDirectoryNode" />
+              <item name="5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITP4511_EA_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="2023" type="462c0819:PsiDirectoryNode" />
+              <item name="5" type="462c0819:PsiDirectoryNode" />
+              <item name="20" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITP4511_EA_Project" type="b2602c69:ProjectViewProjectNode" />
@@ -457,7 +378,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -801,7 +721,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323393000" />
+    <option name="totallyTimeSpent" value="323446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -814,9 +734,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="927" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67948717" visible="true" weight="0.28958458" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67948717" visible="true" weight="0.21252258" />
       <window_info id="Structure" order="1" sideWeight="0.32051283" side_tool="true" weight="0.28236002" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -832,7 +751,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49969897" weight="0.32955974" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32955974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49909693" visible="true" weight="0.42389938" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49909693" visible="true" weight="0.7081761" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.500301" side_tool="true" weight="0.509434" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32955974" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32955974" />
@@ -1117,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/controller/BookingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="87" column="53" lean-forward="true" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+        <state>
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
@@ -1134,11 +1053,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itp4511/service/impl/BookingRecordServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="79" column="58" lean-forward="true" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+        <state relative-caret-position="317">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#parseGuestBatchForUpdateObj#0;class#BookingRecordServiceImpl#0" />
           </folding>
         </state>
       </provider>
@@ -1275,8 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bookingRecordTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
         </state>
       </provider>
     </entry>
