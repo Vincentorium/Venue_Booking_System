@@ -74,7 +74,7 @@ public class OtherController extends HttpServlet {
                     LOG.debug("Handle the item " + fileItem.toString());
 
 
-                    if (fileItem.isFormField()) {//如果是true就是文本 input text
+                    if (fileItem.isFormField()) {//if return true
                         LOG.debug("Entering conditional statement to check and confirm file is text. ");
 
 
@@ -85,7 +85,7 @@ public class OtherController extends HttpServlet {
                     } else {//是一个文件
                         LOG.debug("Entering conditional statement to check and confirm element is file. ");
 
-                         String name = fileItem.getName(); //輸入的名字
+                         String name = fileItem.getName(); //get name of file
 
                         //get the name of input
                         if (fileItem.getFieldName().equals("image")) {

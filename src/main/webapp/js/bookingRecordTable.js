@@ -125,3 +125,78 @@ $(document).on('click','.right',function(e){
 
 })
 
+
+
+//table recording attachment
+
+
+var inputID__mainMailBox=0
+var inputID__specificBox=0
+var inputID__multiMails=0
+var  inputID__singleReportAttach=0
+$(document).on('change',".inputDisplay--mainMailBox", function(e) {
+
+
+    let box=$(this)
+    box.addClass("fileInputed--mainMailBox")
+    box.removeAttr('id');
+
+    var newInput
+    var reader = new FileReader();
+    reader.onload = function(e) {
+
+
+        var img = $('<img class="mailAttach--mainMailBox">').attr({
+            src: e.target.result,
+            width: 50,
+            height: 50
+        });
+        var removeBtn = $('<button class="close-button--mainMailBox" data-close='+inputID__mainMailBox+'>').text('x');
+        newInput = $('<input>').attr({
+            type: 'file',
+            name: 'images[]',
+            class: "fileInput inputDisplay--mainMailBox "+ ++inputID__mainMailBox,
+            id:"file-input--mainMailBox"
+
+        });
+        box.parent().find('.preview--mainMailBox').before(newInput);
+
+
+        removeBtn.on('click', function() {
+            box.parent().remove();
+
+
+            $("."+box.data("close")).remove()
+
+        });
+
+        var previewDiv = $('<div>').append(img).append(removeBtn);
+//        $(this).parent().find('.preview--mainMailBox').append(previewDiv);
+        box.parent().find('.preview--mainMailBox').append(previewDiv);
+
+    };
+    reader.readAsDataURL($(this).get(0).files[0]);
+
+
+
+
+    $(this).removeClass("inputDisplay--mainMailBox").css("display", "none");
+
+    e.stopPropagation()
+
+
+
+});
+
+
+function clearMailBox(box){
+    inputID__mainMailBox=0;
+    box.find('.mailTextArea').val("")
+    box.find('.preview').html("")
+
+    box.find(".mailAttachBox").html(
+        '       <input type="file" id="file-input--mainMailBox" class="fileInput fileInput--mainMailBox inputDisplay--mainMailBox file-input-mail-JS 0" />'
+        +'       <div class="preview preview--mainMailBox"></div>'
+    )
+
+}

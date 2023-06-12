@@ -42,15 +42,13 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
     public boolean insertBookingRecords(StringBuilder bookingSessionsJSArrayStr) {
 
 
-
         Object[][] batchArrForGuestList_MM;// array for the batch update of  guestList
         Object[][] batchArrForSession; // array for batch update of sessions
         List<SessionObj> sessionObjs; //Object List to store the data from front side
 
 
-
         sessionObjs = parseIntoObjects(bookingSessionsJSArrayStr);
- // create bookingID and add the id into object in session list
+        // create bookingID and add the id into object in session list
         createAndaddBookingIDintoSessionObj(sessionObjs);
 
 
@@ -77,8 +75,9 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
 
             //3.
             try {
-                guestlistService.addGuestlistenguest_MMWithGuestListAndGuestID(batchArrForGuestList_MM);
-                LOG.debug("Succeed add record for guestList " + guestListID + " with " + " guest(s)");
+                int isUpdate[] = guestlistService.addGuestlistenguest_MMWithGuestListAndGuestID(batchArrForGuestList_MM);
+                if (isUpdate.length > 0)
+                    LOG.debug("Successfully insert " + isUpdate.length + " record(s)");
             } catch (Exception e) {
                 LOG.debug("Fail to create  guestlistenguest_MmDAO : " + e.getMessage());
             }
@@ -101,6 +100,7 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
 
 
         Object[][] batchArrAfterRemoveGuestArr = new Object[noOfSessionSelected][attributesOfBatchArr];
+        LOG.debug("Begin parsing session object into 2D array to do batch update");
 
         for (SessionObj obj : sessionObjs) {
 
@@ -108,7 +108,7 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
             batchArrAfterRemoveGuestArr[i][1] = obj.getGuestListID();
             batchArrAfterRemoveGuestArr[i][2] = obj.getSessionID();
             i++;
-            LOG.debug("The session will be update is " + obj.getSessionID() + " with guest lIst ID: " + obj.getGuestListID());
+            LOG.debug("The session with ID " + obj.getSessionID() + " will be update  with guest List ID: " + obj.getGuestListID());
         }
 
         return batchArrAfterRemoveGuestArr;
@@ -132,7 +132,7 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
                 guestCollection[i][1] = guestListID; // GuestLisID
                 guestCollection[i][2] = sessionObj.getGuestList()[i]; //GuestID
 
-                LOG.debug(" Guest List: with " + guestListID + " Guest ID: " + sessionObj.getGuestList()[i]);
+                LOG.debug("A guest with ID " + sessionObj.getGuestList()[i] + " is under Guest List ID " + guestListID);
             }
         } catch (Exception e) {
 
@@ -189,7 +189,7 @@ public class BookingRecordServiceImpl implements BookingRecordServiceInterfae {
             sessionObj.setBookingID(bookingID);
         }
 
-        LOG.debug("Attach booking ID to [j][0] of batchArr  for " + sessionObjs.size() + " session(s)");
+        LOG.debug("Attach booking records ID to  " + sessionObjs.size() + " session(s)");
         return sessionObjs;
     }
 

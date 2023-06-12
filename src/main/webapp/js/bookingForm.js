@@ -253,10 +253,9 @@ $(".bookingFormSubmit").click(function (e) {
 
     var sessionSelected = $('.venu-session-selected');
 
-    if(sessionSelected.length==0)
-    {
+    if (sessionSelected.length == 0) {
         alert("Please select a time slot to submit!")
-        return ;
+        return;
 
     }
     $.each(sessionSelected, function (i, rc) {
@@ -497,17 +496,8 @@ var getBookingRCIntoTable =
                 let statusContent = statusContentFun(rc.bookStatus); // display the relveant text to according to status num
                 let attachmentBox = getAttachmentBox(rc.bookReceipt, rc.bookId)//see if there is a attachment uploaed
                 let dataCustomizedForUserType = getDataCustomizedForUserType(searchType);
-                // let customColum=  (jsTemp.guestInfo==null?"": " <td  >"+ rc.userName + "</td>")
-                //loading 不同type的區別
-                // 不同狀態
 
-                /*
-                one search with multi condition
-                *  1. staff  => load only wait to approve
-                *       getBookingRC()
-                *  2. customer => load all relevant to cusotmer
-                *       getBookingRC
-                * */
+
                 content +=
 
                     ' <tr class="bookingRCBoxGeneral specificBookingRC_' + i + '" data-bookingid=' + rc.bookId + '>'
@@ -518,8 +508,9 @@ var getBookingRCIntoTable =
                     + '   <td>' + sessionInfoContent + ' </td>'
                     + '   <td  > $ ' + format(rc.bookFee) + '</td>'
                     + '   <td  class="bookingAttach" >' + attachmentBox + '</td>'
-                    + '   <td><input type="button" class="submitButton submitBookingRecord" value="' + dataCustomizedForUserType.buttonValue + '" data-submit_box=".specificBookingRC_' + i + '"  data-submit_type="' + dataCustomizedForUserType.submitType + '">  </td>'
-
+                    + '   <td><input type="button" class="submitButton submitBookingRecord" value="'
+                    + dataCustomizedForUserType.buttonValue + '" data-submit_box=".specificBookingRC_' + i
+                    + '"  data-submit_type="' + dataCustomizedForUserType.submitType + '">  </td>'
                     + ' </tr>'
 
 
@@ -678,12 +669,10 @@ function approveBooking(bookingBox) {
 }
 
 
-
-
-$(document).on("change",".file-input",function(){
+$(document).on("change", ".file-input", function () {
     $(this).parent().removeClass('demonHide');
 });
-$(document).on("click",".file-input-cancel",function(){
+$(document).on("click", ".file-input-cancel", function () {
     $(this).parent().addClass('demonHide');
     $(this).prev().val('');
 });

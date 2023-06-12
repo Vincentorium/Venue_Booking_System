@@ -158,16 +158,18 @@ public class SessionService {
     //for the first time update session
     public boolean updateSession(Object[][] batchArrWithGuestList) {
 
-        boolean isUpdate = false;
+        int noOfAffectedRow;
 
-        isUpdate = sessionDAO.updateBach(
+
+        noOfAffectedRow = sessionDAO.updateBach(
                 "UPDATE `session` SET  `sessionFKbookingRecord`=? ,`sessionFKGuestlist`=?,`sessionStatus`= 1 " +
-                        "where  `sessionID`=?", batchArrWithGuestList).length > 0;
+                        "where  `sessionID`=?", batchArrWithGuestList).length ;
 
-        LOG.debug("Status of update session with Booking records.. : " + isUpdate);
+        if (noOfAffectedRow > 0)
+            LOG.debug("No of records  updating session with Booking record ID(s) and GuestList ID(s) : " + noOfAffectedRow);
 
 
-        return isUpdate;
+        return noOfAffectedRow > 0;
     }
 
 

@@ -16,9 +16,9 @@ public class GuestServiceImpl implements GuestService {
     public boolean addGuest(Guest guest) {
 
 
-        guestDAO.addGuest(guest);
 
-        return false;
+
+        return guestDAO.addGuest(guest)>0;
     }
 
     @Override

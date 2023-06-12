@@ -57,8 +57,10 @@
 }
 
 .loginForm_loginCtnTitle,.loginForm_loginCtnTitle>img{
-
     margin: 14px;
+    top: -5px;
+    right: 1px;
+
 
 }
 .loginFunctionWrapper{

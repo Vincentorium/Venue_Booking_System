@@ -23,6 +23,16 @@
   opacity: 0.3;
    
 }
+
+ .close--bookingForm{
+
+     top:-3px;
+ }
+.close--guest{
+    top: -1px;
+    right: 1px;
+
+}
 .close:hover {
   opacity: 1;
 }

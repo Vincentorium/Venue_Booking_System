@@ -53,7 +53,7 @@ public class BookingController extends HttpServlet {
     private GuestlistService guestlistService = new GuestlistService();
     private BookingRecordServiceInterfae bookingRecordServiceImpl = new BookingRecordServiceImpl();
 
-    public static final Logger LOG = LoggerFactory.getLogger(OtherController.class);
+    public static final Logger LOG = LoggerFactory.getLogger(BookingController.class);
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -129,9 +129,11 @@ public class BookingController extends HttpServlet {
                     boolean isUpdate = bookingRecordServiceImpl.insertBookingRecords(bookingSessionsJSArrayStr);
 
                     if (isUpdate) {
-                        LOG.debug("Add Booking Record(s) Successfully");
+
                         responseJson.put("message", "Add record(s) Successfully");
+
                         response.getWriter().write(responseJson.toString());
+                        LOG.debug("Sent JSON Response to Front-Side");
                     }
                 } catch (Exception e) {
                     LOG.debug(e.getMessage());
